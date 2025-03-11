@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <strong>🔗 <a href="https://json.uiboy.com">json.uiboy.com</a></strong><br>
+  <strong>🔗 <a href="https://jsontrans.vercel.app/">json.uiboy.com</a></strong><br>
   免费在线JSON翻译工具，支持40+种语言，由AI驱动
 </p>
 
