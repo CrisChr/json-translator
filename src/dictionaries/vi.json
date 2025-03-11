@@ -1,0 +1,249 @@
+{
+    "hero": {
+      "badge": "Được hỗ trợ bởi DeepSeek AI",
+      "title": "Công cụ dịch JSON i18n",
+      "description": "Dịch nhanh chóng các tệp ngôn ngữ JSON bằng công nghệ AI. Nhanh chóng, chính xác và dễ sử dụng.",
+      "features": {
+        "multilanguage": "Hỗ trợ đa ngôn ngữ",
+        "realtime": "Dịch thời gian thực"
+      }
+    },
+    "workflow": {
+      "title": "Hoàn thành dịch thuật trong bốn bước đơn giản",
+      "description": "Chúng tôi đã đơn giản hóa quy trình dịch tệp JSON để giúp bạn nhanh chóng có được kết quả dịch chất lượng cao",
+      "steps": [
+        {
+          "title": "Tải lên tệp JSON",
+          "description": "Hỗ trợ kéo thả hoặc nhấp để chọn tệp"
+        },
+        {
+          "title": "Chọn ngôn ngữ đích",
+          "description": "Chọn ngôn ngữ đích để dịch"
+        },
+        {
+          "title": "Bắt đầu dịch",
+          "description": "Nhập API Key và bắt đầu dịch AI"
+        },
+        {
+          "title": "Tải xuống kết quả",
+          "description": "Tải xuống tệp JSON đã được dịch"
+        }
+      ]
+    },
+    "features": {
+      "title": "Tính năng dịch thuật mạnh mẽ",
+      "items": [
+        {
+          "title": "Giữ nguyên cấu trúc JSON",
+          "description": "Thông minh nhận diện và duy trì cấu trúc, thụt lề và định dạng của tệp JSON gốc"
+        },
+        {
+          "title": "Hỗ trợ đa ngôn ngữ",
+          "description": "Hỗ trợ dịch giữa nhiều ngôn ngữ bao gồm tiếng Anh, tiếng Trung, tiếng Nhật và nhiều ngôn ngữ khác"
+        },
+        {
+          "title": "Dịch thuật bằng AI",
+          "description": "Sử dụng mô hình V3 của DeepSeek để đảm bảo độ chính xác của thuật ngữ kỹ thuật và cách diễn đạt tự nhiên"
+        },
+        {
+          "title": "An toàn & Đáng tin cậy",
+          "description": "API key chỉ được sử dụng tạm thời trong trình duyệt và không bao giờ được lưu hoặc truyền đến máy chủ"
+        }
+      ]
+    },
+    "uploadSection": {
+      "title": "Tải lên tệp JSON",
+      "description": "Tải lên tệp JSON của bạn để dịch",
+      "dragText": "Kéo tệp vào đây hoặc nhấp để tải lên",
+      "supportText": "Hỗ trợ tệp định dạng .json, tối đa 10MB",
+      "apiKeyTip": "Mẹo: Cần có DeepSeek API Key để dịch",
+      "errors": {
+        "selectFile": "Vui lòng chọn một tệp",
+        "jsonExtension": "Vui lòng tải lên tệp có phần mở rộng .json",
+        "fileSize": "Kích thước tệp không được vượt quá 10MB",
+        "jsonFormat": "Định dạng JSON không hợp lệ, vui lòng kiểm tra nội dung tệp",
+        "emptyJson": "Tệp JSON không được để trống"
+      },
+      "success": {
+        "uploaded": "Tải lên tệp thành công"
+      },
+      "apiKeyTitle": "DeepSeek API Key",
+      "apiKeyPlaceholder": "sk-...",
+      "errorTitle": "Lỗi",
+      "successTitle": "Thành công"
+    },
+    "translateSection": {
+      "title": "Chọn ngôn ngữ đích",
+      "description": "Chọn ngôn ngữ để dịch sang"
+    },
+    "translatePanel": {
+      "startTranslate": "Bắt đầu dịch",
+      "translating": "Đang dịch...",
+      "cancel": "Hủy",
+      "uploadFirst": "Vui lòng tải lên tệp trước",
+      "enterApiKey": "Vui lòng nhập API Key",
+      "foundUnfinished": "Tìm thấy bản dịch chưa hoàn thành",
+      "continueTranslation": "Tiếp tục dịch",
+      "translationCancelled": "Đã hủy dịch",
+      "invalidApiKey": "Định dạng API Key không hợp lệ",
+      "errorTitle": "Lỗi",
+      "successTitle": "Thành công",
+      "translationCompleted": "Dịch hoàn thành!",
+      "showMoreLanguages": "Hiển thị thêm ngôn ngữ",
+      "hideMoreLanguages": "Ẩn bớt ngôn ngữ",
+      "overallProgress": "Tiến độ tổng thể",
+      "completedSegments": "Phân đoạn đã hoàn thành",
+      "translatingLanguage": "Đang dịch",
+      "allLanguagesTranslated": "Tất cả ngôn ngữ đã được chọn đều đã được dịch",
+      "pleaseUploadAndEnterKey": "Vui lòng tải lên tệp và nhập API Key",
+      "tip": "Mẹo",
+      "cancelled": "Đã hủy",
+      "translationFailed": "Dịch thất bại",
+      "pleaseSelectLanguage": "Vui lòng chọn ít nhất một ngôn ngữ đích",
+      "bytes": "Byte",
+      "kb": "KB",
+      "mb": "MB",
+      "gb": "GB",
+      "apiKeyErrors": {
+        "invalidFormat": "Định dạng khóa API không hợp lệ",
+        "invalidOrExpired": "Khóa API không hợp lệ hoặc đã hết hạn",
+        "rateLimitReached": "Đã đạt giới hạn gọi API",
+        "validationFailed": "Xác thực khóa API thất bại"
+      }
+    },
+    "jsonPreview": {
+      "title": "Xem trước",
+      "empty": "Xem trước JSON sẽ xuất hiện ở đây",
+      "copied": "Đã sao chép vào clipboard",
+      "originalJson": "JSON gốc",
+      "translatedJson": "JSON đã dịch",
+      "tips": "Mẹo: Hỗ trợ xem trước và định dạng tệp JSON theo thời gian thực, và bạn có thể sao chép trực tiếp nội dung",
+      "placeholder": {
+        "upload": "Vui lòng tải lên tệp JSON",
+        "translation": "Kết quả dịch sẽ được hiển thị ở đây"
+      },
+      "actions": {
+        "copy": "Sao chép",
+        "download": "Tải xuống",
+        "downloadAll": "Tải xuống tất cả bản dịch",
+        "downloadFormat": "Tải xuống bản dịch {lang}"
+      },
+      "toast": {
+        "copySuccess": "Nội dung đã được sao chép vào clipboard",
+        "copyError": "Sao chép thất bại, vui lòng sao chép thủ công",
+        "downloadSuccess": "Tệp dịch {lang} đã được tải xuống",
+        "downloadAllSuccess": "Tất cả các tệp dịch đã được tải xuống",
+        "downloadError": "Tải xuống thất bại, vui lòng thử lại"
+      },
+      "languages": {
+        "en": "Tiếng Anh",
+        "zh": "Tiếng Trung (Giản thể)",
+        "zh-TW": "Tiếng Trung (Phồn thể)",
+        "ja": "Tiếng Nhật",
+        "ko": "Tiếng Hàn",
+        "fr": "Tiếng Pháp",
+        "de": "Tiếng Đức",
+        "es": "Tiếng Tây Ban Nha",
+        "pt": "Tiếng Bồ Đào Nha",
+        "it": "Tiếng Ý",
+        "ru": "Tiếng Nga",
+        "ar": "Tiếng Ả Rập",
+        "hi": "Tiếng Hindi",
+        "bn": "Tiếng Bengali",
+        "th": "Tiếng Thái",
+        "vi": "Tiếng Việt",
+        "id": "Tiếng Indonesia",
+        "ms": "Tiếng Malaysia",
+        "tr": "Tiếng Thổ Nhĩ Kỳ",
+        "nl": "Tiếng Hà Lan",
+        "pl": "Tiếng Ba Lan",
+        "uk": "Tiếng Ukraine",
+        "el": "Tiếng Hy Lạp",
+        "he": "Tiếng Do Thái",
+        "sv": "Tiếng Thụy Điển",
+        "da": "Tiếng Đan Mạch",
+        "fi": "Tiếng Phần Lan",
+        "cs": "Tiếng Séc",
+        "ro": "Tiếng Romania",
+        "hu": "Tiếng Hungary",
+        "sk": "Tiếng Slovak",
+        "bg": "Tiếng Bulgaria",
+        "hr": "Tiếng Croatia",
+        "lt": "Tiếng Lithuania",
+        "sl": "Tiếng Slovenia",
+        "et": "Tiếng Estonia",
+        "lv": "Tiếng Latvia",
+        "sr": "Tiếng Serbia",
+        "mt": "Tiếng Malta",
+        "fa": "Tiếng Ba Tư",
+        "ur": "Tiếng Urdu",
+        "ta": "Tiếng Tamil",
+        "te": "Tiếng Telugu",
+        "ml": "Tiếng Malayalam",
+        "kn": "Tiếng Kannada",
+        "mr": "Tiếng Marathi",
+        "gu": "Tiếng Gujarat",
+        "my": "Tiếng Miến Điện",
+        "km": "Tiếng Khmer",
+        "lo": "Tiếng Lào",
+        "mn": "Tiếng Mông Cổ",
+        "ka": "Tiếng Georgia",
+        "hy": "Tiếng Armenia",
+        "az": "Tiếng Azerbaijan",
+        "sw": "Tiếng Swahili",
+        "af": "Tiếng Afrikaans",
+        "am": "Tiếng Amharic"
+      }
+    },
+    "faq": {
+      "title": "Câu hỏi thường gặp",
+      "description": "Các câu hỏi phổ biến về công cụ dịch JSON",
+      "items": [
+        {
+          "question": "Công cụ này làm gì?",
+          "answer": "Đây là công cụ dịch quốc tế hóa JSON được hỗ trợ bởi AI giúp các nhà phát triển nhanh chóng dịch các tệp ngôn ngữ JSON sang nhiều ngôn ngữ trong khi vẫn giữ nguyên cấu trúc JSON."
+        },
+        {
+          "question": "Làm thế nào để sử dụng công cụ này?",
+          "answer": "1. Tải lên tệp JSON của bạn để dịch\n2. Chọn ngôn ngữ đích\n3. Nhập DeepSeek API Key của bạn\n4. Nhấp vào bắt đầu dịch\n5. Tải xuống kết quả sau khi dịch xong"
+        },
+        {
+          "question": "Hỗ trợ những ngôn ngữ nào?",
+          "answer": "Hiện tại hỗ trợ nhiều ngôn ngữ bao gồm tiếng Anh, tiếng Trung (Giản thể), tiếng Trung (Phồn thể), tiếng Nhật, tiếng Hàn, tiếng Pháp, tiếng Đức, tiếng Tây Ban Nha, tiếng Nga và nhiều ngôn ngữ khác."
+        },
+        {
+          "question": "API Key của tôi có được lưu không?",
+          "answer": "Không. API Key của bạn chỉ được sử dụng tạm thời trong trình duyệt và sẽ không được lưu hoặc truyền đến bất kỳ máy chủ nào."
+        },
+        {
+          "question": "Làm thế nào để đảm bảo chất lượng dịch?",
+          "answer": "Chúng tôi sử dụng mô hình V3 của DeepSeek để dịch, đảm bảo độ chính xác của thuật ngữ kỹ thuật và cách diễn đạt ngôn ngữ tự nhiên. Chúng tôi cũng hỗ trợ chức năng từ điển tùy chỉnh để duy trì tính nhất quán của thuật ngữ cụ thể."
+        },
+        {
+          "question": "Có giới hạn kích thước tệp không?",
+          "answer": "Kích thước tệp JSON đơn lẻ được giới hạn ở 10MB. Đối với các tệp lớn hơn, nên chia nhỏ và dịch theo từng đợt."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Bắt đầu sử dụng công cụ dịch AI ngay bây giờ",
+      "description": "Dịch nhanh chóng và chính xác các tệp ngôn ngữ JSON của bạn sang nhiều ngôn ngữ",
+      "button": "Dùng thử ngay",
+      "features": [
+        "Không cần đăng ký",
+        "Hoàn toàn miễn phí",
+        "Dịch thời gian thực"
+      ]
+    },
+    "footer": {
+      "creator": "Được tạo với ❤️ bởi Viggo",
+      "twitter": "@viggo",
+      "coffee": "Mua cho tôi một ly cà phê",
+      "github": "GitHub"
+    },
+    "metadata": {
+      "title": "Công cụ dịch JSON - Giải pháp dịch đa ngôn ngữ được hỗ trợ bởi AI",
+      "description": "Dịch nhanh chóng và chính xác các tệp ngôn ngữ JSON sang nhiều ngôn ngữ bằng công nghệ AI. Hỗ trợ cấu trúc JSON, biến và thẻ HTML.",
+      "keywords": "dịch JSON,dịch AI,quốc tế hóa,i18n,dịch đa ngôn ngữ,DeepSeek"
+    }
+  }

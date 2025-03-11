@@ -1,0 +1,249 @@
+{
+  "hero": {
+    "badge": "DeepSeek AI 驱动",
+    "title": "i18n JSON 国际化翻译工具",
+    "description": "使用 AI 技术快速翻译您的 JSON 语言文件。快速、准确、易用。",
+    "features": {
+      "multilanguage": "多语言支持",
+      "realtime": "实时翻译"
+    }
+  },
+  "workflow": {
+    "title": "四个简单步骤完成翻译",
+    "description": "我们简化了 JSON 文件翻译流程，帮助您快速获得高质量的翻译结果",
+    "steps": [
+      {
+        "title": "上传 JSON 文件",
+        "description": "支持拖拽上传或点击选择文件"
+      },
+      {
+        "title": "选择目标语言",
+        "description": "选择需要翻译的目标语言"
+      },
+      {
+        "title": "开始翻译",
+        "description": "输入 API Key 并开始 AI 翻译"
+      },
+      {
+        "title": "下载结果",
+        "description": "下载翻译完成的 JSON 文件"
+      }
+    ]
+  },
+  "features": {
+    "title": "强大的翻译功能",
+    "items": [
+      {
+        "title": "保持 JSON 结构",
+        "description": "智能识别并保持原始 JSON 文件的结构、缩进和格式"
+      },
+      {
+        "title": "多语言支持",
+        "description": "支持包括英语、中文、日语等多种语言之间的翻译"
+      },
+      {
+        "title": "AI 驱动翻译",
+        "description": "使用 DeepSeek V3 模型确保专业术语的准确性和自然表达"
+      },
+      {
+        "title": "安全可靠",
+        "description": "API Key 仅在浏览器临时使用，从不保存或传输到服务器"
+      }
+    ]
+  },
+  "uploadSection": {
+    "title": "上传 JSON 文件",
+    "description": "上传需要翻译的 JSON 文件",
+    "dragText": "拖拽文件到此处或点击上传",
+    "supportText": "支持 .json 格式文件，最大 10MB",
+    "apiKeyTitle": "DeepSeek API 密钥",
+    "apiKeyPlaceholder": "sk-...",
+    "errors": {
+      "selectFile": "请选择文件",
+      "jsonExtension": "请上传 .json 格式的文件",
+      "fileSize": "文件大小不能超过 10MB",
+      "jsonFormat": "无效的 JSON 格式，请检查文件内容",
+      "emptyJson": "JSON 文件不能为空"
+    },
+    "success": {
+      "uploaded": "文件上传成功"
+    },
+    "errorTitle": "错误",
+    "successTitle": "成功",
+    "apiKeyTip": "提示：翻译功能需要 DeepSeek API 密钥"
+  },
+  "translateSection": {
+    "title": "选择目标语言",
+    "description": "选择需要翻译的目标语言"
+  },
+  "translatePanel": {
+    "startTranslate": "开始翻译",
+    "translating": "翻译中...",
+    "cancel": "取消",
+    "uploadFirst": "请先上传文件",
+    "enterApiKey": "请输入 API Key",
+    "foundUnfinished": "发现未完成的翻译",
+    "continueTranslation": "继续翻译",
+    "translationCancelled": "翻译已取消",
+    "invalidApiKey": "无效的 API Key 格式",
+    "errorTitle": "错误",
+    "successTitle": "成功",
+    "translationCompleted": "翻译完成！",
+    "showMoreLanguages": "显示更多语言",
+    "hideMoreLanguages": "隐藏更多语言",
+    "overallProgress": "总体进度",
+    "completedSegments": "已完成片段",
+    "translatingLanguage": "正在翻译",
+    "tip": "提示",
+    "allLanguagesTranslated": "所有选择的语言已翻译完成",
+    "pleaseSelectLanguage": "请选择至少一种目标语言",
+    "pleaseUploadAndEnterKey": "请上传文件并输入 API Key",
+    "cancelled": "已取消",
+    "translationFailed": "翻译失败",
+    "bytes": "字节",
+    "kb": "KB",
+    "mb": "MB",
+    "gb": "GB",
+    "apiKeyErrors": {
+      "invalidFormat": "无效的 API 密钥格式",
+      "invalidOrExpired": "无效或已过期的 API 密钥",
+      "rateLimitReached": "API 调用次数已达上限",
+      "validationFailed": "API 密钥验证失败"
+    }
+  },
+  "jsonPreview": {
+    "title": "预览",
+    "empty": "JSON 预览将显示在这里",
+    "copied": "已复制到剪贴板",
+    "originalJson": "原始 JSON",
+    "translatedJson": "翻译后的 JSON",
+    "tips": "提示：支持实时预览和格式化 JSON 文件，您可以直接复制内容",
+    "placeholder": {
+      "upload": "请上传 JSON 文件",
+      "translation": "翻译结果将显示在这里"
+    },
+    "actions": {
+      "copy": "复制",
+      "download": "下载",
+      "downloadAll": "下载所有翻译",
+      "downloadFormat": "下载{lang}翻译"
+    },
+    "toast": {
+      "copySuccess": "内容已复制到剪贴板",
+      "copyError": "复制失败，请手动复制",
+      "downloadSuccess": "{lang}翻译文件已下载",
+      "downloadAllSuccess": "所有翻译文件已下载",
+      "downloadError": "下载失败，请重试"
+    },
+    "languages": {
+      "en": "英语",
+      "ru": "俄语",
+      "es": "西班牙语",
+      "de": "德语",
+      "tr": "土耳其语",
+      "fr": "法语",
+      "ja": "日语",
+      "pt": "葡萄牙语",
+      "zh": "简体中文",
+      "zh-TW": "繁体中文",
+      "it": "意大利语",
+      "ar": "阿拉伯语",
+      "pl": "波兰语",
+      "el": "希腊语",
+      "nl": "荷兰语",
+      "id": "印尼语",
+      "ko": "韩语",
+      "th": "泰",
+      "vi": "越南语",
+      "fa": "波斯语",
+      "uk": "乌克兰语",
+      "he": "希伯来语",
+      "sv": "瑞典语",
+      "ro": "罗马尼亚语",
+      "hu": "匈牙利语",
+      "da": "丹麦语",
+      "sk": "斯洛伐克语",
+      "sr": "塞尔维亚语",
+      "bg": "保加利亚语",
+      "fi": "芬兰语",
+      "hr": "克罗地亚语",
+      "lt": "立陶宛语",
+      "nb": "挪威语(书面语)",
+      "sl": "斯洛文尼亚语",
+      "lv": "拉脱维亚语",
+      "et": "爱沙尼亚语",
+      "cs": "捷克语",
+      "ca": "加泰罗尼亚语",
+      "hi": "印地语",
+      "bn": "孟加拉语",
+      "ta": "泰米尔语",
+      "ur": "乌尔都语",
+      "gu": "古吉拉特语",
+      "kn": "卡纳达语",
+      "ml": "马拉雅拉姆语",
+      "mr": "马拉地语",
+      "ms": "马来语",
+      "my": "缅甸语",
+      "km": "柬埔寨语",
+      "lo": "老挝语",
+      "mn": "蒙古语",
+      "az": "阿塞拜疆语",
+      "ka": "格鲁吉亚语",
+      "hy": "亚美尼亚语",
+      "sw": "斯瓦希里语",
+      "af": "南非荷兰语",
+      "am": "阿姆哈拉语"
+    }
+  },
+  "faq": {
+    "title": "常见问题",
+    "description": "关于 JSON 翻译工具的常见问题",
+    "items": [
+      {
+        "question": "这个工具是做什么的？",
+        "answer": "这是一个 AI 驱动的 JSON 国际化翻译工具，帮助开发者在保持 JSON 结构完整性的同时快速将 JSON 语言文件翻译成多种语言。"
+      },
+      {
+        "question": "如何使用这个工具？",
+        "answer": "1. 上传需要翻译的 JSON 文件\n2. 选择目标语言\n3. 输入 DeepSeek API Key\n4. 点击开始翻译\n5. 翻译完成后下载结果"
+      },
+      {
+        "question": "支持哪些语言？",
+        "answer": "目前支持包括英语、简体中文、繁体中文、日语、韩语、法语、德、西班牙语、俄语等多种语言。"
+      },
+      {
+        "question": "我的 API Key 会被保存吗？",
+        "answer": "不会。您的 API Key 仅在浏览器中临时使用，不会被保存或传输到任何服务器。"
+      },
+      {
+        "question": "如何保证翻译质量？",
+        "answer": "我们使用 DeepSeek 的 V3 模型进行翻译，确保专业术语的准确性和语言表达的自然性。我们还支持自定义词典功能来保持特定术语的一致性。"
+      },
+      {
+        "question": "文件大小有限制吗？",
+        "answer": "单个 JSON 文件大小限制为 10MB。对于更大的文件，建议分批翻译。"
+      }
+    ]
+  },
+  "cta": {
+    "title": "立即使用 AI 翻译工具",
+    "description": "快速准确地将您的 JSON 语言文件翻译成多种语言",
+    "button": "立即尝试",
+    "features": [
+      "无需注册",
+      "完全免费",
+      "实时翻译"
+    ]
+  },
+  "footer": {
+    "creator": "由 Viggo 用 ❤️ 创建",
+    "twitter": "@viggo",
+    "coffee": "请我喝咖啡",
+    "github": "GitHub"
+  },
+  "metadata": {
+    "title": "JSON翻译工具 - AI驱动的多语言翻译解决方案",
+    "description": "使用AI技术快速准确地将JSON语言文件翻译成多种语言。支持保持JSON结构、变量占位符和HTML标签。",
+    "keywords": "JSON翻译,AI翻译,国际化,i18n,多语言翻译,DeepSeek"
+  }
+} 

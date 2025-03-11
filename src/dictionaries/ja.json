@@ -1,0 +1,249 @@
+{
+  "hero": {
+    "badge": "DeepSeek AI搭載",
+    "title": "i18n JSON国際化翻訳ツール",
+    "description": "AI技術で素早くJSONファイルを翻訳。高速、正確、使いやすい。",
+    "features": {
+      "multilanguage": "多言語対応",
+      "realtime": "リアルタイム翻訳"
+    }
+  },
+  "workflow": {
+    "title": "4つの簡単なステップで翻訳完了",
+    "description": "JSONファイルの翻訳プロセスを簡素化し、高品質な翻訳結果を素早く取得できます",
+    "steps": [
+      {
+        "title": "JSONファイルをアップロード",
+        "description": "ドラッグ＆ドロップまたはクリックでファイルを選択"
+      },
+      {
+        "title": "対象言語を選択",
+        "description": "翻訳したい言語を選択"
+      },
+      {
+        "title": "翻訳開始",
+        "description": "APIキーを入力してAI翻訳を開始"
+      },
+      {
+        "title": "結果をダウンロード",
+        "description": "翻訳されたJSONファイルをダウンロード"
+      }
+    ]
+  },
+  "features": {
+    "title": "パワフルな翻訳機能",
+    "items": [
+      {
+        "title": "JSON構造を保持",
+        "description": "元のJSONファイルの構造、インデント、フォーマットを維持"
+      },
+      {
+        "title": "多言語対応",
+        "description": "英語、中国語、日本語など、多数の言語間の翻訳をサポート"
+      },
+      {
+        "title": "AI駆動の翻訳",
+        "description": "DeepSeek GPTモデルを使用し、専門用語の正確性と自然な表現を確保"
+      },
+      {
+        "title": "安全性と信頼性",
+        "description": "APIキーはブラウザで一時的に使用するのみで、保存や送信は行いません"
+      }
+    ]
+  },
+  "uploadSection": {
+    "title": "JSONファイルをアップロード",
+    "description": "翻訳したいJSONファイルをアップロードしてください",
+    "dragText": "ファイルをドラッグ＆ドロップまたはクリックしてアップロード",
+    "supportText": ".json形式のファイル（最大10MB）に対応",
+    "apiKeyTip": "ヒント：翻訳にはOpenAI API Keyが必要です",
+    "errors": {
+      "selectFile": "ファイルを選択してください",
+      "jsonExtension": ".json形式のファイルをアップロードしてください",
+      "fileSize": "ファイルサイズは10MB以下にしてください",
+      "jsonFormat": "無効なJSON形式です。ファイルの内容を確認してください",
+      "emptyJson": "JSONファイルが空です"
+    },
+    "success": {
+      "uploaded": "ファイルのアップロードが完了しました"
+    },
+    "apiKeyTitle": "DeepSeek API Key",
+    "apiKeyPlaceholder": "sk-...",
+    "errorTitle": "エラー",
+    "successTitle": "成功"
+  },
+  "translateSection": {
+    "title": "対象言語を選択",
+    "description": "翻訳したい言語を選んでください"
+  },
+  "translatePanel": {
+    "startTranslate": "翻訳開始",
+    "translating": "翻訳中...",
+    "cancel": "キャンセル",
+    "uploadFirst": "ファイルをアップロードしてください",
+    "enterApiKey": "API Keyを入力してください",
+    "foundUnfinished": "未完了の翻訳が見つかりました",
+    "continueTranslation": "翻訳を続ける",
+    "translationCancelled": "翻訳がキャンセルされました",
+    "invalidApiKey": "無効なAPI Keyフォーマット",
+    "errorTitle": "エラー",
+    "successTitle": "成功",
+    "translationCompleted": "翻訳が完了しました！",
+    "showMoreLanguages": "他の言語を表示",
+    "hideMoreLanguages": "言語を隠す",
+    "overallProgress": "全体の進捗",
+    "completedSegments": "完了セグメント",
+    "translatingLanguage": "翻訳中の言語",
+    "allLanguagesTranslated": "選択された全ての言語が翻訳済みです",
+    "pleaseUploadAndEnterKey": "ファイルをアップロードしAPI Keyを入力してください",
+    "tip": "ヒント",
+    "cancelled": "キャンセル済み",
+    "translationFailed": "翻訳に失敗しました",
+    "pleaseSelectLanguage": "翻訳する言語を1つ以上選択してください",
+    "bytes": "バイト",
+    "kb": "KB",
+    "mb": "MB",
+    "gb": "GB",
+    "apiKeyErrors": {
+      "invalidFormat": "APIキーの形式が無効です",
+      "invalidOrExpired": "APIキーが無効または期限切れです",
+      "rateLimitReached": "APIレート制限に達しました",
+      "validationFailed": "APIキーの検証に失敗しました"
+    }
+  },
+  "jsonPreview": {
+    "title": "プレビュー",
+    "empty": "JSONプレビューがここに表示されます",
+    "copied": "クリップボードにコピーしました",
+    "originalJson": "元のJSON",
+    "translatedJson": "翻訳されたJSON",
+    "tips": "ヒント：JSONファイルのリアルタイムプレビューと整形をサポートし、内容を直接コピーできます",
+    "placeholder": {
+      "upload": "JSONファイルをアップロードしてください",
+      "translation": "翻訳結果がここに表示されます"
+    },
+    "actions": {
+      "copy": "コピー",
+      "download": "ダウンロード",
+      "downloadAll": "すべての翻訳をダウンロード",
+      "downloadFormat": "{lang}の翻訳をダウンロード"
+    },
+    "toast": {
+      "copySuccess": "内容をクリップボードにコピーしました",
+      "copyError": "コピーに失敗しました。手動でコピーしてください",
+      "downloadSuccess": "{lang}の翻訳ファイルをダウンロードしました",
+      "downloadAllSuccess": "すべての翻訳ファイルをダウンロードしました",
+      "downloadError": "ダウンロードに失敗しました。もう一度お試しください"
+    },
+    "languages": {
+      "en": "英語",
+      "zh": "中国語（簡体字）",
+      "zh-TW": "中国語（繁体字）",
+      "ja": "日本語",
+      "ko": "韓国語",
+      "fr": "フランス語",
+      "de": "ドイツ語",
+      "es": "スペイン語",
+      "pt": "ポルトガル語",
+      "it": "イタリア語",
+      "ru": "ロシア語",
+      "ar": "アラビア語",
+      "hi": "ヒンディー語",
+      "bn": "ベンガル語",
+      "th": "タイ語",
+      "vi": "ベトナム語",
+      "id": "インドネシア語",
+      "ms": "マレー語",
+      "tr": "トルコ語",
+      "nl": "オランダ語",
+      "pl": "ポーランド語",
+      "uk": "ウクライナ語",
+      "el": "ギリシャ語",
+      "he": "ヘブライ語",
+      "sv": "スウェーデン語",
+      "da": "デンマーク語",
+      "fi": "フィンランド語",
+      "cs": "チェコ語",
+      "ro": "ルーマニア語",
+      "hu": "ハンガリー語",
+      "sk": "スロバキア語",
+      "bg": "ブルガリア語",
+      "hr": "クロアチア語",
+      "lt": "リトアニア語",
+      "sl": "スロベニア語",
+      "et": "エストニア語",
+      "lv": "ラトビア語",
+      "sr": "セルビア語",
+      "mt": "マルタ語",
+      "fa": "ペルシャ語",
+      "ur": "ウルドゥー語",
+      "ta": "タミル語",
+      "te": "テルグ語",
+      "ml": "マラヤーラム語",
+      "kn": "カンナダ語",
+      "mr": "マラーティー語",
+      "gu": "グジャラート語",
+      "my": "ミャンマー語",
+      "km": "クメール語",
+      "lo": "ラオス語",
+      "mn": "モンゴル語",
+      "ka": "グルジア語",
+      "hy": "アルメニア語",
+      "az": "アゼルバイジャン語",
+      "sw": "スワヒリ語",
+      "af": "アフリカーンス語",
+      "am": "アムハラ語"
+    }
+  },
+  "faq": {
+    "title": "よくある質問",
+    "description": "JSON翻訳ツールに関するよくある質問",
+    "items": [
+      {
+        "question": "このツールは何ができますか？",
+        "answer": "これはAI搭載のJSON国際化翻訳ツールで、開発者がJSONファイルの構造を維持しながら、複数の言語に素早く翻訳することができます。"
+      },
+      {
+        "question": "使い方を教えてください",
+        "answer": "1. 翻訳したいJSONファイルをアップロード\n2. 対象言語を選択\n3. DeepSeek APIキーを入力\n4. 翻訳を開始\n5. 翻訳完了後、結果をダウンロード"
+      },
+      {
+        "question": "対応している言語は？",
+        "answer": "現在、英語、簡体字中国語、繁体字中国語、日本語、韓国語、フランス語、ドイツ語、スペイン語、ロシア語など、多数の言語に対応しています。"
+      },
+      {
+        "question": "APIキーは保存されますか？",
+        "answer": "いいえ。APIキーはブラウザで一時的に使用されるだけで、サーバーに保存や送信されることはありません。"
+      },
+      {
+        "question": "翻訳品質はどのように保証されていますか？",
+        "answer": "OpenAIのGPTモデルを使用して翻訳を行い、専門用語の正確性と自然な表現を確保しています。また、特定の用語の一貫性を保つためのカスタム辞書機能もサポートしています。"
+      },
+      {
+        "question": "ファイルサイズの制限はありますか？",
+        "answer": "1つのJSONファイルのサイズ制限は10MBです。より大きなファイルの場合は、分割して翻訳することをお勧めします。"
+      }
+    ]
+  },
+  "cta": {
+    "title": "今すぐAI翻訳ツールを使用開始",
+    "description": "JSONファイルを素早く正確に多言語翻訳",
+    "button": "今すぐ試す",
+    "features": [
+      "登録不要",
+      "完全無料",
+      "リアルタイム翻訳"
+    ]
+  },
+  "footer": {
+    "creator": "Viggoが❤️を込めて作成",
+    "twitter": "@viggo",
+    "coffee": "コーヒーを奢る",
+    "github": "GitHub"
+  },
+  "metadata": {
+    "title": "JSON翻訳ツール - AI搭載の多言語翻訳ソリューション",
+    "description": "AI技術で素早く正確にJSONファイルを多言語に翻訳。JSON構造、変数プレースホルダー、HTMLタグをサポート。",
+    "keywords": "JSON翻訳,AI翻訳,国際化,i18n,多言語翻訳,DeepSeek"
+  }
+} 

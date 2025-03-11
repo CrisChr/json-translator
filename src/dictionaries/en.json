@@ -1,0 +1,249 @@
+{
+  "hero": {
+    "badge": "DeepSeek AI Powered",
+    "title": "i18n JSON Translation Tool",
+    "description": "Translate your JSON language files quickly using AI technology. Fast, accurate, and easy to use.",
+    "features": {
+      "multilanguage": "Multilingual Support",
+      "realtime": "Real-time Translation"
+    }
+  },
+  "workflow": {
+    "title": "Complete Translation in Four Simple Steps",
+    "description": "We've simplified the JSON file translation process to help you quickly obtain high-quality translation results",
+    "steps": [
+      {
+        "title": "Upload JSON File",
+        "description": "Support drag and drop or click to select file"
+      },
+      {
+        "title": "Select Target Language",
+        "description": "Choose the target language for translation"
+      },
+      {
+        "title": "Start Translation",
+        "description": "Enter API Key and start AI translation"
+      },
+      {
+        "title": "Download Results",
+        "description": "Download the translated JSON file"
+      }
+    ]
+  },
+  "features": {
+    "title": "Powerful Translation Features",
+    "items": [
+      {
+        "title": "Preserve JSON Structure",
+        "description": "Intelligently recognize and maintain the structure, indentation, and format of the original JSON file"
+      },
+      {
+        "title": "Multi-language Support",
+        "description": "Support translation between multiple languages including English, Chinese, Japanese, and more"
+      },
+      {
+        "title": "AI-Powered Translation",
+        "description": "Utilizing DeepSeek V3 models to ensure accuracy of technical terms and natural expression"
+      },
+      {
+        "title": "Secure & Reliable",
+        "description": "API keys are only used temporarily in the browser and never saved or transmitted to servers"
+      }
+    ]
+  },
+  "uploadSection": {
+    "title": "Upload JSON File",
+    "description": "Upload your JSON file for translation",
+    "dragText": "Drag files here or click to upload",
+    "supportText": "Supports .json format files, up to 10MB",
+    "apiKeyTip": "Tips: DeepSeek API Key is required for translation",
+    "errors": {
+      "selectFile": "Please select a file",
+      "jsonExtension": "Please upload a file with a .json extension",
+      "fileSize": "File size cannot exceed 10MB",
+      "jsonFormat": "Invalid JSON format, please check the file content",
+      "emptyJson": "JSON file cannot be empty"
+    },
+    "success": {
+      "uploaded": "File uploaded successfully"
+    },
+    "apiKeyTitle": "DeepSeek API Key",
+    "apiKeyPlaceholder": "sk-...",
+    "errorTitle": "Error",
+    "successTitle": "Success"
+  },
+  "translateSection": {
+    "title": "Select Target Language",
+    "description": "Choose languages to translate into"
+  },
+  "translatePanel": {
+    "startTranslate": "Start Translation",
+    "translating": "Translating...",
+    "cancel": "Cancel",
+    "uploadFirst": "Please upload a file first",
+    "enterApiKey": "Please enter API Key",
+    "foundUnfinished": "Found unfinished translation",
+    "continueTranslation": "Continue translation",
+    "translationCancelled": "Translation cancelled",
+    "invalidApiKey": "Invalid API Key format",
+    "errorTitle": "Error",
+    "successTitle": "Success",
+    "translationCompleted": "Translation completed!",
+    "showMoreLanguages": "Show more languages",
+    "hideMoreLanguages": "Hide more languages",
+    "overallProgress": "Overall Progress",
+    "completedSegments": "Completed Segments",
+    "translatingLanguage": "Translating",
+    "allLanguagesTranslated": "All selected languages are translated",
+    "pleaseUploadAndEnterKey": "Please upload a file and enter API Key",
+    "tip": "Tip",
+    "cancelled": "Cancelled",
+    "translationFailed": "Translation failed",
+    "pleaseSelectLanguage": "Please select at least one target language",
+    "bytes": "Bytes",
+    "kb": "KB",
+    "mb": "MB",
+    "gb": "GB",
+    "apiKeyErrors": {
+      "invalidFormat": "Invalid API key format",
+      "invalidOrExpired": "Invalid or expired API key",
+      "rateLimitReached": "API rate limit reached",
+      "validationFailed": "API key validation failed"
+    }
+  },
+  "jsonPreview": {
+    "title": "Preview",
+    "empty": "JSON preview will appear here",
+    "copied": "Copied to clipboard",
+    "originalJson": "Original JSON",
+    "translatedJson": "Translated JSON",
+    "tips": "Tips: Supports real-time preview and formatting of JSON files, and you can directly copy the content",
+    "placeholder": {
+      "upload": "Please upload a JSON file",
+      "translation": "Translation results will be displayed here"
+    },
+    "actions": {
+      "copy": "Copy",
+      "download": "Download",
+      "downloadAll": "Download all translations",
+      "downloadFormat": "Download {lang} translation"
+    },
+    "toast": {
+      "copySuccess": "Content has been copied to the clipboard",
+      "copyError": "Copy failed, please copy manually",
+      "downloadSuccess": "{lang} translation file has been downloaded",
+      "downloadAllSuccess": "All translation files have been downloaded",
+      "downloadError": "Download failed, please try again"
+    },
+    "languages": {
+      "en": "English",
+      "zh": "Chinese (Simplified)",
+      "zh-TW": "Chinese (Traditional)",
+      "ja": "Japanese",
+      "ko": "Korean",
+      "fr": "French",
+      "de": "German",
+      "es": "Spanish",
+      "pt": "Portuguese",
+      "it": "Italian",
+      "ru": "Russian",
+      "ar": "Arabic",
+      "hi": "Hindi",
+      "bn": "Bengali",
+      "th": "Thai",
+      "vi": "Vietnamese",
+      "id": "Indonesian",
+      "ms": "Malay",
+      "tr": "Turkish",
+      "nl": "Dutch",
+      "pl": "Polish",
+      "uk": "Ukrainian",
+      "el": "Greek",
+      "he": "Hebrew",
+      "sv": "Swedish",
+      "da": "Danish",
+      "fi": "Finnish",
+      "cs": "Czech",
+      "ro": "Romanian",
+      "hu": "Hungarian",
+      "sk": "Slovak",
+      "bg": "Bulgarian",
+      "hr": "Croatian",
+      "lt": "Lithuanian",
+      "sl": "Slovenian",
+      "et": "Estonian",
+      "lv": "Latvian",
+      "sr": "Serbian",
+      "mt": "Maltese",
+      "fa": "Persian",
+      "ur": "Urdu",
+      "ta": "Tamil",
+      "te": "Telugu",
+      "ml": "Malayalam",
+      "kn": "Kannada",
+      "mr": "Marathi",
+      "gu": "Gujarati",
+      "my": "Burmese",
+      "km": "Khmer",
+      "lo": "Lao",
+      "mn": "Mongolian",
+      "ka": "Georgian",
+      "hy": "Armenian",
+      "az": "Azerbaijani",
+      "sw": "Swahili",
+      "af": "Afrikaans",
+      "am": "Amharic"
+    }
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "description": "Common questions about the JSON translation tool",
+    "items": [
+      {
+        "question": "What does this tool do?",
+        "answer": "This is an AI-powered JSON internationalization translation tool that helps developers quickly translate JSON language files into multiple languages while maintaining JSON structure integrity."
+      },
+      {
+        "question": "How to use this tool?",
+        "answer": "1. Upload your JSON file for translation\n2. Select target languages\n3. Enter your DeepSeek API Key\n4. Click start translation\n5. Download results after translation is complete"
+      },
+      {
+        "question": "What languages are supported?",
+        "answer": "Currently supports multiple languages including English, Chinese (Simplified), Chinese (Traditional), Japanese, Korean, French, German, Spanish, Russian, and more."
+      },
+      {
+        "question": "Will my API Key be saved?",
+        "answer": "No. Your API Key is only used temporarily in the browser and will not be saved or transmitted to any servers."
+      },
+      {
+        "question": "How is translation quality assured?",
+        "answer": "We use DeepSeek's V3 model for translation, ensuring accuracy of technical terms and natural language expression. We also support custom dictionary functionality to maintain consistency of specific terminology."
+      },
+      {
+        "question": "Is there a file size limit?",
+        "answer": "Single JSON file size is limited to 10MB. For larger files, it's recommended to split them and translate in batches."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Start Using AI Translation Tool Now",
+    "description": "Quickly and accurately translate your JSON language files into multiple languages",
+    "button": "Try Now",
+    "features": [
+      "No Registration Required",
+      "Completely Free",
+      "Real-time Translation"
+    ]
+  },
+  "footer": {
+    "creator": "Created with ❤️ by Viggo",
+    "twitter": "@viggo",
+    "coffee": "Buy Me a Coffee",
+    "github": "GitHub"
+  },
+  "metadata": {
+    "title": "JSON Translator - AI-Powered Multilingual Translation Solution",
+    "description": "Quickly and accurately translate JSON language files into multiple languages using AI technology. Supports JSON structure, variable placeholders, and HTML tags.",
+    "keywords": "JSON translation,AI translation,internationalization,i18n,multilingual translation,DeepSeek"
+  }
+} 

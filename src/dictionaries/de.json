@@ -1,0 +1,249 @@
+{
+  "hero": {
+    "badge": "KI-gestützt",
+    "title": "i18n JSON Übersetzungstool",
+    "description": "Übersetzen Sie Ihre JSON-Sprachdateien schnell mit KI-Technologie. Schnell, genau und einfach zu bedienen.",
+    "features": {
+      "multilanguage": "Mehrsprachige Unterstützung",
+      "realtime": "Echtzeitübersetzung"
+    }
+  },
+  "workflow": {
+    "title": "Vollständige Übersetzung in vier einfachen Schritten",
+    "description": "Wir haben den Übersetzungsprozess für JSON-Dateien vereinfacht, um Ihnen zu helfen, schnell hochwertige Übersetzungsergebnisse zu erhalten",
+    "steps": {
+      "0": {
+        "title": "JSON-Datei hochladen",
+        "description": "Unterstützt Drag & Drop oder Klicken zum Auswählen der Datei"
+      },
+      "1": {
+        "title": "Zielsprache auswählen",
+        "description": "Wählen Sie die Zielsprache für die Übersetzung"
+      },
+      "2": {
+        "title": "Übersetzung starten",
+        "description": "Geben Sie den API-Schlüssel ein und starten Sie die KI-Übersetzung"
+      },
+      "3": {
+        "title": "Ergebnisse herunterladen",
+        "description": "Laden Sie die übersetzte JSON-Datei herunter"
+      }
+    }
+  },
+  "features": {
+    "title": "Leistungsstarke Übersetzungsfunktionen",
+    "items": {
+      "0": {
+        "title": "JSON-Struktur beibehalten",
+        "description": "Intelligent erkennen und die Struktur, Einrückung und das Format der ursprünglichen JSON-Datei beibehalten"
+      },
+      "1": {
+        "title": "Mehrsprachige Unterstützung",
+        "description": "Unterstützt die Übersetzung zwischen mehreren Sprachen, einschließlich Englisch, Chinesisch, Japanisch und mehr"
+      },
+      "2": {
+        "title": "KI-gestützte Übersetzung",
+        "description": "Nutzung von DeepSeek V3-Modellen zur Sicherstellung der Genauigkeit technischer Begriffe und natürlicher Ausdrucksweise"
+      },
+      "3": {
+        "title": "Sicher & Zuverlässig",
+        "description": "API-Schlüssel werden nur vorübergehend im Browser verwendet und niemals gespeichert oder an Server übertragen"
+      }
+    }
+  },
+  "uploadSection": {
+    "title": "JSON-Datei hochladen",
+    "description": "Laden Sie Ihre JSON-Datei zur Übersetzung hoch",
+    "dragText": "Dateien hierher ziehen oder klicken, um hochzuladen",
+    "supportText": "Unterstützt .json-Formatdateien, bis zu 10MB",
+    "apiKeyTip": "Hinweis: DeepSeek API-Schlüssel ist für die Übersetzung erforderlich",
+    "errors": {
+      "selectFile": "Bitte wählen Sie eine Datei aus",
+      "jsonExtension": "Bitte laden Sie eine Datei mit der .json-Erweiterung hoch",
+      "fileSize": "Die Dateigröße darf 10MB nicht überschreiten",
+      "jsonFormat": "Ungültiges JSON-Format, bitte überprüfen Sie den Dateinhalt",
+      "emptyJson": "JSON-Datei darf nicht leer sein"
+    },
+    "success": {
+      "uploaded": "Datei erfolgreich hochgeladen"
+    },
+    "apiKeyTitle": "DeepSeek API-Schlüssel",
+    "apiKeyPlaceholder": "sk-...",
+    "errorTitle": "Fehler",
+    "successTitle": "Erfolg"
+  },
+  "translateSection": {
+    "title": "Zielsprache auswählen",
+    "description": "Wählen Sie Sprachen aus, in die übersetzt werden soll"
+  },
+  "translatePanel": {
+    "startTranslate": "Übersetzung starten",
+    "translating": "Übersetzung läuft...",
+    "cancel": "Abbrechen",
+    "uploadFirst": "Bitte laden Sie zuerst eine Datei hoch",
+    "enterApiKey": "Bitte geben Sie den API-Schlüssel ein",
+    "foundUnfinished": "Unvollständige Übersetzung gefunden",
+    "continueTranslation": "Übersetzung fortsetzen",
+    "translationCancelled": "Übersetzung abgebrochen",
+    "invalidApiKey": "Ungültiges API-Schlüssel-Format",
+    "errorTitle": "Fehler",
+    "successTitle": "Erfolg",
+    "translationCompleted": "Übersetzung abgeschlossen!",
+    "showMoreLanguages": "Weitere Sprachen anzeigen",
+    "hideMoreLanguages": "Weitere Sprachen ausblenden",
+    "overallProgress": "Gesamtfortschritt",
+    "completedSegments": "Abgeschlossene Segmente",
+    "translatingLanguage": "Übersetzen",
+    "allLanguagesTranslated": "Alle ausgewählten Sprachen sind übersetzt",
+    "pleaseUploadAndEnterKey": "Bitte laden Sie eine Datei hoch und geben Sie den API-Schlüssel ein",
+    "tip": "Tipp",
+    "cancelled": "Abgebrochen",
+    "translationFailed": "Übersetzung fehlgeschlagen",
+    "pleaseSelectLanguage": "Bitte wählen Sie mindestens eine Zielsprache aus",
+    "bytes": "Bytes",
+    "kb": "KB",
+    "mb": "MB",
+    "gb": "GB",
+    "apiKeyErrors": {
+      "invalidFormat": "Ungültiges API-Schlüssel-Format",
+      "invalidOrExpired": "Ungültiger oder abgelaufener API-Schlüssel",
+      "rateLimitReached": "API-Aufrufslimit erreicht",
+      "validationFailed": "API-Schlüssel-Validierung fehlgeschlagen"
+    }
+  },
+  "jsonPreview": {
+    "title": "Vorschau",
+    "empty": "Die JSON-Vorschau wird hier angezeigt",
+    "copied": "In die Zwischenablage kopiert",
+    "originalJson": "Ursprüngliches JSON",
+    "translatedJson": "Übersetztes JSON",
+    "tips": "Tipps: Unterstützt die Echtzeitvorschau und Formatierung von JSON-Dateien, und Sie können den Inhalt direkt kopieren",
+    "placeholder": {
+      "upload": "Bitte laden Sie eine JSON-Datei hoch",
+      "translation": "Übersetzungsergebnisse werden hier angezeigt"
+    },
+    "actions": {
+      "copy": "Kopieren",
+      "download": "Herunterladen",
+      "downloadAll": "Alle Übersetzungen herunterladen",
+      "downloadFormat": "{lang} Übersetzungsdatei herunterladen"
+    },
+    "toast": {
+      "copySuccess": "Inhalt wurde in die Zwischenablage kopiert",
+      "copyError": "Kopieren fehlgeschlagen, bitte manuell kopieren",
+      "downloadSuccess": "{lang} Übersetzungsdatei wurde heruntergeladen",
+      "downloadAllSuccess": "Alle Übersetzungsdateien wurden heruntergeladen",
+      "downloadError": "Herunterladen fehlgeschlagen, bitte versuchen Sie es erneut"
+    },
+    "languages": {
+      "en": "Englisch",
+      "zh": "Chinesisch (Vereinfacht)",
+      "zh-TW": "Chinesisch (Traditionell)",
+      "ja": "Japanisch",
+      "ko": "Koreanisch",
+      "fr": "Französisch",
+      "de": "Deutsch",
+      "es": "Spanisch",
+      "pt": "Portugiesisch",
+      "it": "Italienisch",
+      "ru": "Russisch",
+      "ar": "Arabisch",
+      "hi": "Hindi",
+      "bn": "Bengalisch",
+      "th": "Thailändisch",
+      "vi": "Vietnamesisch",
+      "id": "Indonesisch",
+      "ms": "Malaiisch",
+      "tr": "Türkisch",
+      "nl": "Niederländisch",
+      "pl": "Polnisch",
+      "uk": "Ukrainisch",
+      "el": "Griechisch",
+      "he": "Hebräisch",
+      "sv": "Schwedisch",
+      "da": "Dänisch",
+      "fi": "Finnisch",
+      "cs": "Tschechisch",
+      "ro": "Rumänisch",
+      "hu": "Ungarisch",
+      "sk": "Slowakisch",
+      "bg": "Bulgarisch",
+      "hr": "Kroatisch",
+      "lt": "Litauisch",
+      "sl": "Slowenisch",
+      "et": "Estnisch",
+      "lv": "Lettisch",
+      "sr": "Serbisch",
+      "mt": "Maltesisch",
+      "fa": "Persisch",
+      "ur": "Urdu",
+      "ta": "Tamil",
+      "te": "Telugu",
+      "ml": "Malayalam",
+      "kn": "Kannada",
+      "mr": "Marathi",
+      "gu": "Gujarati",
+      "my": "Burmesisch",
+      "km": "Khmer",
+      "lo": "Laotisch",
+      "mn": "Mongolisch",
+      "ka": "Georgisch",
+      "hy": "Armenisch",
+      "az": "Aserbaidschanisch",
+      "sw": "Swahili",
+      "af": "Afrikaans",
+      "am": "Amharisch"
+    }
+  },
+  "faq": {
+    "title": "Häufig gestellte Fragen",
+    "description": "Häufige Fragen zum JSON-Übersetzungstool",
+    "items": {
+      "0": {
+        "question": "Was macht dieses Tool?",
+        "answer": "Dies ist ein KI-gestütztes JSON-Internationalisierungsübersetzungstool, das Entwicklern hilft, JSON-Sprachdateien schnell in mehrere Sprachen zu übersetzen, während die Integrität der JSON-Struktur gewahrt bleibt."
+      },
+      "1": {
+        "question": "Wie benutzt man dieses Tool?",
+        "answer": "1. Laden Sie Ihre JSON-Datei zur Übersetzung hoch\n2. Wählen Sie die Zielsprache aus\n3. Geben Sie Ihren DeepSeek API-Schlüssel ein\n4. Klicken Sie auf Übersetzung starten\n5. Laden Sie die Ergebnisse herunter, nachdem die Übersetzung abgeschlossen ist"
+      },
+      "2": {
+        "question": "Welche Sprachen werden unterstützt?",
+        "answer": "Derzeit werden mehrere Sprachen unterstützt, darunter Englisch, Chinesisch (vereinfacht), Chinesisch (traditionell), Japanisch, Koreanisch, Französisch, Deutsch, Spanisch, Russisch und mehr."
+      },
+      "3": {
+        "question": "Wird mein API-Schlüssel gespeichert?",
+        "answer": "Nein. Ihr API-Schlüssel wird nur vorübergehend im Browser verwendet und wird nicht gespeichert oder an irgendwelche Server übertragen."
+      },
+      "4": {
+        "question": "Wie wird die Übersetzungsqualität sichergestellt?",
+        "answer": "Wir verwenden das V3-Modell von DeepSeek für die Übersetzung, um die Genauigkeit technischer Begriffe und den Ausdruck in natürlicher Sprache zu gewährleisten. Wir unterstützen auch die Funktionalität eines benutzerdefinierten Wörterbuchs, um die Konsistenz spezifischer Terminologie aufrechtzuerhalten."
+      },
+      "5": {
+        "question": "Gibt es eine Dateigrößenbeschränkung?",
+        "answer": "Die Größe einer einzelnen JSON-Datei ist auf 10 MB begrenzt. Für größere Dateien wird empfohlen, sie zu teilen und in Chargen zu übersetzen."
+      }
+    }
+  },
+  "cta": {
+    "title": "Beginnen Sie jetzt mit dem AI-Übersetzungstool",
+    "description": "Übersetzen Sie Ihre JSON-Sprachdateien schnell und genau in mehrere Sprachen",
+    "button": "Jetzt Ausprobieren",
+    "features": {
+      "0": "Keine Registrierung erforderlich",
+      "1": "Völlig kostenlos",
+      "2": "Echtzeitübersetzung"
+    }
+  },
+  "footer": {
+    "creator": "Erstellt mit ❤️ von Viggo",
+    "twitter": "@viggo",
+    "coffee": "Kauf mir einen Kaffee",
+    "github": "GitHub"
+  },
+  "metadata": {
+    "title": "JSON-Übersetzer - KI-gestützte mehrsprachige Übersetzungslösung",
+    "description": "Übersetzen Sie JSON-Sprachdateien schnell und präzise in mehrere Sprachen mit KI-Technologie. Unterstützt JSON-Struktur, Variablen-Platzhalter und HTML-Tags.",
+    "keywords": "JSON-Übersetzung,KI-Übersetzung,Internationalisierung,i18n,mehrsprachige Übersetzung,DeepSeek"
+  }
+}

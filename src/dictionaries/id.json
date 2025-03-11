@@ -1,0 +1,249 @@
+{
+  "hero": {
+    "badge": "Didukung DeepSeek AI",
+    "title": "i18n Alat Terjemahan JSON",
+    "description": "Terjemahkan berkas bahasa JSON Anda dengan cepat menggunakan teknologi AI. Cepat, akurat, dan mudah digunakan.",
+    "features": {
+      "multilanguage": "Dukungan Multibahasa",
+      "realtime": "Terjemahan Waktu Nyata"
+    }
+  },
+  "workflow": {
+    "title": "Selesaikan Terjemahan dalam Empat Langkah Sederhana",
+    "description": "Kami telah menyederhanakan proses terjemahan berkas JSON untuk membantu Anda dengan cepat mendapatkan hasil terjemahan berkualitas tinggi",
+    "steps": {
+      "0": {
+        "title": "Unggah Berkas JSON",
+        "description": "Dukungan seret dan lepas atau klik untuk memilih berkas"
+      },
+      "1": {
+        "title": "Pilih Bahasa Target",
+        "description": "Pilih bahasa target untuk terjemahan"
+      },
+      "2": {
+        "title": "Mulai Terjemahan",
+        "description": "Masukkan Kunci API dan mulai terjemahan AI"
+      },
+      "3": {
+        "title": "Unduh Hasil",
+        "description": "Unduh berkas JSON yang telah diterjemahkan"
+      }
+    }
+  },
+  "features": {
+    "title": "Fitur Terjemahan yang Kuat",
+    "items": {
+      "0": {
+        "title": "Pertahankan Struktur JSON",
+        "description": "Secara cerdas mengenali dan mempertahankan struktur, indentasi, dan format berkas JSON asli"
+      },
+      "1": {
+        "title": "Dukungan Multi-bahasa",
+        "description": "Dukungan terjemahan antara beberapa bahasa termasuk Inggris, Mandarin, Jepang, dan lainnya"
+      },
+      "2": {
+        "title": "Terjemahan Didukung AI",
+        "description": "Memanfaatkan model DeepSeek V3 untuk memastikan akurasi istilah teknis dan ekspresi alami"
+      },
+      "3": {
+        "title": "Aman & Andal",
+        "description": "Kunci API hanya digunakan sementara di browser dan tidak pernah disimpan atau dikirim ke server"
+      }
+    }
+  },
+  "uploadSection": {
+    "title": "Unggah Berkas JSON",
+    "description": "Unggah berkas JSON Anda untuk terjemahan",
+    "dragText": "Seret berkas ke sini atau klik untuk mengunggah",
+    "supportText": "Mendukung berkas format .json, hingga 10MB",
+    "apiKeyTip": "Tips: Kunci API DeepSeek diperlukan untuk terjemahan",
+    "errors": {
+      "selectFile": "Silakan pilih berkas",
+      "jsonExtension": "Silakan unggah berkas dengan ekstensi .json",
+      "fileSize": "Ukuran berkas tidak boleh melebihi 10MB",
+      "jsonFormat": "Format JSON tidak valid, silakan periksa konten berkas",
+      "emptyJson": "Berkas JSON tidak boleh kosong"
+    },
+    "success": {
+      "uploaded": "Berkas berhasil diunggah"
+    },
+    "apiKeyTitle": "Kunci API DeepSeek",
+    "apiKeyPlaceholder": "sk-...",
+    "errorTitle": "Kesalahan",
+    "successTitle": "Sukses"
+  },
+  "translateSection": {
+    "title": "Pilih Bahasa Target",
+    "description": "Pilih bahasa untuk diterjemahkan"
+  },
+  "translatePanel": {
+    "startTranslate": "Mulai Terjemahan",
+    "translating": "Sedang Menerjemahkan...",
+    "cancel": "Batal",
+    "uploadFirst": "Silakan unggah berkas terlebih dahulu",
+    "enterApiKey": "Silakan masukkan Kunci API",
+    "foundUnfinished": "Ditemukan terjemahan yang belum selesai",
+    "continueTranslation": "Lanjutkan terjemahan",
+    "translationCancelled": "Terjemahan dibatalkan",
+    "invalidApiKey": "Format Kunci API tidak valid",
+    "errorTitle": "Kesalahan",
+    "successTitle": "Sukses",
+    "translationCompleted": "Terjemahan selesai!",
+    "showMoreLanguages": "Tampilkan lebih banyak bahasa",
+    "hideMoreLanguages": "Sembunyikan lebih banyak bahasa",
+    "overallProgress": "Kemajuan Keseluruhan",
+    "completedSegments": "Segmen yang Diselesaikan",
+    "translatingLanguage": "Menerjemahkan",
+    "allLanguagesTranslated": "Semua bahasa yang dipilih telah diterjemahkan",
+    "pleaseUploadAndEnterKey": "Silakan unggah file dan masukkan Kunci API",
+    "tip": "Tip",
+    "cancelled": "Dibatalkan",
+    "translationFailed": "Terjemahan gagal",
+    "pleaseSelectLanguage": "Silakan pilih setidaknya satu bahasa target",
+    "bytes": "Byte",
+    "kb": "KB",
+    "mb": "MB",
+    "gb": "GB",
+    "apiKeyErrors": {
+      "invalidFormat": "Format kunci API tidak valid",
+      "invalidOrExpired": "Kunci API tidak valid atau kedaluwarsa",
+      "rateLimitReached": "Batas pemanggilan API tercapai",
+      "validationFailed": "Validasi kunci API gagal"
+    }
+  },
+  "jsonPreview": {
+    "title": "Pratampilan",
+    "empty": "Pratampilan JSON akan muncul di sini",
+    "copied": "Disalin ke papan klip",
+    "originalJson": "JSON Asli",
+    "translatedJson": "JSON Terjemahan",
+    "tips": "Tips: Mendukung pratampilan waktu nyata dan pemformatan file JSON, dan Anda dapat langsung menyalin kontennya",
+    "placeholder": {
+      "upload": "Silakan unggah file JSON",
+      "translation": "Hasil terjemahan akan ditampilkan di sini"
+    },
+    "actions": {
+      "copy": "Salin",
+      "download": "Unduh",
+      "downloadAll": "Unduh semua terjemahan",
+      "downloadFormat": "Unduh terjemahan {lang}"
+    },
+    "toast": {
+      "copySuccess": "Konten telah disalin ke papan klip",
+      "copyError": "Salin gagal, silakan salin secara manual",
+      "downloadSuccess": "File terjemahan {lang} telah diunduh",
+      "downloadAllSuccess": "Semua file terjemahan telah diunduh",
+      "downloadError": "Unduh gagal, silakan coba lagi"
+    },
+    "languages": {
+      "en": "Inggris",
+      "zh": "Cina (Sederhana)",
+      "zh-TW": "Cina (Tradisional)",
+      "ja": "Jepang",
+      "ko": "Korea",
+      "fr": "Prancis",
+      "de": "Jerman",
+      "es": "Spanyol",
+      "pt": "Portugis",
+      "it": "Italia",
+      "ru": "Rusia",
+      "ar": "Arab",
+      "hi": "Hindi",
+      "bn": "Bengali",
+      "th": "Thai",
+      "vi": "Vietnamese",
+      "id": "Bahasa Indonesia",
+      "ms": "Melayu",
+      "tr": "Turki",
+      "nl": "Belanda",
+      "pl": "Polandia",
+      "uk": "Ukraina",
+      "el": "Yunani",
+      "he": "Ibrani",
+      "sv": "Swedia",
+      "da": "Denmark",
+      "fi": "Finlandia",
+      "cs": "Ceko",
+      "ro": "Rumania",
+      "hu": "Hongaria",
+      "sk": "Slovakia",
+      "bg": "Bulgaria",
+      "hr": "Kroasia",
+      "lt": "Lituania",
+      "sl": "Slovenia",
+      "et": "Estonia",
+      "lv": "Latvia",
+      "sr": "Serbia",
+      "mt": "Malta",
+      "fa": "Persia",
+      "ur": "Urdu",
+      "ta": "Tamil",
+      "te": "Telugu",
+      "ml": "Malayalam",
+      "kn": "Kannada",
+      "mr": "Marathi",
+      "gu": "Gujarati",
+      "my": "Burmese",
+      "km": "Khmer",
+      "lo": "Lao",
+      "mn": "Mongolia",
+      "ka": "Georgia",
+      "hy": "Armenia",
+      "az": "Azerbaijan",
+      "sw": "Swahili",
+      "af": "Afrikaans",
+      "am": "Amharic"
+    }
+  },
+  "faq": {
+    "title": "Pertanyaan yang Sering Diajukan",
+    "description": "Pertanyaan umum tentang alat terjemahan JSON",
+    "items": {
+      "0": {
+        "question": "Apa yang dilakukan alat ini?",
+        "answer": "Ini adalah alat terjemahan internasionalisasi JSON yang didukung AI yang membantu pengembang dengan cepat menerjemahkan file bahasa JSON ke dalam berbagai bahasa sambil mempertahankan integritas struktur JSON."
+      },
+      "1": {
+        "question": "Bagaimana cara menggunakan alat ini?",
+        "answer": "1. Unggah file JSON Anda untuk diterjemahkan\n2. Pilih bahasa target\n3. Masukkan Kunci API DeepSeek Anda\n4. Klik mulai terjemahan\n5. Unduh hasil setelah terjemahan selesai"
+      },
+      "2": {
+        "question": "Bahasa apa saja yang didukung?",
+        "answer": "Saat ini mendukung berbagai bahasa termasuk Inggris, Mandarin (Sederhana), Mandarin (Tradisional), Jepang, Korea, Prancis, Jerman, Spanyol, Rusia, dan lainnya."
+      },
+      "3": {
+        "question": "Apakah Kunci API saya akan disimpan?",
+        "answer": "Tidak. Kunci API Anda hanya digunakan sementara di browser dan tidak akan disimpan atau dikirim ke server mana pun."
+      },
+      "4": {
+        "question": "Bagaimana kualitas terjemahan dijamin?",
+        "answer": "Kami menggunakan model V3 dari DeepSeek untuk terjemahan, memastikan akurasi istilah teknis dan ekspresi bahasa alami. Kami juga mendukung fungsi kamus kustom untuk menjaga konsistensi terminologi tertentu."
+      },
+      "5": {
+        "question": "Apakah ada batas ukuran file?",
+        "answer": "Ukuran file JSON tunggal dibatasi hingga 10MB. Untuk file yang lebih besar, disarankan untuk membaginya dan menerjemahkan dalam batch."
+      }
+    }
+  },
+  "cta": {
+    "title": "Mulai Menggunakan Alat Terjemahan AI Sekarang",
+    "description": "Terjemahkan file bahasa JSON Anda dengan cepat dan akurat ke dalam beberapa bahasa",
+    "button": "Coba Sekarang",
+    "features": {
+      "0": "Tidak Perlu Registrasi",
+      "1": "Sepenuhnya Gratis",
+      "2": "Terjemahan Waktu Nyata"
+    }
+  },
+  "footer": {
+    "creator": "Dibuat dengan ❤️ oleh Viggo",
+    "twitter": "@viggo",
+    "coffee": "Beli Saya Secangkir Kopi",
+    "github": "GitHub"
+  },
+  "metadata": {
+    "title": "Penerjemah JSON - Solusi Terjemahan Multibahasa Berbasis AI",
+    "description": "Terjemahkan file bahasa JSON ke berbagai bahasa dengan cepat dan akurat menggunakan teknologi AI. Mendukung struktur JSON, placeholder variabel, dan tag HTML.",
+    "keywords": "terjemahan JSON,terjemahan AI,internasionalisasi,i18n,terjemahan multibahasa,DeepSeek"
+  }
+}

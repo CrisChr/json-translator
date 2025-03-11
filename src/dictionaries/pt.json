@@ -1,0 +1,249 @@
+{
+  "hero": {
+    "badge": "Alimentado por IA",
+    "title": "i18n Ferramenta de Tradução JSON",
+    "description": "Traduza seus arquivos de linguagem JSON rapidamente usando tecnologia de IA. Rápido, preciso e fácil de usar.",
+    "features": {
+      "multilanguage": "Suporte Multilíngue",
+      "realtime": "Tradução em Tempo Real"
+    }
+  },
+  "workflow": {
+    "title": "Tradução Completa em Quatro Passos Simples",
+    "description": "Simplificamos o processo de tradução de arquivos JSON para ajudá-lo a obter rapidamente resultados de tradução de alta qualidade",
+    "steps": {
+      "0": {
+        "title": "Carregar Arquivo JSON",
+        "description": "Suporte para arrastar e soltar ou clicar para selecionar o arquivo"
+      },
+      "1": {
+        "title": "Selecionar Idioma Alvo",
+        "description": "Escolha o idioma alvo para tradução"
+      },
+      "2": {
+        "title": "Iniciar Tradução",
+        "description": "Insira a Chave da API e inicie a tradução por IA"
+      },
+      "3": {
+        "title": "Baixar Resultados",
+        "description": "Baixe o arquivo JSON traduzido"
+      }
+    }
+  },
+  "features": {
+    "title": "Recursos Poderosos de Tradução",
+    "items": {
+      "0": {
+        "title": "Preservar Estrutura JSON",
+        "description": "Reconhecer e manter inteligentemente a estrutura, indentação e formato do arquivo JSON original"
+      },
+      "1": {
+        "title": "Suporte a Múltiplos Idiomas",
+        "description": "Suporte à tradução entre vários idiomas, incluindo inglês, chinês, japonês e mais"
+      },
+      "2": {
+        "title": "Tradução Alimentada por IA",
+        "description": "Utilizando modelos V3 da DeepSeek para garantir a precisão de termos técnicos e expressão natural"
+      },
+      "3": {
+        "title": "Seguro e Confiável",
+        "description": "As chaves da API são usadas apenas temporariamente no navegador e nunca são salvas ou transmitidas para servidores"
+      }
+    }
+  },
+  "uploadSection": {
+    "title": "Carregar Arquivo JSON",
+    "description": "Carregue seu arquivo JSON para tradução",
+    "dragText": "Arraste arquivos aqui ou clique para carregar",
+    "supportText": "Suporta arquivos no formato .json, até 10MB",
+    "apiKeyTip": "Dicas: A Chave da API DeepSeek é necessária para tradução",
+    "errors": {
+      "selectFile": "Por favor, selecione um arquivo",
+      "jsonExtension": "Por favor, carregue um arquivo com a extensão .json",
+      "fileSize": "O tamanho do arquivo não pode exceder 10MB",
+      "jsonFormat": "Formato JSON inválido, por favor verifique o conteúdo do arquivo",
+      "emptyJson": "O arquivo JSON não pode estar vazio"
+    },
+    "success": {
+      "uploaded": "Arquivo carregado com sucesso"
+    },
+    "apiKeyTitle": "Chave da API DeepSeek",
+    "apiKeyPlaceholder": "sk-...",
+    "errorTitle": "Erro",
+    "successTitle": "Sucesso"
+  },
+  "translateSection": {
+    "title": "Selecionar Idioma Alvo",
+    "description": "Escolha os idiomas para traduzir"
+  },
+  "translatePanel": {
+    "startTranslate": "Iniciar Tradução",
+    "translating": "Traduzindo...",
+    "cancel": "Cancelar",
+    "uploadFirst": "Por favor, carregue um arquivo primeiro",
+    "enterApiKey": "Por favor, insira a Chave da API",
+    "foundUnfinished": "Encontrada tradução inacabada",
+    "continueTranslation": "Continuar tradução",
+    "translationCancelled": "Tradução cancelada",
+    "invalidApiKey": "Formato da Chave da API inválido",
+    "errorTitle": "Erro",
+    "successTitle": "Sucesso",
+    "translationCompleted": "Tradução concluída!",
+    "showMoreLanguages": "Mostrar mais idiomas",
+    "hideMoreLanguages": "Ocultar mais idiomas",
+    "overallProgress": "Progresso Geral",
+    "completedSegments": "Segmentos Concluídos",
+    "translatingLanguage": "Traduzindo",
+    "allLanguagesTranslated": "Todos os idiomas selecionados estão traduzidos",
+    "pleaseUploadAndEnterKey": "Por favor, faça o upload de um arquivo e insira a chave da API",
+    "tip": "Dica",
+    "cancelled": "Cancelado",
+    "translationFailed": "A tradução falhou",
+    "pleaseSelectLanguage": "Por favor, selecione pelo menos um idioma de destino",
+    "bytes": "Bytes",
+    "kb": "KB",
+    "mb": "MB",
+    "gb": "GB",
+    "apiKeyErrors": {
+      "invalidFormat": "Formato de chave API inválido",
+      "invalidOrExpired": "Chave API inválida ou expirada",
+      "rateLimitReached": "Limite de chamadas API atingido",
+      "validationFailed": "Falha na validação da chave API"
+    }
+  },
+  "jsonPreview": {
+    "title": "Pré-visualização",
+    "empty": "A pré-visualização JSON aparecerá aqui",
+    "copied": "Copiado para a área de transferência",
+    "originalJson": "JSON Original",
+    "translatedJson": "JSON Traduzido",
+    "tips": "Dicas: Suporta pré-visualização em tempo real e formatação de arquivos JSON, e você pode copiar diretamente o conteúdo",
+    "placeholder": {
+      "upload": "Por favor, faça o upload de um arquivo JSON",
+      "translation": "Os resultados da tradução serão exibidos aqui"
+    },
+    "actions": {
+      "copy": "Copiar",
+      "download": "Baixar",
+      "downloadAll": "Baixar todas as traduções",
+      "downloadFormat": "Baixar tradução {lang}"
+    },
+    "toast": {
+      "copySuccess": "O conteúdo foi copiado para a área de transferência",
+      "copyError": "Falha ao copiar, por favor copie manualmente",
+      "downloadSuccess": "O arquivo de tradução {lang} foi baixado",
+      "downloadAllSuccess": "Todos os arquivos de tradução foram baixados",
+      "downloadError": "Falha ao baixar, por favor tente novamente"
+    },
+    "languages": {
+      "en": "Inglês",
+      "zh": "Chinês (Simplificado)",
+      "zh-TW": "Chinês (Tradicional)",
+      "ja": "Japonês",
+      "ko": "Coreano",
+      "fr": "Francês",
+      "de": "Alemão",
+      "es": "Espanhol",
+      "pt": "Português",
+      "it": "Italiano",
+      "ru": "Russo",
+      "ar": "Árabe",
+      "hi": "Hindi",
+      "bn": "Bengali",
+      "th": "Tailandês",
+      "vi": "Vietnamita",
+      "id": "Indonésio",
+      "ms": "Malaio",
+      "tr": "Turco",
+      "nl": "Holandês",
+      "pl": "Polonês",
+      "uk": "Ucraniano",
+      "el": "Grego",
+      "he": "Hebraico",
+      "sv": "Sueco",
+      "da": "Dinamarquês",
+      "fi": "Finlandês",
+      "cs": "Tcheco",
+      "ro": "Romeno",
+      "hu": "Húngaro",
+      "sk": "Eslovaco",
+      "bg": "Búlgaro",
+      "hr": "Croata",
+      "lt": "Lituano",
+      "sl": "Esloveno",
+      "et": "Estoniano",
+      "lv": "Letão",
+      "sr": "Sérvio",
+      "mt": "Maltês",
+      "fa": "Persa",
+      "ur": "Urdu",
+      "ta": "Tâmil",
+      "te": "Telugo",
+      "ml": "Malaiala",
+      "kn": "Canarês",
+      "mr": "Marathi",
+      "gu": "Guzerate",
+      "my": "Birmanês",
+      "km": "Cambojano",
+      "lo": "Lao",
+      "mn": "Mongol",
+      "ka": "Georgiano",
+      "hy": "Armênio",
+      "az": "Azeri",
+      "sw": "Suaíli",
+      "af": "Africâner",
+      "am": "Amárico"
+    }
+  },
+  "faq": {
+    "title": "Perguntas Frequentes",
+    "description": "Perguntas comuns sobre a ferramenta de tradução JSON",
+    "items": {
+      "0": {
+        "question": "O que esta ferramenta faz?",
+        "answer": "Esta é uma ferramenta de tradução de internacionalização JSON alimentada por IA que ajuda os desenvolvedores a traduzir rapidamente arquivos de linguagem JSON em vários idiomas, mantendo a integridade da estrutura JSON."
+      },
+      "1": {
+        "question": "Como usar esta ferramenta?",
+        "answer": "1. Carregue seu arquivo JSON para tradução\n2. Selecione os idiomas de destino\n3. Insira sua chave de API DeepSeek\n4. Clique em iniciar tradução\n5. Baixe os resultados após a conclusão da tradução"
+      },
+      "2": {
+        "question": "Quais idiomas são suportados?",
+        "answer": "Atualmente suporta vários idiomas, incluindo inglês, chinês (simplificado), chinês (tradicional), japonês, coreano, francês, alemão, espanhol, russo e mais."
+      },
+      "3": {
+        "question": "Meu API Key será salvo?",
+        "answer": "Não. Seu API Key é usado apenas temporariamente no navegador e não será salvo ou transmitido para nenhum servidor."
+      },
+      "4": {
+        "question": "Como a qualidade da tradução é garantida?",
+        "answer": "Usamos o modelo V3 da DeepSeek para tradução, garantindo a precisão dos termos técnicos e a expressão em linguagem natural. Também suportamos a funcionalidade de dicionário personalizado para manter a consistência da terminologia específica."
+      },
+      "5": {
+        "question": "Há um limite de tamanho de arquivo?",
+        "answer": "O tamanho de um único arquivo JSON é limitado a 10MB. Para arquivos maiores, é recomendável dividi-los e traduzir em lotes."
+      }
+    }
+  },
+  "cta": {
+    "title": "Comece a Usar a Ferramenta de Tradução AI Agora",
+    "description": "Traduza rapidamente e com precisão seus arquivos de linguagem JSON para múltiplas línguas",
+    "button": "Experimente Agora",
+    "features": {
+      "0": "Nenhum Registro Necessário",
+      "1": "Completamente Grátis",
+      "2": "Tradução em Tempo Real"
+    }
+  },
+  "footer": {
+    "creator": "Criado com ❤️ por Viggo",
+    "twitter": "@viggo",
+    "coffee": "Compre-me um Café",
+    "github": "GitHub"
+  },
+  "metadata": {
+    "title": "Tradutor JSON - Solução de Tradução Multilíngue Baseada em IA",
+    "description": "Traduza arquivos JSON de idiomas para múltiplos idiomas de forma rápida e precisa usando tecnologia de IA. Suporta estrutura JSON, marcadores de variáveis e tags HTML.",
+    "keywords": "tradução JSON,tradução IA,internacionalização,i18n,tradução multilíngue,DeepSeek"
+  }
+}

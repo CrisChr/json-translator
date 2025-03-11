@@ -1,0 +1,249 @@
+{
+  "hero": {
+    "badge": "DeepSeek AI Aangedreven",
+    "title": "i18n JSON Vertaaltool",
+    "description": "Vertaal uw JSON-taalbestanden snel met behulp van AI-technologie. Snel, nauwkeurig en eenvoudig te gebruiken.",
+    "features": {
+      "multilanguage": "Meertalige Ondersteuning",
+      "realtime": "Realtime Vertaling"
+    }
+  },
+  "workflow": {
+    "title": "Voltooi Vertaling in Vier Eenvoudige Stappen",
+    "description": "We hebben het proces van het vertalen van JSON-bestanden vereenvoudigd om u te helpen snel hoogwaardige vertaalresultaten te verkrijgen",
+    "steps": {
+      "0": {
+        "title": "Upload JSON-bestand",
+        "description": "Ondersteunt slepen en neerzetten of klik om bestand te selecteren"
+      },
+      "1": {
+        "title": "Selecteer Doeltaal",
+        "description": "Kies de doeltaal voor vertaling"
+      },
+      "2": {
+        "title": "Start Vertaling",
+        "description": "Voer API-sleutel in en start AI-vertaling"
+      },
+      "3": {
+        "title": "Download Resultaten",
+        "description": "Download het vertaalde JSON-bestand"
+      }
+    }
+  },
+  "features": {
+    "title": "Krachtige Vertaalfuncties",
+    "items": {
+      "0": {
+        "title": "Behoud JSON-structuur",
+        "description": "Intelligente herkenning en behoud van de structuur, inspringing en opmaak van het originele JSON-bestand"
+      },
+      "1": {
+        "title": "Meertalige Ondersteuning",
+        "description": "Ondersteunt vertaling tussen meerdere talen, waaronder Engels, Chinees, Japans en meer"
+      },
+      "2": {
+        "title": "AI-Aangedreven Vertaling",
+        "description": "Gebruikmakend van DeepSeek V3-modellen om de nauwkeurigheid van technische termen en natuurlijke uitdrukkingen te waarborgen"
+      },
+      "3": {
+        "title": "Veilig & Betrouwbaar",
+        "description": "API-sleutels worden alleen tijdelijk in de browser gebruikt en nooit opgeslagen of verzonden naar servers"
+      }
+    }
+  },
+  "uploadSection": {
+    "title": "Upload JSON-bestand",
+    "description": "Upload uw JSON-bestand voor vertaling",
+    "dragText": "Sleep bestanden hierheen of klik om te uploaden",
+    "supportText": "Ondersteunt .json-bestandsindelingen, tot 10MB",
+    "apiKeyTip": "Tips: DeepSeek API-sleutel is vereist voor vertaling",
+    "errors": {
+      "selectFile": "Selecteer alstublieft een bestand",
+      "jsonExtension": "Upload alstublieft een bestand met een .json-extensie",
+      "fileSize": "Bestandsgrootte mag niet groter zijn dan 10MB",
+      "jsonFormat": "Ongeldig JSON-formaat, controleer alstublieft de bestandsinhoud",
+      "emptyJson": "JSON-bestand mag niet leeg zijn"
+    },
+    "success": {
+      "uploaded": "Bestand succesvol geüpload"
+    },
+    "apiKeyTitle": "DeepSeek API-sleutel",
+    "apiKeyPlaceholder": "sk-...",
+    "errorTitle": "Fout",
+    "successTitle": "Succes"
+  },
+  "translateSection": {
+    "title": "Selecteer Doeltaal",
+    "description": "Kies talen om in te vertalen"
+  },
+  "translatePanel": {
+    "startTranslate": "Start Vertaling",
+    "translating": "Bezig met vertalen...",
+    "cancel": "Annuleren",
+    "uploadFirst": "Upload eerst een bestand",
+    "enterApiKey": "Voer alstublieft API-sleutel in",
+    "foundUnfinished": "Onvoltooide vertaling gevonden",
+    "continueTranslation": "Vervolg vertaling",
+    "translationCancelled": "Vertaling geannuleerd",
+    "invalidApiKey": "Ongeldig API-sleutel formaat",
+    "errorTitle": "Fout",
+    "successTitle": "Succes",
+    "translationCompleted": "Vertaling voltooid!",
+    "showMoreLanguages": "Toon meer talen",
+    "hideMoreLanguages": "Verberg meer talen",
+    "overallProgress": "Algemene voortgang",
+    "completedSegments": "Voltooide segmenten",
+    "translatingLanguage": "Vertalen",
+    "allLanguagesTranslated": "Alle geselecteerde talen zijn vertaald",
+    "pleaseUploadAndEnterKey": "Upload een bestand en voer de API-sleutel in",
+    "tip": "Tip",
+    "cancelled": "Geannuleerd",
+    "translationFailed": "Vertaling mislukt",
+    "pleaseSelectLanguage": "Selecteer alstublieft ten minste één doeltaal",
+    "bytes": "Bytes",
+    "kb": "KB",
+    "mb": "MB",
+    "gb": "GB",
+    "apiKeyErrors": {
+      "invalidFormat": "Ongeldig API-sleutelformaat",
+      "invalidOrExpired": "Ongeldige of verlopen API-sleutel",
+      "rateLimitReached": "API-aanroeplimiet bereikt",
+      "validationFailed": "API-sleutelvalidatie mislukt"
+    }
+  },
+  "jsonPreview": {
+    "title": "Voorbeeld",
+    "empty": "JSON-voorbeeld verschijnt hier",
+    "copied": "Gekopieerd naar klembord",
+    "originalJson": "Originele JSON",
+    "translatedJson": "Vertaald JSON",
+    "tips": "Tips: Ondersteunt realtime voorbeeld en opmaak van JSON-bestanden, en u kunt de inhoud direct kopiëren",
+    "placeholder": {
+      "upload": "Upload een JSON-bestand",
+      "translation": "Vertaalresultaten worden hier weergegeven"
+    },
+    "actions": {
+      "copy": "Kopiëren",
+      "download": "Downloaden",
+      "downloadAll": "Download alle vertalingen",
+      "downloadFormat": "Download {lang} vertaling"
+    },
+    "toast": {
+      "copySuccess": "Inhoud is gekopieerd naar het klembord",
+      "copyError": "Kopiëren mislukt, kopieer handmatig",
+      "downloadSuccess": "{lang} vertaalbestand is gedownload",
+      "downloadAllSuccess": "Alle vertaalbestanden zijn gedownload",
+      "downloadError": "Downloaden mislukt, probeer het opnieuw"
+    },
+    "languages": {
+      "en": "Engels",
+      "zh": "Chinees (vereenvoudigd)",
+      "zh-TW": "Chinees (traditioneel)",
+      "ja": "Japans",
+      "ko": "Koreaans",
+      "fr": "Frans",
+      "de": "Duits",
+      "es": "Spaans",
+      "pt": "Portugees",
+      "it": "Italiaans",
+      "ru": "Russisch",
+      "ar": "Arabisch",
+      "hi": "Hindi",
+      "bn": "Bengaals",
+      "th": "Thais",
+      "vi": "Vietnamees",
+      "id": "Indonesisch",
+      "ms": "Maleis",
+      "tr": "Turks",
+      "nl": "Nederlands",
+      "pl": "Pools",
+      "uk": "Oekraïens",
+      "el": "Grieks",
+      "he": "Hebreeuws",
+      "sv": "Zweeds",
+      "da": "Deens",
+      "fi": "Fins",
+      "cs": "Tsjechisch",
+      "ro": "Roemeens",
+      "hu": "Hongaars",
+      "sk": "Slowaaks",
+      "bg": "Bulgaars",
+      "hr": "Kroatisch",
+      "lt": "Litouws",
+      "sl": "Sloveens",
+      "et": "Ests",
+      "lv": "Lets",
+      "sr": "Servisch",
+      "mt": "Maltees",
+      "fa": "Perzisch",
+      "ur": "Urdu",
+      "ta": "Tamil",
+      "te": "Telugu",
+      "ml": "Malayalam",
+      "kn": "Kannada",
+      "mr": "Marathi",
+      "gu": "Gujarati",
+      "my": "Birmaans",
+      "km": "Khmer",
+      "lo": "Laos",
+      "mn": "Mongools",
+      "ka": "Georgisch",
+      "hy": "Armeens",
+      "az": "Azerbeidzjaans",
+      "sw": "Swahili",
+      "af": "Afrikaans",
+      "am": "Amhaars"
+    }
+  },
+  "faq": {
+    "title": "Veelgestelde Vragen",
+    "description": "Veelvoorkomende vragen over de JSON vertaaltool",
+    "items": {
+      "0": {
+        "question": "Wat doet deze tool?",
+        "answer": "Dit is een AI-gestuurde JSON internationalisatie vertaaltool die ontwikkelaars helpt om JSON-taalbestanden snel in meerdere talen te vertalen, terwijl de integriteit van de JSON-structuur behouden blijft."
+      },
+      "1": {
+        "question": "Hoe gebruik je deze tool?",
+        "answer": "1. Upload je JSON-bestand voor vertaling\n2. Selecteer doeltalen\n3. Voer je DeepSeek API-sleutel in\n4. Klik op start vertaling\n5. Download de resultaten nadat de vertaling is voltooid"
+      },
+      "2": {
+        "question": "Welke talen worden ondersteund?",
+        "answer": "Momenteel worden meerdere talen ondersteund, waaronder Engels, Chinees (Vereenvoudigd), Chinees (Traditioneel), Japans, Koreaans, Frans, Duits, Spaans, Russisch, en meer."
+      },
+      "3": {
+        "question": "Zal mijn API-sleutel worden opgeslagen?",
+        "answer": "Nee. Uw API-sleutel wordt alleen tijdelijk in de browser gebruikt en zal niet worden opgeslagen of naar servers worden verzonden."
+      },
+      "4": {
+        "question": "Hoe wordt de vertaalkwaliteit gegarandeerd?",
+        "answer": "We gebruiken het V3-model van DeepSeek voor vertaling, wat de nauwkeurigheid van technische termen en natuurlijke taaluitdrukkingen waarborgt. We ondersteunen ook de functionaliteit van een aangepast woordenboek om de consistentie van specifieke terminologie te behouden."
+      },
+      "5": {
+        "question": "Is er een limiet voor de bestandsgrootte?",
+        "answer": "De grootte van een enkel JSON-bestand is beperkt tot 10MB. Voor grotere bestanden is het aan te raden om ze te splitsen en in batches te vertalen."
+      }
+    }
+  },
+  "cta": {
+    "title": "Begin Nu met het Gebruik van de AI Vertaaltool",
+    "description": "Vertaal snel en nauwkeurig uw JSON-taalbestanden in meerdere talen",
+    "button": "Probeer Nu",
+    "features": {
+      "0": "Geen Registratie Vereist",
+      "1": "Volledig Gratis",
+      "2": "Realtime Vertaling"
+    }
+  },
+  "footer": {
+    "creator": "Gemaakt met ❤️ door Viggo",
+    "twitter": "@viggo",
+    "coffee": "Koop Me een Koffie",
+    "github": "GitHub"
+  },
+  "metadata": {
+    "title": "JSON Vertaler - AI-Aangedreven Meertalige Vertaaloplossing",
+    "description": "Vertaal JSON-taalbestanden snel en nauwkeurig naar meerdere talen met AI-technologie. Ondersteunt JSON-structuur, variabele plaatshouders en HTML-tags.",
+    "keywords": "JSON vertaling,AI vertaling,internationalisatie,i18n,meertalige vertaling,DeepSeek"
+  }
+}
