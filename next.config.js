@@ -4,7 +4,6 @@ const nextConfig = {
   experimental: {
     scrollRestoration: true,
     serverSourceMaps: false,
-    webpackBuildWorker: true
   },
   cacheHandler: require.resolve('./cache-handler.js'),
   cacheMaxMemorySize: 0, // disable default in-memory caching
