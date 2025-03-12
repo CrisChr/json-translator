@@ -51,7 +51,7 @@ export default function Footer({ dict }: FooterProps) {
             </a>
             
             <a
-              href="https://github.com/ViggoZ/json-translate"
+              href="https://github.com/CrisChr/json-translator"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-600 hover:text-gray-900 transition-colors flex items-center gap-1"

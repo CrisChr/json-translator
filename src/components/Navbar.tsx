@@ -74,7 +74,7 @@ export default function Navbar() {
 
             {/* GitHub 链接 */}
             <a
-              href="https://github.com/ViggoZ/json-translate"
+              href="https://github.com/CrisChr/json-translator"
               target="_blank"
               rel="noopener noreferrer"
               className={`transition-colors ${
