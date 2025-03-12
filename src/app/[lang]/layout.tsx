@@ -9,6 +9,7 @@ import { notFound } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { ReactNode } from "react";
 import Analytics from '@/components/Analytics'
+import { Analytics } from '@vercel/analytics/next';
 
 const geistSans = localFont({
   src: "../fonts/GeistVF.woff",
@@ -133,6 +134,7 @@ export default async function LocaleLayout(props: LayoutProps) {
         <TranslateProvider>
           <Navbar />
           {children}
+          <Analytics />
           <Toaster />
         </TranslateProvider>
       </body>
