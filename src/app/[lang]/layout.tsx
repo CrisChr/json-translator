@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import { Script } from "next/script";
+import Script from "next/script";
 import localFont from "next/font/local";
 import "../globals.css";
 import { Toaster } from "@/components/ui/toaster";
