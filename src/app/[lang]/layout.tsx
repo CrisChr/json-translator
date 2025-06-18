@@ -128,7 +128,6 @@ export default async function LocaleLayout(props: LayoutProps) {
     <html lang={lang} suppressHydrationWarning>
       <head>
         <meta name="google-adsense-account" content="ca-pub-8598116000817169"></meta>
-        <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8598116000817169" crossOrigin="anonymous"></Script>
       </head>
       <body className={cn(
         geistSans.variable,
@@ -145,4 +144,4 @@ export default async function LocaleLayout(props: LayoutProps) {
       </body>
     </html>
   );
-} 
+}
