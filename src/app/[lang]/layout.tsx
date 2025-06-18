@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import { Script } from "next/script";
 import localFont from "next/font/local";
 import "../globals.css";
 import { Toaster } from "@/components/ui/toaster";
@@ -125,6 +126,7 @@ export default async function LocaleLayout(props: LayoutProps) {
 
   return (
     <html lang={lang} suppressHydrationWarning>
+      <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8598116000817169" crossorigin="anonymous"></Script>
       <body className={cn(
         geistSans.variable,
         geistMono.variable,
