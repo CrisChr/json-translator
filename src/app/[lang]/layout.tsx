@@ -34,9 +34,9 @@ export async function generateMetadata(
   { params }: Pick<LayoutProps, 'params'>
 ): Promise<Metadata> {
   const lang = params.lang
-  
+
   // 导入对应语言的字典
-  const dict = await import(`@/dictionaries/${params.lang}.json`).then(
+  const dict = await import(`@/dictionaries/${lang}.json`).then(
     (module) => module.default
   );
 
@@ -105,7 +105,11 @@ export async function generateMetadata(
         'max-image-preview': 'large',
         'max-snippet': -1,
       },
-    }
+    },
+    // 在这里添加 Google AdSense meta 标签
+    other: {
+      'google-adsense-account': 'ca-pub-8598116000817169',
+    },
   }
 }
 
@@ -126,9 +130,6 @@ export default async function LocaleLayout(props: LayoutProps) {
 
   return (
     <html lang={lang} suppressHydrationWarning>
-      <head>
-        <meta name="google-adsense-account" content="ca-pub-8598116000817169"></meta>
-      </head>
       <body className={cn(
         geistSans.variable,
         geistMono.variable,
