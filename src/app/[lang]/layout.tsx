@@ -33,7 +33,8 @@ interface LayoutProps {
 export async function generateMetadata(
   { params }: Pick<LayoutProps, 'params'>
 ): Promise<Metadata> {
-  const lang = params.lang
+  const lang = params.lang;
+  const domain = "https://jsontrans.vercel.app";
 
   // 导入对应语言的字典
   const dict = await import(`@/dictionaries/${lang}.json`).then(
@@ -41,31 +42,19 @@ export async function generateMetadata(
   );
 
   // 构建语言替代链接对象
-  const languageAlternates = {
-    'en': '/en',
-    'zh': '/zh',
-    'zh-TW': '/zh-TW',
-    'ja': '/ja',
-    'ko': '/ko',
-    'fr': '/fr',
-    'de': '/de',
-    'es': '/es',
-    'pt': '/pt',
-    'it': '/it',
-    'ru': '/ru',
-    'ar': '/ar',
-    'el': '/el',
-    'nl': '/nl',
-    'id': '/id',
-    'pl': '/pl',
-    'th': '/th',
-    'tr': '/tr',
-    'vi': '/vi'
-  }
+  const languageAlternates = locales.reduce((acc: { [key: string]: string }, locale: string) => {
+    acc[locale] = `${domain}/${locale}`;
+    return acc;
+  }, {});
 
   return {
+    metadataBase: new URL(domain),
     title: dict.metadata.title,
     description: dict.metadata.description,
+    alternates: {
+      canonical: `${domain}/${lang}`,
+      languages: languageAlternates,
+    },
     keywords: dict.metadata.keywords,
     icons: {
       icon: '/favicon.png',
@@ -91,9 +80,6 @@ export async function generateMetadata(
       title: dict.metadata.title,
       description: dict.metadata.description,
       images: ['https://json.uiboy.com/og-image.png']
-    },
-    alternates: {
-      languages: languageAlternates
     },
     robots: {
       index: true,
@@ -128,6 +114,20 @@ export default async function LocaleLayout(props: LayoutProps) {
     (module) => module.default
   );
 
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'WebApplication',
+    name: dict.metadata.title,
+    description: dict.metadata.description,
+    url: `https://jsontrans.vercel.app/${lang}`,
+    applicationCategory: 'DeveloperApplication',
+    operatingSystem: 'All',
+    offers: {
+      '@type': 'Offer',
+      price: '0',
+    },
+  };
+
   return (
     <html lang={lang} suppressHydrationWarning>
       <body className={cn(
@@ -135,9 +135,13 @@ export default async function LocaleLayout(props: LayoutProps) {
         geistMono.variable,
         "min-h-screen bg-background font-sans antialiased"
       )}>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
         {/* <Analytics /> */}
         <TranslateProvider>
-          <Navbar />
+          <Navbar dict={dict} />
           {children}
           <Analytics />
           <Toaster />

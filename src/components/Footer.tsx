@@ -33,25 +33,9 @@ export default function Footer({ dict }: FooterProps) {
               {dict.twitter}
             </a> */}
             
-            <a
-              href="https://buymeacoffee.com/ponyred"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-600 hover:text-amber-600 transition-colors flex items-center gap-1"
-            >
-              <svg 
-                width="16" 
-                height="16" 
-                viewBox="0 0 24 24" 
-                fill="currentColor"
-              >
-                <path d="M20 3H4v10c0 2.21 1.79 4 4 4h6c2.21 0 4-1.79 4-4v-3h2c1.11 0 2-.89 2-2V5c0-1.11-.89-2-2-2zm0 5h-2V5h2v3zM4 19h16v2H4v-2z"/>
-              </svg>
-              {dict.coffee}
-            </a>
             
             <a
-              href="https://github.com/CrisChr/json-translator"
+              href="https://github.com/CrisChr"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-600 hover:text-gray-900 transition-colors flex items-center gap-1"
@@ -71,4 +55,4 @@ export default function Footer({ dict }: FooterProps) {
       </div>
     </footer>
   )
-} 
+}
