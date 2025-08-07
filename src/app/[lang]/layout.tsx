@@ -47,6 +47,9 @@ export async function generateMetadata(
     return acc;
   }, {});
 
+  // 为 hreflang 添加 x-default, 指向默认语言版本
+  languageAlternates['x-default'] = `${domain}/${defaultLocale}`;
+
   return {
     metadataBase: new URL(domain),
     title: dict.metadata.title,

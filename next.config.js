@@ -5,8 +5,18 @@ const nextConfig = {
     scrollRestoration: true,
     serverSourceMaps: false,
   },
-  cacheHandler: require.resolve('./cache-handler.js'),
-  cacheMaxMemorySize: 0, // disable default in-memory caching
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'json.uiboy.com',
+        port: '',
+        pathname: '/**',
+      },
+    ],
+  },
+  // cacheHandler: require.resolve('./cache-handler.js'),
+  // cacheMaxMemorySize: 0, // disable default in-memory caching
   productionBrowserSourceMaps: false,
   webpack: (
     config,
