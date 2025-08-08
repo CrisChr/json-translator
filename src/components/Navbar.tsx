@@ -32,7 +32,7 @@ export default function Navbar({ dict }: NavbarProps) {
   }, [])
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-colors duration-200 ${scrolled ? 'bg-white/80 backdrop-blur-sm shadow-sm' : 'bg-transparent'
+    <nav className={`fixed top-0 left-0 right-0 z-50 transition-colors duration-200 ${scrolled ? 'bg-blue-600/80 backdrop-blur-sm shadow-sm' : 'bg-transparent'
       }`}>
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
@@ -40,7 +40,7 @@ export default function Navbar({ dict }: NavbarProps) {
           <Link href="/" className="flex items-center gap-2">
             <div className="relative w-12 h-7">
               <Image
-                src={scrolled ? "/logo-blue.png" : "/logo-white.png"}
+                src={"/logo-white.png"}
                 alt="JSON Translater Logo"
                 width={512}
                 height={316}
@@ -48,7 +48,7 @@ export default function Navbar({ dict }: NavbarProps) {
                 priority
               />
             </div>
-            <span className={`font-semibold text-lg hidden sm:block ${scrolled ? 'text-gray-800' : 'text-white'
+            <span className={`font-semibold text-lg hidden sm:block ${scrolled ? 'text-white' : 'text-white'
               }`}>
               JSON Translater
             </span>
@@ -81,7 +81,7 @@ export default function Navbar({ dict }: NavbarProps) {
               href="https://github.com/CrisChr"
               target="_blank"
               rel="noopener noreferrer"
-              className={`transition-colors ${scrolled ? 'text-gray-700 hover:text-gray-900' : 'text-white hover:text-white/80'
+              className={`transition-colors ${scrolled ? 'text-white hover:text-white/80' : 'text-white hover:text-white/80'
                 }`}
             >
               <svg
@@ -99,7 +99,7 @@ export default function Navbar({ dict }: NavbarProps) {
               target="_blank"
               rel="noopener noreferrer"
               className={`inline-flex items-center justify-center px-4 py-2 text-sm font-medium rounded-md transition-colors ${scrolled
-                  ? 'bg-white/20 text-black hover:bg-white/30'
+                  ? 'bg-white/20 text-white hover:bg-white/30'
                   : 'bg-white/20 text-white hover:bg-white/30'
                 }`}
             >

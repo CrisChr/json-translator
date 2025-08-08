@@ -1,195 +1,203 @@
 {
   "hero": {
-    "badge": "DeepSeek AI搭載",
+    "badge": "AI搭載",
     "title": "i18n JSON国際化翻訳ツール",
-    "description": "AI技術で素早くJSONファイルを翻訳。高速、正確、使いやすい。",
+    "description": "AI技術を使用して、JSON言語ファイルを迅速に翻訳します。高速、正確、そして使いやすいです。",
     "features": {
       "multilanguage": "多言語対応",
       "realtime": "リアルタイム翻訳"
     }
   },
   "workflow": {
-    "title": "4つの簡単なステップで翻訳完了",
-    "description": "JSONファイルの翻訳プロセスを簡素化し、高品質な翻訳結果を素早く取得できます",
+    "title": "4つの簡単なステップで翻訳",
+    "description": "JSONファイルの翻訳プロセスを簡素化し、迅速に高品質の翻訳結果を得られるようにしました",
     "steps": [
       {
-        "title": "JSONファイルをアップロード",
-        "description": "ドラッグ＆ドロップまたはクリックでファイルを選択"
+        "title": "JSONファイルのアップロード",
+        "description": "ドラッグアンドドロップによるアップロード、またはファイルを選択するクリックに対応"
       },
       {
-        "title": "対象言語を選択",
-        "description": "翻訳したい言語を選択"
+        "title": "翻訳対象言語の選択",
+        "description": "翻訳先の対象言語を選択します"
       },
       {
         "title": "翻訳開始",
-        "description": "APIキーを入力してAI翻訳を開始"
+        "description": "APIキーを入力して、AI翻訳を開始します"
       },
       {
-        "title": "結果をダウンロード",
-        "description": "翻訳されたJSONファイルをダウンロード"
+        "title": "結果のダウンロード",
+        "description": "翻訳されたJSONファイルをダウンロードします"
       }
     ]
   },
   "features": {
-    "title": "パワフルな翻訳機能",
+    "title": "強力な翻訳機能",
     "items": [
       {
-        "title": "JSON構造を保持",
-        "description": "元のJSONファイルの構造、インデント、フォーマットを維持"
+        "title": "JSON構造の維持",
+        "description": "元のJSONファイルの構造、インデント、フォーマットをインテリジェントに識別して維持します"
       },
       {
         "title": "多言語対応",
-        "description": "英語、中国語、日本語など、多数の言語間の翻訳をサポート"
+        "description": "英語、中国語、日本語など、複数の言語間の翻訳をサポートします"
       },
       {
-        "title": "AI駆動の翻訳",
-        "description": "DeepSeek GPTモデルを使用し、専門用語の正確性と自然な表現を確保"
+        "title": "AIによる翻訳",
+        "description": "AIモデルを使用して、専門用語の正確さと自然な表現を確保します"
       },
       {
-        "title": "安全性と信頼性",
-        "description": "APIキーはブラウザで一時的に使用するのみで、保存や送信は行いません"
+        "title": "安全で信頼できる",
+        "description": "APIキーはブラウザ内で一時的にのみ使用され、サーバーに保存または送信されることはありません"
       }
     ]
   },
   "uploadSection": {
-    "title": "JSONファイルをアップロード",
-    "description": "翻訳したいJSONファイルをアップロードしてください",
-    "dragText": "ファイルをドラッグ＆ドロップまたはクリックしてアップロード",
-    "supportText": ".json形式のファイル（最大10MB）に対応",
-    "apiKeyTip": "ヒント：翻訳にはOpenAI API Keyが必要です",
+    "title": "JSONファイルのアップロード",
+    "description": "翻訳する必要があるJSONファイルをアップロードします",
+    "dragText": "ファイルをここにドラッグアンドドロップするか、クリックしてアップロードします",
+    "supportText": "最大10MBの.jsonファイルをサポートします",
+    "apiKeyTitle": "APIキー",
+    "apiKeyPlaceholder": "sk-...",
+    "aiProviderTitle": "AIプロバイダー",
+    "aiProviders": {
+      "deepseek": "DeepSeek",
+      "openai": "OpenAI",
+      "google": "Google Gemini",
+      "claude": "Claude"
+    },
     "errors": {
       "selectFile": "ファイルを選択してください",
-      "jsonExtension": ".json形式のファイルをアップロードしてください",
-      "fileSize": "ファイルサイズは10MB以下にしてください",
-      "jsonFormat": "無効なJSON形式です。ファイルの内容を確認してください",
-      "emptyJson": "JSONファイルが空です"
+      "jsonExtension": ".jsonファイルをアップロードしてください",
+      "fileSize": "ファイルサイズは10MBを超えることはできません",
+      "jsonFormat": "JSON形式が無効です。ファイルの内容を確認してください",
+      "emptyJson": "JSONファイルは空にすることはできません"
     },
     "success": {
-      "uploaded": "ファイルのアップロードが完了しました"
+      "uploaded": "ファイルが正常にアップロードされました"
     },
-    "apiKeyTitle": "DeepSeek API Key",
-    "apiKeyPlaceholder": "sk-...",
     "errorTitle": "エラー",
-    "successTitle": "成功"
+    "successTitle": "成功",
+    "apiKeyTip": "ヒント：翻訳機能にはAPIキーが必要です"
   },
   "translateSection": {
-    "title": "対象言語を選択",
-    "description": "翻訳したい言語を選んでください"
+    "title": "翻訳対象言語の選択",
+    "description": "翻訳先の対象言語を選択します"
   },
   "translatePanel": {
     "startTranslate": "翻訳開始",
     "translating": "翻訳中...",
     "cancel": "キャンセル",
-    "uploadFirst": "ファイルをアップロードしてください",
-    "enterApiKey": "API Keyを入力してください",
+    "uploadFirst": "最初にファイルアップロードしてください",
+    "enterApiKey": "APIキーを入力してください",
     "foundUnfinished": "未完了の翻訳が見つかりました",
-    "continueTranslation": "翻訳を続ける",
+    "continueTranslation": "翻訳を続行します",
     "translationCancelled": "翻訳がキャンセルされました",
-    "invalidApiKey": "無効なAPI Keyフォーマット",
+    "invalidApiKey": "APIキーの形式が無効です",
     "errorTitle": "エラー",
     "successTitle": "成功",
     "translationCompleted": "翻訳が完了しました！",
-    "showMoreLanguages": "他の言語を表示",
-    "hideMoreLanguages": "言語を隠す",
-    "overallProgress": "全体の進捗",
-    "completedSegments": "完了セグメント",
-    "translatingLanguage": "翻訳中の言語",
-    "allLanguagesTranslated": "選択された全ての言語が翻訳済みです",
-    "pleaseUploadAndEnterKey": "ファイルをアップロードしAPI Keyを入力してください",
+    "showMoreLanguages": "さらに言語を表示",
+    "hideMoreLanguages": "言語を非表示",
+    "overallProgress": "全体的な進捗状況",
+    "completedLanguages": "完了した言語",
+    "translatingLanguage": "翻訳中",
     "tip": "ヒント",
+    "allLanguagesTranslated": "選択されたすべての言語が翻訳されました。",
+    "pleaseSelectLanguage": "少なくとも1つの翻訳対象言語を選択してください",
+    "pleaseUploadAndEnterKey": "ファイルとAPIキーを入力してください",
     "cancelled": "キャンセル済み",
     "translationFailed": "翻訳に失敗しました",
-    "pleaseSelectLanguage": "翻訳する言語を1つ以上選択してください",
     "bytes": "バイト",
     "kb": "KB",
     "mb": "MB",
     "gb": "GB",
     "apiKeyErrors": {
       "invalidFormat": "APIキーの形式が無効です",
-      "invalidOrExpired": "APIキーが無効または期限切れです",
-      "rateLimitReached": "APIレート制限に達しました",
+      "invalidOrExpired": "APIキーが無効であるか、期限切れです",
+      "rateLimitReached": "API呼び出しのレート制限に達しました",
       "validationFailed": "APIキーの検証に失敗しました"
     }
   },
   "jsonPreview": {
     "title": "プレビュー",
-    "empty": "JSONプレビューがここに表示されます",
-    "copied": "クリップボードにコピーしました",
+    "empty": "ここにJSONプレビューが表示されます",
+    "copied": "クリップボードにコピーされました",
     "originalJson": "元のJSON",
-    "translatedJson": "翻訳されたJSON",
-    "tips": "ヒント：JSONファイルのリアルタイムプレビューと整形をサポートし、内容を直接コピーできます",
+    "translatedJson": "翻訳済みJSON",
+    "tips": "ヒント：リアルタイムプレビューとフォーマットされたJSONファイルをサポートします。コンテンツを直接コピーできます。",
     "placeholder": {
       "upload": "JSONファイルをアップロードしてください",
-      "translation": "翻訳結果がここに表示されます"
+      "translation": "ここに翻訳結果が表示されます"
     },
     "actions": {
       "copy": "コピー",
+      "clear": "クリア",
       "download": "ダウンロード",
       "downloadAll": "すべての翻訳をダウンロード",
-      "downloadFormat": "{lang}の翻訳をダウンロード"
+      "downloadFormat": "{lang}翻訳をダウンロード"
     },
     "toast": {
-      "copySuccess": "内容をクリップボードにコピーしました",
+      "copySuccess": "コンテンツがクリップボードにコピーされました",
       "copyError": "コピーに失敗しました。手動でコピーしてください",
-      "downloadSuccess": "{lang}の翻訳ファイルをダウンロードしました",
-      "downloadAllSuccess": "すべての翻訳ファイルをダウンロードしました",
-      "downloadError": "ダウンロードに失敗しました。もう一度お試しください"
+      "downloadSuccess": "{lang}翻訳ファイルがダウンロードされました",
+      "downloadAllSuccess": "すべての翻訳ファイルがダウンロードされました",
+      "downloadError": "ダウンロードに失敗しました。再試行してください"
     },
     "languages": {
       "en": "英語",
-      "zh": "中国語（簡体字）",
-      "zh-TW": "中国語（繁体字）",
-      "ja": "日本語",
-      "ko": "韓国語",
-      "fr": "フランス語",
-      "de": "ドイツ語",
-      "es": "スペイン語",
-      "pt": "ポルトガル語",
-      "it": "イタリア語",
       "ru": "ロシア語",
+      "es": "スペイン語",
+      "de": "ドイツ語",
+      "tr": "トルコ語",
+      "fr": "フランス語",
+      "ja": "日本語",
+      "pt": "ポルトガル語",
+      "zh": "簡体字中国語",
+      "zh-TW": "繁体字中国語",
+      "it": "イタリア語",
       "ar": "アラビア語",
-      "hi": "ヒンディー語",
-      "bn": "ベンガル語",
+      "pl": "ポーランド語",
+      "el": "ギリシャ語",
+      "nl": "オランダ語",
+      "id": "インドネシア語",
+      "ko": "韓国語",
       "th": "タイ語",
       "vi": "ベトナム語",
-      "id": "インドネシア語",
-      "ms": "マレー語",
-      "tr": "トルコ語",
-      "nl": "オランダ語",
-      "pl": "ポーランド語",
+      "fa": "ペルシャ語",
       "uk": "ウクライナ語",
-      "el": "ギリシャ語",
       "he": "ヘブライ語",
       "sv": "スウェーデン語",
-      "da": "デンマーク語",
-      "fi": "フィンランド語",
-      "cs": "チェコ語",
       "ro": "ルーマニア語",
       "hu": "ハンガリー語",
+      "da": "デンマーク語",
       "sk": "スロバキア語",
+      "sr": "セルビア語",
       "bg": "ブルガリア語",
+      "fi": "フィンランド語",
       "hr": "クロアチア語",
       "lt": "リトアニア語",
+      "nb": "ノルウェー語（ブークモール）",
       "sl": "スロベニア語",
-      "et": "エストニア語",
       "lv": "ラトビア語",
-      "sr": "セルビア語",
-      "mt": "マルタ語",
-      "fa": "ペルシャ語",
-      "ur": "ウルドゥー語",
+      "et": "エストニア語",
+      "cs": "チェコ語",
+      "ca": "カタルーニャ語",
+      "hi": "ヒンディー語",
+      "bn": "ベンガル語",
       "ta": "タミル語",
-      "te": "テルグ語",
-      "ml": "マラヤーラム語",
-      "kn": "カンナダ語",
-      "mr": "マラーティー語",
+      "ur": "ウルドゥー語",
       "gu": "グジャラート語",
-      "my": "ミャンマー語",
+      "kn": "カンナダ語",
+      "ml": "マラヤーラム語",
+      "mr": "マラーティー語",
+      "ms": "マレー語",
+      "my": "ビルマ語",
       "km": "クメール語",
-      "lo": "ラオス語",
+      "lo": "ラオ語",
       "mn": "モンゴル語",
+      "az": "アゼルバイジャン語",
       "ka": "グルジア語",
       "hy": "アルメニア語",
-      "az": "アゼルバイジャン語",
       "sw": "スワヒリ語",
       "af": "アフリカーンス語",
       "am": "アムハラ語"
@@ -200,50 +208,50 @@
     "description": "JSON翻訳ツールに関するよくある質問",
     "items": [
       {
-        "question": "このツールは何ができますか？",
-        "answer": "これはAI搭載のJSON国際化翻訳ツールで、開発者がJSONファイルの構造を維持しながら、複数の言語に素早く翻訳することができます。"
+        "question": "このツールは何をしますか？",
+        "answer": "これは、開発者がJSON言語ファイルを複数の言語に迅速に翻訳するのに役立つAI搭載のJSON国際化翻訳ツールであり、JSON構造の整合性を維持します。"
       },
       {
-        "question": "使い方を教えてください",
-        "answer": "1. 翻訳したいJSONファイルをアップロード\n2. 対象言語を選択\n3. DeepSeek APIキーを入力\n4. 翻訳を開始\n5. 翻訳完了後、結果をダウンロード"
+        "question": "このツールをどのように使用しますか？",
+        "answer": "1. 翻訳する必要があるJSONファイルをアップロードします\n2. 翻訳対象言語を選択します\n3. APIキーを入力します\n4. 翻訳開始をクリックします\n5. 翻訳が完了したら結果をダウンロードします"
       },
       {
-        "question": "対応している言語は？",
-        "answer": "現在、英語、簡体字中国語、繁体字中国語、日本語、韓国語、フランス語、ドイツ語、スペイン語、ロシア語など、多数の言語に対応しています。"
+        "question": "どの言語がサポートされていますか？",
+        "answer": "現在、英語、簡体字中国語、繁体字中国語、日本語、韓国語、フランス語、ドイツ語、スペイン語、ロシア語などを含む複数の言語をサポートしています。"
       },
       {
-        "question": "APIキーは保存されますか？",
-        "answer": "いいえ。APIキーはブラウザで一時的に使用されるだけで、サーバーに保存や送信されることはありません。"
+        "question": "私のAPIキーは保存されますか？",
+        "answer": "いいえ。APIキーはブラウザで一時的にのみ使用され、サーバーに保存または送信されることはありません。"
       },
       {
-        "question": "翻訳品質はどのように保証されていますか？",
-        "answer": "OpenAIのGPTモデルを使用して翻訳を行い、専門用語の正確性と自然な表現を確保しています。また、特定の用語の一貫性を保つためのカスタム辞書機能もサポートしています。"
+        "question": "翻訳の品質をどのように確保しますか？",
+        "answer": "専門用語の正確さと自然な言語表現を確保するために、翻訳にはAIモデルを使用しています。特定の用語の一貫性を維持するために、カスタム辞書機能もサポートしています。"
       },
       {
-        "question": "ファイルサイズの制限はありますか？",
-        "answer": "1つのJSONファイルのサイズ制限は10MBです。より大きなファイルの場合は、分割して翻訳することをお勧めします。"
+        "question": "ファイルサイズの上限はありますか？",
+        "answer": "単一のJSONファイルの最大サイズは10MBです。より大きなファイルの場合は、バッチで翻訳することをお勧めします。"
       }
     ]
   },
   "cta": {
-    "title": "今すぐAI翻訳ツールを使用開始",
-    "description": "JSONファイルを素早く正確に多言語翻訳",
+    "title": "今すぐAI翻訳ツールを使用しましょう",
+    "description": "JSON言語ファイルを迅速かつ正確に複数の言語に翻訳します",
     "button": "今すぐ試す",
     "features": [
       "登録不要",
-      "完全無料",
+      "完全に無料",
       "リアルタイム翻訳"
     ]
   },
   "footer": {
     "creator": "Redが❤️を込めて作成",
     "twitter": "@chrisgostrong",
-    "coffee": "コーヒーを奢る",
+    "coffee": "コーヒーをごちそうしてください",
     "github": "GitHub"
   },
   "metadata": {
     "title": "JSON翻訳ツール - AI搭載の多言語翻訳ソリューション",
-    "description": "AI技術で素早く正確にJSONファイルを多言語に翻訳。JSON構造、変数プレースホルダー、HTMLタグをサポート。",
-    "keywords": "JSON翻訳,AI翻訳,国際化,i18n,多言語翻訳,DeepSeek"
+    "description": "AI技術を使用して、JSON言語ファイルを迅速かつ正確に複数の言語に翻訳します。JSON構造、変数プレースホルダー、HTMLタグの維持をサポートします。",
+    "keywords": "i18n翻訳, JSON翻訳, AI翻訳, 開発者向け翻訳ツール, ソフトウェアローカリゼーション, ウェブサイトローカリゼーション, アプリローカリゼーション, 国際化ツール, 自動翻訳, コード翻訳, React i18n, Vue i18n, Next.js i18n, Angular i18n, Svelte i18n, i18next自動翻訳, next-intlツール, JavaScript i18nライブラリ, Flutter i18n, React Native i18n, iOSアプリ翻訳, Androidアプリ翻訳, GitHub i18n統合, VS Code i18nプラグイン, Node.js i18n, ARBファイル翻訳, AI搭載JSONファイル翻訳, 開発者向けi18nソリューション, JSON言語ファイルの自動翻訳, オンラインJSON翻訳ツール, 無料i18n翻訳ツール, 効率的なソフトウェア国際化プロセス, 最適なi18n実践, 継続的なローカリゼーションサービス, 多言語ウェブサイト開発, ゲームローカリゼーションツール, AI支援ローカリゼーション, 翻訳管理システム, TMS, アジャイルローカリゼーション, 翻訳API, ワンクリックですべての言語を翻訳, 多言語ウェブサイトの実装方法, アプリの国際化の方法, 自動フロントエンド翻訳プロセス, ローカリゼーションコストの削減, 多言語版の迅速なリリース, 多言語JSONファイルの管理方法, 翻訳チームコラボレーションツール, i18nの課題解決, 翻訳の一貫性を維持する方法, 最高のJSON翻訳ツール"
   }
-} 
+}

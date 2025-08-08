@@ -2,17 +2,11 @@
 
 import { useState, useEffect } from "react"
 import { useTranslate } from "@/context/TranslateContext"
-import { translate } from "@/lib/openai"
-import { Input } from "@/components/ui/input"
+import { getTranslationFunctions } from "@/lib/translate"
 import { Button } from "@/components/ui/button"
 import { useToast } from "@/hooks/use-toast"
 import { Progress } from "@/components/ui/progress"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { Checkbox } from "@/components/ui/checkbox"
-import { chunkJsonObject, mergeTranslatedChunks } from "@/lib/json-utils"
 import { ChevronDown, Languages, Loader2 } from "lucide-react"
-import { getDictionary } from "@/lib/getDictionary"
-import { validateApiKey } from "@/lib/openai"
 
 interface TranslatedResult {
   lang: string;
@@ -51,7 +45,7 @@ interface TranslatePanelProps {
       continueTranslation: string;
       overallProgress: string;
       translatingLanguage: string;
-      completedSegments: string;
+      completedLanguages: string;
       bytes: string;
       kb: string;
       mb: string;
@@ -73,12 +67,15 @@ export function TranslatePanel({ dict }: TranslatePanelProps) {
   const [error, setError] = useState("")
   const { toast } = useToast()
   const [controller, setController] = useState<AbortController | null>(null)
-  const [totalChunks, setTotalChunks] = useState(0)
-  const [completedChunks, setCompletedChunks] = useState(0)
+  const [completedLangsCount, setCompletedLangsCount] = useState(0)
   const [showMoreLanguages, setShowMoreLanguages] = useState(false)
 
-  const { 
-    file, 
+  const cleanJsonString = (str: string) => {
+    return str.replace(/```json/g, "").replace(/```/g, "").trim();
+  };
+
+  const {
+    file,
     apiKey,
     setApiKey,
     isTranslating,
@@ -99,7 +96,9 @@ export function TranslatePanel({ dict }: TranslatePanelProps) {
     totalProgress,
     estimatedTime,
     setTotalProgress,
-    setEstimatedTime
+    setEstimatedTime,
+    aiProvider,
+    setAiProvider,
   } = useTranslate()
 
   type TranslatePanelKey = keyof typeof dict.translatePanel | 'apiKeyErrors.invalidFormat' | 'apiKeyErrors.invalidOrExpired' | 'apiKeyErrors.rateLimitReached' | 'apiKeyErrors.validationFailed';
@@ -136,7 +135,7 @@ export function TranslatePanel({ dict }: TranslatePanelProps) {
     continueTranslation: getTranslation("continueTranslation", "Continue Translation"),
     overallProgress: getTranslation("overallProgress", "Overall Progress"),
     translatingLanguage: getTranslation("translatingLanguage", "Translating Language"),
-    completedSegments: getTranslation("completedSegments", "Completed Segments"),
+    completedLanguages: getTranslation("completedLanguages", "Completed Languages"),
     languages: dict?.jsonPreview?.languages || {},  // 从 jsonPreview 中获取语言映射
     bytes: "B",
     kb: "KB",
@@ -167,7 +166,7 @@ export function TranslatePanel({ dict }: TranslatePanelProps) {
     { value: "pl", label: translations.languages["pl"] || "Polish" },
     { value: "el", label: translations.languages["el"] || "Greek" },
     { value: "nl", label: translations.languages["nl"] || "Dutch" },
-    { value: "id", label: translations.languages["id"] || "Indonesian" },
+    { value: "id", label: translations.languages["id"] || "Bahasa Indonesia" },
     { value: "ko", label: translations.languages["ko"] || "Korean" },
     { value: "th", label: translations.languages["th"] || "Thai" }
   ];
@@ -195,7 +194,7 @@ export function TranslatePanel({ dict }: TranslatePanelProps) {
     { value: "et", label: translations.languages["et"] || "Estonian" },
     { value: "cs", label: translations.languages["cs"] || "Czech" },
     { value: "ca", label: translations.languages["ca"] || "Catalan" },
-    
+
     // Asian languages
     { value: "hi", label: translations.languages["hi"] || "Hindi" },
     { value: "bn", label: translations.languages["bn"] || "Bengali" },
@@ -210,7 +209,7 @@ export function TranslatePanel({ dict }: TranslatePanelProps) {
     { value: "km", label: translations.languages["km"] || "Khmer" },
     { value: "lo", label: translations.languages["lo"] || "Lao" },
     { value: "mn", label: translations.languages["mn"] || "Mongolian" },
-    
+
     // Other languages
     { value: "az", label: translations.languages["az"] || "Azerbaijani" },
     { value: "ka", label: translations.languages["ka"] || "Georgian" },
@@ -245,11 +244,12 @@ export function TranslatePanel({ dict }: TranslatePanelProps) {
     }
 
     // 添加API密钥验证
+    const { translate, validateApiKey } = getTranslationFunctions(aiProvider);
     try {
       await validateApiKey(apiKey);
     } catch (err) {
       let errorMessage = translations.apiKeyErrors.validationFailed;
-      
+
       if (err instanceof Error) {
         if (err.message.includes('format')) {
           errorMessage = translations.apiKeyErrors.invalidFormat;
@@ -259,7 +259,7 @@ export function TranslatePanel({ dict }: TranslatePanelProps) {
           errorMessage = translations.apiKeyErrors.rateLimitReached;
         }
       }
-      
+
       toast({
         variant: "destructive",
         title: translations.errorTitle,
@@ -274,46 +274,23 @@ export function TranslatePanel({ dict }: TranslatePanelProps) {
     setError("");
     setProgress(0);
     setCancelTranslation(false);
+    setCompletedLangsCount(0);
 
     const startTime = Date.now();
-    
+
     try {
       const content = await readFileContent(file);
       const jsonContent = JSON.parse(content);
-      
-      const savedProgress = localStorage.getItem(`translation_progress_${file.name}`);
-      const savedChunks = savedProgress ? JSON.parse(savedProgress) : {};
-      
-      const chunks = chunkJsonObject(jsonContent, {
-        maxKeys: 50,
-        maxSize: 4000,
-        preserveStructure: true
-      });
-      
-      const calculatedTotalChunks = chunks.length * selectedLangs.length;
-      setTotalChunks(calculatedTotalChunks);
-      let currentCompletedChunks = 0;
-      setCompletedChunks(currentCompletedChunks);
-      
-      const results: TranslatedResult[] = [...translatedResults];
-      
-      // Get languages that have been completely translated
-      const completedLangs = translatedResults
-        .filter(result => {
-          try {
-            // Check if the translation content is complete
-            const translatedContent = JSON.parse(result.content);
-            const originalContent = JSON.parse(content);
-            // Compare the number of keys to determine if it's completely translated
-            return Object.keys(translatedContent).length === Object.keys(originalContent).length;
-          } catch {
-            return false;
-          }
-        })
-        .map(result => result.lang);
 
-      // Filter out languages that haven't been translated
-      const remainingLangs = selectedLangs.filter(lang => !completedLangs.includes(lang));
+      const fileContent = JSON.stringify(jsonContent, null, 2);
+      const totalLangs = selectedLangs.length;
+      let currentCompletedLangs = 0;
+
+      const results: TranslatedResult[] = [...translatedResults];
+
+      const remainingLangs = selectedLangs.filter(
+        (lang) => !translatedResults.some((r) => r.lang === lang)
+      );
 
       // If all selected languages are already translated
       if (remainingLangs.length === 0) {
@@ -324,134 +301,59 @@ export function TranslatePanel({ dict }: TranslatePanelProps) {
         return;
       }
 
-      // Only translate languages that haven't been completed
       for (const lang of remainingLangs) {
         if (cancelTranslation) break;
-        
+
         setCurrentTranslatingLang(lang);
-        const translatedChunks: Record<string, any>[] = [];
-        const savedLangChunks = savedChunks[lang] || [];
-        
-        // Initialize the translated content for the current language
-        let currentLangContent = mergeTranslatedChunks(savedLangChunks);
-        
-        // If there's already saved content, add it to the results
-        if (Object.keys(currentLangContent).length > 0) {
-          const resultIndex = results.findIndex(r => r.lang === lang);
-          if (resultIndex !== -1) {
-            results[resultIndex] = {
-              lang,
-              content: JSON.stringify(currentLangContent, null, 2)
-            };
-          } else {
-            results.push({
-              lang,
-              content: JSON.stringify(currentLangContent, null, 2)
-            });
-          }
-          setTranslatedResults([...results]);
-        }
 
-        for (let i = savedLangChunks.length; i < chunks.length; i++) {
-          if (cancelTranslation) {
-            break
-          }
-          
-          try {
-            const chunk = chunks[i]
-            const translatedChunk = await translate(
-              JSON.stringify(chunk),
-              lang,
-              apiKey,
-              controller.signal,
-              (progress) => {
-                const singleChunkProgress = progress / 100
-                const overallProgress = ((currentCompletedChunks + singleChunkProgress) / calculatedTotalChunks) * 100
-                setTotalProgress(Math.round(overallProgress))
-              },
-              (content) => {
-                setStreamContent(content)
-                try {
-                  // 如果翻译被取消，不进行 JSON 解析
-                  if (cancelTranslation) return
-                  
-                  const parsedStreamContent = JSON.parse(`{${content}}`)
-                  const mergedContent = mergeTranslatedChunks([
-                    currentLangContent,
-                    parsedStreamContent
-                  ])
-                  
-                  const resultIndex = results.findIndex(r => r.lang === lang)
-                  if (resultIndex !== -1) {
-                    results[resultIndex] = {
-                      lang,
-                      content: JSON.stringify(mergedContent, null, 2)
-                    }
-                  } else {
-                    results.push({
-                      lang,
-                      content: JSON.stringify(mergedContent, null, 2)
-                    })
-                  }
-                  setTranslatedResults([...results])
-                } catch (error) {
-                  // 如果是取消操作，忽略错误
-                  if (cancelTranslation) return
-                  
-                  console.warn('Stream content parse error:', error)
-                }
+        try {
+          const translatedContent = await translate(
+            fileContent,
+            lang,
+            apiKey,
+            controller.signal,
+            (progress) => {
+              // Since we are not chunking, progress can be simplified
+              const overallProgress = ((completedLangsCount + progress / 100) / totalLangs) * 100;
+              setTotalProgress(Math.round(overallProgress));
+            },
+            (streamedContent) => {
+              const cleanedContent = cleanJsonString(streamedContent);
+              setStreamContent(cleanedContent);
+              const resultIndex = results.findIndex((r) => r.lang === lang);
+              const newResult = { lang, content: cleanedContent };
+              if (resultIndex !== -1) {
+                results[resultIndex] = newResult;
+              } else {
+                results.push(newResult);
               }
-            )
-            
-            // 如果翻译被取消，跳出循环
-            if (!translatedChunk || cancelTranslation) {
-              break
+              setTranslatedResults([...results]);
             }
+          );
 
-            const parsedChunk = JSON.parse(translatedChunk)
-            translatedChunks.push(parsedChunk)
-            
-            currentLangContent = mergeTranslatedChunks([
-              currentLangContent,
-              parsedChunk
-            ])
-
-            const resultIndex = results.findIndex(r => r.lang === lang)
+          if (translatedContent) {
+            const cleanedContent = cleanJsonString(translatedContent);
+            const resultIndex = results.findIndex((r) => r.lang === lang);
             if (resultIndex !== -1) {
-              results[resultIndex] = {
-                lang,
-                content: JSON.stringify(currentLangContent, null, 2)
-              }
+              results[resultIndex].content = cleanedContent;
             } else {
-              results.push({
-                lang,
-                content: JSON.stringify(currentLangContent, null, 2)
-              })
+              results.push({ lang, content: cleanedContent });
             }
-            setTranslatedResults([...results])
-            
-            savedChunks[lang] = translatedChunks
-            localStorage.setItem(
-              `translation_progress_${file.name}`,
-              JSON.stringify(savedChunks)
-            )
-            
-            currentCompletedChunks++
-            setCompletedChunks(currentCompletedChunks)
-          } catch (error) {
-            // 如果是取消操作，跳出循环
-            if (cancelTranslation || (error instanceof DOMException && error.name === 'AbortError')) {
-              break
-            }
-            // 其他错误则继续处理下一个块
-            continue
+            setTranslatedResults([...results]);
+            currentCompletedLangs++;
+            setCompletedLangsCount(currentCompletedLangs);
+            setTotalProgress(Math.round((currentCompletedLangs / totalLangs) * 100));
           }
+        } catch (error) {
+          if (cancelTranslation || (error instanceof DOMException && error.name === 'AbortError')) {
+            break;
+          }
+          handleTranslationError(error);
+          continue;
         }
       }
-      
-      // Clear saved progress
-      localStorage.removeItem(`translation_progress_${file.name}`);
-      
+
+
       // 只有在非取消状态下才显示完成提示
       if (!cancelTranslation) {
         toast({
@@ -459,7 +361,7 @@ export function TranslatePanel({ dict }: TranslatePanelProps) {
           description: translations.translationCompleted
         });
       }
-      
+
     } catch (err) {
       handleTranslationError(err);
     } finally {
@@ -468,7 +370,6 @@ export function TranslatePanel({ dict }: TranslatePanelProps) {
       setStreamContent('');
       setCurrentTranslatingLang(null);
       setEstimatedTime(0); // Reset estimated time
-      setCompletedChunks(0);
     }
   };
 
@@ -481,7 +382,6 @@ export function TranslatePanel({ dict }: TranslatePanelProps) {
     setIsTranslating(false)
     setProgress(0)
     setTotalProgress(0)
-    setTotalChunks(0)
     setCurrentTranslatingLang(null)
     setStreamContent("")
     // 清除保存的进度
@@ -492,7 +392,6 @@ export function TranslatePanel({ dict }: TranslatePanelProps) {
       title: translations.cancelled,
       description: translations.translationCancelled
     })
-    setCompletedChunks(0)
   }
 
   // Add a function to check saved progress
@@ -562,13 +461,12 @@ export function TranslatePanel({ dict }: TranslatePanelProps) {
         <div className="grid grid-cols-3 gap-2 mt-1">
           {/* Common languages */}
           {commonLanguages.map(option => (
-            <label 
-              key={option.value} 
-              className={`flex items-center justify-center px-4 py-2 rounded-full cursor-pointer transition-colors text-sm ${
-                selectedLangs.includes(option.value) 
-                  ? 'bg-primary text-primary-foreground' 
+            <label
+              key={option.value}
+              className={`flex items-center justify-center px-4 py-2 rounded-full cursor-pointer transition-colors text-sm ${selectedLangs.includes(option.value)
+                  ? 'bg-primary text-primary-foreground'
                   : 'bg-muted hover:bg-muted/80'
-              }`}
+                }`}
             >
               <input
                 type="checkbox"
@@ -593,12 +491,12 @@ export function TranslatePanel({ dict }: TranslatePanelProps) {
           className="mt-4 w-full rounded-full shadow-none border-none"
           onClick={() => setShowMoreLanguages(!showMoreLanguages)}
         >
-          {showMoreLanguages 
-            ? translations.hideMoreLanguages 
+          {showMoreLanguages
+            ? translations.hideMoreLanguages
             : translations.showMoreLanguages
           }
-          <ChevronDown 
-            className={`ml-2 h-4 w-4 transform ${showMoreLanguages ? "rotate-180" : ""}`} 
+          <ChevronDown
+            className={`ml-2 h-4 w-4 transform ${showMoreLanguages ? "rotate-180" : ""}`}
           />
         </Button>
 
@@ -606,13 +504,12 @@ export function TranslatePanel({ dict }: TranslatePanelProps) {
         {showMoreLanguages && (
           <div className="grid grid-cols-3 gap-2 mt-2">
             {moreLanguages.map(option => (
-              <label 
-                key={option.value} 
-                className={`flex items-center justify-center px-4 py-2 rounded-full cursor-pointer transition-colors text-sm ${
-                  selectedLangs.includes(option.value) 
-                    ? 'bg-primary text-primary-foreground' 
+              <label
+                key={option.value}
+                className={`flex items-center justify-center px-4 py-2 rounded-full cursor-pointer transition-colors text-sm ${selectedLangs.includes(option.value)
+                    ? 'bg-primary text-primary-foreground'
                     : 'bg-muted hover:bg-muted/80'
-                }`}
+                  }`}
               >
                 <input
                   type="checkbox"
@@ -632,6 +529,7 @@ export function TranslatePanel({ dict }: TranslatePanelProps) {
           </div>
         )}
       </div>
+
       {error && (
         <div className="text-red-500 text-sm">{error}</div>
       )}
@@ -641,11 +539,11 @@ export function TranslatePanel({ dict }: TranslatePanelProps) {
           <div className="space-y-2">
             <div className="flex items-center justify-between text-sm">
               <span>{translations.overallProgress} ({totalProgress}%)</span>
-              <span>{translations.completedSegments}: {completedChunks}/{totalChunks || 1}</span>
+              <span>{translations.completedLanguages}: {completedLangsCount}/{selectedLangs.length}</span>
             </div>
             <Progress value={totalProgress} className="w-full" />
           </div>
-          
+
           {currentTranslatingLang && (
             <div className="text-sm text-muted-foreground">
               {translations.translatingLanguage}: {
@@ -657,8 +555,8 @@ export function TranslatePanel({ dict }: TranslatePanelProps) {
       )}
 
       <div className="flex gap-2">
-        <Button 
-          className="flex-1 bg-blue-600 hover:bg-blue-700 text-white py-6 text-lg font-medium rounded-full shadow-none" 
+        <Button
+          className="flex-1 bg-blue-600 hover:bg-blue-700 text-white py-6 text-lg font-medium rounded-full shadow-none"
           onClick={() => {
             if (!file) {
               toast({
@@ -670,7 +568,7 @@ export function TranslatePanel({ dict }: TranslatePanelProps) {
             }
             if (!apiKey) {
               toast({
-                variant: "destructive", 
+                variant: "destructive",
                 title: translations.errorTitle,
                 description: translations.enterApiKey
               });
@@ -696,7 +594,7 @@ export function TranslatePanel({ dict }: TranslatePanelProps) {
         </Button>
 
         {isTranslating && (
-          <Button 
+          <Button
             variant="outline"
             onClick={handleCancel}
             className="w-24 py-6 shadow-none rounded-full"
@@ -706,7 +604,7 @@ export function TranslatePanel({ dict }: TranslatePanelProps) {
         )}
       </div>
 
-      
+
     </div>
   )
-} 
+}

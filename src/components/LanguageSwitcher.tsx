@@ -19,7 +19,7 @@ export default function LanguageSwitcher() {
   const [currentLang, setCurrentLang] = useState('')
   const [open, setOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
-  
+
   useEffect(() => {
     setMounted(true)
     setCurrentLang(pathname.split('/')[1])
@@ -29,10 +29,10 @@ export default function LanguageSwitcher() {
     const handleScroll = () => {
       setScrolled(window.scrollY > 0)
     }
-    
+
     window.addEventListener('scroll', handleScroll)
     handleScroll() // 初始检查
-    
+
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
@@ -47,27 +47,27 @@ export default function LanguageSwitcher() {
   return (
     <Popover open={open} onOpenChange={setOpen}>
       <PopoverTrigger asChild>
-        <Button 
-          variant="ghost" 
+        <Button
+          variant="ghost"
           size="sm"
           className={cn(
             "flex items-center gap-2 px-2 h-9",
-            scrolled 
-              ? "text-foreground hover:text-foreground bg-gray-100/0 hover:bg-gray-100 px-3 rounded-full" 
+            scrolled
+              ? "text-foreground hover:text-foreground bg-gray-100/0 hover:bg-gray-100 px-3 rounded-full text-white"
               : "text-white hover:text-white hover:bg-white/10 px-3 rounded-full"
           )}
         >
           <Globe className={cn(
             "h-4 w-4",
-            scrolled ? "text-foreground" : "text-white"
+            "text-white"
           )} />
           <span className="hidden sm:inline-block">
             {localeNames[currentLang as keyof typeof localeNames]}
           </span>
         </Button>
       </PopoverTrigger>
-      <PopoverContent 
-        className="w-[200px] p-2 rounded-2xl shadow-none" 
+      <PopoverContent
+        className="w-[200px] p-2 rounded-2xl shadow-none"
         align="end"
       >
         <div className="grid gap-1">

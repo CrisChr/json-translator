@@ -14,6 +14,8 @@ interface TranslateContextType {
   setSourceLang: (lang: string) => void
   apiKey: string
   setApiKey: (key: string) => void
+  aiProvider: string
+  setAiProvider: (provider: string) => void
   isTranslating: boolean
   setIsTranslating: (status: boolean) => void
   translatedContent: string
@@ -43,6 +45,7 @@ export function TranslateProvider({ children }: { children: React.ReactNode }) {
   const [file, setFile] = useState<File | null>(null)
   const [sourceLang, setSourceLang] = useState('en')
   const [apiKey, setApiKey] = useState('')
+  const [aiProvider, setAiProvider] = useState('deepseek')
   const [isTranslating, setIsTranslating] = useState(false)
   const [translatedContent, setTranslatedContent] = useState('')
   const [progress, setProgress] = useState(0)
@@ -71,6 +74,8 @@ export function TranslateProvider({ children }: { children: React.ReactNode }) {
     setSourceLang,
     apiKey,
     setApiKey,
+    aiProvider,
+    setAiProvider,
     isTranslating,
     setIsTranslating,
     translatedContent,
@@ -107,4 +112,4 @@ export function useTranslate() {
     throw new Error('useTranslate must be used within a TranslateProvider')
   }
   return context
-} 
+}

@@ -1,6 +1,6 @@
 {
   "hero": {
-    "badge": "DeepSeek AI 驱动",
+    "badge": "AI 驱动",
     "title": "i18n JSON 国际化翻译工具",
     "description": "使用 AI 技术快速翻译您的 JSON 语言文件。快速、准确、易用。",
     "features": {
@@ -43,7 +43,7 @@
       },
       {
         "title": "AI 驱动翻译",
-        "description": "使用 DeepSeek V3 模型确保专业术语的准确性和自然表达"
+        "description": "使用 AI 模型确保专业术语的准确性和自然表达"
       },
       {
         "title": "安全可靠",
@@ -56,8 +56,15 @@
     "description": "上传需要翻译的 JSON 文件",
     "dragText": "拖拽文件到此处或点击上传",
     "supportText": "支持 .json 格式文件，最大 10MB",
-    "apiKeyTitle": "DeepSeek API 密钥",
+    "apiKeyTitle": "API 密钥",
     "apiKeyPlaceholder": "sk-...",
+    "aiProviderTitle": "AI 提供商",
+    "aiProviders": {
+      "deepseek": "DeepSeek",
+      "openai": "OpenAI",
+      "google": "Google Gemini",
+      "claude": "Claude"
+    },
     "errors": {
       "selectFile": "请选择文件",
       "jsonExtension": "请上传 .json 格式的文件",
@@ -70,7 +77,7 @@
     },
     "errorTitle": "错误",
     "successTitle": "成功",
-    "apiKeyTip": "提示：翻译功能需要 DeepSeek API 密钥"
+    "apiKeyTip": "提示：翻译功能需要 API 密钥"
   },
   "translateSection": {
     "title": "选择目标语言",
@@ -92,7 +99,7 @@
     "showMoreLanguages": "显示更多语言",
     "hideMoreLanguages": "隐藏更多语言",
     "overallProgress": "总体进度",
-    "completedSegments": "已完成片段",
+    "completedLanguages": "已完成语言",
     "translatingLanguage": "正在翻译",
     "tip": "提示",
     "allLanguagesTranslated": "所有选择的语言已翻译完成",
@@ -124,6 +131,7 @@
     },
     "actions": {
       "copy": "复制",
+      "clear": "清除",
       "download": "下载",
       "downloadAll": "下载所有翻译",
       "downloadFormat": "下载{lang}翻译"
@@ -205,7 +213,7 @@
       },
       {
         "question": "如何使用这个工具？",
-        "answer": "1. 上传需要翻译的 JSON 文件\n2. 选择目标语言\n3. 输入 DeepSeek API Key\n4. 点击开始翻译\n5. 翻译完成后下载结果"
+        "answer": "1. 上传需要翻译的 JSON 文件\n2. 选择目标语言\n3. 输入 API Key\n4. 点击开始翻译\n5. 翻译完成后下载结果"
       },
       {
         "question": "支持哪些语言？",
@@ -217,7 +225,7 @@
       },
       {
         "question": "如何保证翻译质量？",
-        "answer": "我们使用 DeepSeek 的 V3 模型进行翻译，确保专业术语的准确性和语言表达的自然性。我们还支持自定义词典功能来保持特定术语的一致性。"
+        "answer": "我们使用 AI 模型进行翻译，确保专业术语的准确性和语言表达的自然性。我们还支持自定义词典功能来保持特定术语的一致性。"
       },
       {
         "question": "文件大小有限制吗？",

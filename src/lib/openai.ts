@@ -1,128 +1,70 @@
-import OpenAI from 'openai'
+import { OpenAI } from "openai";
+
+const openai = new OpenAI({
+  baseURL: "https://api.openai.com/v1",
+  apiKey: "dummy", // The actual key will be passed from the component
+  dangerouslyAllowBrowser: true,
+});
 
 export async function translate(
-  text: string, 
-  targetLang: string, 
+  json: string,
+  targetLang: string,
   apiKey: string,
-  signal?: AbortSignal,
-  onProgress?: (progress: number) => void,
-  onStream?: (chunk: string) => void
-) {
-  if (!apiKey.startsWith('sk-')) {
-    throw new Error('Invalid API Key format')
+  signal: AbortSignal,
+  onProgress: (progress: number) => void,
+  onStream: (content: string) => void
+): Promise<string | null> {
+  openai.apiKey = apiKey;
+
+  const stream = await openai.chat.completions.create({
+    model: "gpt-4o-mini",
+    messages: [
+      {
+        role: "system",
+        content: `You are a professional JSON translator. Your task is to translate the given JSON object into ${targetLang}. Please maintain the original JSON structure and only translate the string values. Do not translate the keys. Return only the translated JSON object as a string, without any additional text or explanations.`,
+      },
+      {
+        role: "user",
+        content: json,
+      },
+    ],
+    stream: true,
+  });
+
+  let translatedContent = "";
+  const estimatedTokens = json.length / 4; // 估算总 token 数
+  let receivedTokens = 0;
+
+  for await (const chunk of stream) {
+    if (signal.aborted) {
+      stream.controller.abort();
+      return null;
+    }
+    const content = chunk.choices[0]?.delta?.content || "";
+    translatedContent += content;
+    receivedTokens += content.length / 4;
+    
+    const progress = Math.min(Math.round((receivedTokens / estimatedTokens) * 100), 100);
+    onProgress(progress);
+
+    onStream(translatedContent);
   }
 
-  const openai = new OpenAI({ 
-    apiKey,
-    baseURL: 'https://api.deepseek.com',
-    dangerouslyAllowBrowser: true
-  })
-
-  try {
-    const prompt = `Please translate the following JSON content to ${targetLang}, keep the JSON structure unchanged, only translate the value part.
-    Note:
-    1. Keep all keys unchanged
-    2. Only translate value parts
-    3. Keep JSON format valid
-    4. Keep all special characters and formats
-    
-    JSON content:
-    ${text}`
-
-    const response = await openai.chat.completions.create({
-      model: "deepseek-chat",
-      messages: [
-        {
-          role: "system",
-          content: "You are a professional JSON translation assistant. Please return the translated JSON content directly, without adding any markdown tags or other formats."
-        },
-        {
-          role: "user",
-          content: prompt
-        }
-      ],
-      temperature: 0.3,
-      stream: true
-    }, {
-      signal
-    })
-
-    let fullContent = ''
-    let tokenCount = 0
-    const estimatedTokens = text.length / 4 // Estimate total token count
-
-    for await (const chunk of response) {
-      const content = chunk.choices[0]?.delta?.content || ''
-      fullContent += content
-      tokenCount += content.length / 4
-
-      // Calculate current progress
-      const progress = Math.min(Math.round((tokenCount / estimatedTokens) * 100), 100)
-      onProgress?.(progress)
-      
-      onStream?.(fullContent)
-    }
-
-    // Validate final JSON format
-    try {
-      const parsedJson = JSON.parse(fullContent)
-      fullContent = JSON.stringify(parsedJson, null, 2)
-    } catch (e) {
-      if (signal?.aborted) {
-        return ''
-      }
-      throw new Error(`Invalid translation result format: ${(e as Error).message}`)
-    }
-
-    return fullContent
-
-  } catch (error: unknown) {
-    if (signal?.aborted || (error instanceof DOMException && error.name === 'AbortError')) {
-      return ''
-    }
-    
-    if (error instanceof OpenAI.APIError) {
-      if (error.status === 401) {
-        throw new Error('Invalid or expired API Key')
-      }
-      
-      if (error.status === 429) {
-        throw new Error('API call limit reached')
-      }
-    }
-    
-    throw error
-  }
+  return translatedContent;
 }
 
-export async function validateApiKey(apiKey: string): Promise<boolean> {
-  if (!apiKey.startsWith('sk-')) {
-    throw new Error('Invalid API Key format')
-  }
-
-  const openai = new OpenAI({ 
-    apiKey,
-    baseURL: 'https://api.deepseek.com',
-    dangerouslyAllowBrowser: true
-  })
-
+export async function validateApiKey(apiKey: string): Promise<void> {
+  openai.apiKey = apiKey;
   try {
-    // Send a minimal request to validate the API key
-    await openai.chat.completions.create({
-      model: "deepseek-chat",
-      messages: [{ role: "user", content: "test" }],
-      max_tokens: 1
-    })
-    return true
-  } catch (error) {
-    if (error instanceof OpenAI.APIError) {
-      if (error.status === 401) {
-        throw new Error('Invalid or expired API Key')
-      }
-      if (error.status === 429) {
-        throw new Error('API call limit reached')
+    await openai.models.list();
+  } catch (error: any) {
+    if (error.response) {
+      if (error.response.status === 401) {
+        throw new Error("Invalid or expired API Key");
+      } else if (error.response.status === 429) {
+        throw new Error("API call limit reached");
       }
     }
-    throw error
+    throw new Error("API Key validation failed");
   }
-} 
+}

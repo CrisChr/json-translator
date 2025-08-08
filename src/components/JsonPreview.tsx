@@ -1,13 +1,11 @@
 "use client"
 
 import { useTranslate } from "@/context/TranslateContext"
-import { useState, useEffect, memo, useRef } from "react"
-import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
-import { oneDark } from 'react-syntax-highlighter/dist/esm/styles/prism'
+import { useState, useEffect, useRef } from "react"
 import { Button } from "./ui/button"
-import { CopyIcon, ExpandIcon, ShrinkIcon, DownloadIcon } from "lucide-react"
+import { CopyIcon, DownloadIcon, XIcon } from "lucide-react"
 import { useToast } from "@/hooks/use-toast"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import JSZip from 'jszip'
 import dynamic from 'next/dynamic';
 
@@ -27,6 +25,7 @@ interface JsonPreviewProps {
       };
       actions: {
         copy: string;
+        clear: string;
         download: string;
         downloadAll: string;
         downloadFormat: string;
@@ -44,7 +43,7 @@ interface JsonPreviewProps {
 }
 
 export const JsonPreview: React.FC<JsonPreviewProps> = ({ dict }) => {
-  const { file, translatedResults, streamContent, isTranslating, currentTranslatingLang } = useTranslate()
+  const { file, translatedResults, streamContent, isTranslating, currentTranslatingLang, resetTranslation } = useTranslate()
   const [sourceContent, setSourceContent] = useState<string>("")
   const [activeTab, setActiveTab] = useState<string>("")
   const { selectedLangs } = useTranslate()
@@ -64,6 +63,7 @@ export const JsonPreview: React.FC<JsonPreviewProps> = ({ dict }) => {
     },
     actions: {
       copy: dict?.jsonPreview?.actions?.copy || "Copy",
+      clear: dict?.jsonPreview?.actions?.clear || "Clear",
       download: dict?.jsonPreview?.actions?.download || "Download",
       downloadAll: dict?.jsonPreview?.actions?.downloadAll || "Download all translations",
       downloadFormat: dict?.jsonPreview?.actions?.downloadFormat || "Download {lang} translation"
@@ -295,6 +295,7 @@ export const JsonPreview: React.FC<JsonPreviewProps> = ({ dict }) => {
                 <Button
                   variant="ghost"
                   size="sm"
+                  disabled={isTranslating}
                   onClick={() => {
                     const content = translatedResults.find(r => r.lang === activeTab)?.content || '';
                     handleCopy(content);
@@ -305,6 +306,7 @@ export const JsonPreview: React.FC<JsonPreviewProps> = ({ dict }) => {
                 <Button
                   variant="outline"
                   size="sm"
+                  disabled={isTranslating}
                   onClick={() => handleDownload(activeTab)}
                   className="flex items-center gap-2 shadow-none"
                 >
@@ -317,19 +319,32 @@ export const JsonPreview: React.FC<JsonPreviewProps> = ({ dict }) => {
               </>
 
             )}
-            {translatedResults.length > 0 && (
-              <Button
-                variant="outline"
-                size="sm"
-                onClick={handleDownloadAll}
-                className="flex items-center gap-2 shadow-none"
-              >
-                <DownloadIcon className="h-4 w-4" />
-                {translations.actions.downloadAll}
-              </Button>
-            )}
+              {translatedResults.length > 0 && (
+                <Button
+                  variant="outline"
+                  size="sm"
+                  disabled={isTranslating}
+                  onClick={handleDownloadAll}
+                  className="flex items-center gap-2 shadow-none"
+                >
+                  <DownloadIcon className="h-4 w-4" />
+                  {translations.actions.downloadAll}
+                </Button>
+              )}
+              {translatedResults.length > 0 && (
+                <Button
+                  variant="destructive"
+                  size="sm"
+                  disabled={isTranslating}
+                  onClick={resetTranslation}
+                  className="flex items-center gap-2 shadow-none"
+                >
+                  <XIcon className="h-4 w-4" />
+                  {translations.actions.clear}
+                </Button>
+              )}
+            </div>
           </div>
-        </div>
 
         <Tabs defaultValue={selectedLangs[0]} value={activeTab} onValueChange={setActiveTab} className="w-full">
           <VirtualizedJson
@@ -356,4 +371,4 @@ export const JsonPreview: React.FC<JsonPreviewProps> = ({ dict }) => {
       </div>
     </div>
   )
-} 
+}

@@ -1,88 +1,95 @@
 {
   "hero": {
-    "badge": "Zasilane przez DeepSeek AI",
-    "title": "i18n Narzędzie do tłumaczenia JSON",
-    "description": "Szybko tłumacz swoje pliki językowe JSON za pomocą technologii AI. Szybko, dokładnie i łatwo w użyciu.",
+    "badge": "Obsługiwane przez AI",
+    "title": "Narzędzie do tłumaczenia JSON z obsługą wielu języków",
+    "description": "Użyj technologii AI, aby szybko przetłumaczyć swoje pliki językowe JSON. Szybko, dokładnie i łatwo.",
     "features": {
-      "multilanguage": "Wsparcie wielojęzyczne",
+      "multilanguage": "Obsługa wielu języków",
       "realtime": "Tłumaczenie w czasie rzeczywistym"
     }
   },
   "workflow": {
-    "title": "Pełne tłumaczenie w czterech prostych krokach",
+    "title": "Przetłumacz w czterech prostych krokach",
     "description": "Uprościliśmy proces tłumaczenia plików JSON, aby pomóc Ci szybko uzyskać wysokiej jakości wyniki tłumaczenia",
-    "steps": {
-      "0": {
+    "steps": [
+      {
         "title": "Prześlij plik JSON",
-        "description": "Wsparcie dla przeciągania i upuszczania lub kliknij, aby wybrać plik"
+        "description": "Obsługuje przesyłanie metodą przeciągnij i upuść lub kliknij, aby wybrać plik"
       },
-      "1": {
-        "title": "Wybierz docelowy język",
-        "description": "Wybierz docelowy język do tłumaczenia"
+      {
+        "title": "Wybierz język docelowy",
+        "description": "Wybierz język docelowy, na który chcesz przetłumaczyć"
       },
-      "2": {
+      {
         "title": "Rozpocznij tłumaczenie",
-        "description": "Wprowadź klucz API i rozpocznij tłumaczenie AI"
+        "description": "Wprowadź swój klucz API i rozpocznij tłumaczenie AI"
       },
-      "3": {
-        "title": "Pobierz wyniki",
+      {
+        "title": "Pobierz wynik",
         "description": "Pobierz przetłumaczony plik JSON"
       }
-    }
+    ]
   },
   "features": {
-    "title": "Potężne funkcje tłumaczenia",
-    "items": {
-      "0": {
+    "title": "Zaawansowane funkcje tłumaczenia",
+    "items": [
+      {
         "title": "Zachowaj strukturę JSON",
-        "description": "Inteligentnie rozpoznawaj i utrzymuj strukturę, wcięcia i format oryginalnego pliku JSON"
+        "description": "Inteligentnie identyfikuje i zachowuje strukturę, wcięcie i formatowanie oryginalnego pliku JSON"
       },
-      "1": {
-        "title": "Wsparcie dla wielu języków",
-        "description": "Wsparcie dla tłumaczenia między wieloma językami, w tym angielskim, chińskim, japońskim i innymi"
+      {
+        "title": "Obsługa wielu języków",
+        "description": "Obsługuje tłumaczenie między wieloma językami, w tym angielskim, chińskim, japońskim i wieloma innymi"
       },
-      "2": {
-        "title": "Tłumaczenie zasilane AI",
-        "description": "Wykorzystanie modeli DeepSeek V3, aby zapewnić dokładność terminów technicznych i naturalne wyrażenie"
+      {
+        "title": "Tłumaczenie oparte na AI",
+        "description": "Wykorzystuje modele AI, aby zapewnić dokładność i naturalne wyrażenie profesjonalnej terminologii"
       },
-      "3": {
+      {
         "title": "Bezpieczne i niezawodne",
-        "description": "Klucze API są używane tylko tymczasowo w przeglądarce i nigdy nie są zapisywane ani przesyłane na serwery"
+        "description": "Klucz API jest używany tylko tymczasowo w przeglądarce i nigdy nie jest zapisywany ani przesyłany na serwer"
       }
-    }
+    ]
   },
   "uploadSection": {
     "title": "Prześlij plik JSON",
-    "description": "Prześlij swój plik JSON do tłumaczenia",
-    "dragText": "Przeciągnij pliki tutaj lub kliknij, aby przesłać",
-    "supportText": "Obsługuje pliki w formacie .json, do 10MB",
-    "apiKeyTip": "Wskazówki: Klucz API DeepSeek jest wymagany do tłumaczenia",
+    "description": "Prześlij plik JSON, który chcesz przetłumaczyć",
+    "dragText": "Przeciągnij i upuść pliki tutaj lub kliknij, aby przesłać",
+    "supportText": "Obsługuje pliki .json do 10 MB",
+    "apiKeyTitle": "Klucz API",
+    "apiKeyPlaceholder": "sk-...",
+    "aiProviderTitle": "Dostawca AI",
+    "aiProviders": {
+      "deepseek": "DeepSeek",
+      "openai": "OpenAI",
+      "google": "Google Gemini",
+      "claude": "Claude"
+    },
     "errors": {
-      "selectFile": "Proszę wybrać plik",
-      "jsonExtension": "Proszę przesłać plik z rozszerzeniem .json",
-      "fileSize": "Rozmiar pliku nie może przekraczać 10MB",
-      "jsonFormat": "Nieprawidłowy format JSON, proszę sprawdzić zawartość pliku",
+      "selectFile": "Wybierz plik",
+      "jsonExtension": "Prześlij plik .json",
+      "fileSize": "Rozmiar pliku nie może przekraczać 10 MB",
+      "jsonFormat": "Nieprawidłowy format JSON, sprawdź zawartość pliku",
       "emptyJson": "Plik JSON nie może być pusty"
     },
     "success": {
       "uploaded": "Plik przesłany pomyślnie"
     },
-    "apiKeyTitle": "Klucz API DeepSeek",
-    "apiKeyPlaceholder": "sk-...",
     "errorTitle": "Błąd",
-    "successTitle": "Sukces"
+    "successTitle": "Sukces",
+    "apiKeyTip": "Wskazówka: Funkcja tłumaczenia wymaga klucza API"
   },
   "translateSection": {
-    "title": "Wybierz docelowy język",
-    "description": "Wybierz języki do tłumaczenia"
+    "title": "Wybierz język docelowy",
+    "description": "Wybierz język docelowy, na który chcesz przetłumaczyć"
   },
   "translatePanel": {
     "startTranslate": "Rozpocznij tłumaczenie",
     "translating": "Tłumaczenie...",
     "cancel": "Anuluj",
-    "uploadFirst": "Proszę najpierw przesłać plik",
-    "enterApiKey": "Proszę wprowadzić klucz API",
-    "foundUnfinished": "Znaleziono niedokończone tłumaczenie",
+    "uploadFirst": "Najpierw prześlij plik",
+    "enterApiKey": "Wprowadź swój klucz API",
+    "foundUnfinished": "Znaleziono nieukończone tłumaczenie",
     "continueTranslation": "Kontynuuj tłumaczenie",
     "translationCancelled": "Tłumaczenie anulowane",
     "invalidApiKey": "Nieprawidłowy format klucza API",
@@ -92,158 +99,159 @@
     "showMoreLanguages": "Pokaż więcej języków",
     "hideMoreLanguages": "Ukryj więcej języków",
     "overallProgress": "Ogólny postęp",
-    "completedSegments": "Zakończone segmenty",
+    "completedLanguages": "Zakończone języki",
     "translatingLanguage": "Tłumaczenie",
-    "allLanguagesTranslated": "Wszystkie wybrane języki zostały przetłumaczone",
-    "pleaseUploadAndEnterKey": "Proszę przesłać plik i wprowadzić klucz API",
     "tip": "Wskazówka",
+    "allLanguagesTranslated": "Wszystkie wybrane języki zostały przetłumaczone.",
+    "pleaseSelectLanguage": "Wybierz co najmniej jeden język docelowy",
+    "pleaseUploadAndEnterKey": "Prześlij plik i wprowadź klucz API",
     "cancelled": "Anulowane",
     "translationFailed": "Tłumaczenie nie powiodło się",
-    "pleaseSelectLanguage": "Proszę wybrać co najmniej jeden język docelowy",
-    "bytes": "Bajty",
+    "bytes": "bajtów",
     "kb": "KB",
     "mb": "MB",
     "gb": "GB",
     "apiKeyErrors": {
       "invalidFormat": "Nieprawidłowy format klucza API",
       "invalidOrExpired": "Nieprawidłowy lub wygasły klucz API",
-      "rateLimitReached": "Osiągnięto limit wywołań API",
+      "rateLimitReached": "Osiągnięto limit szybkości wywołań API",
       "validationFailed": "Weryfikacja klucza API nie powiodła się"
     }
   },
   "jsonPreview": {
     "title": "Podgląd",
-    "empty": "Podgląd JSON pojawi się tutaj",
+    "empty": "Podgląd JSON zostanie wyświetlony tutaj",
     "copied": "Skopiowano do schowka",
     "originalJson": "Oryginalny JSON",
     "translatedJson": "Przetłumaczony JSON",
-    "tips": "Wskazówki: Obsługuje podgląd w czasie rzeczywistym i formatowanie plików JSON, a zawartość można bezpośrednio skopiować",
+    "tips": "Wskazówka: Obsługuje podgląd w czasie rzeczywistym i sformatowane pliki JSON. Możesz kopiować zawartość bezpośrednio.",
     "placeholder": {
-      "upload": "Proszę przesłać plik JSON",
-      "translation": "Wyniki tłumaczenia będą wyświetlane tutaj"
+      "upload": "Prześlij plik JSON",
+      "translation": "Wyniki tłumaczenia zostaną wyświetlone tutaj"
     },
     "actions": {
       "copy": "Kopiuj",
+      "clear": "Wyczyść",
       "download": "Pobierz",
       "downloadAll": "Pobierz wszystkie tłumaczenia",
       "downloadFormat": "Pobierz tłumaczenie {lang}"
     },
     "toast": {
-      "copySuccess": "Zawartość została skopiowana do schowka",
-      "copyError": "Kopiowanie nie powiodło się, proszę skopiować ręcznie",
-      "downloadSuccess": "Plik tłumaczenia {lang} został pobrany",
-      "downloadAllSuccess": "Wszystkie pliki tłumaczeń zostały pobrane",
-      "downloadError": "Pobieranie nie powiodło się, proszę spróbować ponownie"
+      "copySuccess": "Zawartość skopiowana do schowka",
+      "copyError": "Kopiowanie nie powiodło się, skopiuj ręcznie",
+      "downloadSuccess": "Plik tłumaczenia {lang} pobrany",
+      "downloadAllSuccess": "Wszystkie pliki tłumaczeń pobrane",
+      "downloadError": "Pobieranie nie powiodło się, spróbuj ponownie"
     },
     "languages": {
       "en": "Angielski",
-      "zh": "Chiński (uproszczony)",
-      "zh-TW": "Chiński (tradycyjny)",
-      "ja": "Japoński",
-      "ko": "Koreański",
-      "fr": "Francuski",
-      "de": "Niemiecki",
-      "es": "Hiszpański",
-      "pt": "Portugalski",
-      "it": "Włoski",
       "ru": "Rosyjski",
+      "es": "Hiszpański",
+      "de": "Niemiecki",
+      "tr": "Turecki",
+      "fr": "Francuski",
+      "ja": "Japoński",
+      "pt": "Portugalski",
+      "zh": "Chiński uproszczony",
+      "zh-TW": "Chiński tradycyjny",
+      "it": "Włoski",
       "ar": "Arabski",
-      "hi": "Hindi",
-      "bn": "Bengalski",
+      "pl": "Polski",
+      "el": "Grecki",
+      "nl": "Holenderski",
+      "id": "Indonezyjski",
+      "ko": "Koreański",
       "th": "Tajski",
       "vi": "Wietnamski",
-      "id": "Indonezyjski",
-      "ms": "Malajski",
-      "tr": "Turecki",
-      "nl": "Holenderski",
-      "pl": "Polski",
+      "fa": "Perski",
       "uk": "Ukraiński",
-      "el": "Grecki",
-      "he": "Hebrajski",
+      "he": "Hebrajki",
       "sv": "Szwedzki",
-      "da": "Duński",
-      "fi": "Fiński",
-      "cs": "Czeski",
       "ro": "Rumuński",
       "hu": "Węgierski",
+      "da": "Duński",
       "sk": "Słowacki",
+      "sr": "Serbski",
       "bg": "Bułgarski",
+      "fi": "Fiński",
       "hr": "Chorwacki",
       "lt": "Litewski",
+      "nb": "Norweski (bokmål)",
       "sl": "Słoweński",
-      "et": "Estoński",
       "lv": "Łotewski",
-      "sr": "Serbski",
-      "mt": "Maltański",
-      "fa": "Perski",
+      "et": "Estoński",
+      "cs": "Czeski",
+      "ca": "Kataloński",
+      "hi": "Hindi",
+      "bn": "Bengalski",
+      "ta": "Tamil",
       "ur": "Urdu",
-      "ta": "Tamilski",
-      "te": "Telugu",
-      "ml": "Malajalam",
+      "gu": "Gudżarati",
       "kn": "Kannada",
+      "ml": "Malajalam",
       "mr": "Marathi",
-      "gu": "Gujarat",
+      "ms": "Malajski",
       "my": "Birmański",
-      "km": "Khmer",
-      "lo": "Lao",
-      "mn": "Mongolski",
-      "ka": "Gruziński",
-      "hy": "Ormiański",
+      "km": "Khmerski",
+      "lo": "Laotański",
+      "mn": "Mongołski",
       "az": "Azerbejdżański",
+      "ka": "Gruziński",
+      "hy": "Ormeński",
       "sw": "Suahili",
       "af": "Afrykański",
       "am": "Amharski"
     }
   },
   "faq": {
-    "title": "Najczęściej Zadawane Pytania",
-    "description": "Typowe pytania dotyczące narzędzia do tłumaczenia JSON",
-    "items": {
-      "0": {
+    "title": "Często zadawane pytania",
+    "description": "Często zadawane pytania dotyczące narzędzia do tłumaczenia JSON",
+    "items": [
+      {
         "question": "Co robi to narzędzie?",
-        "answer": "To narzędzie do tłumaczenia JSON zasilane sztuczną inteligencją, które pomaga programistom szybko tłumaczyć pliki językowe JSON na wiele języków, zachowując integralność struktury JSON."
+        "answer": "To jest narzędzie do tłumaczenia JSON obsługiwane przez AI, które pomaga programistom szybko tłumaczyć pliki językowe JSON na wiele języków, zachowując integralność struktury JSON."
       },
-      "1": {
+      {
         "question": "Jak korzystać z tego narzędzia?",
-        "answer": "1. Prześlij swój plik JSON do tłumaczenia\n2. Wybierz docelowe języki\n3. Wprowadź swój klucz API DeepSeek\n4. Kliknij rozpocznij tłumaczenie\n5. Pobierz wyniki po zakończeniu tłumaczenia"
+        "answer": "1. Prześlij plik JSON, który chcesz przetłumaczyć\n2. Wybierz język docelowy\n3. Wprowadź swój klucz API\n4. Kliknij Rozpocznij tłumaczenie\n5. Pobierz wynik po zakończeniu tłumaczenia"
       },
-      "2": {
+      {
         "question": "Jakie języki są obsługiwane?",
-        "answer": "Obecnie obsługuje wiele języków, w tym angielski, chiński (uproszczony), chiński (tradycyjny), japoński, koreański, francuski, niemiecki, hiszpański, rosyjski i inne."
+        "answer": "Obecnie obsługuje wiele języków, w tym angielski, chiński uproszczony, chiński tradycyjny, japoński, koreański, francuski, niemiecki, hiszpański, rosyjski i wiele innych."
       },
-      "3": {
-        "question": "Czy mój klucz API będzie zapisany?",
-        "answer": "Nie. Twój klucz API jest używany tylko tymczasowo w przeglądarce i nie będzie zapisany ani przesyłany do żadnych serwerów."
+      {
+        "question": "Czy mój klucz API zostanie zapisany?",
+        "answer": "Nie. Twój klucz API jest używany tylko tymczasowo w przeglądarce i nie będzie zapisywany ani przesyłany na żaden serwer."
       },
-      "4": {
-        "question": "Jak zapewniana jest jakość tłumaczenia?",
-        "answer": "Używamy modelu V3 DeepSeek do tłumaczenia, zapewniając dokładność terminów technicznych i naturalnego wyrażenia językowego. Obsługujemy również funkcjonalność niestandardowego słownika, aby utrzymać spójność określonej terminologii."
+      {
+        "question": "Jak zapewnić jakość tłumaczenia?",
+        "answer": "Używamy modeli AI do tłumaczenia, aby zapewnić dokładność profesjonalnej terminologii i naturalność wyrazu językowego. Obsługujemy również funkcje niestandardowego słownika, aby zachować spójność określonych terminów."
       },
-      "5": {
+      {
         "question": "Czy istnieje limit rozmiaru pliku?",
-        "answer": "Rozmiar pojedynczego pliku JSON jest ograniczony do 10MB. W przypadku większych plików zaleca się ich podział i tłumaczenie w partiach."
+        "answer": "Maksymalny rozmiar pojedynczego pliku JSON wynosi 10 MB. W przypadku większych plików zaleca się tłumaczenie ich partiami."
       }
-    }
+    ]
   },
   "cta": {
-    "title": "Zacznij korzystać z narzędzia do tłumaczenia AI teraz",
+    "title": "Użyj narzędzia do tłumaczenia AI już teraz",
     "description": "Szybko i dokładnie przetłumacz swoje pliki językowe JSON na wiele języków",
     "button": "Wypróbuj teraz",
-    "features": {
-      "0": "Brak wymagań rejestracyjnych",
-      "1": "Całkowicie za darmo",
-      "2": "Tłumaczenie w czasie rzeczywistym"
-    }
+    "features": [
+      "Nie wymaga rejestracji",
+      "Zupełnie za darmo",
+      "Tłumaczenie w czasie rzeczywistym"
+    ]
   },
   "footer": {
-    "creator": "Stworzone z ❤️ przez Red",
+    "creator": "Stworzone przez Red z ❤️",
     "twitter": "@chrisgostrong",
-    "coffee": "Postaw mi kawę",
+    "coffee": "Kup mi kawę",
     "github": "GitHub"
   },
   "metadata": {
-    "title": "Tłumacz JSON - Wielojęzyczne rozwiązanie tłumaczeniowe oparte na AI",
-    "description": "Szybko i dokładnie tłumacz pliki językowe JSON na wiele języków za pomocą technologii AI. Obsługuje strukturę JSON, zmienne i tagi HTML.",
-    "keywords": "tłumaczenie JSON,tłumaczenie AI,internacjonalizacja,i18n,tłumaczenie wielojęzyczne,DeepSeek"
+    "title": "Narzędzie do tłumaczenia JSON - rozwiązanie do tłumaczenia wielojęzycznego oparte na AI",
+    "description": "Użyj technologii AI, aby szybko i dokładnie przetłumaczyć pliki językowe JSON na wiele języków. Obsługuje zachowanie struktury JSON, zmiennych symboli zastępczych i tagów HTML.",
+    "keywords": "tłumaczenie i18n, tłumaczenie JSON, tłumaczenie AI, narzędzie do tłumaczenia dla programistów, lokalizacja oprogramowania, lokalizacja witryny, lokalizacja aplikacji, narzędzie do internacjonalizacji, tłumaczenie automatyczne, tłumaczenie kodu, React i18n, Vue i18n, Next.js i18n, Angular i18n, Svelte i18n, automatyczne tłumaczenie i18next, narzędzie next-intl, biblioteka JavaScript i18n, Flutter i18n, React Native i18n, tłumaczenie aplikacji iOS, tłumaczenie aplikacji Android, integracja GitHub i18n, wtyczka VS Code i18n, Node.js i18n, tłumaczenie plików ARB, tłumaczenie plików JSON oparte na AI, rozwiązanie i18n dla programistów, automatyczne tłumaczenie plików językowych JSON, tłumacz JSON online, bezpłatne narzędzie do tłumaczenia i18n, wydajny proces internacjonalizacji oprogramowania, najlepsze praktyki i18n, ciągła usługa lokalizacji, tworzenie wielojęzycznych witryn internetowych, narzędzie do lokalizacji gier, lokalizacja wspomagana przez AI, system zarządzania tłumaczeniami, TMS, zwinna lokalizacja, API tłumaczeń, tłumaczenie jednym kliknięciem wszystkich języków, jak wdrożyć wielojęzyczne witryny, jak przeprowadzić internacjonalizację aplikacji, automatyczny proces tłumaczenia front-endu, zmniejszenie kosztów lokalizacji, szybkie uruchomienie wielojęzycznych wersji, jak zarządzać wielojęzycznymi plikami JSON, narzędzie do współpracy zespołu tłumaczy, rozwiązywanie problemów i18n, jak zachować spójność tłumaczeń, najlepsze narzędzie do tłumaczenia JSON"
   }
 }

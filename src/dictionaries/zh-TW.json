@@ -1,129 +1,137 @@
 {
   "hero": {
-    "badge": "DeepSeek AI 驅動",
-    "title": "i18n JSON 翻譯工具",
-    "description": "使用 AI 技術快速翻譯您的 JSON 語言文件。快速、準確且易於使用。",
+    "badge": "AI 驅動",
+    "title": "i18n JSON國際化翻譯工具",
+    "description": "使用AI技術快速翻譯您的JSON語言檔案。快速、準確且易於使用。",
     "features": {
-      "multilanguage": "多語言支持",
-      "realtime": "實時翻譯"
+      "multilanguage": "多語言支援",
+      "realtime": "即時翻譯"
     }
   },
   "workflow": {
     "title": "四個簡單步驟完成翻譯",
-    "description": "我們簡化了 JSON 文件翻譯過程，幫助您快速獲得高質量的翻譯結果",
-    "steps": {
-      "0": {
-        "title": "上傳 JSON 文件",
-        "description": "支持拖放或點擊選擇文件"
+    "description": "我們簡化了JSON檔案翻譯流程，幫助您快速獲得高品質的翻譯結果",
+    "steps": [
+      {
+        "title": "上傳JSON檔案",
+        "description": "支援拖放上傳或點擊選擇檔案"
       },
-      "1": {
+      {
         "title": "選擇目標語言",
-        "description": "選擇翻譯的目標語言"
+        "description": "選擇您需要翻譯到的目標語言"
       },
-      "2": {
+      {
         "title": "開始翻譯",
-        "description": "輸入 API 密鑰並開始 AI 翻譯"
+        "description": "輸入您的API Key並開始AI翻譯"
       },
-      "3": {
+      {
         "title": "下載結果",
-        "description": "下載翻譯後的 JSON 文件"
+        "description": "下載翻譯後的JSON檔案"
       }
-    }
+    ]
   },
   "features": {
     "title": "強大的翻譯功能",
-    "items": {
-      "0": {
-        "title": "保留 JSON 結構",
-        "description": "智能識別並保持原始 JSON 文件的結構、縮排和格式"
+    "items": [
+      {
+        "title": "保留JSON結構",
+        "description": "智慧識別並保留原始JSON檔案的結構、縮排和格式"
       },
-      "1": {
-        "title": "多語言支持",
-        "description": "支持多種語言之間的翻譯，包括英語、中文、日語等"
+      {
+        "title": "多語言支援",
+        "description": "支援多種語言之間的翻譯，包括英文、中文、日文等"
       },
-      "2": {
-        "title": "AI 驅動的翻譯",
-        "description": "利用 DeepSeek V3 模型確保技術術語的準確性和自然表達"
+      {
+        "title": "AI 驅動翻譯",
+        "description": "使用AI模型確保專業術語的準確性和自然表達"
       },
-      "3": {
+      {
         "title": "安全可靠",
-        "description": "API 密鑰僅在瀏覽器中暫時使用，從不保存或傳輸到伺服器"
+        "description": "API Key僅在瀏覽器中臨時使用，絕不會儲存或傳輸到伺服器"
       }
-    }
+    ]
   },
   "uploadSection": {
-    "title": "上傳 JSON 文件",
-    "description": "上傳您的 JSON 文件以進行翻譯",
-    "dragText": "將文件拖到這裡或點擊上傳",
-    "supportText": "支持 .json 格式文件，最大 10MB",
-    "apiKeyTip": "提示：翻譯需要 DeepSeek API 密鑰",
+    "title": "上傳JSON檔案",
+    "description": "上傳您需要翻譯的JSON檔案",
+    "dragText": "將檔案拖放到這裡或點擊上傳",
+    "supportText": "支援大小不超過10MB的.json檔案",
+    "apiKeyTitle": "API Key",
+    "apiKeyPlaceholder": "sk-...",
+    "aiProviderTitle": "AI 提供者",
+    "aiProviders": {
+      "deepseek": "DeepSeek",
+      "openai": "OpenAI",
+      "google": "Google Gemini",
+      "claude": "Claude"
+    },
     "errors": {
-      "selectFile": "請選擇一個文件",
-      "jsonExtension": "請上傳一個 .json 擴展名的文件",
-      "fileSize": "文件大小不能超過 10MB",
-      "jsonFormat": "無效的 JSON 格式，請檢查文件內容",
-      "emptyJson": "JSON 文件不能為空"
+      "selectFile": "請選擇檔案",
+      "jsonExtension": "請上傳.json檔案",
+      "fileSize": "檔案大小不能超過10MB",
+      "jsonFormat": "JSON格式無效，請檢查檔案內容",
+      "emptyJson": "JSON檔案不能為空"
     },
     "success": {
-      "uploaded": "文件上傳成功"
+      "uploaded": "檔案上傳成功"
     },
-    "apiKeyTitle": "DeepSeek API 密鑰",
-    "apiKeyPlaceholder": "sk-...",
     "errorTitle": "錯誤",
-    "successTitle": "成功"
+    "successTitle": "成功",
+    "apiKeyTip": "提示：翻譯功能需要API Key"
   },
   "translateSection": {
     "title": "選擇目標語言",
-    "description": "選擇要翻譯的語言"
+    "description": "選擇您需要翻譯到的目標語言"
   },
   "translatePanel": {
     "startTranslate": "開始翻譯",
     "translating": "翻譯中...",
     "cancel": "取消",
-    "uploadFirst": "請先上傳文件",
-    "enterApiKey": "請輸入 API 密鑰",
+    "uploadFirst": "請先上傳檔案",
+    "enterApiKey": "請輸入您的API Key",
     "foundUnfinished": "發現未完成的翻譯",
     "continueTranslation": "繼續翻譯",
     "translationCancelled": "翻譯已取消",
-    "invalidApiKey": "無效的 API 密鑰格式",
+    "invalidApiKey": "API Key格式無效",
     "errorTitle": "錯誤",
     "successTitle": "成功",
     "translationCompleted": "翻譯完成！",
     "showMoreLanguages": "顯示更多語言",
     "hideMoreLanguages": "隱藏更多語言",
     "overallProgress": "整體進度",
-    "completedSegments": "已完成段落",
+    "completedLanguages": "已完成語言",
     "translatingLanguage": "翻譯中",
-    "allLanguagesTranslated": "所有選擇的語言已翻譯",
-    "pleaseUploadAndEnterKey": "請上傳文件並輸入 API 金鑰",
     "tip": "提示",
+    "allLanguagesTranslated": "所有選定的語言都已翻譯完成。",
+    "pleaseSelectLanguage": "請至少選擇一種目標語言",
+    "pleaseUploadAndEnterKey": "請上傳檔案並輸入您的API Key",
     "cancelled": "已取消",
     "translationFailed": "翻譯失敗",
-    "pleaseSelectLanguage": "請至少選擇一種目標語言",
     "bytes": "位元組",
     "kb": "KB",
     "mb": "MB",
     "gb": "GB",
     "apiKeyErrors": {
-      "invalidFormat": "無效的 API 密鑰格式",
-      "invalidOrExpired": "無效或已過期的 API 密鑰",
-      "rateLimitReached": "API 調用次數已達上限",
-      "validationFailed": "API 密鑰驗證失敗"
+      "invalidFormat": "API Key格式無效",
+      "invalidOrExpired": "API Key無效或已過期",
+      "rateLimitReached": "API呼叫速率限制已達上限",
+      "validationFailed": "API Key驗證失敗"
     }
   },
   "jsonPreview": {
     "title": "預覽",
-    "empty": "JSON 預覽將顯示在這裡",
+    "empty": "JSON預覽將顯示在此處",
     "copied": "已複製到剪貼簿",
-    "originalJson": "原始 JSON",
-    "translatedJson": "翻譯後的 JSON",
-    "tips": "提示：支持 JSON 文件的即時預覽和格式化，您可以直接複製內容",
+    "originalJson": "原始JSON",
+    "translatedJson": "翻譯後的JSON",
+    "tips": "提示：支援即時預覽和格式化的JSON檔案。您可以直接複製內容。",
     "placeholder": {
-      "upload": "請上傳一個 JSON 文件",
-      "translation": "翻譯結果將顯示在這裡"
+      "upload": "請上傳JSON檔案",
+      "translation": "翻譯結果將顯示在此處"
     },
     "actions": {
       "copy": "複製",
+      "clear": "清除",
       "download": "下載",
       "downloadAll": "下載所有翻譯",
       "downloadFormat": "下載 {lang} 翻譯"
@@ -131,119 +139,119 @@
     "toast": {
       "copySuccess": "內容已複製到剪貼簿",
       "copyError": "複製失敗，請手動複製",
-      "downloadSuccess": "{lang} 翻譯文件已下載",
-      "downloadAllSuccess": "所有翻譯文件已下載",
-      "downloadError": "下載失敗，請再試一次"
+      "downloadSuccess": "{lang} 翻譯檔案已下載",
+      "downloadAllSuccess": "所有翻譯檔案已下載",
+      "downloadError": "下載失敗，請重試"
     },
     "languages": {
-      "en": "英語",
-      "zh": "中文（簡體）",
-      "zh-TW": "中文（繁體）",
-      "ja": "日語",
-      "ko": "韓語",
-      "fr": "法語",
-      "de": "德語",
-      "es": "西班牙語",
-      "pt": "葡萄牙語",
-      "it": "意大利語",
-      "ru": "俄語",
-      "ar": "阿拉伯語",
-      "hi": "印地語",
-      "bn": "孟加拉語",
-      "th": "泰語",
-      "vi": "越南語",
-      "id": "印尼語",
-      "ms": "馬來語",
-      "tr": "土耳其語",
-      "nl": "荷蘭語",
-      "pl": "波蘭語",
-      "uk": "烏克蘭語",
-      "el": "希臘語",
-      "he": "希伯來語",
-      "sv": "瑞典語",
-      "da": "丹麥語",
-      "fi": "芬蘭語",
-      "cs": "捷克語",
-      "ro": "羅馬尼亞語",
-      "hu": "匈牙利語",
-      "sk": "斯洛伐克語",
-      "bg": "保加利亞語",
-      "hr": "克羅地亞語",
-      "lt": "立陶宛語",
-      "sl": "斯洛文尼亞語",
-      "et": "愛沙尼亞語",
-      "lv": "拉脫維亞語",
-      "sr": "塞爾維亞語",
-      "mt": "馬耳他語",
-      "fa": "波斯語",
-      "ur": "烏爾都語",
-      "ta": "泰米爾語",
-      "te": "泰盧固語",
-      "ml": "馬拉雅拉姆語",
-      "kn": "卡納達語",
-      "mr": "馬拉地語",
-      "gu": "古吉拉特語",
-      "my": "緬甸語",
-      "km": "高棉語",
-      "lo": "老撾語",
-      "mn": "蒙古語",
-      "ka": "喬治亞語",
-      "hy": "亞美尼亞語",
-      "az": "阿塞拜疆語",
-      "sw": "斯瓦希里語",
-      "af": "南非荷蘭語",
-      "am": "阿姆哈拉語"
+      "en": "英文",
+      "ru": "俄文",
+      "es": "西班牙文",
+      "de": "德文",
+      "tr": "土耳其文",
+      "fr": "法文",
+      "ja": "日文",
+      "pt": "葡萄牙文",
+      "zh": "簡體中文",
+      "zh-TW": "繁體中文",
+      "it": "義大利文",
+      "ar": "阿拉伯文",
+      "pl": "波蘭文",
+      "el": "希臘文",
+      "nl": "荷蘭文",
+      "id": "印尼文",
+      "ko": "韓文",
+      "th": "泰文",
+      "vi": "越南文",
+      "fa": "波斯文",
+      "uk": "烏克蘭文",
+      "he": "希伯來文",
+      "sv": "瑞典文",
+      "ro": "羅馬尼亞文",
+      "hu": "匈牙利文",
+      "da": "丹麥文",
+      "sk": "斯洛伐克文",
+      "sr": "塞爾維亞文",
+      "bg": "保加利亞文",
+      "fi": "芬蘭文",
+      "hr": "克羅埃西亞文",
+      "lt": "立陶宛文",
+      "nb": "挪威書面語",
+      "sl": "斯洛維尼亞文",
+      "lv": "拉脫維亞文",
+      "et": "愛沙尼亞文",
+      "cs": "捷克文",
+      "ca": "加泰隆尼亞文",
+      "hi": "印地文",
+      "bn": "孟加拉文",
+      "ta": "泰米爾文",
+      "ur": "烏爾都文",
+      "gu": "古吉拉特文",
+      "kn": "卡納達文",
+      "ml": "馬拉雅拉姆文",
+      "mr": "馬拉地文",
+      "ms": "馬來文",
+      "my": "緬甸文",
+      "km": "高棉文",
+      "lo": "寮國文",
+      "mn": "蒙古文",
+      "az": "亞塞拜然文",
+      "ka": "喬治亞文",
+      "hy": "亞美尼亞文",
+      "sw": "斯瓦希里文",
+      "af": "南非荷蘭文",
+      "am": "阿姆哈拉文"
     }
   },
   "faq": {
     "title": "常見問題",
-    "description": "有關 JSON 翻譯工具的常見問題",
-    "items": {
-      "0": {
+    "description": "關於JSON翻譯工具的常見問題",
+    "items": [
+      {
         "question": "這個工具是做什麼的？",
-        "answer": "這是一個由 AI 驅動的 JSON 國際化翻譯工具，幫助開發者快速將 JSON 語言文件翻譯成多種語言，同時保持 JSON 結構的完整性。"
+        "answer": "這是一個AI驅動的JSON國際化翻譯工具，幫助開發人員快速將JSON語言檔案翻譯成多種語言，同時保持JSON結構的完整性。"
       },
-      "1": {
+      {
         "question": "如何使用這個工具？",
-        "answer": "1. 上傳您的 JSON 文件進行翻譯\n2. 選擇目標語言\n3. 輸入您的 DeepSeek API 密鑰\n4. 點擊開始翻譯\n5. 翻譯完成後下載結果"
+        "answer": "1. 上傳您需要翻譯的JSON檔案\n2. 選擇目標語言\n3. 輸入您的API Key\n4. 點擊開始翻譯\n5. 翻譯完成後下載結果"
       },
-      "2": {
-        "question": "支持哪些語言？",
-        "answer": "目前支持多種語言，包括英語、中文（簡體）、中文（繁體）、日語、韓語、法語、德語、西班牙語、俄語等。"
+      {
+        "question": "支援哪些語言？",
+        "answer": "目前支援多種語言，包括英文、簡體中文、繁體中文、日文、韓文、法文、德文、西班牙文、俄文等等。"
       },
-      "3": {
-        "question": "我的 API 金鑰會被保存嗎？",
-        "answer": "不會。您的 API 金鑰僅在瀏覽器中暫時使用，不會被保存或傳輸到任何伺服器。"
+      {
+        "question": "我的API Key會被儲存嗎？",
+        "answer": "不會。您的API Key僅在瀏覽器中臨時使用，不會被儲存或傳輸到任何伺服器。"
       },
-      "4": {
-        "question": "如何確保翻譯質量？",
-        "answer": "我們使用 DeepSeek 的 V3 模型進行翻譯，確保技術術語的準確性和自然語言表達。我們還支持自定義字典功能，以保持特定術語的一致性。"
+      {
+        "question": "如何確保翻譯品質？",
+        "answer": "我們使用AI模型進行翻譯，以確保專業術語的準確性和語言表達的自然性。我們也支援自定義詞典功能，以保持特定術語的一致性。"
       },
-      "5": {
+      {
         "question": "是否有檔案大小限制？",
-        "answer": "單個 JSON 檔案大小限制為 10MB。對於較大的檔案，建議將其拆分並分批翻譯。"
+        "answer": "單個JSON檔案的最大大小為10MB。對於較大的檔案，建議分批翻譯。"
       }
-    }
+    ]
   },
   "cta": {
-    "title": "立即開始使用 AI 翻譯工具",
-    "description": "快速準確地將您的 JSON 語言檔案翻譯成多種語言",
+    "title": "立即使用AI翻譯工具",
+    "description": "快速且準確地將您的JSON語言檔案翻譯成多種語言",
     "button": "立即試用",
-    "features": {
-      "0": "無需註冊",
-      "1": "完全免費",
-      "2": "即時翻譯"
-    }
+    "features": [
+      "無需註冊",
+      "完全免費",
+      "即時翻譯"
+    ]
   },
   "footer": {
-    "creator": "由 Red ❤️ 創建",
+    "creator": "由Red用心製作 ❤️",
     "twitter": "@chrisgostrong",
     "coffee": "請我喝杯咖啡",
     "github": "GitHub"
   },
   "metadata": {
-    "title": "JSON翻譯工具 - AI驅動的多語言翻譯解決方案",
-    "description": "使用AI技術快速準確地將JSON語言文件翻譯成多種語言。支持保持JSON結構、變量佔位符和HTML標籤。",
-    "keywords": "JSON翻譯,AI翻譯,國際化,i18n,多語言翻譯,DeepSeek,線上工具"
+    "title": "JSON翻譯工具 - AI 驅動的多語言翻譯方案",
+    "description": "使用AI技術快速準確地將JSON語言檔案翻譯成多種語言。支援保留JSON結構、變數佔位符和HTML標籤。",
+    "keywords": "i18n翻譯, JSON翻譯, AI翻譯, 開發者翻譯工具, 軟體本地化, 網站本地化, App本地化, 國際化工具, 自動翻譯, 程式碼翻譯, React i18n, Vue i18n, Next.js i18n, Angular i18n, Svelte i18n, i18next自動翻譯, next-intl工具, JavaScript i18n函式庫, Flutter i18n, React Native i18n, iOS App翻譯, Android App翻譯, GitHub i18n整合, VS Code i18n外掛程式, Node.js i18n, ARB檔案翻譯, AI驅動的JSON檔案翻譯, 開發者專屬i18n解決方案, JSON語言檔案的自動翻譯, 線上JSON翻譯器, 免費i18n翻譯工具, 高效的軟體國際化流程, 最佳i18n實務, 持續的本地化服務, 多語言網站開發, 遊戲本地化工具, AI輔助本地化, 翻譯管理系統, TMS, 敏捷本地化, 翻譯API, 一鍵翻譯所有語言, 如何實現多語言網站, 如何進行App國際化, 自動化的前端翻譯流程, 降低本地化成本, 快速推出多語言版本, 如何管理多語言JSON檔案, 翻譯團隊協作工具, 解決i18n痛點, 如何保持翻譯一致性, 最佳JSON翻譯工具"
   }
 }

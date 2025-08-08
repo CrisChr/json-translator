@@ -1,10 +1,11 @@
 'use client'
 
 import { Input } from "@/components/ui/input"
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { useTranslate } from "@/context/TranslateContext"
 import { useToast } from "@/hooks/use-toast"
 import { parseJson } from "@/lib/json-utils"
-import { UploadIcon, FileJson2Icon, KeyIcon, Languages, FileIcon } from "lucide-react"
+import { UploadIcon, FileJson2Icon, KeyIcon, Bot, FileIcon } from "lucide-react"
 import { useState } from "react"
 
 interface FileUploadProps {
@@ -16,6 +17,13 @@ interface FileUploadProps {
     apiKeyTip: string;
     apiKeyTitle: string;
     apiKeyPlaceholder: string;
+    aiProviderTitle: string;
+    aiProviders: {
+      deepseek: string;
+      openai: string;
+      google: string;
+      claude: string;
+    };
     errorTitle: string;
     successTitle: string;
     errors?: {
@@ -31,15 +39,31 @@ interface FileUploadProps {
   }
 }
 
+interface AIProvidersMapping {
+  [key: string]: string;
+}
+
 export function FileUpload({ dict }: FileUploadProps) {
   const [isUploaded, setIsUploaded] = useState(false)
   const [fileInfo, setFileInfo] = useState<{ name: string; size: string } | null>(null)
   const { toast } = useToast()
-  const { setFile, apiKey, setApiKey, resetTranslation } = useTranslate()
-  
+  const { setFile, apiKey, setApiKey, resetTranslation, aiProvider, setAiProvider } = useTranslate()
+
+  const aiProvidersMapping: AIProvidersMapping = {
+    "deepseek": "DeepSeek",
+    "openai": "OpenAI",
+    "google": "Google Gemini",
+    "claude": "Claude"
+  }
+
+  const handleProviderChange = (provider: string) => {
+    setAiProvider(provider);
+    setApiKey('');
+  };
+
   const handleUpload = async (event: React.ChangeEvent<HTMLInputElement>) => {
     const files = event.target.files
-    
+
     if (!files || !files[0]) {
       toast({
         variant: "destructive",
@@ -50,7 +74,7 @@ export function FileUpload({ dict }: FileUploadProps) {
     }
 
     const file = files[0]
-    
+
     if (!file.name.endsWith('.json')) {
       toast({
         variant: "destructive",
@@ -72,7 +96,7 @@ export function FileUpload({ dict }: FileUploadProps) {
     try {
       const text = await file.text()
       const result = parseJson(text.trim())
-      
+
       if (!result.success) {
         throw new Error(result.error || dict.errors?.jsonFormat || 'Invalid JSON format')
       }
@@ -92,7 +116,7 @@ export function FileUpload({ dict }: FileUploadProps) {
         title: dict.successTitle || "Success",
         description: dict.success?.uploaded || "File uploaded successfully"
       })
-      
+
     } catch (err) {
       setIsUploaded(false)
       setFileInfo(null)
@@ -112,7 +136,7 @@ export function FileUpload({ dict }: FileUploadProps) {
   const handleDrop = async (e: React.DragEvent) => {
     e.preventDefault()
     e.stopPropagation()
-    
+
     const files = e.dataTransfer.files
     if (files && files[0]) {
       const event = { target: { files } } as React.ChangeEvent<HTMLInputElement>
@@ -131,11 +155,11 @@ export function FileUpload({ dict }: FileUploadProps) {
   return (
     <div className="w-full max-w-xl space-y-4">
       <div>
-        <label 
-          htmlFor="dropzone-file" 
+        <label
+          htmlFor="dropzone-file"
           className={`flex flex-col items-center justify-center w-full p-16 border border-dashed rounded-2xl cursor-pointer transition-colors
-            ${isUploaded 
-              ? 'border-blue-500 bg-blue-50 hover:bg-blue-100/50' 
+            ${isUploaded
+              ? 'border-blue-500 bg-blue-50 hover:bg-blue-100/50'
               : 'border-blue-300 bg-blue-50 hover:bg-blue-100/50'
             }`}
           onDragOver={handleDragOver}
@@ -179,15 +203,33 @@ export function FileUpload({ dict }: FileUploadProps) {
 
       <div>
         <h2 className="text-xl font-semibold flex items-center gap-2">
+          <Bot className="w-5 h-5" />
+          {dict.aiProviderTitle || "AI Provider"}
+        </h2>
+        <Select value={aiProvider} onValueChange={handleProviderChange}>
+          <SelectTrigger className="mt-1 shadow-none">
+            <SelectValue placeholder="Select AI Provider" />
+          </SelectTrigger>
+          <SelectContent>
+            <SelectItem value="deepseek">{dict.aiProviders?.deepseek || "DeepSeek"}</SelectItem>
+            <SelectItem value="openai">{dict.aiProviders?.openai || "OpenAI"}</SelectItem>
+            <SelectItem value="google">{dict.aiProviders?.google || "Google Gemini"}</SelectItem>
+            <SelectItem value="claude">{dict.aiProviders?.claude || "Claude"}</SelectItem>
+          </SelectContent>
+        </Select>
+      </div>
+
+      <div>
+        <h2 className="text-xl font-semibold flex items-center gap-2">
           <KeyIcon className="w-5 h-5" />
-          {dict.apiKeyTitle || "OpenAI API Key"}
+          {`${aiProvidersMapping[aiProvider]} ${dict.apiKeyTitle || "API Key"}`}
         </h2>
         <p className="text-xs text-muted-foreground pb-2">
-          {dict.apiKeyTip || "Tips: OpenAI API Key is required for translation."}
+          {dict.apiKeyTip || "Tips: API Key is required for translation."}
         </p>
-        <Input 
-          type="password" 
-          placeholder={dict.apiKeyPlaceholder || "sk-..."} 
+        <Input
+          type="password"
+          //placeholder={dict.apiKeyPlaceholder || "sk-..."} 
           className="mt-1 shadow-none"
           value={apiKey}
           onChange={(e) => setApiKey(e.target.value)}
@@ -195,4 +237,4 @@ export function FileUpload({ dict }: FileUploadProps) {
       </div>
     </div>
   )
-} 
+}
