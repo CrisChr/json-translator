@@ -63,7 +63,7 @@
       "deepseek": "DeepSeek",
       "openai": "OpenAI",
       "google": "Google Gemini",
-      "claude": "Claude"
+      "claude": "Anthropic"
     },
     "errors": {
       "selectFile": "파일을 선택해주세요",

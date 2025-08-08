@@ -53,7 +53,7 @@ export function FileUpload({ dict }: FileUploadProps) {
     "deepseek": "DeepSeek",
     "openai": "OpenAI",
     "google": "Google Gemini",
-    "claude": "Claude"
+    "claude": "Anthropic"
   }
 
   const handleProviderChange = (provider: string) => {
@@ -214,7 +214,7 @@ export function FileUpload({ dict }: FileUploadProps) {
             <SelectItem value="deepseek">{dict.aiProviders?.deepseek || "DeepSeek"}</SelectItem>
             <SelectItem value="openai">{dict.aiProviders?.openai || "OpenAI"}</SelectItem>
             <SelectItem value="google">{dict.aiProviders?.google || "Google Gemini"}</SelectItem>
-            <SelectItem value="claude">{dict.aiProviders?.claude || "Claude"}</SelectItem>
+            <SelectItem value="claude">{dict.aiProviders?.claude || "Anthropic"}</SelectItem>
           </SelectContent>
         </Select>
       </div>
