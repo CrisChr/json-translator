@@ -18,7 +18,7 @@ export const HeroSection = ({ dict }: HeroSectionProps) => {
       <div className="absolute inset-0 h-[500px] bg-gradient-to-br from-blue-600 via-blue-500 to-blue-400/50" />
       
       <div className="container mx-auto px-4 relative z-10">
-        <div className="text-center space-y-4 md:space-y-6 py-8 md:py-12">
+        <div className="text-center space-y-4 md:space-y-6 pt-24 pb-8 md:py-12">
           <div className="inline-block animate-bounce-slow">
             <span className="px-4 md:px-6 py-1.5 md:py-2 bg-white/10 rounded-full text-xs md:text-sm font-medium text-white flex items-center gap-2">
               <Sparkles className="w-3 h-3 md:w-4 md:h-4 animate-pulse" />
@@ -31,6 +31,9 @@ export const HeroSection = ({ dict }: HeroSectionProps) => {
           <p className="text-base md:text-xl text-white/80 max-w-2xl mx-auto px-4 md:px-0">
             {dict.description}
           </p>
+          <div className="pt-4 flex justify-center">
+            <a href="https://www.producthunt.com/products/i18n-translator-by-ai?embed=true&utm_source=badge-featured&utm_medium=badge&utm_source=badge-i18n-translator-by-ai" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1002973&theme=light&t=1754627927606" alt="i18n Translator by AI - Translate i18n JSON file by AI | Product Hunt" style={{width: '250px', height: '54px'}} width="250" height="54" /></a>
+          </div>
           <div className="flex flex-col md:flex-row items-center justify-center gap-3 md:gap-6 pt-2 md:pt-4">
             <div className="flex items-center space-x-2 text-xs md:text-sm text-white/90">
               <svg className="w-3 h-3 md:w-4 md:h-4" fill="currentColor" viewBox="0 0 20 20">
