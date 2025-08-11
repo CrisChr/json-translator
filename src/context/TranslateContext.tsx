@@ -1,6 +1,6 @@
 "use client"
 
-import { createContext, useContext, useState } from 'react'
+import { createContext, useContext, useState, useCallback } from 'react'
 
 interface TranslatedResult {
   lang: string
@@ -57,7 +57,7 @@ export function TranslateProvider({ children }: { children: React.ReactNode }) {
   const [totalProgress, setTotalProgress] = useState(0)
   const [estimatedTime, setEstimatedTime] = useState(0)
 
-  const resetTranslation = () => {
+  const resetTranslation = useCallback(() => {
     setTranslatedResults([]);
     setTranslatedContent('');
     setStreamContent('');
@@ -65,7 +65,7 @@ export function TranslateProvider({ children }: { children: React.ReactNode }) {
     setTotalProgress(0);
     setEstimatedTime(0);
     setCurrentTranslatingLang(null);
-  };
+  }, []); // 依赖项为空数组，确保函数引用稳定
 
   const value = {
     file,

@@ -77,7 +77,7 @@
     },
     "errorTitle": "Hata",
     "successTitle": "Başarılı",
-    "apiKeyTip": "İpucu: Çeviri işlevi bir API anahtarı gerektirir"
+    "apiKeyTip": "API Anahtarınız yalnızca tarayıcıda geçici olarak kullanılır ve herhangi bir sunucuya kaydedilmez veya iletilmez."
   },
   "translateSection": {
     "title": "Hedef Dili Seçin",

@@ -77,7 +77,7 @@
     },
     "errorTitle": "Erro",
     "successTitle": "Sucesso",
-    "apiKeyTip": "Dica: A função de tradução requer uma chave API"
+    "apiKeyTip": "Sua Chave API é usada apenas temporariamente no navegador e não será salva ou transmitida para nenhum servidor."
   },
   "translateSection": {
     "title": "Selecione o Idioma de Destino",

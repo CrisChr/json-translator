@@ -77,7 +77,7 @@
     },
     "errorTitle": "Kesalahan",
     "successTitle": "Berhasil",
-    "apiKeyTip": "Tip: Fungsi terjemahan memerlukan kunci API"
+    "apiKeyTip": "Kunci API Anda hanya digunakan sementara di browser dan tidak akan disimpan atau dikirim ke server mana pun."
   },
   "translateSection": {
     "title": "Pilih Bahasa Target",

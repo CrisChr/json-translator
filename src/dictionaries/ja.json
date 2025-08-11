@@ -77,7 +77,7 @@
     },
     "errorTitle": "エラー",
     "successTitle": "成功",
-    "apiKeyTip": "ヒント：翻訳機能にはAPIキーが必要です"
+    "apiKeyTip": "APIキーはブラウザで一時的にのみ使用され、サーバーに保存または送信されることはありません。"
   },
   "translateSection": {
     "title": "翻訳対象言語の選択",

@@ -4,6 +4,7 @@ const nextConfig = {
   experimental: {
     scrollRestoration: true,
     serverSourceMaps: false,
+    fetchCache: false,
   },
   images: {
     remotePatterns: [
@@ -41,6 +42,14 @@ const nextConfig = {
     // your project has type errors.
     // !! WARN !!
     ignoreBuildErrors: true,
+  },
+  async rewrites() {
+    return [
+      {
+        source: '/api/translate/:path*',
+        destination: 'http://localhost:3001/translate/:path*', // Proxy to your backend
+      },
+    ]
   },
 }
 

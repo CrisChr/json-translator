@@ -1,4 +1,5 @@
 import OpenAI from 'openai'
+import {decrypt} from './utils'
 
 export async function translate(
   text: string,
@@ -8,15 +9,11 @@ export async function translate(
   onProgress?: (progress: number) => void,
   onStream?: (chunk: string) => void
 ) {
-  if (!apiKey.startsWith('sk-')) {
-    throw new Error('Invalid API Key format')
-  }
 
   const openai = new OpenAI({
     apiKey,
     baseURL: 'https://api.deepseek.com',
-    dangerouslyAllowBrowser: true
-  })
+  });
 
   try {
     const prompt = `Please translate the following JSON content to ${targetLang}, keep the JSON structure unchanged, only translate the value part.
@@ -60,7 +57,7 @@ export async function translate(
       const progress = Math.min(Math.round((tokenCount / estimatedTokens) * 100), 100)
       onProgress?.(progress)
 
-      onStream?.(fullContent)
+      onStream?.(content)
     }
 
     // Clean the fullContent to extract only the JSON part
@@ -102,16 +99,13 @@ export async function translate(
   }
 }
 
-export async function validateApiKey(apiKey: string): Promise<boolean> {
-  if (!apiKey.startsWith('sk-')) {
-    throw new Error('Invalid API Key format')
-  }
+export async function validateApiKey(apiKey: string): Promise<void> {
+  console.log('apiKey: ', apiKey);
 
   const openai = new OpenAI({
-    apiKey,
+    apiKey: decrypt(apiKey),
     baseURL: 'https://api.deepseek.com',
-    dangerouslyAllowBrowser: true
-  })
+  });
 
   try {
     // Send a minimal request to validate the API key
@@ -120,7 +114,6 @@ export async function validateApiKey(apiKey: string): Promise<boolean> {
       messages: [{ role: "user", content: "test" }],
       max_tokens: 1
     })
-    return true
   } catch (error) {
     if (error instanceof OpenAI.APIError) {
       if (error.status === 401) {

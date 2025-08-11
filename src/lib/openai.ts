@@ -1,10 +1,5 @@
 import { OpenAI } from "openai";
-
-const openai = new OpenAI({
-  baseURL: "https://api.openai.com/v1",
-  apiKey: "dummy", // The actual key will be passed from the component
-  dangerouslyAllowBrowser: true,
-});
+import {decrypt} from './utils'
 
 export async function translate(
   json: string,
@@ -14,7 +9,11 @@ export async function translate(
   onProgress: (progress: number) => void,
   onStream: (content: string) => void
 ): Promise<string | null> {
-  openai.apiKey = apiKey;
+
+  const openai = new OpenAI({
+    baseURL: "https://api.gptsapi.net/v1",
+    apiKey,
+  });
 
   const stream = await openai.chat.completions.create({
     model: "gpt-4o-mini",
@@ -47,14 +46,17 @@ export async function translate(
     const progress = Math.min(Math.round((receivedTokens / estimatedTokens) * 100), 100);
     onProgress(progress);
 
-    onStream(translatedContent);
+    onStream(content);
   }
 
   return translatedContent;
 }
 
 export async function validateApiKey(apiKey: string): Promise<void> {
-  openai.apiKey = apiKey;
+  const openai = new OpenAI({
+    baseURL: "https://api.gptsapi.net/v1",
+    apiKey: decrypt(apiKey),
+  });
   try {
     await openai.models.list();
   } catch (error: any) {

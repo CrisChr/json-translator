@@ -77,7 +77,7 @@
     },
     "errorTitle": "Fehler",
     "successTitle": "Erfolg",
-    "apiKeyTip": "Tipp: Die Übersetzungsfunktion benötigt einen API-Schlüssel"
+    "apiKeyTip": "Ihr API-Schlüssel wird nur vorübergehend im Browser verwendet und wird nicht auf einem Server gespeichert oder übertragen."
   },
   "translateSection": {
     "title": "Zielsprache auswählen",

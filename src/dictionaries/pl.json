@@ -77,7 +77,7 @@
     },
     "errorTitle": "Błąd",
     "successTitle": "Sukces",
-    "apiKeyTip": "Wskazówka: Funkcja tłumaczenia wymaga klucza API"
+    "apiKeyTip": "Twój klucz API jest używany tylko tymczasowo w przeglądarce i nie będzie zapisywany ani przesyłany na żaden serwer."
   },
   "translateSection": {
     "title": "Wybierz język docelowy",

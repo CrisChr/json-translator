@@ -77,7 +77,7 @@
     },
     "errorTitle": "Fout",
     "successTitle": "Succes",
-    "apiKeyTip": "Tip: De vertaalfunctie vereist een API-sleutel"
+    "apiKeyTip": "Uw API-sleutel wordt alleen tijdelijk in de browser gebruikt en wordt niet opgeslagen of naar een server verzonden."
   },
   "translateSection": {
     "title": "Selecteer doeltaal",

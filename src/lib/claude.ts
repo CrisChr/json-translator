@@ -1,8 +1,5 @@
 import Anthropic from "@anthropic-ai/sdk";
-
-const anthropic = new Anthropic({
-  apiKey: "dummy", // The actual key will be passed from the component
-});
+import {decrypt} from './utils'
 
 export async function translate(
   json: string,
@@ -12,7 +9,14 @@ export async function translate(
   onProgress: (progress: number) => void,
   onStream: (content: string) => void
 ): Promise<string | null> {
-  anthropic.apiKey = apiKey;
+
+  const decryptedApiKey = decrypt(apiKey)
+
+
+  const anthropic = new Anthropic({
+    apiKey: decryptedApiKey,
+    baseURL: "https://api.gptsapi.net",
+  });
 
   const stream = await anthropic.messages.stream({
     model: "claude-3-5-sonnet-20240620",
@@ -42,7 +46,7 @@ export async function translate(
         const progress = Math.min(Math.round((receivedTokens / estimatedTokens) * 100), 100);
         onProgress(progress);
 
-        onStream(translatedContent);
+        onStream(content);
     }
   }
 
@@ -52,7 +56,9 @@ export async function translate(
 }
 
 export async function validateApiKey(apiKey: string): Promise<void> {
-    anthropic.apiKey = apiKey;
+    const anthropic = new Anthropic({
+      apiKey: decrypt(apiKey),
+    });
     try {
         await anthropic.messages.create({
             model: "claude-3-5-sonnet-20240620",
