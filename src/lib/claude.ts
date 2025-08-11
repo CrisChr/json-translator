@@ -15,7 +15,6 @@ export async function translate(
 
   const anthropic = new Anthropic({
     apiKey: decryptedApiKey,
-    baseURL: "https://api.gptsapi.net",
   });
 
   const stream = await anthropic.messages.stream({

@@ -11,7 +11,7 @@ export async function translate(
 ): Promise<string | null> {
 
   const openai = new OpenAI({
-    baseURL: "https://api.gptsapi.net/v1",
+    baseURL: "https://api.openai.com/v1",
     apiKey,
   });
 
@@ -54,7 +54,7 @@ export async function translate(
 
 export async function validateApiKey(apiKey: string): Promise<void> {
   const openai = new OpenAI({
-    baseURL: "https://api.gptsapi.net/v1",
+    baseURL: "https://api.openai.com/v1",
     apiKey: decrypt(apiKey),
   });
   try {
