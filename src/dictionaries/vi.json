@@ -77,7 +77,7 @@
     },
     "errorTitle": "Lỗi",
     "successTitle": "Thành công",
-    "apiKeyTip": "Mẹo: Chức năng dịch thuật yêu cầu API Key"
+    "apiKeyTip": "API Key của bạn chỉ được sử dụng tạm thời trong trình duyệt và sẽ không được lưu hoặc truyền đến bất kỳ máy chủ nào."
   },
   "translateSection": {
     "title": "Chọn ngôn ngữ đích",

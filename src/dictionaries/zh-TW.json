@@ -77,7 +77,7 @@
     },
     "errorTitle": "錯誤",
     "successTitle": "成功",
-    "apiKeyTip": "提示：翻譯功能需要API Key"
+    "apiKeyTip": "您的API Key僅在瀏覽器中臨時使用，不會被儲存或傳輸到任何伺服器。"
   },
   "translateSection": {
     "title": "選擇目標語言",

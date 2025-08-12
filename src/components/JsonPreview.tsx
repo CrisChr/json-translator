@@ -289,7 +289,7 @@ export const JsonPreview: React.FC<JsonPreviewProps> = ({ dict }) => {
       <div className="border border-border rounded-3xl p-4 md:p-6 transition-all duration-300 bg-white/90 backdrop-blur-sm">
         <div className="flex justify-between items-center mb-4">
           <h3 className="text-lg font-bold">{translations.translatedJson}</h3>
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2 flex-wrap">
             {activeTab && translatedResults.find(r => r.lang === activeTab) && (
               <>
                 <Button

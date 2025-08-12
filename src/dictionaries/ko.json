@@ -77,7 +77,7 @@
     },
     "errorTitle": "오류",
     "successTitle": "성공",
-    "apiKeyTip": "팁: 번역 기능에는 API 키가 필요합니다"
+    "apiKeyTip": "API 키는 브라우저에서 일시적으로만 사용되며 서버에 저장되거나 전송되지 않습니다."
   },
   "translateSection": {
     "title": "대상 언어 선택",
