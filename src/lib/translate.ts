@@ -1,4 +1,4 @@
-
+import { on } from "events";
 
 type TranslateFunction = (
   json: string,
@@ -13,14 +13,15 @@ type ValidateApiKeyFunction = (apiKey: string) => Promise<void>;
 
 export const getTranslationFunctions = (provider: string): { translate: TranslateFunction, validateApiKey: ValidateApiKeyFunction } => {
   const translate: TranslateFunction = async (json, targetLang, apiKey, signal, onProgress, onStream) => {
-    const url = `/api/proxy/${provider}`;
-    let translatedContent = "";
+    const url = `/api/translate/${provider}`;
 
     try {
       const response = await fetch(url, {
         method: 'POST',
         headers: {
-          'Content-Type': 'application/json',
+          'Content-Type': 'event-stream/json',
+          'Connection': 'keep-alive',
+          'Cache-Control': 'no-cache',
         },
         body: JSON.stringify({ json, targetLang, apiKey }), // 使用加密的API Key
         signal: signal,
@@ -38,6 +39,8 @@ export const getTranslationFunctions = (provider: string): { translate: Translat
       const reader = response.body.getReader();
       const decoder = new TextDecoder('utf-8');
 
+      let accumulatedContent = "";
+
       while (true) {
         const { done, value } = await reader.read();
         if (done) break;
@@ -48,13 +51,15 @@ export const getTranslationFunctions = (provider: string): { translate: Translat
         }
 
         const chunk = decoder.decode(value, { stream: true });
-        translatedContent += chunk;
-        onStream(translatedContent);
-        // 代理层不提供细粒度进度，这里可以简单地模拟或移除
-        onProgress(Math.min(translatedContent.length / json.length * 100, 100));
+        console.log('Received chunk: ', chunk);
+        accumulatedContent += chunk;
+        onStream(accumulatedContent); // 直接发送累积的内容，实现打字机效果
+
+        const progress = Math.min(Math.round((accumulatedContent.length / json.length) * 100), 100);
+        onProgress(progress); // 更新进度
       }
 
-      return translatedContent;
+      return accumulatedContent;
 
     } catch (error: any) {
       if (error.name === 'AbortError') {

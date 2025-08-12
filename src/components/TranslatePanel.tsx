@@ -331,27 +331,28 @@ export function TranslatePanel({ dict }: TranslatePanelProps) {
             },
             (streamedContent) => {
               const cleanedContent = cleanJsonString(streamedContent);
-              setStreamContent(cleanedContent);
-              const resultIndex = results.findIndex((r) => r.lang === lang);
-              const newResult = { lang, content: cleanedContent };
-              if (resultIndex !== -1) {
-                results[resultIndex] = newResult;
-              } else {
-                results.push(newResult);
-              }
-              setTranslatedResults([...results]);
+              // 优先更新流式内容，确保打字机效果的即时性
+              setStreamContent(streamedContent);
+
+              // 使用函数式更新来处理 translatedResults
+              // 这可以确保我们总是基于最新的状态进行操作，避免闭包陷阱
+              setTranslatedResults((prevResults: TranslatedResult[]) => {
+                const newResults = [...prevResults];
+                const resultIndex = newResults.findIndex(r => r.lang === lang);
+                const newResult = { lang, content: cleanedContent };
+
+                if (resultIndex !== -1) {
+                  newResults[resultIndex] = newResult;
+                } else {
+                  newResults.push(newResult);
+                }
+                return newResults;
+              });
             }
           );
 
-          if (translatedContent) {
-            const cleanedContent = cleanJsonString(translatedContent);
-            const resultIndex = results.findIndex((r) => r.lang === lang);
-            if (resultIndex !== -1) {
-              results[resultIndex].content = cleanedContent;
-            } else {
-              results.push({ lang, content: cleanedContent });
-            }
-            setTranslatedResults([...results]);
+          // 流式处理结束后，如果翻译成功（translatedContent 不为 null），则更新完成计数
+          if (translatedContent !== null) {
             currentCompletedLangs++;
             setCompletedLangsCount(currentCompletedLangs);
             setTotalProgress(Math.round((currentCompletedLangs / totalLangs) * 100));

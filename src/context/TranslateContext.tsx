@@ -27,7 +27,7 @@ interface TranslateContextType {
   streamContent: string
   setStreamContent: (content: string) => void
   translatedResults: TranslatedResult[]
-  setTranslatedResults: (results: TranslatedResult[]) => void
+  setTranslatedResults: React.Dispatch<React.SetStateAction<TranslatedResult[]>>
   selectedLangs: string[]
   setSelectedLangs: (langs: string[]) => void
   currentTranslatingLang: string | null

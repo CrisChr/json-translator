@@ -38,10 +38,12 @@ export async function POST(
     const abortController = new AbortController();
     const signal = abortController.signal;
 
-    // 设置响应头，指示流式传输
+    // 设置正确的流式响应头
     const responseHeaders = new Headers();
-    responseHeaders.set('Content-Type', 'text/plain; charset=utf-8');
-    responseHeaders.set('X-Content-Type-Options', 'nosniff'); // 安全头
+    responseHeaders.set('Content-Type', 'text/event-stream; charset=utf-8');
+    responseHeaders.set('Cache-Control', 'no-cache');
+    responseHeaders.set('Connection', 'keep-alive');
+    responseHeaders.set('X-Content-Type-Options', 'nosniff');
 
     // 直接调用翻译函数，它现在会返回一个可读流
     const stream = await translateModule.translate(
