@@ -37,6 +37,7 @@ next-env.d.ts
 # IDE
 .idea
 .vscode
+.kiro
 *.swp
 *.swo
 
@@ -48,3 +49,7 @@ next-env.d.ts
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+.clineignore
+.clinerules
+/memory-bank

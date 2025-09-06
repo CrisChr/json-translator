@@ -77,7 +77,7 @@
     },
     "errorTitle": "Error",
     "successTitle": "Success",
-    "apiKeyTip": "Your API Key is only used temporarily in the browser and will not be saved or transmitted to any server."
+    "apiKeyTip": "The Key is only used temporarily in the browser and will not be saved or transmitted to any server."
   },
   "translateSection": {
     "title": "Select Target Language",

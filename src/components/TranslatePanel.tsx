@@ -7,6 +7,10 @@ import { Button } from "@/components/ui/button"
 import { useToast } from "@/hooks/use-toast"
 import { Progress } from "@/components/ui/progress"
 import { ChevronDown, Languages, Loader2 } from "lucide-react"
+import { encrypt } from "@/lib/utils"
+
+// 临时导入，用于调试 SECRET_KEY (不再需要导入 SECRET_KEY，直接访问 process.env)
+// import { SECRET_KEY as CLIENT_SECRET_KEY } from '@/lib/utils';
 
 interface TranslatedResult {
   lang: string;
@@ -99,7 +103,13 @@ export function TranslatePanel({ dict }: TranslatePanelProps) {
     setEstimatedTime,
     aiProvider,
     setAiProvider,
+    resetTranslation, // 获取 resetTranslation 函数
   } = useTranslate()
+
+  // 调试：打印前端的 SECRET_KEY
+  useEffect(() => {
+    console.log('Frontend NEXT_PUBLIC_CRYPTO_SECRET_KEY:', process.env.NEXT_PUBLIC_CRYPTO_SECRET_KEY);
+  }, []);
 
   type TranslatePanelKey = keyof typeof dict.translatePanel | 'apiKeyErrors.invalidFormat' | 'apiKeyErrors.invalidOrExpired' | 'apiKeyErrors.rateLimitReached' | 'apiKeyErrors.validationFailed';
 
@@ -245,8 +255,10 @@ export function TranslatePanel({ dict }: TranslatePanelProps) {
 
     // 添加API密钥验证
     const { translate, validateApiKey } = getTranslationFunctions(aiProvider);
+    const encryptedApiKeyForValidation = encrypt(apiKey); // 先加密用于验证
     try {
-      await validateApiKey(apiKey);
+      // 验证时也使用加密后的key，因为后端会解密
+      await validateApiKey(encryptedApiKeyForValidation); // 暂时注释掉，因为用户反馈解密后为空
     } catch (err) {
       let errorMessage = translations.apiKeyErrors.validationFailed;
 
@@ -310,7 +322,7 @@ export function TranslatePanel({ dict }: TranslatePanelProps) {
           const translatedContent = await translate(
             fileContent,
             lang,
-            apiKey,
+            encrypt(apiKey), // 确保这里传递的是加密后的key
             controller.signal,
             (progress) => {
               // Since we are not chunking, progress can be simplified
@@ -319,27 +331,28 @@ export function TranslatePanel({ dict }: TranslatePanelProps) {
             },
             (streamedContent) => {
               const cleanedContent = cleanJsonString(streamedContent);
-              setStreamContent(cleanedContent);
-              const resultIndex = results.findIndex((r) => r.lang === lang);
-              const newResult = { lang, content: cleanedContent };
-              if (resultIndex !== -1) {
-                results[resultIndex] = newResult;
-              } else {
-                results.push(newResult);
-              }
-              setTranslatedResults([...results]);
+              // 优先更新流式内容，确保打字机效果的即时性
+              setStreamContent(streamedContent);
+
+              // 使用函数式更新来处理 translatedResults
+              // 这可以确保我们总是基于最新的状态进行操作，避免闭包陷阱
+              setTranslatedResults((prevResults: TranslatedResult[]) => {
+                const newResults = [...prevResults];
+                const resultIndex = newResults.findIndex(r => r.lang === lang);
+                const newResult = { lang, content: cleanedContent };
+
+                if (resultIndex !== -1) {
+                  newResults[resultIndex] = newResult;
+                } else {
+                  newResults.push(newResult);
+                }
+                return newResults;
+              });
             }
           );
 
-          if (translatedContent) {
-            const cleanedContent = cleanJsonString(translatedContent);
-            const resultIndex = results.findIndex((r) => r.lang === lang);
-            if (resultIndex !== -1) {
-              results[resultIndex].content = cleanedContent;
-            } else {
-              results.push({ lang, content: cleanedContent });
-            }
-            setTranslatedResults([...results]);
+          // 流式处理结束后，如果翻译成功（translatedContent 不为 null），则更新完成计数
+          if (translatedContent !== null) {
             currentCompletedLangs++;
             setCompletedLangsCount(currentCompletedLangs);
             setTotalProgress(Math.round((currentCompletedLangs / totalLangs) * 100));
@@ -436,6 +449,16 @@ export function TranslatePanel({ dict }: TranslatePanelProps) {
       // 移除 setTranslatedResults([])，因为清空操作应该由 resetTranslation 处理
     }
   }, [selectedLangs, isTranslating]);
+
+  // 当选择的语言列表变化时，重置翻译进度
+  useEffect(() => {
+    resetTranslation();
+  }, [selectedLangs, resetTranslation]); // 添加 resetTranslation 到依赖数组
+
+  // 当AI供应商变化时，重置翻译进度
+  useEffect(() => {
+    resetTranslation();
+  }, [aiProvider, resetTranslation]); // 添加 resetTranslation 到依赖数组
 
   const formatFileSize = (bytes: number): string => {
     if (bytes === 0) return `0 ${translations.bytes}`

@@ -78,7 +78,7 @@ export default function Navbar({ dict }: NavbarProps) {
 
             {/* GitHub 链接 */}
             <a
-              href="https://github.com/CrisChr"
+              href="https://github.com/CrisChr/json-translator"
               target="_blank"
               rel="noopener noreferrer"
               className={`transition-colors ${scrolled ? 'text-white hover:text-white/80' : 'text-white hover:text-white/80'
