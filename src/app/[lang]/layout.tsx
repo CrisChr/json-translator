@@ -71,7 +71,7 @@ export async function generateMetadata(
       type: 'website',
       images: [
         {
-          url: 'https://json.uiboy.com/og-image.png',
+          url: '/og-image.png',
           width: 1200,
           height: 630,
           alt: dict.metadata.title
@@ -82,7 +82,7 @@ export async function generateMetadata(
       card: 'summary_large_image',
       title: dict.metadata.title,
       description: dict.metadata.description,
-      images: ['https://json.uiboy.com/og-image.png']
+      images: ['/og-image.png']
     },
     robots: {
       index: true,
