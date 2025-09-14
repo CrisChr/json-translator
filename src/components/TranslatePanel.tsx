@@ -437,10 +437,18 @@ export function TranslatePanel({ dict }: TranslatePanelProps) {
     }
   }, [file]);
 
-  // Initialize the component
+  // Initialize the component and reset progress when selected languages change
   useEffect(() => {
-    setTotalProgress(0);
-  }, []);
+    if (!isTranslating) {
+      setTotalProgress(0);
+      setProgress(0);
+      setCompletedLangsCount(0);
+      setStreamContent('');
+      setCurrentTranslatingLang(null);
+      setEstimatedTime(0);
+      // 移除 setTranslatedResults([])，因为清空操作应该由 resetTranslation 处理
+    }
+  }, [selectedLangs, isTranslating]);
 
   // 当选择的语言列表变化时，重置翻译进度
   useEffect(() => {
