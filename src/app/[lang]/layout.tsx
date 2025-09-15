@@ -138,7 +138,6 @@ export default async function LocaleLayout(props: LayoutProps) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8598116000817169" crossOrigin="anonymous"></script>
         {/* <Analytics /> */}
         <TranslateProvider>
           <Navbar dict={dict} />
