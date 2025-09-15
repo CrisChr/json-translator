@@ -34,7 +34,7 @@ export async function generateMetadata(
   { params }: Pick<LayoutProps, 'params'>
 ): Promise<Metadata> {
   const lang = params.lang;
-  const domain = "https://jsontrans.vercel.app";
+  const domain = "https://jsontrans.fun";
 
   // 导入对应语言的字典
   const dict = await import(`@/dictionaries/${lang}.json`).then(
@@ -95,10 +95,6 @@ export async function generateMetadata(
         'max-snippet': -1,
       },
     },
-    // 在这里添加 Google AdSense meta 标签
-    other: {
-      'google-adsense-account': 'ca-pub-8598116000817169',
-    },
   }
 }
 
@@ -122,7 +118,7 @@ export default async function LocaleLayout(props: LayoutProps) {
     '@type': 'WebApplication',
     name: dict.metadata.title,
     description: dict.metadata.description,
-    url: `https://jsontrans.vercel.app/${lang}`,
+    url: `https://jsontrans.fun/${lang}`,
     applicationCategory: 'DeveloperApplication',
     operatingSystem: 'All',
     offers: {
@@ -142,6 +138,7 @@ export default async function LocaleLayout(props: LayoutProps) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8598116000817169" crossOrigin="anonymous"></script>
         {/* <Analytics /> */}
         <TranslateProvider>
           <Navbar dict={dict} />

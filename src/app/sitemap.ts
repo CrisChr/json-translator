@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next';
 import { locales } from '@/config/i18n';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const domain = 'https://jsontrans.vercel.app';
+  const domain = 'https://jsontrans.fun';
 
   const sitemapEntries: MetadataRoute.Sitemap = locales.map((locale) => ({
     url: `${domain}/${locale}`,
