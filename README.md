@@ -20,7 +20,7 @@
 
 ## ✨ Features
 
-- 🤖 Smart translation powered by DeepSeek V3 models
+- 🤖 Smart translation powered by AI models
 - 🔄 Maintains JSON structure integrity
 - 🌍 Supports 40+ languages
 - 🌐 Multi-language interface
@@ -36,44 +36,44 @@
 
 - Node.js >= 16.0.0
 - npm or yarn or pnpm
-- DeepSeek API key
+- AI API key (Gemini, DeepSeek, OpenAI or Anthropic)
 
 ### Installation
 
 ```bash
-git clone https://github.com/ViggoZ/json-translate.git
+git clone https://github.com/CrisChr/json-translator.git
 ```
 
 ```bash
-cd json-translate
+cd json-translator
 ```
 
 ```bash
-npm install
+pnpm install
 ```
 
 ### Development
 
 ```bash
-npm run dev
+pnpm run dev
 ```
 Visit http://localhost:3000 to view the development environment.
 
 ### Build
 
 ```bash
-npm run build
+pnpm run build
 ```
 
 ```bash
-npm run start
+pnpm run start
 ```
 
 ## 📖 Usage Guide
 
 1. **Preparation**
    - Prepare your JSON file for translation
-   - Get your DeepSeek API key (https://platform.deepseek.com/)
+   - Get your AI API key (Gemini, DeepSeek, OpenAI or Anthropic)
 
 2. **Getting Started**
    - Visit the website
@@ -105,7 +105,6 @@ npm run start
   - Radix UI
   - HeadlessUI
 - **Language**: TypeScript
-- **API**: DeepSeek API
 - **Libraries**:
   - JSZip (file handling)
   - React Syntax Highlighter

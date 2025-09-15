@@ -36,44 +36,44 @@
 
 - Node.js >= 16.0.0
 - npm 或 yarn 或 pnpm
-- DeepSeek API密钥
+- AI API密钥（Gemini, DeepSeek, OpenAI or Anthropic）
 
 ### 安装
 
 ```bash
-git clone https://github.com/ViggoZ/json-translate.git
+git clone https://github.com/CrisChr/json-translator.git
 ```
 
 ```bash
-cd json-translate
+cd json-translator
 ```
 
 ```bash
-npm install
+pnpm install
 ```
 
 ### 开发
 
 ```bash
-npm run dev
+pnpm run dev
 ```
 访问 http://localhost:3000 查看开发环境。
 
 ### 构建
 
 ```bash
-npm run build
+pnpm run build
 ```
 
 ```bash
-npm run start
+pnpm run start
 ```
 
 ## 📖 使用指南
 
 1. **准备工作**
    - 准备需要翻译的JSON文件
-   - 获取DeepSeek API密钥 (https://platform.deepseek.com/)
+   - 获取 AI API密钥（Gemini, DeepSeek, OpenAI or Anthropic）
 
 2. **开始使用**
    - 访问网站
@@ -105,7 +105,6 @@ npm run start
   - Radix UI
   - HeadlessUI
 - **语言**: TypeScript
-- **API**: DeepSeek API
 - **工具库**:
   - JSZip (文件处理)
   - React Syntax Highlighter (代码高亮)
