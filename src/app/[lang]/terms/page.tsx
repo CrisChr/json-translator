@@ -6,7 +6,7 @@ export default async function TermsPage({ params: { lang } }: { params: { lang: 
 
   return (
     <PageLayout title={'Terms of Service'}>
-      <p><strong>Last Updated: October 26, 2023</strong></p>
+      <p><strong>Last Updated: October 26, 2024</strong></p>
 
       <p>
         Welcome to JSON Translater! Before using our services, please read the following terms of service carefully. By accessing or using this website, you agree to be bound by these terms.

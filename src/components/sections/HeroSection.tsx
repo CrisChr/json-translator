@@ -18,7 +18,7 @@ export const HeroSection = ({ dict }: HeroSectionProps) => {
       <div className="absolute inset-0 h-[500px] bg-gradient-to-br from-blue-600 via-blue-500 to-blue-400/50" />
 
       <div className="container mx-auto px-4 relative z-10">
-        <div className="text-center space-y-4 md:space-y-6 pt-24 pb-8 md:py-12">
+        <div className="text-center space-y-4 md:space-y-6 pt-24 pb-8 md:py-14">
           <div className="inline-block animate-bounce-slow">
             <span className="px-4 md:px-6 py-1.5 md:py-2 bg-white/10 rounded-full text-xs md:text-sm font-medium text-white flex items-center gap-2">
               <Sparkles className="w-3 h-3 md:w-4 md:h-4 animate-pulse" />
