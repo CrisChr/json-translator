@@ -5,6 +5,8 @@ import Link from "next/link"
 import { useEffect, useState } from "react"
 import LanguageSwitcher from '@/components/LanguageSwitcher'
 
+import { useParams } from 'next/navigation'
+
 interface NavbarProps {
   dict: {
     coffee: string
@@ -12,6 +14,8 @@ interface NavbarProps {
 }
 
 export default function Navbar({ dict }: NavbarProps) {
+  const params = useParams()
+  const lang = params.lang
   const [scrolled, setScrolled] = useState(false)
   const [mounted, setMounted] = useState(false)
 
@@ -55,6 +59,14 @@ export default function Navbar({ dict }: NavbarProps) {
           </Link>
 
           <div className="flex items-center gap-6">
+            <Link
+              href={`/${lang}/blog`}
+              className={`transition-colors ${
+                scrolled ? 'text-white hover:text-white/80' : 'text-white hover:text-white/80'
+              }`}
+            >
+              Blog
+            </Link>
             {mounted && <LanguageSwitcher />}
 
             {/* Twitter/X 链接 */}
