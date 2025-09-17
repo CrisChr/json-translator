@@ -8,7 +8,6 @@ import { WorkflowSection } from '@/components/sections/WorkflowSection'
 import { FeaturesSection } from '@/components/sections/FeaturesSection' 
 import { CTASection } from '@/components/sections/CTASection'
 import FAQ from '@/components/sections/FAQ'
-import Footer from '@/components/Footer'
 
 export default async function Home({
   params,
@@ -89,7 +88,6 @@ export default async function Home({
         <FAQ dict={dict.faq} />
         <CTASection dict={dict.cta} />
       </main>
-      <Footer dict={dict.footer} />
     </div>
   )
 }

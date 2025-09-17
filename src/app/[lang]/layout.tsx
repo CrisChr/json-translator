@@ -3,7 +3,7 @@ import Script from "next/script";
 import localFont from "next/font/local";
 import "../globals.css";
 import { Toaster } from "@/components/ui/toaster";
-import Navbar from "@/components/Navbar";
+import NavbarWrapper from "@/components/NavbarWrapper";
 import { TranslateProvider } from "@/context/TranslateContext";
 import { locales, defaultLocale } from "@/config/i18n";
 import { notFound } from "next/navigation";
@@ -11,6 +11,7 @@ import { cn } from "@/lib/utils";
 import { ReactNode } from "react";
 //import Analytics from '@/components/Analytics'
 import { Analytics } from '@vercel/analytics/next';
+import Footer from "@/components/Footer"; // Import Footer component
 
 const geistSans = localFont({
   src: "../fonts/GeistVF.woff",
@@ -132,7 +133,7 @@ export default async function LocaleLayout(props: LayoutProps) {
       <body className={cn(
         geistSans.variable,
         geistMono.variable,
-        "min-h-screen bg-background font-sans antialiased"
+        "min-h-screen bg-background font-sans antialiased flex flex-col" // Add flex flex-col
       )}>
         <script
           type="application/ld+json"
@@ -140,8 +141,11 @@ export default async function LocaleLayout(props: LayoutProps) {
         />
         {/* <Analytics /> */}
         <TranslateProvider>
-          <Navbar dict={dict} />
-          {children}
+          <NavbarWrapper dict={{ coffee: dict.footer.coffee }} />
+          <main className="flex-grow"> {/* Wrap children in a main tag with flex-grow */}
+            {children}
+          </main>
+          <Footer dict={dict.footer} /> {/* Render Footer component with full dict.footer */}
           <Analytics />
           <Toaster />
         </TranslateProvider>

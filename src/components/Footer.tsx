@@ -1,3 +1,7 @@
+"use client"
+
+import { useParams } from 'next/navigation'
+
 interface FooterProps {
   dict: {
     creator: string
@@ -7,6 +11,8 @@ interface FooterProps {
 }
 
 export default function Footer({ dict }: FooterProps) {
+  const params = useParams()
+  const lang = params.lang
   return (
     <footer className="py-8 bg-gray-50">
       <div className="container mx-auto px-4">
@@ -14,6 +20,11 @@ export default function Footer({ dict }: FooterProps) {
           <p className="text-gray-600">
             {dict.creator}
           </p>
+          <div className="flex items-center gap-4">
+            <a href={`/${lang}/about`} className="text-gray-600 hover:text-blue-600 transition-colors">About</a>
+            <a href={`/${lang}/privacy`} className="text-gray-600 hover:text-blue-600 transition-colors">Privacy</a>
+            <a href={`/${lang}/terms`} className="text-gray-600 hover:text-blue-600 transition-colors">Terms</a>
+          </div>
 
           <div className="flex items-center gap-4">
             {/* <a

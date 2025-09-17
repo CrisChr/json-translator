@@ -9,8 +9,8 @@
     }
   },
   "workflow": {
-    "title": "Translate in Four Easy Steps",
-    "description": "We've simplified the JSON file translation process to help you quickly get high-quality translation results",
+    "title": "How It Works?",
+    "description": "This tool runs entirely locally in your browser, ensuring your data never leaves your computer. We've simplified the JSON file translation process into four easy steps to help you get high-quality results quickly and securely.",
     "steps": [
       {
         "title": "Upload JSON File",
@@ -220,8 +220,8 @@
         "answer": "Currently supports multiple languages including English, Simplified Chinese, Traditional Chinese, Japanese, Korean, French, German, Spanish, Russian, and more."
       },
       {
-        "question": "Will my API Key be saved?",
-        "answer": "No. Your API Key is only used temporarily in the browser and will not be saved or transmitted to any server."
+        "question": "How secure is this tool? Will my data be uploaded?",
+        "answer": "We take data security and privacy very seriously. All operations of this tool are performed locally in your browser. Your JSON files and API keys are never uploaded to our servers. This ensures that your data privacy and business secrets are absolutely safe.\n\nSpecifically, the entire process works as follows:\n1.  Local Processing: When you upload a JSON file, it is loaded directly into your browser's memory. It does not pass through any remote server.\n2.  API Key Security: Your API Key is stored only in the browser's temporary session. It is directly sent from your browser to the AI provider's official API endpoint (e.g., OpenAI, Google Gemini) for translation, without going through our server as a proxy.\n3.  No Data Retention: Once you close the browser tab, all data, including the file content and API Key, is immediately cleared. We do not store, record, or analyze any of your operational data.\n\nYou can use this tool with complete confidence, as your sensitive information never leaves your own computer."
       },
       {
         "question": "How to ensure translation quality?",

@@ -4,6 +4,8 @@ import Image from "next/image"
 import Link from "next/link"
 import { useEffect, useState } from "react"
 import LanguageSwitcher from '@/components/LanguageSwitcher'
+import { usePathname } from 'next/navigation';
+import { useParams } from 'next/navigation'
 
 interface NavbarProps {
   dict: {
@@ -12,8 +14,13 @@ interface NavbarProps {
 }
 
 export default function Navbar({ dict }: NavbarProps) {
+  const params = useParams()
+  const pathname = usePathname()
+  const lang = params.lang
   const [scrolled, setScrolled] = useState(false)
   const [mounted, setMounted] = useState(false)
+  const staticPages = ['/blog', '/about', '/privacy', '/terms']
+  const isStaticPage = !!staticPages.find((page) => pathname.includes(page))
 
   useEffect(() => {
     const handleScroll = () => {
@@ -32,8 +39,7 @@ export default function Navbar({ dict }: NavbarProps) {
   }, [])
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-colors duration-200 ${scrolled ? 'bg-blue-600/80 backdrop-blur-sm shadow-sm' : 'bg-transparent'
-      }`}>
+    <nav className={`fixed top-0 left-0 right-0 z-50 transition-colors duration-200 ${isStaticPage ? 'bg-blue-600/80 backdrop-blur-sm shadow-sm' : scrolled ? 'bg-blue-600/80 backdrop-blur-sm shadow-sm' : 'bg-transparent'}`}>
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo + 网站名称 */}
@@ -55,6 +61,14 @@ export default function Navbar({ dict }: NavbarProps) {
           </Link>
 
           <div className="flex items-center gap-6">
+            <Link
+              href={`/${lang}/blog`}
+              className={`transition-colors ${
+                scrolled ? 'text-white hover:text-white/80' : 'text-white hover:text-white/80'
+              }`}
+            >
+              Blog
+            </Link>
             {mounted && <LanguageSwitcher />}
 
             {/* Twitter/X 链接 */}
