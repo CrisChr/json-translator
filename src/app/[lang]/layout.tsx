@@ -10,7 +10,7 @@ import { notFound } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { ReactNode } from "react";
 //import Analytics from '@/components/Analytics'
-import { Analytics } from '@vercel/analytics/next';
+import { Analytics } from "@vercel/analytics/next";
 import Footer from "@/components/Footer"; // Import Footer component
 
 const geistSans = localFont({
@@ -31,25 +31,28 @@ interface LayoutProps {
   };
 }
 
-export async function generateMetadata(
-  { params }: Pick<LayoutProps, 'params'>
-): Promise<Metadata> {
+export async function generateMetadata({
+  params,
+}: Pick<LayoutProps, "params">): Promise<Metadata> {
   const lang = params.lang;
   const domain = "https://jsontrans.fun";
 
   // 导入对应语言的字典
   const dict = await import(`@/dictionaries/${lang}.json`).then(
-    (module) => module.default
+    (module) => module.default,
   );
 
   // 构建语言替代链接对象
-  const languageAlternates = locales.reduce((acc: { [key: string]: string }, locale: string) => {
-    acc[locale] = `${domain}/${locale}`;
-    return acc;
-  }, {});
+  const languageAlternates = locales.reduce(
+    (acc: { [key: string]: string }, locale: string) => {
+      acc[locale] = `${domain}/${locale}`;
+      return acc;
+    },
+    {},
+  );
 
   // 为 hreflang 添加 x-default, 指向默认语言版本
-  languageAlternates['x-default'] = `${domain}/${defaultLocale}`;
+  languageAlternates["x-default"] = `${domain}/${defaultLocale}`;
 
   return {
     metadataBase: new URL(domain),
@@ -61,29 +64,29 @@ export async function generateMetadata(
     },
     keywords: dict.metadata.keywords,
     icons: {
-      icon: '/favicon.png',
-      shortcut: '/favicon.png',
-      apple: '/favicon.png',
+      icon: "/favicon.png",
+      shortcut: "/favicon.png",
+      apple: "/favicon.png",
     },
     openGraph: {
       title: dict.metadata.title,
       description: dict.metadata.description,
       locale: params.lang,
-      type: 'website',
+      type: "website",
       images: [
         {
-          url: '/og-image.png',
+          url: "/og-image.png",
           width: 1200,
           height: 630,
-          alt: dict.metadata.title
-        }
-      ]
+          alt: dict.metadata.title,
+        },
+      ],
     },
     twitter: {
-      card: 'summary_large_image',
+      card: "summary_large_image",
       title: dict.metadata.title,
       description: dict.metadata.description,
-      images: ['/og-image.png']
+      images: ["/og-image.png"],
     },
     robots: {
       index: true,
@@ -91,61 +94,77 @@ export async function generateMetadata(
       googleBot: {
         index: true,
         follow: true,
-        'max-video-preview': -1,
-        'max-image-preview': 'large',
-        'max-snippet': -1,
+        "max-video-preview": -1,
+        "max-image-preview": "large",
+        "max-snippet": -1,
       },
     },
-  }
+  };
 }
 
 export async function generateStaticParams() {
-  return locales.map((locale) => ({ lang: locale }))
+  return locales.map((locale) => ({ lang: locale }));
 }
 
 export default async function LocaleLayout(props: LayoutProps) {
-  const { children, params: { lang } } = props;
+  const {
+    children,
+    params: { lang },
+  } = props;
 
   if (!locales.includes(lang)) {
     notFound();
   }
 
   const dict = await import(`@/dictionaries/${lang}.json`).then(
-    (module) => module.default
+    (module) => module.default,
   );
 
   const jsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'WebApplication',
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
     name: dict.metadata.title,
     description: dict.metadata.description,
     url: `https://jsontrans.fun/${lang}`,
-    applicationCategory: 'DeveloperApplication',
-    operatingSystem: 'All',
+    applicationCategory: "DeveloperApplication",
+    operatingSystem: "All",
     offers: {
-      '@type': 'Offer',
-      price: '0',
+      "@type": "Offer",
+      price: "0",
     },
   };
 
   return (
     <html lang={lang} suppressHydrationWarning>
-      <body className={cn(
-        geistSans.variable,
-        geistMono.variable,
-        "min-h-screen bg-background font-sans antialiased flex flex-col" // Add flex flex-col
-      )}>
+      <head>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
+        <Script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8598116000817169"
+          crossOrigin="anonymous"
+          strategy="beforeInteractive"
+        ></Script>
+      </head>
+      <body
+        className={cn(
+          geistSans.variable,
+          geistMono.variable,
+          "min-h-screen bg-background font-sans antialiased flex flex-col", // Add flex flex-col
+        )}
+      >
         {/* <Analytics /> */}
         <TranslateProvider>
           <NavbarWrapper dict={{ coffee: dict.footer.coffee }} />
-          <main className="flex-grow"> {/* Wrap children in a main tag with flex-grow */}
+          <main className="flex-grow">
+            {" "}
+            {/* Wrap children in a main tag with flex-grow */}
             {children}
           </main>
-          <Footer dict={dict.footer} /> {/* Render Footer component with full dict.footer */}
+          <Footer dict={dict.footer} />{" "}
+          {/* Render Footer component with full dict.footer */}
           <Analytics />
           <Toaster />
         </TranslateProvider>
