@@ -137,6 +137,7 @@ export default async function LocaleLayout(props: LayoutProps) {
   return (
     <html lang={lang} suppressHydrationWarning>
       <head>
+        <meta name="baidu-site-verification" content="codeva-lgsprdUsiK" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
