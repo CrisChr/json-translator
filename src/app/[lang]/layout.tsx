@@ -141,12 +141,7 @@ export default async function LocaleLayout(props: LayoutProps) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
-        <Script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8598116000817169"
-          crossOrigin="anonymous"
-          strategy="beforeInteractive"
-        ></Script>
+        <Script async data-cfasync="false" src="//pl27813265.effectivegatecpm.com/4b5735e9fa53bd4a6fb3a12753c86bcf/invoke.js"></Script>
       </head>
       <body
         className={cn(
@@ -168,6 +163,7 @@ export default async function LocaleLayout(props: LayoutProps) {
           <Analytics />
           <Toaster />
         </TranslateProvider>
+        <div id="container-4b5735e9fa53bd4a6fb3a12753c86bcf"></div>
       </body>
     </html>
   );
