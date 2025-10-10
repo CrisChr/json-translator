@@ -137,7 +137,7 @@ export default async function LocaleLayout(props: LayoutProps) {
 
   return (
     <html lang={lang} suppressHydrationWarning>
-      <Head>
+      <head>
         <meta name="referrer" content="no-referrer-when-downgrade" />
         <script
           type="application/ld+json"
@@ -162,7 +162,7 @@ export default async function LocaleLayout(props: LayoutProps) {
           `,
           }}
         ></Script>
-      </Head>
+      </head>
       <body
         className={cn(
           geistSans.variable,
@@ -185,7 +185,6 @@ export default async function LocaleLayout(props: LayoutProps) {
           <Toaster />
         </TranslateProvider>
         <script type='text/javascript' src='//pl27814468.effectivegatecpm.com/fa/75/b9/fa75b9ff9cfa26f8b74ee00d63fb1878.js' data-cfasync="false"></script>
-
       </body>
     </html>
   );
