@@ -137,6 +137,8 @@ export default async function LocaleLayout(props: LayoutProps) {
   return (
     <html lang={lang} suppressHydrationWarning>
       <head>
+        <meta name="0b78a9b444015e8c5b48783c5389c633f7911a4f" content="0b78a9b444015e8c5b48783c5389c633f7911a4f" />
+        <meta name="referrer" content="no-referrer-when-downgrade" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
