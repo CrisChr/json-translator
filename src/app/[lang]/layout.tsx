@@ -141,7 +141,7 @@ export default async function LocaleLayout(props: LayoutProps) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
-        <Script async data-cfasync="false" src="//pl27813265.effectivegatecpm.com/4b5735e9fa53bd4a6fb3a12753c86bcf/invoke.js"></Script>
+        <script async data-cfasync="false" src="//pl27813265.effectivegatecpm.com/4b5735e9fa53bd4a6fb3a12753c86bcf/invoke.js"></script>
       </head>
       <body
         className={cn(
@@ -158,12 +158,13 @@ export default async function LocaleLayout(props: LayoutProps) {
             {/* Wrap children in a main tag with flex-grow */}
             {children}
           </main>
+          <div id="container-4b5735e9fa53bd4a6fb3a12753c86bcf"></div>
           <Footer dict={dict.footer} />{" "}
           {/* Render Footer component with full dict.footer */}
           <Analytics />
           <Toaster />
         </TranslateProvider>
-        <div id="container-4b5735e9fa53bd4a6fb3a12753c86bcf"></div>
+        <script type='text/javascript' src='//pl27814468.effectivegatecpm.com/fa/75/b9/fa75b9ff9cfa26f8b74ee00d63fb1878.js' data-cfasync="false"></script>
       </body>
     </html>
   );
