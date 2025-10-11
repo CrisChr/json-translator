@@ -181,11 +181,10 @@ export default async function LocaleLayout(props: LayoutProps) {
           </main>
           <div id="container-4b5735e9fa53bd4a6fb3a12753c86bcf"></div>
           <Footer dict={dict.footer} />{" "}
-          {/* Render Footer component with full dict.footer */}
-          <Analytics />
+          <Analytics/>
           <Toaster />
         </TranslateProvider>
-        <script type='text/javascript' src='//pl27814468.effectivegatecpm.com/fa/75/b9/fa75b9ff9cfa26f8b74ee00d63fb1878.js' data-cfasync="false"></script>
+        <script async type='text/javascript' src='//pl27814468.effectivegatecpm.com/fa/75/b9/fa75b9ff9cfa26f8b74ee00d63fb1878.js' data-cfasync="false"></script>
       </body>
     </html>
   );

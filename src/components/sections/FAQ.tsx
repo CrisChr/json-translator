@@ -26,8 +26,25 @@ export default function FAQ({ dict }: FAQProps) {
     ? dict.items 
     : Object.values(dict.items)
 
+  const faqJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqs.map((faq) => ({
+      '@type': 'Question',
+      name: faq.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: faq.answer,
+      },
+    })),
+  };
+
   return (
     <section className="py-20 bg-gray-50">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl font-bold mb-4">
@@ -41,10 +58,11 @@ export default function FAQ({ dict }: FAQProps) {
         <div className="max-w-3xl mx-auto space-y-4">
           {faqs.map((faq, index) => (
             <div
-              key={index}
+              key={faq.question}
               className="bg-white rounded-2xl overflow-hidden"
             >
               <button
+                type="button"
                 className="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-100"
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
               >
@@ -71,4 +89,4 @@ export default function FAQ({ dict }: FAQProps) {
       </div>
     </section>
   )
-} 
+}

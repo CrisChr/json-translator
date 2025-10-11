@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { decrypt, SECRET_KEY as SERVER_SECRET_KEY } from '@/lib/utils'; // 导入解密函数和 SECRET_KEY
+import { decrypt } from '@/lib/utils';
 
 export async function POST(
   request: NextRequest,
