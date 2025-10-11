@@ -1,3 +1,4 @@
+import { Metadata } from 'next';
 import ReactMarkdown, { Components } from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import whatIsJsonMarkdown from '@/content/what-is-json';
@@ -6,6 +7,43 @@ import commonErrorMarkdown from '@/content/common-json-error';
 import jsonVsXmlMarkdown from '@/content/json-vs-xml';
 import { getDictionary } from '@/lib/getDictionary';
 import React from 'react'; // Import React for React.HTMLAttributes
+
+// Metadata for each blog post
+const blogMetadata: { [key: string]: { title: string; description: string; date: string; } } = {
+  'what-is-json': {
+    title: 'What is JSON? A Comprehensive Guide for Developers',
+    description: 'Explore the fundamentals of JSON, including its syntax, data types, and common use cases in web development and APIs.',
+    date: '2025-10-01',
+  },
+  'how-to-build': {
+    title: 'How to Build a Multilingual Website with Next.js',
+    description: 'A step-by-step guide on creating an internationalized (i18n) website using Next.js App Router and modern localization techniques.',
+    date: '2025-10-04',
+  },
+  'common-json-error': {
+    title: 'Common JSON Errors and How to Fix Them',
+    description: 'Learn to identify and resolve frequent JSON parsing errors, such as syntax mistakes, invalid data types, and encoding issues.',
+    date: '2025-10-08',
+  },
+  'json-vs-xml': {
+    title: 'JSON vs. XML: Key Differences and When to Use Each',
+    description: 'A detailed comparison of JSON and XML, covering their structure, verbosity, parsing speed, and ideal applications.',
+    date: '2025-10-11',
+  },
+};
+
+export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
+  const slug = params.slug;
+  const metadata = blogMetadata[slug] || {
+    title: 'Blog Post',
+    description: 'Read our latest article.',
+  };
+
+  return {
+    title: metadata.title,
+    description: metadata.description,
+  };
+}
 
 // Custom components to ensure semantic HTML tags and potentially add styling/syntax highlighting
 const components: Components = {
@@ -34,7 +72,7 @@ const components: Components = {
   blockquote: ({ node, ...props }) => (
     <blockquote className="border-l-4 border-gray-300 pl-4 italic mb-4" {...props} />
   ),
-  img: ({ node, ...props }) => <img className="max-w-full h-auto my-4 rounded-md" {...props} />,
+  img: ({ node, alt, ...props }) => <img className="max-w-full h-auto my-4 rounded-md" alt={alt || ''} {...props} />,
   table: ({ node, ...props }) => (
     <table className="min-w-full divide-y divide-gray-200 dark:divide-gray-700 mb-4" {...props} />
   ),
@@ -57,6 +95,34 @@ const components: Components = {
 
 export default async function BlogPostPage({ params }: { params: { slug: string, lang: string } }) {
   const dict = await getDictionary(params.lang);
+  const { slug, lang } = params;
+  const metadata = blogMetadata[slug] || { title: '', description: '', date: '' };
+
+  const articleJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: metadata.title,
+    description: metadata.description,
+    image: `https://jsontrans.fun/og-image.png`,
+    datePublished: metadata.date,
+    author: {
+      '@type': 'Organization',
+      name: 'jsontrans.fun',
+      url: 'https://jsontrans.fun',
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'jsontrans.fun',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://jsontrans.fun/logo-blue.png',
+      },
+    },
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': `https://jsontrans.fun/${lang}/blog/${slug}`,
+    },
+  };
 
   const renderContent = () => {
     switch (params.slug) {
@@ -90,8 +156,14 @@ export default async function BlogPostPage({ params }: { params: { slug: string,
   };
 
   return (
-    <div className="container mx-auto px-4 py-24">
-      {renderContent()}
-    </div>
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
+      />
+      <div className="container mx-auto px-4 py-24">
+        {renderContent()}
+      </div>
+    </>
   );
 }

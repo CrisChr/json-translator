@@ -10,7 +10,7 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'json.uiboy.com',
+        hostname: 'jsontrans.fun',
         port: '',
         pathname: '/**',
       },
@@ -43,14 +43,14 @@ const nextConfig = {
     // !! WARN !!
     ignoreBuildErrors: true,
   },
-  async rewrites() {
-    return [
-      {
-        source: '/api/translate/:path*',
-        destination: 'http://localhost:3001/translate/:path*', // Proxy to your backend
-      },
-    ]
-  },
+  // async rewrites() {
+  //   return [
+  //     {
+  //       source: '/api/translate/:path*',
+  //       destination: 'http://localhost:3000/translate/:path*', // Proxy to your backend
+  //     },
+  //   ]
+  // },
 }
 
 module.exports = nextConfig

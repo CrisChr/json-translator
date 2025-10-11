@@ -12,7 +12,7 @@ export async function translate(
 
   const openai = new OpenAI({
     apiKey,
-    baseURL: 'https://api.deepseek.com',
+    baseURL: 'https://api.deepseek.com/v1',
   });
 
   try {
