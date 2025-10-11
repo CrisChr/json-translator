@@ -126,6 +126,7 @@ export default async function LocaleLayout(props: LayoutProps) {
     "@type": "WebApplication",
     name: dict.metadata.title,
     description: dict.metadata.description,
+    logo: "https://jsontrans.fun/logo-blue.png",
     url: `https://jsontrans.fun/${lang}`,
     applicationCategory: "DeveloperApplication",
     operatingSystem: "All",
