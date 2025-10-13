@@ -1,64 +1,65 @@
 {
   "hero": {
     "badge": "AI 驅動",
-    "title": "i18n JSON國際化翻譯工具",
-    "description": "使用AI技術快速翻譯您的JSON語言檔案。快速、準確且易於使用。",
+    "title": "i18n JSON 國際化翻譯工具",
+    "description": "使用 AI 技術快速翻譯您的 JSON 語言檔案。快速、準確、易於使用。",
     "features": {
       "multilanguage": "多語言支援",
-      "realtime": "即時翻譯"
+      "secure": "安全可靠",
+      "free": "完全免費"
     }
   },
   "workflow": {
-    "title": "四個簡單步驟完成翻譯",
-    "description": "我們簡化了JSON檔案翻譯流程，幫助您快速獲得高品質的翻譯結果",
+    "title": "如何運作",
     "steps": [
       {
-        "title": "上傳JSON檔案",
-        "description": "支援拖放上傳或點擊選擇檔案"
+        "title": "上傳檔案",
+        "description": "上傳需要翻譯的 JSON 檔案"
       },
       {
         "title": "選擇目標語言",
-        "description": "選擇您需要翻譯到的目標語言"
+        "description": "選擇需要翻譯成的目標語言"
       },
       {
         "title": "開始翻譯",
-        "description": "輸入您的API Key並開始AI翻譯"
+        "description": "輸入 API 金鑰並開始 AI 翻譯"
       },
       {
         "title": "下載結果",
-        "description": "下載翻譯後的JSON檔案"
+        "description": "下載翻譯完成的 JSON 檔案"
       }
     ]
   },
   "features": {
-    "title": "強大的翻譯功能",
-    "items": [
-      {
-        "title": "保留JSON結構",
-        "description": "智慧識別並保留原始JSON檔案的結構、縮排和格式"
+    "title": "為什麼選擇我們？",
+    "learnMore": "了解更多",
+    "items": {
+      "codeFriendly": {
+        "title": "程式碼友善",
+        "description": "支援自動 JSON 格式化，可複製或直接下載 JSON 檔案。"
       },
-      {
+      "multiLanguage": {
         "title": "多語言支援",
-        "description": "支援多種語言之間的翻譯，包括英文、中文、日文等"
+        "description": "支援超過 30 種語言的翻譯，由 Google、DeepSeek、Anthropic 和 OpenAI 提供支援。"
       },
-      {
-        "title": "AI 驅動翻譯",
-        "description": "使用AI模型確保專業術語的準確性和自然表達"
+      "aiPowered": {
+        "title": "AI 驅動",
+        "description": "利用先進的 AI 技術確保翻譯的準確性和流暢性。"
       },
-      {
-        "title": "安全可靠",
-        "description": "API Key僅在瀏覽器中臨時使用，絕不會儲存或傳輸到伺服器"
+      "dataSecurity": {
+        "title": "資料安全",
+        "description": "所有翻譯過程都在您的瀏覽器中進行，確保您的資料不會上傳到雲端。"
       }
-    ]
+    }
   },
   "uploadSection": {
-    "title": "上傳JSON檔案",
-    "description": "上傳您需要翻譯的JSON檔案",
-    "dragText": "將檔案拖放到這裡或點擊上傳",
-    "supportText": "支援大小不超過10MB的.json檔案",
-    "apiKeyTitle": "API Key",
+    "title": "上傳 JSON 檔案",
+    "description": "上傳需要翻譯的 JSON 檔案",
+    "dragText": "拖拽檔案到此處或點擊上傳",
+    "supportText": "支援最大 10MB 的 .json 檔案",
+    "apiKeyTitle": "API 金鑰",
     "apiKeyPlaceholder": "sk-...",
-    "aiProviderTitle": "AI 提供者",
+    "aiProviderTitle": "AI 提供商",
     "aiProviders": {
       "deepseek": "DeepSeek",
       "openai": "OpenAI",
@@ -66,33 +67,33 @@
       "claude": "Anthropic"
     },
     "errors": {
-      "selectFile": "請選擇檔案",
-      "jsonExtension": "請上傳.json檔案",
-      "fileSize": "檔案大小不能超過10MB",
-      "jsonFormat": "JSON格式無效，請檢查檔案內容",
-      "emptyJson": "JSON檔案不能為空"
+      "selectFile": "請選擇一個檔案",
+      "jsonExtension": "請上傳 .json 檔案",
+      "fileSize": "檔案大小不能超過 10MB",
+      "jsonFormat": "無效的 JSON 格式，請檢查檔案內容",
+      "emptyJson": "JSON 檔案不能為空"
     },
     "success": {
       "uploaded": "檔案上傳成功"
     },
     "errorTitle": "錯誤",
     "successTitle": "成功",
-    "apiKeyTip": "您的API Key僅在瀏覽器中臨時使用，不會被儲存或傳輸到任何伺服器。"
+    "apiKeyTip": "金鑰僅在瀏覽器中臨時使用，不會被儲存或傳輸到任何伺服器。"
   },
   "translateSection": {
     "title": "選擇目標語言",
-    "description": "選擇您需要翻譯到的目標語言"
+    "description": "選擇需要翻譯成的目標語言"
   },
   "translatePanel": {
     "startTranslate": "開始翻譯",
     "translating": "翻譯中...",
     "cancel": "取消",
-    "uploadFirst": "請先上傳檔案",
-    "enterApiKey": "請輸入您的API Key",
+    "uploadFirst": "請先上傳一個檔案",
+    "enterApiKey": "請輸入您的 API 金鑰",
     "foundUnfinished": "發現未完成的翻譯",
     "continueTranslation": "繼續翻譯",
     "translationCancelled": "翻譯已取消",
-    "invalidApiKey": "API Key格式無效",
+    "invalidApiKey": "無效的 API 金鑰格式",
     "errorTitle": "錯誤",
     "successTitle": "成功",
     "translationCompleted": "翻譯完成！",
@@ -100,34 +101,34 @@
     "hideMoreLanguages": "隱藏更多語言",
     "overallProgress": "整體進度",
     "completedLanguages": "已完成語言",
-    "translatingLanguage": "翻譯中",
+    "translatingLanguage": "正在翻譯",
     "tip": "提示",
-    "allLanguagesTranslated": "所有選定的語言都已翻譯完成。",
-    "pleaseSelectLanguage": "請至少選擇一種目標語言",
-    "pleaseUploadAndEnterKey": "請上傳檔案並輸入您的API Key",
+    "allLanguagesTranslated": "所有選擇的語言都已翻譯完成。",
+    "pleaseSelectLanguage": "請至少選擇一個目標語言",
+    "pleaseUploadAndEnterKey": "請上傳檔案並輸入您的 API 金鑰",
     "cancelled": "已取消",
     "translationFailed": "翻譯失敗",
-    "bytes": "位元組",
+    "bytes": "bytes",
     "kb": "KB",
     "mb": "MB",
     "gb": "GB",
     "apiKeyErrors": {
-      "invalidFormat": "API Key格式無效",
-      "invalidOrExpired": "API Key無效或已過期",
-      "rateLimitReached": "API呼叫速率限制已達上限",
-      "validationFailed": "API Key驗證失敗"
+      "invalidFormat": "無效的 API 金鑰格式",
+      "invalidOrExpired": "無效或過期的 API 金鑰",
+      "rateLimitReached": "達到 API 呼叫頻率限制",
+      "validationFailed": "API 金鑰驗證失敗"
     }
   },
   "jsonPreview": {
     "title": "預覽",
-    "empty": "JSON預覽將顯示在此處",
+    "empty": "JSON 預覽將顯示在這裡",
     "copied": "已複製到剪貼簿",
-    "originalJson": "原始JSON",
-    "translatedJson": "翻譯後的JSON",
-    "tips": "提示：支援即時預覽和格式化的JSON檔案。您可以直接複製內容。",
+    "originalJson": "原始 JSON",
+    "translatedJson": "翻譯後的 JSON",
+    "tips": "提示：支援即時預覽和格式化的 JSON 檔案。您可以直接複製內容。",
     "placeholder": {
-      "upload": "請上傳JSON檔案",
-      "translation": "翻譯結果將顯示在此處"
+      "upload": "請上傳 JSON 檔案",
+      "translation": "翻譯結果將顯示在這裡"
     },
     "actions": {
       "copy": "複製",
@@ -144,98 +145,98 @@
       "downloadError": "下載失敗，請重試"
     },
     "languages": {
-      "en": "英文",
-      "ru": "俄文",
-      "es": "西班牙文",
-      "de": "德文",
-      "tr": "土耳其文",
-      "fr": "法文",
-      "ja": "日文",
-      "pt": "葡萄牙文",
+      "en": "英語",
+      "ru": "俄語",
+      "es": "西班牙語",
+      "de": "德語",
+      "tr": "土耳其語",
+      "fr": "法語",
+      "ja": "日語",
+      "pt": "葡萄牙語",
       "zh": "簡體中文",
       "zh-TW": "繁體中文",
-      "it": "義大利文",
-      "ar": "阿拉伯文",
-      "pl": "波蘭文",
-      "el": "希臘文",
-      "nl": "荷蘭文",
-      "id": "印尼文",
-      "ko": "韓文",
-      "th": "泰文",
-      "vi": "越南文",
-      "fa": "波斯文",
-      "uk": "烏克蘭文",
-      "he": "希伯來文",
-      "sv": "瑞典文",
-      "ro": "羅馬尼亞文",
-      "hu": "匈牙利文",
-      "da": "丹麥文",
-      "sk": "斯洛伐克文",
-      "sr": "塞爾維亞文",
-      "bg": "保加利亞文",
-      "fi": "芬蘭文",
-      "hr": "克羅埃西亞文",
-      "lt": "立陶宛文",
-      "nb": "挪威書面語",
-      "sl": "斯洛維尼亞文",
-      "lv": "拉脫維亞文",
-      "et": "愛沙尼亞文",
-      "cs": "捷克文",
-      "ca": "加泰隆尼亞文",
-      "hi": "印地文",
-      "bn": "孟加拉文",
-      "ta": "泰米爾文",
-      "ur": "烏爾都文",
-      "gu": "古吉拉特文",
-      "kn": "卡納達文",
-      "ml": "馬拉雅拉姆文",
-      "mr": "馬拉地文",
-      "ms": "馬來文",
-      "my": "緬甸文",
-      "km": "高棉文",
-      "lo": "寮國文",
-      "mn": "蒙古文",
-      "az": "亞塞拜然文",
-      "ka": "喬治亞文",
-      "hy": "亞美尼亞文",
-      "sw": "斯瓦希里文",
-      "af": "南非荷蘭文",
-      "am": "阿姆哈拉文"
+      "it": "義大利語",
+      "ar": "阿拉伯語",
+      "pl": "波蘭語",
+      "el": "希臘語",
+      "nl": "荷蘭語",
+      "id": "印尼語",
+      "ko": "韓語",
+      "th": "泰語",
+      "vi": "越南語",
+      "fa": "波斯語",
+      "uk": "烏克蘭語",
+      "he": "希伯來語",
+      "sv": "瑞典語",
+      "ro": "羅馬尼亞語",
+      "hu": "匈牙利語",
+      "da": "丹麥語",
+      "sk": "斯洛伐克語",
+      "sr": "塞爾維亞語",
+      "bg": "保加利亞語",
+      "fi": "芬蘭語",
+      "hr": "克羅埃西亞語",
+      "lt": "立陶宛語",
+      "nb": "挪威語博克馬爾",
+      "sl": "斯洛維尼亞語",
+      "lv": "拉脫維亞語",
+      "et": "愛沙尼亞語",
+      "cs": "捷克語",
+      "ca": "加泰羅尼亞語",
+      "hi": "印度語",
+      "bn": "孟加拉語",
+      "ta": "泰米爾語",
+      "ur": "烏爾都語",
+      "gu": "古吉拉特語",
+      "kn": "卡納達語",
+      "ml": "馬拉雅拉姆語",
+      "mr": "馬拉地語",
+      "ms": "馬來語",
+      "my": "緬甸語",
+      "km": "高棉語",
+      "lo": "寮語",
+      "mn": "蒙古語",
+      "az": "亞塞拜然語",
+      "ka": "喬治亞語",
+      "hy": "亞美尼亞語",
+      "sw": "斯瓦希里語",
+      "af": "南非荷蘭語",
+      "am": "阿姆哈拉語"
     }
   },
   "faq": {
     "title": "常見問題",
-    "description": "關於JSON翻譯工具的常見問題",
+    "description": "關於 JSON 翻譯工具的常見問題",
     "items": [
       {
-        "question": "這個工具是做什麼的？",
-        "answer": "這是一個AI驅動的JSON國際化翻譯工具，幫助開發人員快速將JSON語言檔案翻譯成多種語言，同時保持JSON結構的完整性。"
+        "question": "這個工具做什麼？",
+        "answer": "這是一個 AI 驅動的 JSON 國際化翻譯工具，幫助開發者快速將 JSON 語言檔案翻譯成多種語言，同時保持 JSON 結構的完整性。"
       },
       {
         "question": "如何使用這個工具？",
-        "answer": "1. 上傳您需要翻譯的JSON檔案\n2. 選擇目標語言\n3. 輸入您的API Key\n4. 點擊開始翻譯\n5. 翻譯完成後下載結果"
+        "answer": "1. 上傳需要翻譯的 JSON 檔案\n2. 選擇目標語言\n3. 輸入您的 API 金鑰\n4. 點擊開始翻譯\n5. 翻譯完成後下載結果"
       },
       {
         "question": "支援哪些語言？",
-        "answer": "目前支援多種語言，包括英文、簡體中文、繁體中文、日文、韓文、法文、德文、西班牙文、俄文等等。"
+        "answer": "目前支援多種語言，包括英語、簡體中文、繁體中文、日語、韓語、法語、德語、西班牙語、俄語等。"
       },
       {
-        "question": "我的API Key會被儲存嗎？",
-        "answer": "不會。您的API Key僅在瀏覽器中臨時使用，不會被儲存或傳輸到任何伺服器。"
+        "question": "這個工具安全嗎？我的資料會被上傳嗎？",
+        "answer": "我們非常重視資料安全和隱私。此工具的所有操作都在您的瀏覽器中本機執行。您的 JSON 檔案和 API 金鑰永遠不會上傳到我們的伺服器。這確保您的資料隱私和業務機密絕對安全。\n\n具體來說，整個過程如下：\n1. 本機處理：當您上傳 JSON 檔案時，它會直接載入到瀏覽器的記憶體中。它不會通過任何遠端伺服器。\n2. API 金鑰安全性：您的 API 金鑰僅儲存在瀏覽器的臨時會話中。它會直接從您的瀏覽器傳送到 AI 提供商的官方 API 端點（例如 OpenAI、Google Gemini）進行翻譯，而不會通過我們的伺服器作為代理。\n3. 無資料保留：關閉瀏覽器分頁後，所有資料（包括檔案內容和 API 金鑰）會立即清除。我們不會儲存、記錄或分析您的任何操作資料。\n\n您可以完全放心使用此工具，因為您的敏感資訊永遠不會離開您自己的電腦。"
       },
       {
         "question": "如何確保翻譯品質？",
-        "answer": "我們使用AI模型進行翻譯，以確保專業術語的準確性和語言表達的自然性。我們也支援自定義詞典功能，以保持特定術語的一致性。"
+        "answer": "我們使用 AI 模型進行翻譯，確保專業術語的準確性和語言表達的自然性。我們也支援自訂字典功能，以保持特定術語的一致性。"
       },
       {
-        "question": "是否有檔案大小限制？",
-        "answer": "單個JSON檔案的最大大小為10MB。對於較大的檔案，建議分批翻譯。"
+        "question": "有檔案大小限制嗎？",
+        "answer": "單個 JSON 檔案的最大大小為 10MB。對於較大的檔案，建議分批翻譯。"
       }
     ]
   },
   "cta": {
-    "title": "立即使用AI翻譯工具",
-    "description": "快速且準確地將您的JSON語言檔案翻譯成多種語言",
+    "title": "立即使用 AI 翻譯工具",
+    "description": "快速準確地將您的 JSON 語言檔案翻譯成多種語言",
     "button": "立即試用",
     "features": [
       "無需註冊",
@@ -244,14 +245,14 @@
     ]
   },
   "footer": {
-    "creator": "由Red用心製作 ❤️",
+    "creator": "由 Red 用心製作 ❤️",
     "twitter": "@chrisgostrong",
     "coffee": "請我喝杯咖啡",
     "github": "GitHub"
   },
   "metadata": {
-    "title": "JSON翻譯工具 - AI 驅動的多語言翻譯方案",
-    "description": "使用AI技術快速準確地將JSON語言檔案翻譯成多種語言。支援保留JSON結構、變數佔位符和HTML標籤。",
-    "keywords": "i18n翻譯, JSON翻譯, AI翻譯, 開發者翻譯工具, 軟體本地化, 網站本地化, App本地化, 國際化工具, 自動翻譯, 程式碼翻譯, React i18n, Vue i18n, Next.js i18n, Angular i18n, Svelte i18n, i18next自動翻譯, next-intl工具, JavaScript i18n函式庫, Flutter i18n, React Native i18n, iOS App翻譯, Android App翻譯, GitHub i18n整合, VS Code i18n外掛程式, Node.js i18n, ARB檔案翻譯, AI驅動的JSON檔案翻譯, 開發者專屬i18n解決方案, JSON語言檔案的自動翻譯, 線上JSON翻譯器, 免費i18n翻譯工具, 高效的軟體國際化流程, 最佳i18n實務, 持續的本地化服務, 多語言網站開發, 遊戲本地化工具, AI輔助本地化, 翻譯管理系統, TMS, 敏捷本地化, 翻譯API, 一鍵翻譯所有語言, 如何實現多語言網站, 如何進行App國際化, 自動化的前端翻譯流程, 降低本地化成本, 快速推出多語言版本, 如何管理多語言JSON檔案, 翻譯團隊協作工具, 解決i18n痛點, 如何保持翻譯一致性, 最佳JSON翻譯工具"
+    "title": "JSON 翻譯工具 - AI 驅動的多語言翻譯解決方案",
+    "description": "使用 AI 技術快速準確地將 JSON 語言檔案翻譯成多種語言。支援保留 JSON 結構、變數佔位符和 HTML 標籤。",
+    "keywords": "i18n 翻譯, JSON 翻譯, AI 翻譯, 開發者翻譯工具, 軟體本地化, 網站本地化, App 本地化, 國際化工具, 自動翻譯, 程式碼翻譯, React i18n, Vue i18n, Next.js i18n, Angular i18n, Svelte i18n, i18next 自動翻譯, next-intl 工具, JavaScript i18n 函式庫, Flutter i18n, React Native i18n, iOS App 翻譯, Android App 翻譯, GitHub i18n 整合, VS Code i18n 外掛, Node.js i18n, ARB 檔案翻譯, AI 驅動的 JSON 檔案翻譯, 開發者專屬 i18n 解決方案, JSON 語言檔案自動翻譯, 線上 JSON 翻譯器, 免費 i18n 翻譯工具, 高效的軟體國際化流程, 最佳 i18n 實踐, 持續本地化服務, 多語言網站開發, 遊戲本地化工具, AI 協助本地化, 翻譯管理系統, TMS, 敏捷本地化, 翻譯 API, 一鍵翻譯所有語言, 如何實現多語言網站, 如何進行 App 國際化, 自動前端翻譯流程, 降低本地化成本, 快速推出多語言版本, 如何管理多語言 JSON 檔案, 翻譯團隊協作工具, 解決 i18n 痛點, 如何保持翻譯一致性, 最佳 JSON 翻譯工具"
   }
 }

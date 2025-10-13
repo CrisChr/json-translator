@@ -1,59 +1,60 @@
 {
   "hero": {
-    "badge": "AI Destekli",
+    "badge": "Yapay Zeka Desteği",
     "title": "i18n JSON Uluslararasılaştırma Çeviri Aracı",
-    "description": "JSON dil dosyalarınızı hızlıca çevirmek için yapay zeka teknolojisini kullanın. Hızlı, doğru ve kullanımı kolay.",
+    "description": "JSON dil dosyalarınızı hızlı bir şekilde çevirmek için yapay zeka teknolojisini kullanın. Hızlı, doğru ve kullanımı kolay.",
     "features": {
       "multilanguage": "Çok Dilli Destek",
-      "realtime": "Gerçek Zamanlı Çeviri"
+      "secure": "Güvenli ve Güvenilir",
+      "free": "Tamamen Ücretsiz"
     }
   },
   "workflow": {
-    "title": "Dört Kolay Adımda Çeviri",
-    "description": "Yüksek kaliteli çeviri sonuçlarını hızlıca almanızı sağlamak için JSON dosyası çeviri sürecini basitleştirdik",
+    "title": "Nasıl Çalışır",
     "steps": [
       {
-        "title": "JSON Dosyasını Yükleyin",
-        "description": "Sürükle ve bırak yüklemeyi veya dosya seçmek için tıklamayı destekler"
+        "title": "Dosya Yükle",
+        "description": "Çevirmek istediğiniz JSON dosyasını yükleyin"
       },
       {
-        "title": "Hedef Dili Seçin",
-        "description": "Çevirmeniz gereken hedef dili seçin"
+        "title": "Hedef Dil Seç",
+        "description": "Çevirmek istediğiniz hedef dili seçin"
       },
       {
-        "title": "Çeviriyi Başlatın",
-        "description": "API Anahtarınızı girin ve yapay zeka çevirisini başlatın"
+        "title": "Çeviriye Başla",
+        "description": "API Anahtarınızı girin ve yapay zeka çevirisi başlatın"
       },
       {
-        "title": "Sonucu İndirin",
-        "description": "Çevrilmiş JSON dosyasını indirin"
+        "title": "Sonucu İndir",
+        "description": "Çevrilen JSON dosyasını indirin"
       }
     ]
   },
   "features": {
-    "title": "Güçlü Çeviri Özellikleri",
-    "items": [
-      {
-        "title": "JSON Yapısını Koru",
-        "description": "Orijinal JSON dosyasının yapısını, girintiyi ve biçimlendirmesini akıllıca tanımlar ve korur"
+    "title": "Neden Bizi Seçmelisiniz?",
+    "learnMore": "Daha Fazla Bilgi Edinin",
+    "items": {
+      "codeFriendly": {
+        "title": "Kod Dostu",
+        "description": "Otomatik JSON biçimlendirmeyi destekler, JSON dosyasını kopyalayabilir veya doğrudan indirebilirsiniz."
       },
-      {
+      "multiLanguage": {
         "title": "Çok Dilli Destek",
-        "description": "İngilizce, Çince, Japonca ve daha fazlası dahil olmak üzere birden fazla dil arasında çeviriyi destekler"
+        "description": "Google, DeepSeek, Anthropic ve OpenAI tarafından desteklenen 30'dan fazla dilde çeviri yapmayı destekler."
       },
-      {
-        "title": "Yapay Zeka Destekli Çeviri",
-        "description": "Profesyonel terminolojinin doğruluğunu ve doğal ifadesini sağlamak için yapay zeka modellerini kullanır"
+      "aiPowered": {
+        "title": "Yapay Zeka Desteği",
+        "description": "Çeviri doğruluğunu ve akıcılığını sağlamak için gelişmiş yapay zeka teknolojisini kullanır."
       },
-      {
-        "title": "Güvenli ve Güvenilir",
-        "description": "API Anahtarı yalnızca tarayıcıda geçici olarak kullanılır ve asla sunucuya kaydedilmez veya iletilmez"
+      "dataSecurity": {
+        "title": "Veri Güvenliği",
+        "description": "Tüm çeviri işlemleri tarayıcınızda yapılır, böylece verilerinizin buluta yüklenmesi engellenir."
       }
-    ]
+    }
   },
   "uploadSection": {
-    "title": "JSON Dosyasını Yükleyin",
-    "description": "Çevirmeniz gereken JSON dosyasını yükleyin",
+    "title": "JSON Dosyası Yükle",
+    "description": "Çevirmek istediğiniz JSON dosyasını yükleyin",
     "dragText": "Dosyaları buraya sürükleyip bırakın veya yüklemek için tıklayın",
     "supportText": "10MB'a kadar .json dosyalarını destekler",
     "apiKeyTitle": "API Anahtarı",
@@ -68,7 +69,7 @@
     "errors": {
       "selectFile": "Lütfen bir dosya seçin",
       "jsonExtension": "Lütfen bir .json dosyası yükleyin",
-      "fileSize": "Dosya boyutu 10MB'ı geçemez",
+      "fileSize": "Dosya boyutu 10MB'yi geçemez",
       "jsonFormat": "Geçersiz JSON formatı, lütfen dosya içeriğini kontrol edin",
       "emptyJson": "JSON dosyası boş olamaz"
     },
@@ -76,17 +77,17 @@
       "uploaded": "Dosya başarıyla yüklendi"
     },
     "errorTitle": "Hata",
-    "successTitle": "Başarılı",
-    "apiKeyTip": "API Anahtarınız yalnızca tarayıcıda geçici olarak kullanılır ve herhangi bir sunucuya kaydedilmez veya iletilmez."
+    "successTitle": "Başarı",
+    "apiKeyTip": "Anahtar yalnızca tarayıcıda geçici olarak kullanılır ve hiçbir sunucuya kaydedilmez veya aktarılmaz."
   },
   "translateSection": {
-    "title": "Hedef Dili Seçin",
-    "description": "Çevirmeniz gereken hedef dili seçin"
+    "title": "Hedef Dil Seç",
+    "description": "Çevirmek istediğiniz hedef dili seçin"
   },
   "translatePanel": {
-    "startTranslate": "Çeviriyi Başlat",
-    "translating": "Çeviriliyor...",
-    "cancel": "İptal Et",
+    "startTranslate": "Çeviriye Başla",
+    "translating": "Çevriliyor...",
+    "cancel": "İptal",
     "uploadFirst": "Lütfen önce bir dosya yükleyin",
     "enterApiKey": "Lütfen API Anahtarınızı girin",
     "foundUnfinished": "Tamamlanmamış çeviri bulundu",
@@ -94,15 +95,15 @@
     "translationCancelled": "Çeviri iptal edildi",
     "invalidApiKey": "Geçersiz API Anahtarı formatı",
     "errorTitle": "Hata",
-    "successTitle": "Başarılı",
+    "successTitle": "Başarı",
     "translationCompleted": "Çeviri tamamlandı!",
     "showMoreLanguages": "Daha Fazla Dil Göster",
     "hideMoreLanguages": "Daha Fazla Dili Gizle",
-    "overallProgress": "Genel İlerleme",
+    "overallProgress": "Toplam İlerleme",
     "completedLanguages": "Tamamlanan Diller",
-    "translatingLanguage": "Çeviriliyor",
+    "translatingLanguage": "Çevriliyor",
     "tip": "İpucu",
-    "allLanguagesTranslated": "Seçilen tüm diller çevrildi.",
+    "allLanguagesTranslated": "Tüm seçili diller çevrildi.",
     "pleaseSelectLanguage": "Lütfen en az bir hedef dil seçin",
     "pleaseUploadAndEnterKey": "Lütfen bir dosya yükleyin ve API Anahtarınızı girin",
     "cancelled": "İptal Edildi",
@@ -114,20 +115,20 @@
     "apiKeyErrors": {
       "invalidFormat": "Geçersiz API anahtarı formatı",
       "invalidOrExpired": "Geçersiz veya süresi dolmuş API anahtarı",
-      "rateLimitReached": "API çağrı oran sınırı aşıldı",
+      "rateLimitReached": "API çağrı oranı sınırına ulaşıldı",
       "validationFailed": "API anahtarı doğrulaması başarısız oldu"
     }
   },
   "jsonPreview": {
     "title": "Önizleme",
-    "empty": "JSON önizlemesi burada görüntülenecektir",
+    "empty": "JSON önizlemesi burada gösterilecek",
     "copied": "Panoya kopyalandı",
     "originalJson": "Orijinal JSON",
-    "translatedJson": "Çevrilmiş JSON",
+    "translatedJson": "Çevrilen JSON",
     "tips": "İpucu: Gerçek zamanlı önizleme ve biçimlendirilmiş JSON dosyalarını destekler. İçeriği doğrudan kopyalayabilirsiniz.",
     "placeholder": {
       "upload": "Lütfen bir JSON dosyası yükleyin",
-      "translation": "Çeviri sonuçları burada görüntülenecektir"
+      "translation": "Çeviri sonuçları burada gösterilecek"
     },
     "actions": {
       "copy": "Kopyala",
@@ -158,7 +159,7 @@
       "ar": "Arapça",
       "pl": "Lehçe",
       "el": "Yunanca",
-      "nl": "Hollandaca",
+      "nl": "Felemenkçe",
       "id": "Endonezce",
       "ko": "Korece",
       "th": "Tayca",
@@ -186,57 +187,57 @@
       "bn": "Bengalce",
       "ta": "Tamilce",
       "ur": "Urduca",
-      "gu": "Guceratça",
+      "gu": "Güceratça",
       "kn": "Kannada",
       "ml": "Malayalam",
       "mr": "Marathi",
       "ms": "Malayca",
-      "my": "Burmalı",
-      "km": "Kmer",
-      "lo": "Lao",
+      "my": "Birmanca",
+      "km": "Kmerce",
+      "lo": "Laoca",
       "mn": "Moğolca",
       "az": "Azerice",
       "ka": "Gürcüce",
       "hy": "Ermenice",
       "sw": "Svahili",
-      "af": "Afrikaans",
+      "af": "Afrikaanca",
       "am": "Amharca"
     }
   },
   "faq": {
     "title": "Sıkça Sorulan Sorular",
-    "description": "JSON çeviri aracı hakkında sıkça sorulan sorular",
+    "description": "JSON çeviri aracıyla ilgili sık sorulan sorular",
     "items": [
       {
-        "question": "Bu araç ne yapar?",
-        "answer": "Bu, geliştiricilerin JSON dil dosyalarını JSON yapısının bütünlüğünü koruyarak birden fazla dile hızlıca çevirmelerine yardımcı olan AI destekli bir JSON uluslararasılaştırma çeviri aracıdır."
+        "question": "Bu araç ne işe yarar?",
+        "answer": "Bu, geliştiricilere JSON dil dosyalarını JSON yapısının bütünlüğünü koruyarak hızlı bir şekilde birden fazla dile çevirmelerine yardımcı olan yapay zeka destekli bir JSON uluslararasılaştırma çeviri aracıdır."
       },
       {
-        "question": "Bu aracı nasıl kullanırım?",
-        "answer": "1. Çevirmeniz gereken JSON dosyasını yükleyin\n2. Hedef dili seçin\n3. API Anahtarınızı girin\n4. Çeviriyi Başlat'ı tıklayın\n5. Çeviri tamamlandıktan sonra sonucu indirin"
+        "question": "Bu araç nasıl kullanılır?",
+        "answer": "1. Çevirmek istediğiniz JSON dosyasını yükleyin\n2. Hedef dili seçin\n3. API Anahtarınızı girin\n4. Çeviriye Başla'ya tıklayın\n5. Çeviri tamamlandıktan sonra sonucu indirin"
       },
       {
-        "question": "Hangi diller destekleniyor?",
-        "answer": "Şu anda İngilizce, Basitleştirilmiş Çince, Geleneksel Çince, Japonca, Korece, Fransızca, Almanca, İspanyolca, Rusça ve daha fazlası dahil olmak üzere birden fazla dili desteklemektedir."
+        "question": "Hangi diller desteklenmektedir?",
+        "answer": "Şu anda İngilizce, Basitleştirilmiş Çince, Geleneksel Çince, Japonca, Korece, Fransızca, Almanca, İspanyolca, Rusça ve daha fazlasını içeren çok sayıda dil desteklenmektedir."
       },
       {
-        "question": "API Anahtarım kaydedilecek mi?",
-        "answer": "Hayır. API Anahtarınız yalnızca tarayıcıda geçici olarak kullanılır ve herhangi bir sunucuya kaydedilmez veya iletilmez."
+        "question": "Bu araç ne kadar güvenlidir? Verilerim yüklenir mi?",
+        "answer": "Veri güvenliği ve gizliliğini çok ciddiye alıyoruz. Bu aracın tüm işlemleri yerel olarak tarayıcınızda gerçekleştirilir. JSON dosyalarınız ve API anahtarlarınız hiçbir zaman sunucularımıza yüklenmez. Bu, veri gizliliğinizin ve iş sırlarınızın mutlaka güvenli olmasını sağlar.\n\nÖzellikle, tüm süreç aşağıdaki gibi çalışır:\n1. Yerel İşleme: Bir JSON dosyası yüklediğinizde doğrudan tarayıcınızın hafızasına yüklenir. Herhangi bir uzak sunucudan geçmez.\n2. API Anahtarı Güvenliği: API Anahtarınız yalnızca tarayıcının geçici oturumunda saklanır. Doğrudan tarayıcınızdan AI sağlayıcısının resmi API uç noktasına (örneğin OpenAI, Google Gemini) gönderilir, bizim sunucumuzu proxy olarak geçmez.\n3. Veri Tutulmaz: Tarayıcı sekmesini kapattığınızda dosya içeriği ve API Anahtarı dahil tüm veriler hemen silinir. İşlem verilerinizin hiçbirini saklamaz, kaydetmez veya analiz etmeyiz.\n\nBu aracı tam güvenle kullanabilirsiniz çünkü hassas bilgileriniz asla kendi bilgisayarınızdan ayrılmaz."
       },
       {
-        "question": "Çeviri kalitesini nasıl sağlarım?",
-        "answer": "Profesyonel terminolojinin doğruluğunu ve dil ifadesinin doğal halini sağlamak için çeviri için yapay zeka modellerini kullanıyoruz. Ayrıca belirli terimlerin tutarlılığını korumak için özel sözlük işlevlerini de destekliyoruz."
+        "question": "Çeviri kalitesi nasıl sağlanır?",
+        "answer": "Çeviri doğruluğunu ve dil ifadesinin doğal oluşunu sağlamak için yapay zeka modellerini kullanıyoruz. Ayrıca özel sözlük fonksiyonlarını destekleyerek belirli terimlerin tutarlılığını koruyoruz."
       },
       {
         "question": "Dosya boyutu sınırı var mı?",
-        "answer": "Tek bir JSON dosyası için maksimum boyut 10MB'tır. Daha büyük dosyalar için toplu olarak çevirmeniz önerilir."
+        "answer": "Tek bir JSON dosyası için maksimum boyut 10MB'dir. Daha büyük dosyalar için toplu olarak çevirmeniz önerilir."
       }
     ]
   },
   "cta": {
-    "title": "Şimdi AI Çeviri Aracını Kullanın",
-    "description": "JSON dil dosyalarınızı birden fazla dile hızlı ve doğru bir şekilde çevirin",
-    "button": "Şimdi Deneyin",
+    "title": "Yapay Zeka Çeviri Aracını Şimdi Kullan",
+    "description": "JSON dil dosyalarınızı hızlı ve doğru bir şekilde birden fazla dile çevirin",
+    "button": "Şimdi Dene",
     "features": [
       "Kayıt gerekmez",
       "Tamamen ücretsiz",
@@ -244,14 +245,14 @@
     ]
   },
   "footer": {
-    "creator": "❤️ ile Red tarafından oluşturuldu",
+    "creator": "Red tarafından ❤️ ile oluşturuldu",
     "twitter": "@chrisgostrong",
-    "coffee": "Bana bir kahve alın",
+    "coffee": "Bana bir kahve ısmarla",
     "github": "GitHub"
   },
   "metadata": {
-    "title": "JSON Çeviri Aracı - Yapay Zeka Destekli Çok Dilli Çeviri Çözümü",
-    "description": "Yapay zeka teknolojisini kullanarak JSON dil dosyalarını birden fazla dile hızlı ve doğru bir şekilde çevirin. JSON yapısını, değişken yer tutucuları ve HTML etiketlerini korumayı destekler.",
-    "keywords": "i18n çevirisi, JSON çevirisi, yapay zeka çevirisi, geliştirici çeviri aracı, yazılım yerelleştirmesi, web sitesi yerelleştirmesi, uygulama yerelleştirmesi, uluslararasılaştırma aracı, otomatik çeviri, kod çevirisi, React i18n, Vue i18n, Next.js i18n, Angular i18n, Svelte i18n, i18next otomatik çevirisi, next-intl aracı, JavaScript i18n kitaplığı, Flutter i18n, React Native i18n, iOS Uygulama çevirisi, Android Uygulama çevirisi, GitHub i18n entegrasyonu, VS Code i18n eklentisi, Node.js i18n, ARB dosya çevirisi, Yapay Zeka destekli JSON dosya çevirisi, geliştiriciye özel i18n çözümü, JSON dil dosyalarının otomatik çevirisi, çevrimiçi JSON çevirmeni, ücretsiz i18n çeviri aracı, verimli yazılım uluslararasılaştırma süreci, en iyi i18n uygulamaları, sürekli yerelleştirme hizmeti, çok dilli web sitesi geliştirme, oyun yerelleştirme aracı, yapay zeka destekli yerelleştirme, çeviri yönetim sistemi, TMS, çevik yerelleştirme, çeviri API'si, tüm dillerin tek tıklamayla çevirisi, çok dilli web sitelerinin nasıl uygulanacağı, uygulamanın uluslararasılaştırılmasının nasıl yapılacağı, otomatik ön uç çeviri süreci, yerelleştirme maliyetlerini azaltma, çok dilli sürümleri hızlı bir şekilde başlatma, çok dilli JSON dosyalarının nasıl yönetileceği, çeviri ekibi işbirliği aracı, i18n sorunlarını çözme, çeviri tutarlılığının nasıl sağlanacağı, en iyi JSON çeviri aracı"
+    "title": "JSON Çeviri Aracı - Yapay zeka destekli çok dilli çeviri çözümü",
+    "description": "JSON dil dosyalarını hızlı ve doğru bir şekilde yapay zeka teknolojisiyle birden fazla dile çevirin. JSON yapısını, değişken yer tutucularını ve HTML etiketlerini korumayı destekler.",
+    "keywords": "i18n çeviri, JSON çeviri, yapay zeka çevirisi, geliştirici çeviri aracı, yazılım yerelleştirme, web sitesi yerelleştirme, uygulama yerelleştirme, uluslararasılaştırma aracı, otomatik çeviri, kod çevirisi, React i18n, Vue i18n, Next.js i18n, Angular i18n, Svelte i18n, i18next otomatik çeviri, next-intl aracı, JavaScript i18n kütüphanesi, Flutter i18n, React Native i18n, iOS uygulama çevirisi, Android uygulama çevirisi, GitHub i18n entegrasyonu, VS Code i18n eklentisi, Node.js i18n, ARB dosya çevirisi, yapay zeka destekli JSON dosya çevirisi, geliştiriciye özel i18n çözümü, JSON dil dosyalarının otomatik çevirisi, çevrimiçi JSON çevirmen, ücretsiz i18n çeviri aracı, verimli yazılım uluslararasılaştırma süreci, en iyi i18n uygulamaları, sürekli yerelleştirme hizmeti, çok dilli web sitesi geliştirme, oyun yerelleştirme aracı, yapay zeka destekli yerelleştirme, çeviri yönetim sistemi, TMS, çevik yerelleştirme, çeviri API'si, tek tıklamayla tüm dillerin çevirisi, çok dilli web siteleri nasıl uygulanır, uygulama uluslararasılaştırma nasıl yapılır, otomatik ön uç çeviri süreci, yerelleştirme maliyetlerini azaltma, çok dilli sürümleri hızlı başlatma, çok dilli JSON dosyalarını yönetme, çeviri ekibi işbirliği aracı, i18n sorunlarını çözme, çeviri tutarlılığını koruma, en iyi JSON çeviri aracı"
   }
 }

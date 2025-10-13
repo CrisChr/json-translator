@@ -9,7 +9,7 @@ export async function translate(
   onStream: (content: string) => void
 ): Promise<string | null> {
   const genAI = new GoogleGenerativeAI(apiKey);
-  const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
+  const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash-lite" });
 
   const languageMap: { [key: string]: string } = {
     "en": "English",
@@ -65,7 +65,7 @@ export async function translate(
 export async function validateApiKey(apiKey: string): Promise<void> {
   try {
     const genAI = new GoogleGenerativeAI(apiKey);
-    const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
+    const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash-lite" });
     await model.countTokens("test");
   } catch (error: any) {
     if (error.message.includes("API key not valid")) {

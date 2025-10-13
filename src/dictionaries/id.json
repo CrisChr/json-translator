@@ -1,60 +1,61 @@
 {
   "hero": {
     "badge": "Didukung AI",
-    "title": "Alat Penerjemah Internasionalisasi JSON i18n",
+    "title": "Alat Terjemahan Internasionalisasi JSON i18n",
     "description": "Gunakan teknologi AI untuk menerjemahkan file bahasa JSON Anda dengan cepat. Cepat, akurat, dan mudah digunakan.",
     "features": {
-      "multilanguage": "Dukungan Multibahasa",
-      "realtime": "Penerjemahan Waktu Nyata"
+      "multilanguage": "Dukungan Multi-bahasa",
+      "secure": "Aman dan Terpercaya",
+      "free": "Sepenuhnya Gratis"
     }
   },
   "workflow": {
-    "title": "Terjemahkan dalam Empat Langkah Mudah",
-    "description": "Kami telah menyederhanakan proses penerjemahan file JSON untuk membantu Anda mendapatkan hasil terjemahan berkualitas tinggi dengan cepat",
+    "title": "Cara Kerjanya",
     "steps": [
       {
-        "title": "Unggah File JSON",
-        "description": "Mendukung unggah dengan seret dan lepas atau klik untuk memilih file"
+        "title": "Unggah File",
+        "description": "Unggah file JSON yang perlu Anda terjemahkan"
       },
       {
         "title": "Pilih Bahasa Target",
         "description": "Pilih bahasa target yang ingin Anda terjemahkan"
       },
       {
-        "title": "Mulai Penerjemahan",
-        "description": "Masukkan Kunci API Anda dan mulai penerjemahan AI"
+        "title": "Mulai Terjemahan",
+        "description": "Masukkan API Key Anda dan mulai terjemahan AI"
       },
       {
         "title": "Unduh Hasil",
-        "description": "Unduh file JSON yang diterjemahkan"
+        "description": "Unduh file JSON hasil terjemahan"
       }
     ]
   },
   "features": {
-    "title": "Fitur Penerjemahan Canggih",
-    "items": [
-      {
-        "title": "Pertahankan Struktur JSON",
-        "description": "Secara cerdas mengidentifikasi dan mempertahankan struktur, indentasi, dan format file JSON asli"
+    "title": "Mengapa Memilih Kami?",
+    "learnMore": "Pelajari Lebih Lanjut",
+    "items": {
+      "codeFriendly": {
+        "title": "Ramah Kode",
+        "description": "Mendukung pemformatan JSON otomatis, Anda dapat menyalin atau langsung mengunduh file JSON."
       },
-      {
-        "title": "Dukungan Multibahasa",
-        "description": "Mendukung penerjemahan antar berbagai bahasa, termasuk Inggris, Mandarin, Jepang, dan lainnya"
+      "multiLanguage": {
+        "title": "Dukungan Multi-bahasa",
+        "description": "Mendukung terjemahan dalam lebih dari 30 bahasa, didukung oleh Google, DeepSeek, Anthropic dan OpenAI."
       },
-      {
-        "title": "Penerjemahan Didukung AI",
-        "description": "Menggunakan model AI untuk memastikan keakuratan dan ekspresi alami dari terminologi profesional"
+      "aiPowered": {
+        "title": "Didukung AI",
+        "description": "Memanfaatkan teknologi AI canggih untuk memastikan akurasi dan kelancaran terjemahan."
       },
-      {
-        "title": "Aman dan Andal",
-        "description": "Kunci API hanya digunakan sementara di browser dan tidak pernah disimpan atau dikirim ke server"
+      "dataSecurity": {
+        "title": "Keamanan Data",
+        "description": "Semua proses terjemahan dilakukan di browser Anda, memastikan data Anda tidak diunggah ke cloud."
       }
-    ]
+    }
   },
   "uploadSection": {
     "title": "Unggah File JSON",
-    "description": "Unggah file JSON yang ingin Anda terjemahkan",
-    "dragText": "Seret dan lepas file di sini atau klik untuk mengunggah",
+    "description": "Unggah file JSON yang perlu Anda terjemahkan",
+    "dragText": "Seret dan jatuhkan file di sini atau klik untuk mengunggah",
     "supportText": "Mendukung file .json hingga 10MB",
     "apiKeyTitle": "Kunci API",
     "apiKeyPlaceholder": "sk-...",
@@ -77,44 +78,44 @@
     },
     "errorTitle": "Kesalahan",
     "successTitle": "Berhasil",
-    "apiKeyTip": "Kunci API Anda hanya digunakan sementara di browser dan tidak akan disimpan atau dikirim ke server mana pun."
+    "apiKeyTip": "Kunci hanya digunakan sementara di browser dan tidak akan disimpan atau dikirim ke server mana pun."
   },
   "translateSection": {
     "title": "Pilih Bahasa Target",
     "description": "Pilih bahasa target yang ingin Anda terjemahkan"
   },
   "translatePanel": {
-    "startTranslate": "Mulai Penerjemahan",
+    "startTranslate": "Mulai Terjemahan",
     "translating": "Menerjemahkan...",
     "cancel": "Batal",
     "uploadFirst": "Silakan unggah file terlebih dahulu",
-    "enterApiKey": "Silakan masukkan Kunci API Anda",
+    "enterApiKey": "Silakan masukkan API Key Anda",
     "foundUnfinished": "Ditemukan terjemahan yang belum selesai",
-    "continueTranslation": "Lanjutkan Penerjemahan",
-    "translationCancelled": "Penerjemahan dibatalkan",
-    "invalidApiKey": "Format Kunci API tidak valid",
+    "continueTranslation": "Lanjutkan Terjemahan",
+    "translationCancelled": "Terjemahan dibatalkan",
+    "invalidApiKey": "Format API Key tidak valid",
     "errorTitle": "Kesalahan",
     "successTitle": "Berhasil",
-    "translationCompleted": "Penerjemahan selesai!",
+    "translationCompleted": "Terjemahan selesai!",
     "showMoreLanguages": "Tampilkan Lebih Banyak Bahasa",
     "hideMoreLanguages": "Sembunyikan Lebih Banyak Bahasa",
-    "overallProgress": "Progres Keseluruhan",
-    "completedLanguages": "Bahasa yang Selesai",
+    "overallProgress": "Kemajuan Keseluruhan",
+    "completedLanguages": "Bahasa yang Sudah Selesai",
     "translatingLanguage": "Menerjemahkan",
     "tip": "Tip",
     "allLanguagesTranslated": "Semua bahasa yang dipilih telah diterjemahkan.",
     "pleaseSelectLanguage": "Silakan pilih setidaknya satu bahasa target",
-    "pleaseUploadAndEnterKey": "Silakan unggah file dan masukkan Kunci API Anda",
+    "pleaseUploadAndEnterKey": "Silakan unggah file dan masukkan API Key Anda",
     "cancelled": "Dibatalkan",
-    "translationFailed": "Penerjemahan gagal",
-    "bytes": "byte",
+    "translationFailed": "Terjemahan gagal",
+    "bytes": "bytes",
     "kb": "KB",
     "mb": "MB",
     "gb": "GB",
     "apiKeyErrors": {
       "invalidFormat": "Format kunci API tidak valid",
       "invalidOrExpired": "Kunci API tidak valid atau kedaluwarsa",
-      "rateLimitReached": "Batas laju panggilan API tercapai",
+      "rateLimitReached": "Batas panggilan API tercapai",
       "validationFailed": "Validasi kunci API gagal"
     }
   },
@@ -123,25 +124,25 @@
     "empty": "Pratinjau JSON akan ditampilkan di sini",
     "copied": "Disalin ke papan klip",
     "originalJson": "JSON Asli",
-    "translatedJson": "JSON yang Diterjemahkan",
-    "tips": "Tip: Mendukung pratinjau waktu nyata dan file JSON yang diformat. Anda dapat menyalin konten secara langsung.",
+    "translatedJson": "JSON Hasil Terjemahan",
+    "tips": "Tip: Mendukung pratinjau real-time dan file JSON yang diformat. Anda dapat menyalin konten secara langsung.",
     "placeholder": {
       "upload": "Silakan unggah file JSON",
       "translation": "Hasil terjemahan akan ditampilkan di sini"
     },
     "actions": {
       "copy": "Salin",
+      "clear": "Bersihkan",
       "download": "Unduh",
       "downloadAll": "Unduh Semua Terjemahan",
       "downloadFormat": "Unduh Terjemahan {lang}"
     },
     "toast": {
       "copySuccess": "Konten disalin ke papan klip",
-      "clear": "Bersihkan",
-      "copyError": "Penyalinan gagal, silakan salin secara manual",
-      "downloadSuccess": "File terjemahan {lang} diunduh",
-      "downloadAllSuccess": "Semua file terjemahan diunduh",
-      "downloadError": "Pengunduhan gagal, silakan coba lagi"
+      "copyError": "Gagal menyalin, silakan salin secara manual",
+      "downloadSuccess": "File terjemahan {lang} telah diunduh",
+      "downloadAllSuccess": "Semua file terjemahan telah diunduh",
+      "downloadError": "Unduhan gagal, silakan coba lagi"
     },
     "languages": {
       "en": "Inggris",
@@ -159,9 +160,9 @@
       "pl": "Polandia",
       "el": "Yunani",
       "nl": "Belanda",
-      "id": "Indonesia",
+      "id": "Bahasa Indonesia",
       "ko": "Korea",
-      "th": "Thailand",
+      "th": "Thai",
       "vi": "Vietnam",
       "fa": "Persia",
       "uk": "Ukraina",
@@ -175,7 +176,7 @@
       "bg": "Bulgaria",
       "fi": "Finlandia",
       "hr": "Kroasia",
-      "lt": "Lituania",
+      "lt": "Lithuania",
       "nb": "Norwegia Bokmål",
       "sl": "Slovenia",
       "lv": "Latvia",
@@ -193,39 +194,39 @@
       "ms": "Melayu",
       "my": "Burma",
       "km": "Khmer",
-      "lo": "Laos",
+      "lo": "Lao",
       "mn": "Mongolia",
       "az": "Azerbaijan",
       "ka": "Georgia",
       "hy": "Armenia",
       "sw": "Swahili",
       "af": "Afrikaans",
-      "am": "Amharik"
+      "am": "Amharic"
     }
   },
   "faq": {
     "title": "Pertanyaan yang Sering Diajukan",
-    "description": "Pertanyaan yang sering diajukan tentang alat penerjemah JSON",
+    "description": "Pertanyaan umum tentang alat terjemahan JSON",
     "items": [
       {
         "question": "Apa fungsi alat ini?",
-        "answer": "Ini adalah alat terjemahan internasionalisasi JSON yang didukung AI yang membantu pengembang menerjemahkan file bahasa JSON ke berbagai bahasa dengan cepat sambil mempertahankan integritas struktur JSON."
+        "answer": "Ini adalah alat terjemahan internasionalisasi JSON berbasis AI yang membantu pengembang dengan cepat menerjemahkan file bahasa JSON ke dalam berbagai bahasa sambil mempertahankan integritas struktur JSON."
       },
       {
         "question": "Bagaimana cara menggunakan alat ini?",
-        "answer": "1. Unggah file JSON yang ingin Anda terjemahkan\n2. Pilih bahasa target\n3. Masukkan Kunci API Anda\n4. Klik Mulai Penerjemahan\n5. Unduh hasilnya setelah penerjemahan selesai"
+        "answer": "1. Unggah file JSON yang perlu Anda terjemahkan\n2. Pilih bahasa target\n3. Masukkan API Key Anda\n4. Klik Mulai Terjemahan\n5. Unduh hasil setelah terjemahan selesai"
       },
       {
         "question": "Bahasa apa saja yang didukung?",
         "answer": "Saat ini mendukung berbagai bahasa termasuk Inggris, Mandarin Sederhana, Mandarin Tradisional, Jepang, Korea, Prancis, Jerman, Spanyol, Rusia, dan lainnya."
       },
       {
-        "question": "Apakah Kunci API saya akan disimpan?",
-        "answer": "Tidak. Kunci API Anda hanya digunakan sementara di browser dan tidak akan disimpan atau dikirim ke server mana pun."
+        "question": "Seberapa amankah alat ini? Apakah data saya akan diunggah?",
+        "answer": "Kami sangat menjaga keamanan data dan privasi. Semua operasi alat ini dilakukan secara lokal di browser Anda. File JSON dan kunci API Anda tidak akan pernah diunggah ke server kami. Ini memastikan privasi data dan rahasia bisnis Anda tetap aman.\n\nSecara khusus, seluruh proses bekerja sebagai berikut:\n1.  Pemrosesan Lokal: Saat Anda mengunggah file JSON, file tersebut langsung dimuat ke memori browser Anda. Tidak melewati server jarak jauh mana pun.\n2.  Keamanan Kunci API: Kunci API Anda hanya disimpan di sesi sementara browser. Dikirim langsung dari browser Anda ke endpoint API resmi penyedia AI (misalnya, OpenAI, Google Gemini) untuk terjemahan, tanpa melalui server kami sebagai perantara.\n3.  Tidak Ada Penyimpanan Data: Setelah Anda menutup tab browser, semua data, termasuk konten file dan kunci API, langsung dihapus. Kami tidak menyimpan, mencatat, atau menganalisis data operasional Anda.\n\nAnda dapat menggunakan alat ini dengan sepenuhnya percaya diri, karena informasi sensitif Anda tidak pernah meninggalkan komputer Anda sendiri."
       },
       {
-        "question": "Bagaimana cara memastikan kualitas terjemahan?",
-        "answer": "Kami menggunakan model AI untuk penerjemahan untuk memastikan keakuratan terminologi profesional dan keberlangsungan ekspresi bahasa. Kami juga mendukung fungsi kamus khusus untuk mempertahankan konsistensi istilah tertentu."
+        "question": "Bagaimana memastikan kualitas terjemahan?",
+        "answer": "Kami menggunakan model AI untuk terjemahan guna memastikan akurasi istilah profesional dan kelancaran ekspresi bahasa. Kami juga mendukung fungsi kamus khusus untuk mempertahankan konsistensi istilah tertentu."
       },
       {
         "question": "Apakah ada batasan ukuran file?",
@@ -234,24 +235,24 @@
     ]
   },
   "cta": {
-    "title": "Gunakan Alat Penerjemah AI Sekarang",
-    "description": "Terjemahkan file bahasa JSON Anda ke berbagai bahasa dengan cepat dan akurat",
+    "title": "Gunakan Alat Terjemahan AI Sekarang",
+    "description": "Terjemahkan file bahasa JSON Anda ke dalam berbagai bahasa dengan cepat dan akurat",
     "button": "Coba Sekarang",
     "features": [
       "Tidak perlu pendaftaran",
       "Sepenuhnya gratis",
-      "Penerjemahan waktu nyata"
+      "Terjemahan real-time"
     ]
   },
   "footer": {
     "creator": "Dibuat oleh Red dengan ❤️",
     "twitter": "@chrisgostrong",
-    "coffee": "Beli saya kopi",
+    "coffee": "Belikan saya kopi",
     "github": "GitHub"
   },
   "metadata": {
-    "title": "Alat Penerjemah JSON - Solusi Penerjemah Multibahasa Didukung AI",
-    "description": "Gunakan teknologi AI untuk menerjemahkan file bahasa JSON ke berbagai bahasa dengan cepat dan akurat. Mendukung mempertahankan struktur JSON, placeholder variabel, dan tag HTML.",
-    "keywords": "penerjemahan i18n, penerjemahan JSON, penerjemahan AI, alat penerjemahan pengembang, lokalisasi perangkat lunak, lokalisasi situs web, Lokalisasi Aplikasi, alat internasionalisasi, penerjemahan otomatis, penerjemahan kode, React i18n, Vue i18n, Next.js i18n, Angular i18n, Svelte i18n, Penerjemahan otomatis i18next, alat next-intl, pustaka JavaScript i18n, Flutter i18n, React Native i18n, penerjemahan Aplikasi iOS, penerjemahan Aplikasi Android, integrasi GitHub i18n, plugin VS Code i18n, Node.js i18n, penerjemahan file ARB, penerjemahan file JSON didukung AI, solusi i18n khusus pengembang, penerjemahan otomatis file bahasa JSON, penerjemah JSON online, alat penerjemahan i18n gratis, proses internasionalisasi perangkat lunak yang efisien, praktik i18n terbaik, layanan lokalisasi berkelanjutan, pengembangan situs web multibahasa, alat lokalisasi game, lokalisasi berbantuan AI, sistem manajemen penerjemahan, TMS, lokalisasi tangkas, API penerjemahan, penerjemahan satu klik semua bahasa, cara menerapkan situs web multibahasa, cara melakukan internasionalisasi Aplikasi, proses penerjemahan front-end otomatis, mengurangi biaya lokalisasi, meluncurkan versi multibahasa dengan cepat, cara mengelola file JSON multibahasa, alat kolaborasi tim penerjemahan, memecahkan masalah i18n, cara mempertahankan konsistensi terjemahan, alat penerjemahan JSON terbaik"
+    "title": "Alat Terjemahan JSON - Solusi Terjemahan Multibahasa Berbasis AI",
+    "description": "Gunakan teknologi AI untuk dengan cepat dan akurat menerjemahkan file bahasa JSON ke dalam berbagai bahasa. Mendukung pemeliharaan struktur JSON, placeholder variabel, dan tag HTML.",
+    "keywords": "terjemahan i18n, terjemahan JSON, terjemahan AI, alat terjemahan pengembang, lokalisasi perangkat lunak, lokalisasi situs web, lokalisasi Aplikasi, alat internasionalisasi, terjemahan otomatis, terjemahan kode, React i18n, Vue i18n, Next.js i18n, Angular i18n, Svelte i18n, terjemahan otomatis i18next, alat next-intl, pustaka i18n JavaScript, Flutter i18n, React Native i18n, terjemahan Aplikasi iOS, terjemahan Aplikasi Android, integrasi i18n GitHub, plugin i18n VS Code, Node.js i18n, terjemahan file ARB, terjemahan file JSON berbasis AI, solusi i18n khusus pengembang, terjemahan otomatis file bahasa JSON, penerjemah JSON online, alat terjemahan i18n gratis, proses internasionalisasi perangkat lunak yang efisien, praktik i18n terbaik, layanan lokalisasi berkelanjutan, pengembangan situs web multibahasa, alat lokalisasi permainan, lokalisasi berbantuan AI, sistem manajemen terjemahan, TMS, lokalisasi agile, API terjemahan, terjemahan satu klik semua bahasa, cara mengimplementasikan situs web multibahasa, cara melakukan internasionalisasi Aplikasi, proses terjemahan front-end otomatis, mengurangi biaya lokalisasi, meluncurkan versi multibahasa dengan cepat, cara mengelola file JSON multibahasa, alat kolaborasi tim terjemahan, menyelesaikan titik nyeri i18n, cara mempertahankan konsistensi terjemahan, alat terjemahan JSON terbaik"
   }
 }

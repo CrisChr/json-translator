@@ -5,16 +5,16 @@
     "description": "使用 AI 技术快速翻译您的 JSON 语言文件。快速、准确、易用。",
     "features": {
       "multilanguage": "多语言支持",
-      "realtime": "实时翻译"
+      "secure": "安全可靠",
+      "free": "完全免费"
     }
   },
   "workflow": {
-    "title": "四个简单步骤完成翻译",
-    "description": "我们简化了 JSON 文件翻译流程，帮助您快速获得高质量的翻译结果",
+    "title": "工作流程",
     "steps": [
       {
-        "title": "上传 JSON 文件",
-        "description": "支持拖拽上传或点击选择文件"
+        "title": "上传文件",
+        "description": "上传需要翻译的 JSON 文件"
       },
       {
         "title": "选择目标语言",
@@ -31,25 +31,26 @@
     ]
   },
   "features": {
-    "title": "强大的翻译功能",
-    "items": [
-      {
-        "title": "保持 JSON 结构",
-        "description": "智能识别并保持原始 JSON 文件的结构、缩进和格式"
+    "title": "为什么选择我们？",
+    "learnMore": "了解更多",
+    "items": {
+      "codeFriendly": {
+        "title": "代码友好",
+        "description": "支持自动格式化JSON，可复制或直接下载JSON文件。"
       },
-      {
+      "multiLanguage": {
         "title": "多语言支持",
-        "description": "支持包括英语、中文、日语等多种语言之间的翻译"
+        "description": "支持超过30种语言的翻译，由Google、DeepSeek、Anthropic、OpenAI提供支持。"
       },
-      {
-        "title": "AI 驱动翻译",
-        "description": "使用 AI 模型确保专业术语的准确性和自然表达"
+      "aiPowered": {
+        "title": "AI驱动",
+        "description": "利用先进的AI技术，确保翻译的准确性和流畅性。"
       },
-      {
-        "title": "安全可靠",
-        "description": "API Key 仅在浏览器临时使用，从不保存或传输到服务器"
+      "dataSecurity": {
+        "title": "数据安全",
+        "description": "所有翻译过程均在您的浏览器中完成，确保您的数据不会上传到云端。"
       }
-    ]
+    }
   },
   "uploadSection": {
     "title": "上传 JSON 文件",

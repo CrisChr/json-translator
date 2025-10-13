@@ -22,6 +22,7 @@ export default function Footer({ dict }: FooterProps) {
           </p>
           <div className="flex items-center gap-4">
             <a href={`/${lang}/about`} className="text-gray-600 hover:text-blue-600 transition-colors">About</a>
+            <a href={`/${lang}/blog`} className="text-gray-600 hover:text-blue-600 transition-colors">Blog</a>
             <a href={`/${lang}/privacy`} className="text-gray-600 hover:text-blue-600 transition-colors">Privacy</a>
             <a href={`/${lang}/terms`} className="text-gray-600 hover:text-blue-600 transition-colors">Terms</a>
           </div>

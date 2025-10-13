@@ -1,64 +1,65 @@
 {
   "hero": {
-    "badge": "Com tecnologia de IA",
-    "title": "Ferramenta de Tradução de Internacionalização JSON i18n",
-    "description": "Use a tecnologia de IA para traduzir rapidamente seus arquivos de linguagem JSON. Rápido, preciso e fácil de usar.",
+    "badge": "Alimentado por IA",
+    "title": "Ferramenta de Tradução Internacional i18n JSON",
+    "description": "Use a tecnologia de IA para traduzir rapidamente seus arquivos de idioma JSON. Rápido, preciso e fácil de usar.",
     "features": {
-      "multilanguage": "Suporte Multilíngue",
-      "realtime": "Tradução em Tempo Real"
+      "multilanguage": "Suporte multilíngue",
+      "secure": "Seguro e Confiável",
+      "free": "Totalmente Grátis"
     }
   },
   "workflow": {
-    "title": "Traduza em Quatro Passos Simples",
-    "description": "Simplificamos o processo de tradução de arquivos JSON para ajudá-lo a obter rapidamente resultados de tradução de alta qualidade",
+    "title": "Como Funciona",
     "steps": [
       {
-        "title": "Carregar Arquivo JSON",
-        "description": "Suporta upload por arrastar e soltar ou clique para selecionar o arquivo"
+        "title": "Envie o Arquivo",
+        "description": "Envie o arquivo JSON que você precisa traduzir"
       },
       {
         "title": "Selecione o Idioma de Destino",
-        "description": "Selecione o idioma de destino para o qual você precisa traduzir"
+        "description": "Selecione o idioma de destino para a tradução"
       },
       {
         "title": "Iniciar Tradução",
-        "description": "Insira sua Chave API e inicie a tradução por IA"
+        "description": "Insira sua chave da API e inicie a tradução com IA"
       },
       {
-        "title": "Baixar Resultado",
+        "title": "Baixe o Resultado",
         "description": "Baixe o arquivo JSON traduzido"
       }
     ]
   },
   "features": {
-    "title": "Recursos de Tradução Potentes",
-    "items": [
-      {
-        "title": "Preservar Estrutura JSON",
-        "description": "Identifica e preserva inteligentemente a estrutura, a indentação e a formatação do arquivo JSON original"
+    "title": "Por que nos escolher?",
+    "learnMore": "Saiba mais",
+    "items": {
+      "codeFriendly": {
+        "title": "Amigável para Código",
+        "description": "Suporta formatação automática de JSON, você pode copiar ou baixar diretamente o arquivo JSON."
       },
-      {
+      "multiLanguage": {
         "title": "Suporte Multilíngue",
-        "description": "Suporta tradução entre vários idiomas, incluindo inglês, chinês, japonês e muito mais"
+        "description": "Suporta tradução em mais de 30 idiomas, alimentado por Google, DeepSeek, Anthropic e OpenAI."
       },
-      {
-        "title": "Tradução com tecnologia de IA",
-        "description": "Usa modelos de IA para garantir a precisão e a expressão natural da terminologia profissional"
+      "aiPowered": {
+        "title": "Alimentado por IA",
+        "description": "Utiliza tecnologia avançada de IA para garantir precisão e fluidez na tradução."
       },
-      {
-        "title": "Seguro e Confiável",
-        "description": "A Chave API é usada apenas temporariamente no navegador e nunca é salva ou transmitida para o servidor"
+      "dataSecurity": {
+        "title": "Segurança de Dados",
+        "description": "Todos os processos de tradução ocorrem em seu navegador, garantindo que seus dados não sejam carregados para a nuvem."
       }
-    ]
+    }
   },
   "uploadSection": {
-    "title": "Carregar Arquivo JSON",
-    "description": "Carregue o arquivo JSON que você precisa traduzir",
-    "dragText": "Arraste e solte os arquivos aqui ou clique para carregar",
-    "supportText": "Suporta arquivos .json de até 10 MB",
-    "apiKeyTitle": "Chave API",
+    "title": "Enviar Arquivo JSON",
+    "description": "Envie o arquivo JSON que você precisa traduzir",
+    "dragText": "Arraste e solte arquivos aqui ou clique para enviar",
+    "supportText": "Suporta arquivos .json de até 10MB",
+    "apiKeyTitle": "Chave da API",
     "apiKeyPlaceholder": "sk-...",
-    "aiProviderTitle": "Fornecedor de IA",
+    "aiProviderTitle": "Provedor de IA",
     "aiProviders": {
       "deepseek": "DeepSeek",
       "openai": "OpenAI",
@@ -66,33 +67,33 @@
       "claude": "Anthropic"
     },
     "errors": {
-      "selectFile": "Selecione um arquivo",
-      "jsonExtension": "Carregue um arquivo .json",
-      "fileSize": "O tamanho do arquivo não pode exceder 10 MB",
-      "jsonFormat": "Formato JSON inválido, verifique o conteúdo do arquivo",
+      "selectFile": "Por favor, selecione um arquivo",
+      "jsonExtension": "Por favor, envie um arquivo .json",
+      "fileSize": "O tamanho do arquivo não pode exceder 10MB",
+      "jsonFormat": "Formato JSON inválido, por favor verifique o conteúdo do arquivo",
       "emptyJson": "O arquivo JSON não pode estar vazio"
     },
     "success": {
-      "uploaded": "Arquivo carregado com sucesso"
+      "uploaded": "Arquivo enviado com sucesso"
     },
     "errorTitle": "Erro",
     "successTitle": "Sucesso",
-    "apiKeyTip": "Sua Chave API é usada apenas temporariamente no navegador e não será salva ou transmitida para nenhum servidor."
+    "apiKeyTip": "A chave é usada apenas temporariamente no navegador e não será salva ou transmitida a nenhum servidor."
   },
   "translateSection": {
     "title": "Selecione o Idioma de Destino",
-    "description": "Selecione o idioma de destino para o qual você precisa traduzir"
+    "description": "Selecione o idioma de destino para a tradução"
   },
   "translatePanel": {
     "startTranslate": "Iniciar Tradução",
     "translating": "Traduzindo...",
     "cancel": "Cancelar",
-    "uploadFirst": "Carregue um arquivo primeiro",
-    "enterApiKey": "Insira sua Chave API",
-    "foundUnfinished": "Tradução inacabada encontrada",
+    "uploadFirst": "Por favor, envie um arquivo primeiro",
+    "enterApiKey": "Por favor, insira sua chave da API",
+    "foundUnfinished": "Encontrada tradução inacabada",
     "continueTranslation": "Continuar Tradução",
     "translationCancelled": "Tradução cancelada",
-    "invalidApiKey": "Formato de Chave API inválido",
+    "invalidApiKey": "Formato de chave da API inválido",
     "errorTitle": "Erro",
     "successTitle": "Sucesso",
     "translationCompleted": "Tradução concluída!",
@@ -103,8 +104,8 @@
     "translatingLanguage": "Traduzindo",
     "tip": "Dica",
     "allLanguagesTranslated": "Todos os idiomas selecionados foram traduzidos.",
-    "pleaseSelectLanguage": "Selecione pelo menos um idioma de destino",
-    "pleaseUploadAndEnterKey": "Carregue um arquivo e insira sua Chave API",
+    "pleaseSelectLanguage": "Por favor, selecione pelo menos um idioma de destino",
+    "pleaseUploadAndEnterKey": "Por favor, envie um arquivo e insira sua chave da API",
     "cancelled": "Cancelado",
     "translationFailed": "Falha na tradução",
     "bytes": "bytes",
@@ -112,10 +113,10 @@
     "mb": "MB",
     "gb": "GB",
     "apiKeyErrors": {
-      "invalidFormat": "Formato de chave API inválido",
-      "invalidOrExpired": "Chave API inválida ou expirada",
-      "rateLimitReached": "Limite de taxa de chamada da API atingido",
-      "validationFailed": "Falha na validação da chave API"
+      "invalidFormat": "Formato de chave da API inválido",
+      "invalidOrExpired": "Chave da API inválida ou expirada",
+      "rateLimitReached": "Limite de chamadas da API atingido",
+      "validationFailed": "Falha na validação da chave da API"
     }
   },
   "jsonPreview": {
@@ -126,22 +127,22 @@
     "translatedJson": "JSON Traduzido",
     "tips": "Dica: Suporta pré-visualização em tempo real e arquivos JSON formatados. Você pode copiar o conteúdo diretamente.",
     "placeholder": {
-      "upload": "Carregue um arquivo JSON",
+      "upload": "Por favor, envie um arquivo JSON",
       "translation": "Os resultados da tradução serão exibidos aqui"
     },
     "actions": {
       "copy": "Copiar",
       "clear": "Limpar",
       "download": "Baixar",
-      "downloadAll": "Baixar todas as traduções",
-      "downloadFormat": "Baixar tradução {lang}"
+      "downloadAll": "Baixar Todas as Traduções",
+      "downloadFormat": "Baixar Tradução {lang}"
     },
     "toast": {
       "copySuccess": "Conteúdo copiado para a área de transferência",
-      "copyError": "Falha na cópia, copie manualmente",
+      "copyError": "Falha na cópia, por favor copie manualmente",
       "downloadSuccess": "Arquivo de tradução {lang} baixado",
       "downloadAllSuccess": "Todos os arquivos de tradução baixados",
-      "downloadError": "Falha no download, tente novamente"
+      "downloadError": "Falha no download, por favor tente novamente"
     },
     "languages": {
       "en": "Inglês",
@@ -184,22 +185,22 @@
       "ca": "Catalão",
       "hi": "Hindi",
       "bn": "Bengali",
-      "ta": "Tamil",
+      "ta": "Tâmil",
       "ur": "Urdu",
-      "gu": "Gujarati",
+      "gu": "Guzerate",
       "kn": "Canarês",
       "ml": "Malaiala",
-      "mr": "Marata",
+      "mr": "Marati",
       "ms": "Malaio",
       "my": "Birmanês",
       "km": "Khmer",
-      "lo": "Lao",
+      "lo": "Laosiano",
       "mn": "Mongol",
       "az": "Azeri",
       "ka": "Georgiano",
       "hy": "Armênio",
       "sw": "Suaíli",
-      "af": "Afrikaans",
+      "af": "Africâner",
       "am": "Amárico"
     }
   },
@@ -209,36 +210,36 @@
     "items": [
       {
         "question": "O que esta ferramenta faz?",
-        "answer": "Esta é uma ferramenta de tradução de internacionalização JSON com tecnologia de IA que ajuda os desenvolvedores a traduzir rapidamente arquivos de linguagem JSON para vários idiomas, mantendo a integridade da estrutura JSON."
+        "answer": "Esta é uma ferramenta de tradução internacional de JSON alimentada por IA que ajuda os desenvolvedores a traduzir rapidamente arquivos de idioma JSON em vários idiomas, mantendo a integridade da estrutura JSON."
       },
       {
         "question": "Como usar esta ferramenta?",
-        "answer": "1. Carregue o arquivo JSON que você precisa traduzir\n2. Selecione o idioma de destino\n3. Insira sua Chave API\n4. Clique em Iniciar Tradução\n5. Baixe o resultado após a conclusão da tradução"
+        "answer": "1. Envie o arquivo JSON que você precisa traduzir\n2. Selecione o idioma de destino\n3. Insira sua chave da API\n4. Clique em Iniciar Tradução\n5. Baixe o resultado após a conclusão da tradução"
       },
       {
         "question": "Quais idiomas são suportados?",
-        "answer": "Atualmente suporta vários idiomas, incluindo inglês, chinês simplificado, chinês tradicional, japonês, coreano, francês, alemão, espanhol, russo e muito mais."
+        "answer": "Atualmente suporta vários idiomas, incluindo inglês, chinês simplificado, chinês tradicional, japonês, coreano, francês, alemão, espanhol, russo e outros."
       },
       {
-        "question": "Minha Chave API será salva?",
-        "answer": "Não. Sua Chave API é usada apenas temporariamente no navegador e não será salva ou transmitida para nenhum servidor."
+        "question": "Quão segura é esta ferramenta? Meus dados serão enviados?",
+        "answer": "Levamos muito a sério a segurança e privacidade dos dados. Todas as operações desta ferramenta são realizadas localmente em seu navegador. Seus arquivos JSON e chaves da API nunca são enviados para nossos servidores. Isso garante que sua privacidade de dados e segredos comerciais estejam absolutamente seguros.\n\nEspecificamente, todo o processo funciona da seguinte forma:\n1. Processamento Local: Quando você envia um arquivo JSON, ele é carregado diretamente na memória do seu navegador. Ele não passa por nenhum servidor remoto.\n2. Segurança da Chave da API: Sua chave da API é armazenada apenas na sessão temporária do navegador. Ela é enviada diretamente do seu navegador para o endpoint oficial da API do provedor de IA (por exemplo, OpenAI, Google Gemini) para tradução, sem passar pelo nosso servidor como proxy.\n3. Sem Retenção de Dados: Quando você fecha a aba do navegador, todos os dados, incluindo o conteúdo do arquivo e a chave da API, são imediatamente apagados. Não armazenamos, gravamos ou analisamos nenhum dos seus dados operacionais.\n\nVocê pode usar esta ferramenta com total confiança, pois suas informações sensíveis nunca saem do seu próprio computador."
       },
       {
         "question": "Como garantir a qualidade da tradução?",
-        "answer": "Usamos modelos de IA para tradução para garantir a precisão da terminologia profissional e a naturalidade da expressão linguística. Também suportamos funções de dicionário personalizado para manter a consistência de termos específicos."
+        "answer": "Usamos modelos de IA para tradução, garantindo a precisão da terminologia profissional e a naturalidade da expressão linguística. Também oferecemos suporte a funções de dicionário personalizado para manter a consistência de termos específicos."
       },
       {
         "question": "Existe um limite de tamanho de arquivo?",
-        "answer": "O tamanho máximo para um único arquivo JSON é 10 MB. Para arquivos maiores, recomenda-se traduzi-los em lotes."
+        "answer": "O tamanho máximo para um único arquivo JSON é de 10MB. Para arquivos maiores, recomenda-se traduzi-los em lotes."
       }
     ]
   },
   "cta": {
-    "title": "Use a Ferramenta de Tradução por IA Agora",
-    "description": "Traduza seus arquivos de linguagem JSON para vários idiomas de forma rápida e precisa",
+    "title": "Use a Ferramenta de Tradução com IA Agora",
+    "description": "Traduza rapidamente e com precisão seus arquivos de idioma JSON para vários idiomas",
     "button": "Experimente Agora",
     "features": [
-      "Nenhum registro necessário",
+      "Não é necessário registro",
       "Totalmente gratuito",
       "Tradução em tempo real"
     ]
@@ -246,12 +247,12 @@
   "footer": {
     "creator": "Criado por Red com ❤️",
     "twitter": "@chrisgostrong",
-    "coffee": "Compre-me um café",
+    "coffee": "Me pague um café",
     "github": "GitHub"
   },
   "metadata": {
-    "title": "Ferramenta de Tradução JSON - Solução de Tradução Multilíngue com tecnologia de IA",
-    "description": "Use a tecnologia de IA para traduzir rapidamente e com precisão arquivos de linguagem JSON para vários idiomas. Suporta a preservação da estrutura JSON, marcadores de posição de variáveis e tags HTML.",
-    "keywords": "tradução i18n, tradução JSON, tradução por IA, ferramenta de tradução para desenvolvedores, localização de software, localização de sites, localização de aplicativos, ferramenta de internacionalização, tradução automatizada, tradução de código, React i18n, Vue i18n, Next.js i18n, Angular i18n, Svelte i18n, tradução automatizada i18next, ferramenta next-intl, biblioteca JavaScript i18n, Flutter i18n, React Native i18n, tradução de aplicativos iOS, tradução de aplicativos Android, integração GitHub i18n, plugin VS Code i18n, Node.js i18n, tradução de arquivos ARB, tradução de arquivos JSON com tecnologia de IA, solução i18n específica para desenvolvedores, tradução automatizada de arquivos de linguagem JSON, tradutor JSON online, ferramenta de tradução i18n gratuita, processo de internacionalização de software eficiente, melhores práticas i18n, serviço de localização contínua, desenvolvimento de sites multilíngues, ferramenta de localização de jogos, localização assistida por IA, sistema de gerenciamento de tradução, TMS, localização ágil, API de tradução, tradução de um clique para todos os idiomas, como implementar sites multilíngues, como fazer internacionalização de aplicativos, processo de tradução front-end automatizado, reduzir custos de localização, lançar rapidamente versões multilíngues, como gerenciar arquivos JSON multilíngues, ferramenta de colaboração para equipe de tradução, resolver problemas i18n, como manter a consistência da tradução, a melhor ferramenta de tradução JSON"
+    "title": "Ferramenta de Tradução JSON - Solução de Tradução Multilíngue com IA",
+    "description": "Use a tecnologia de IA para traduzir rapidamente e com precisão arquivos de idioma JSON para vários idiomas. Oferece suporte à preservação da estrutura JSON, espaços reservados de variáveis e tags HTML.",
+    "keywords": "tradução i18n, tradução JSON, tradução por IA, ferramenta de tradução para desenvolvedores, localização de software, localização de sites, localização de aplicativos, ferramenta de internacionalização, tradução automatizada, tradução de código, React i18n, Vue i18n, Next.js i18n, Angular i18n, Svelte i18n, tradução automatizada i18next, ferramenta next-intl, biblioteca i18n JavaScript, Flutter i18n, React Native i18n, tradução de aplicativos iOS, tradução de aplicativos Android, integração i18n GitHub, plugin i18n VS Code, Node.js i18n, tradução de arquivos ARB, tradução de arquivos JSON com IA, solução i18n específica para desenvolvedores, tradução automatizada de arquivos de idioma JSON, tradutor JSON online, ferramenta de tradução i18n gratuita, processo eficiente de internacionalização de software, melhores práticas i18n, serviço de localização contínua, desenvolvimento de sites multilíngues, ferramenta de localização de jogos, localização assistida por IA, sistema de gerenciamento de tradução, TMS, localização ágil, API de tradução, tradução de todos os idiomas com um clique, como implementar sites multilíngues, como fazer internacionalização de aplicativos, processo automatizado de tradução frontend, reduzir custos de localização, lançar rapidamente versões multilíngues, como gerenciar arquivos JSON multilíngues, ferramenta de colaboração para equipes de tradução, resolver problemas do i18n, como manter a consistência da tradução, a melhor ferramenta de tradução JSON"
   }
 }
