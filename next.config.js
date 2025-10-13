@@ -43,14 +43,16 @@ const nextConfig = {
     // !! WARN !!
     ignoreBuildErrors: true,
   },
-  // async rewrites() {
-  //   return [
-  //     {
-  //       source: '/api/translate/:path*',
-  //       destination: 'http://localhost:3000/translate/:path*', // Proxy to your backend
-  //     },
-  //   ]
-  // },
+  async redirects() {
+    return [
+      {
+        source: '/:path*',
+        has: [{ type: 'host', value: 'www.jsontrans.fun' }],
+        destination: 'https://jsontrans.fun/:path*',
+        permanent: true,
+      },
+    ]
+  },
 }
 
 module.exports = nextConfig

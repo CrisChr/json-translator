@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import { notFound } from 'next/navigation';
 import ReactMarkdown, { Components } from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import whatIsJsonMarkdown from '@/content/what-is-json';
@@ -6,6 +7,7 @@ import howToBuildMarkdown from '@/content/how-to-build';
 import commonErrorMarkdown from '@/content/common-json-error';
 import jsonVsXmlMarkdown from '@/content/json-vs-xml';
 import { getDictionary } from '@/lib/getDictionary';
+import { locales, defaultLocale } from '@/config/i18n';
 import React from 'react'; // Import React for React.HTMLAttributes
 
 // Metadata for each blog post
@@ -32,16 +34,83 @@ const blogMetadata: { [key: string]: { title: string; description: string; date:
   },
 };
 
-export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
+export async function generateMetadata({ params }: { params: { slug: string, lang: string } }): Promise<Metadata> {
   const slug = params.slug;
-  const metadata = blogMetadata[slug] || {
-    title: 'Blog Post',
-    description: 'Read our latest article.',
+  const lang = params.lang;
+  const metadata = blogMetadata[slug];
+
+  if (!metadata) {
+    notFound();
+  }
+
+  const articleJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: metadata.title,
+    description: metadata.description,
+    image: `https://jsontrans.fun/og-image.png`,
+    datePublished: metadata.date,
+    author: {
+      '@type': 'Organization',
+      name: 'jsontrans.fun',
+      url: 'https://jsontrans.fun',
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'jsontrans.fun',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://jsontrans.fun/logo-blue.png',
+      },
+    },
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': `https://jsontrans.fun/${lang}/blog/${slug}`,
+    },
   };
+
+  const domain = "https://jsontrans.fun";
+  const languageAlternates = locales.reduce(
+    (acc: { [key: string]: string }, locale: string) => {
+      acc[locale] = `${domain}/${locale}/blog/${slug}`;
+      return acc;
+    },
+    {},
+  );
+
+  languageAlternates['x-default'] = `${domain}/${defaultLocale}/blog/${slug}`;
 
   return {
     title: metadata.title,
     description: metadata.description,
+    alternates: {
+      canonical: `${domain}/${lang}/blog/${slug}`,
+      languages: languageAlternates,
+    },
+    openGraph: {
+      title: metadata.title,
+      description: metadata.description,
+      url: `/${lang}/blog/${slug}`,
+      type: 'article',
+      publishedTime: metadata.date,
+      images: [
+        {
+          url: 'https://jsontrans.fun/og-image.png',
+          width: 1200,
+          height: 630,
+          alt: metadata.title,
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: metadata.title,
+      description: metadata.description,
+      images: ['https://jsontrans.fun/og-image.png'],
+    },
+    other: {
+      'ld+json': JSON.stringify(articleJsonLd),
+    },
   };
 }
 
@@ -95,34 +164,6 @@ const components: Components = {
 
 export default async function BlogPostPage({ params }: { params: { slug: string, lang: string } }) {
   const dict = await getDictionary(params.lang);
-  const { slug, lang } = params;
-  const metadata = blogMetadata[slug] || { title: '', description: '', date: '' };
-
-  const articleJsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'Article',
-    headline: metadata.title,
-    description: metadata.description,
-    image: `https://jsontrans.fun/og-image.png`,
-    datePublished: metadata.date,
-    author: {
-      '@type': 'Organization',
-      name: 'jsontrans.fun',
-      url: 'https://jsontrans.fun',
-    },
-    publisher: {
-      '@type': 'Organization',
-      name: 'jsontrans.fun',
-      logo: {
-        '@type': 'ImageObject',
-        url: 'https://jsontrans.fun/logo-blue.png',
-      },
-    },
-    mainEntityOfPage: {
-      '@type': 'WebPage',
-      '@id': `https://jsontrans.fun/${lang}/blog/${slug}`,
-    },
-  };
 
   const renderContent = () => {
     switch (params.slug) {
@@ -151,19 +192,13 @@ export default async function BlogPostPage({ params }: { params: { slug: string,
           </ReactMarkdown>
         );
       default:
-        return <p>Article not found.</p>;
+        notFound();
     }
   };
 
   return (
-    <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
-      />
-      <div className="container mx-auto px-4 py-24">
-        {renderContent()}
-      </div>
-    </>
+    <div className="container mx-auto px-4 py-24">
+      {renderContent()}
+    </div>
   );
 }

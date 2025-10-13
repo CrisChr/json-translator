@@ -1,30 +1,38 @@
 import { MetadataRoute } from 'next';
 import { locales } from '@/config/i18n';
 
+// Assuming blogMetadata is accessible here or fetched.
+// For simplicity, let's define it directly. In a real app, you might import it.
+const blogPosts = [
+  { slug: 'what-is-json', lastModified: '2025-10-01' },
+  { slug: 'how-to-build', lastModified: '2025-10-04' },
+  { slug: 'common-json-error', lastModified: '2025-10-08' },
+  { slug: 'json-vs-xml', lastModified: '2025-10-11' },
+];
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const domain = 'https://jsontrans.fun';
-  const pages = ['', '/about', '/privacy', '/terms', '/blog']; // Add all static pages here
 
-  const sitemapEntries: MetadataRoute.Sitemap = [];
+  // 1. Static pages per locale
+  const staticPages = ['', '/about', '/privacy', '/terms', '/blog'];
+  const sitemapEntries: MetadataRoute.Sitemap = locales.flatMap((locale) =>
+    staticPages.map((page) => ({
+      url: `${domain}/${locale}${page}`,
+      lastModified: new Date(),
+      changeFrequency: page === '' ? 'daily' : 'monthly',
+      priority: page === '' ? 1.0 : 0.8,
+    }))
+  );
 
-  locales.forEach((locale) => {
-    pages.forEach((page) => {
-      sitemapEntries.push({
-        url: `${domain}/${locale}${page}`,
-        lastModified: new Date(),
-        changeFrequency: page === '' ? 'daily' : 'weekly',
-        priority: page === '' ? 0.9 : 0.8,
-      });
-    });
-  });
+  // 2. Dynamic blog posts per locale
+  const blogEntries: MetadataRoute.Sitemap = locales.flatMap((locale) =>
+    blogPosts.map((post) => ({
+      url: `${domain}/${locale}/blog/${post.slug}`,
+      lastModified: new Date(post.lastModified),
+      changeFrequency: 'weekly',
+      priority: 0.9,
+    }))
+  );
 
-  // Add the root URL to the sitemap
-  sitemapEntries.unshift({
-    url: domain,
-    lastModified: new Date(),
-    changeFrequency: 'daily',
-    priority: 1.0,
-  });
-
-  return sitemapEntries;
+  return [...sitemapEntries, ...blogEntries];
 }

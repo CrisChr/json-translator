@@ -1,4 +1,6 @@
+import { Metadata } from 'next';
 import { getDictionary } from '@/lib/getDictionary'
+import { locales, defaultLocale } from '@/config/i18n';
 import { HeroSection } from '@/components/sections/HeroSection'
 import { JsonPreview } from '@/components/JsonPreview'
 import { FileUpload } from '@/components/FileUpload'
@@ -8,6 +10,32 @@ import { WorkflowSection } from '@/components/sections/WorkflowSection'
 import { FeaturesSection } from '@/components/sections/FeaturesSection' 
 import { CTASection } from '@/components/sections/CTASection'
 import FAQ from '@/components/sections/FAQ'
+
+type Props = {
+  params: { lang: string };
+};
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const lang = params.lang;
+  const domain = "https://jsontrans.fun";
+
+  const languageAlternates = locales.reduce(
+    (acc: { [key: string]: string }, locale: string) => {
+      acc[locale] = `${domain}/${locale}`;
+      return acc;
+    },
+    {},
+  );
+
+  languageAlternates['x-default'] = `${domain}/${defaultLocale}`;
+
+  return {
+    alternates: {
+      canonical: `${domain}/${lang}`,
+      languages: languageAlternates,
+    },
+  };
+}
 
 export default async function Home({
   params,

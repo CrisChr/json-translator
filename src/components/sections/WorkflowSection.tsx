@@ -58,9 +58,9 @@ export function WorkflowSection({ dict }: WorkflowSectionProps) {
                     {String(index + 1).padStart(2, '0')}
                   </span>
                 </div>
-                <h3 className="text-xl font-semibold mb-2">
+                <h2 className="text-xl font-semibold mb-2">
                   {step.title}
-                </h3>
+                </h2>
                 <p className="text-gray-600">
                   {step.description}
                 </p>
