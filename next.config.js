@@ -14,6 +14,12 @@ const nextConfig = {
         port: '',
         pathname: '/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'api.producthunt.com',
+        port: '',
+        pathname: '/**',
+      },
     ],
   },
   // cacheHandler: require.resolve('./cache-handler.js'),
@@ -43,14 +49,33 @@ const nextConfig = {
     // !! WARN !!
     ignoreBuildErrors: true,
   },
-  // async rewrites() {
-  //   return [
-  //     {
-  //       source: '/api/translate/:path*',
-  //       destination: 'http://localhost:3000/translate/:path*', // Proxy to your backend
-  //     },
-  //   ]
-  // },
+  async redirects() {
+    return [
+      {
+        source: '/:path*',
+        has: [{ type: 'host', value: 'www.jsontrans.fun' }],
+        destination: 'https://jsontrans.fun/:path*',
+        permanent: true,
+      },
+    ]
+  },
+  async headers() {
+    return [
+      {
+        source: '/:path*',
+        headers: [
+          {
+            key: 'X-Frame-Options',
+            value: 'SAMEORIGIN',
+          },
+          {
+            key: 'X-Content-Type-Options',
+            value: 'nosniff',
+          },
+        ],
+      },
+    ]
+  },
 }
 
 module.exports = nextConfig

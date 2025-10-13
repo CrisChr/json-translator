@@ -1,8 +1,6 @@
-import { getDictionary } from '@/lib/getDictionary'
 import PageLayout from '@/components/PageLayout'
 
 export default async function TermsPage({ params: { lang } }: { params: { lang: string } }) {
-  const dict = await getDictionary(lang)
 
   return (
     <PageLayout title={'Terms of Service'}>

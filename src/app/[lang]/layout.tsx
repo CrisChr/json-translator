@@ -72,6 +72,8 @@ export async function generateMetadata({
     openGraph: {
       title: dict.metadata.title,
       description: dict.metadata.description,
+      url: `${domain}/${lang}`,
+      siteName: dict.metadata.title,
       locale: params.lang,
       type: "website",
       images: [
@@ -88,6 +90,8 @@ export async function generateMetadata({
       title: dict.metadata.title,
       description: dict.metadata.description,
       images: ["/og-image.png"],
+      creator: "@chrisgostrong",
+      site: "@chrisgostrong",
     },
     robots: {
       index: true,

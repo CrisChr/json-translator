@@ -1,4 +1,5 @@
 import { Sparkles } from 'lucide-react'
+import Image from 'next/image';
 
 interface HeroSectionProps {
   dict: {
@@ -32,7 +33,15 @@ export const HeroSection = ({ dict }: HeroSectionProps) => {
             {dict.description}
           </p>
           <div className="pt-4 flex justify-center">
-            <a href="https://www.producthunt.com/products/i18n-translator-by-ai?embed=true&utm_source=badge-featured&utm_medium=badge&utm_source=badge-i18n-translator-by-ai" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1002973&theme=light&t=1754627927606" alt="i18n Translator by AI - Translate i18n JSON file by AI | Product Hunt" style={{ width: '250px', height: '54px' }} width="250" height="54" /></a>
+            <a href="https://www.producthunt.com/products/i18n-translator-by-ai?embed=true&utm_source=badge-featured&utm_medium=badge&utm_source=badge-i18n-translator-by-ai" target="_blank">
+              <Image
+                src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1002973&theme=light&t=1754627927606" 
+                alt="i18n Translator by AI - Translate i18n JSON file by AI | Product Hunt" 
+                width="250" 
+                height="54"
+                unoptimized={true}
+              />
+            </a>
           </div>
           <div className="flex flex-col md:flex-row items-center justify-center gap-3 md:gap-6 pt-2 md:pt-4">
             <div className="flex items-center space-x-2 text-xs md:text-sm text-white/90">
