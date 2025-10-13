@@ -248,7 +248,14 @@
     "creator": "Redによって❤️で作成されました",
     "twitter": "@chrisgostrong",
     "coffee": "コーヒーをおごってください",
-    "github": "GitHub"
+    "github": "GitHub",
+    "navigation": "ナビゲーション",
+    "resources": "リソース",
+    "contact": "コンタクト",
+    "about": "概要",
+    "blog": "ブログ",
+    "privacy": "プライバシー",
+    "terms": "利用規約"
   },
   "metadata": {
     "title": "JSON翻訳ツール - AI搭載の多言語翻訳ソリューション",

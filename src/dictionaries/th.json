@@ -248,7 +248,14 @@
     "creator": "สร้างโดย Red ด้วย ❤️",
     "twitter": "@chrisgostrong",
     "coffee": "ซื้อกาแฟให้ฉันสักแก้ว",
-    "github": "GitHub"
+    "github": "GitHub",
+    "navigation": "การนำทาง",
+    "resources": "แหล่งข้อมูล",
+    "contact": "ติดต่อ",
+    "about": "เกี่ยวกับ",
+    "blog": "บล็อก",
+    "privacy": "ความเป็นส่วนตัว",
+    "terms": "ข้อตกลง"
   },
   "metadata": {
     "title": "เครื่องมือแปล JSON - โซลูชันการแปลภาษาหลายภาษาขับเคลื่อนด้วย AI",

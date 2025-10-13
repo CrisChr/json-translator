@@ -3,25 +3,25 @@ export const defaultLocale = 'en'
 export const locales = ['en', 'zh', 'zh-TW', 'ja', 'ko', 'fr', 'de', 'es', 'pt', 'it', 'ru', 'ar', 'el', 'nl', 'id', 'pl', 'th', 'tr', 'vi']
 
 export const localeNames = {
-  en: 'English',
-  zh: '简体中文',
-  'zh-TW': '繁體中文',
-  ja: '日本語',
-  ko: '한국어',
-  fr: 'Français',
-  de: 'Deutsch',
-  es: 'Español',
-  pt: 'Português',
-  it: 'Italiano',
-  ru: 'Русский',
-  ar: 'العربية',
-  el: 'Ελληνικά',
-  nl: 'Nederlands',
-  id: 'Bahasa Indonesia',
-  pl: 'Polski',
-  th: 'ไทย',
-  tr: 'Türkçe',
-  vi: 'Tiếng Việt'
+  en: '🇬🇧 English',
+  zh: '🇨🇳 简体中文',
+  'zh-TW': '🇭🇰 繁體中文',
+  ja: '🇯🇵 日本語',
+  ko: '🇰🇷 한국어',
+  fr: '🇫🇷 Français',
+  de: '🇩🇪 Deutsch',
+  es: '🇪🇸 Español',
+  pt: '🇵🇹 Português',
+  it: '🇮🇹 Italiano',
+  ru: '🇷🇺 Русский',
+  ar: 'العربية🇸🇦',
+  el: '🇬🇷 Ελληνικά',
+  nl: '🇳🇱 Nederlands',
+  id: '🇮🇩 Bahasa Indonesia',
+  pl: '🇵🇱 Polski',
+  th: '🇹🇭 ไทย',
+  tr: '🇹🇷 Türkçe',
+  vi: '🇻🇳 Tiếng Việt'
 }
 
 export const localeConfigs = {

@@ -248,7 +248,14 @@
     "creator": "由 Red 用心製作 ❤️",
     "twitter": "@chrisgostrong",
     "coffee": "請我喝杯咖啡",
-    "github": "GitHub"
+    "github": "GitHub",
+    "navigation": "站內導覽",
+    "resources": "友情連結",
+    "contact": "聯絡我們",
+    "about": "關於",
+    "blog": "部落格",
+    "privacy": "隱私權政策",
+    "terms": "服務條款"
   },
   "metadata": {
     "title": "JSON 翻譯工具 - AI 驅動的多語言翻譯解決方案",

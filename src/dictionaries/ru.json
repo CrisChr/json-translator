@@ -248,7 +248,14 @@
     "creator": "Создано Red с ❤️",
     "twitter": "@chrisgostrong",
     "coffee": "Купите мне кофе",
-    "github": "GitHub"
+    "github": "GitHub",
+    "navigation": "Навигация",
+    "resources": "Ресурсы",
+    "contact": "Контакты",
+    "about": "О нас",
+    "blog": "Блог",
+    "privacy": "Конфиденциальность",
+    "terms": "Условия"
   },
   "metadata": {
     "title": "Инструмент перевода JSON - Многоязычное решение на базе ИИ",

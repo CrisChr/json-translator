@@ -248,7 +248,14 @@
     "creator": "Red가 ❤️로 제작",
     "twitter": "@chrisgostrong",
     "coffee": "커피 한 잔 사주기",
-    "github": "GitHub"
+    "github": "GitHub",
+    "navigation": "탐색",
+    "resources": "자료",
+    "contact": "연락처",
+    "about": "소개",
+    "blog": "블로그",
+    "privacy": "개인정보 보호",
+    "terms": "약관"
   },
   "metadata": {
     "title": "JSON 번역 도구 - AI 기반 다국어 번역 솔루션",

@@ -248,7 +248,14 @@
     "creator": "Dibuat oleh Red dengan ❤️",
     "twitter": "@chrisgostrong",
     "coffee": "Belikan saya kopi",
-    "github": "GitHub"
+    "github": "GitHub",
+    "navigation": "Navigasi",
+    "resources": "Sumber Daya",
+    "contact": "Kontak",
+    "about": "Tentang",
+    "blog": "Blog",
+    "privacy": "Privasi",
+    "terms": "Syarat"
   },
   "metadata": {
     "title": "Alat Terjemahan JSON - Solusi Terjemahan Multibahasa Berbasis AI",

@@ -71,25 +71,6 @@ export default function Navbar({ dict }: NavbarProps) {
             </Link>
             {mounted && <LanguageSwitcher />}
 
-            {/* Twitter/X 链接 */}
-            {/* <a
-              href="https://x.com/decohack"
-              target="_blank"
-              rel="noopener noreferrer"
-              className={`transition-colors ${
-                scrolled ? 'text-gray-700 hover:text-gray-900' : 'text-white hover:text-white/80'
-              }`}
-            >
-              <svg 
-                width="20" 
-                height="20" 
-                viewBox="0 0 24 24" 
-                fill="currentColor"
-              >
-                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-              </svg>
-            </a> */}
-
             {/* GitHub 链接 */}
             <a
               href="https://github.com/CrisChr/json-translator"

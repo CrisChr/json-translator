@@ -248,7 +248,14 @@
     "creator": "Stworzone przez Red z ❤️",
     "twitter": "@chrisgostrong",
     "coffee": "Postaw mi kawę",
-    "github": "GitHub"
+    "github": "GitHub",
+    "navigation": "Nawigacja",
+    "resources": "Zasoby",
+    "contact": "Kontakt",
+    "about": "O nas",
+    "blog": "Blog",
+    "privacy": "Prywatność",
+    "terms": "Warunki"
   },
   "metadata": {
     "title": "Narzędzie do tłumaczenia JSON - Rozwiązanie do tłumaczeń wielojęzycznych oparte na AI",

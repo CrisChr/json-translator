@@ -248,7 +248,14 @@
     "creator": "Created by Red with ❤️",
     "twitter": "@chrisgostrong",
     "coffee": "Buy me a coffee",
-    "github": "GitHub"
+    "github": "GitHub",
+    "navigation": "Navigation",
+    "resources": "Resources",
+    "contact": "Contact",
+    "about": "About",
+    "blog": "Blog",
+    "privacy": "Privacy",
+    "terms": "Terms"
   },
   "metadata": {
     "title": "JSON Translation Tool - AI-powered Multilingual Translation Solution",

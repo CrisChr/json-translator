@@ -248,7 +248,14 @@
     "creator": "Red tarafından ❤️ ile oluşturuldu",
     "twitter": "@chrisgostrong",
     "coffee": "Bana bir kahve ısmarla",
-    "github": "GitHub"
+    "github": "GitHub",
+    "navigation": "Navigasyon",
+    "resources": "Kaynaklar",
+    "contact": "İletişim",
+    "about": "Hakkında",
+    "blog": "Blog",
+    "privacy": "Gizlilik",
+    "terms": "Şartlar"
   },
   "metadata": {
     "title": "JSON Çeviri Aracı - Yapay zeka destekli çok dilli çeviri çözümü",

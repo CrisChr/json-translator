@@ -248,7 +248,14 @@
     "creator": "تم إنشاؤه بواسطة Red مع ❤️",
     "twitter": "@chrisgostrong",
     "coffee": "اشتري لي قهوة",
-    "github": "GitHub"
+    "github": "GitHub",
+    "navigation": "التنقل",
+    "resources": "الموارد",
+    "contact": "الاتصال",
+    "about": "حول",
+    "blog": "المدونة",
+    "privacy": "الخصوصية",
+    "terms": "الشروط"
   },
   "metadata": {
     "title": "أداة ترجمة JSON - حل الترجمة متعدد اللغات المدعوم بالذكاء الاصطناعي",
