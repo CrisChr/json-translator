@@ -1,61 +1,62 @@
 {
   "hero": {
-    "badge": "AI 지원",
+    "badge": "AI 기반",
     "title": "i18n JSON 국제화 번역 도구",
-    "description": "AI 기술을 사용하여 JSON 언어 파일을 빠르게 번역합니다. 빠르고, 정확하며, 사용이 간편합니다.",
+    "description": "AI 기술을 사용하여 JSON 언어 파일을 빠르게 번역하세요. 빠르고 정확하며 사용하기 쉽습니다.",
     "features": {
       "multilanguage": "다국어 지원",
-      "realtime": "실시간 번역"
+      "secure": "안전하고 신뢰할 수 있음",
+      "free": "완전 무료"
     }
   },
   "workflow": {
-    "title": "간편한 4단계 번역",
-    "description": "JSON 파일 번역 과정을 간소화하여 고품질 번역 결과를 빠르게 얻을 수 있도록 지원합니다.",
+    "title": "작동 방식",
     "steps": [
       {
-        "title": "JSON 파일 업로드",
-        "description": "드래그 앤 드롭 업로드 또는 파일 선택 클릭 지원"
+        "title": "파일 업로드",
+        "description": "번역할 JSON 파일을 업로드하세요"
       },
       {
         "title": "대상 언어 선택",
-        "description": "번역할 대상 언어를 선택합니다"
+        "description": "번역할 대상 언어를 선택하세요"
       },
       {
         "title": "번역 시작",
-        "description": "API 키를 입력하고 AI 번역을 시작합니다"
+        "description": "API 키를 입력하고 AI 번역을 시작하세요"
       },
       {
         "title": "결과 다운로드",
-        "description": "번역된 JSON 파일을 다운로드합니다"
+        "description": "번역된 JSON 파일을 다운로드하세요"
       }
     ]
   },
   "features": {
-    "title": "강력한 번역 기능",
-    "items": [
-      {
-        "title": "JSON 구조 유지",
-        "description": "원본 JSON 파일의 구조, 들여쓰기 및 서식을 지능적으로 식별하고 유지합니다"
+    "title": "왜 저희를 선택해야 하나요?",
+    "learnMore": "더 알아보기",
+    "items": {
+      "codeFriendly": {
+        "title": "코드 친화적",
+        "description": "자동 JSON 포맷팅을 지원하여 JSON 파일을 복사하거나 직접 다운로드할 수 있습니다."
       },
-      {
+      "multiLanguage": {
         "title": "다국어 지원",
-        "description": "영어, 중국어, 일본어 등 여러 언어 간 번역을 지원합니다"
+        "description": "Google, DeepSeek, Anthropic, OpenAI 기반으로 30개 이상의 언어 번역을 지원합니다."
       },
-      {
-        "title": "AI 기반 번역",
-        "description": "AI 모델을 사용하여 전문 용어의 정확성과 자연스러운 표현을 보장합니다"
+      "aiPowered": {
+        "title": "AI 기반",
+        "description": "고급 AI 기술을 활용하여 번역의 정확성과 자연스러움을 보장합니다."
       },
-      {
-        "title": "안전하고 안정적인",
-        "description": "API 키는 브라우저에서 일시적으로만 사용되며 서버에 저장되거나 전송되지 않습니다"
+      "dataSecurity": {
+        "title": "데이터 보안",
+        "description": "모든 번역 과정은 브라우저 내에서 이루어져 데이터가 클라우드에 업로드되지 않도록 합니다."
       }
-    ]
+    }
   },
   "uploadSection": {
     "title": "JSON 파일 업로드",
-    "description": "번역할 JSON 파일을 업로드합니다",
-    "dragText": "파일을 여기에 드래그 앤 드롭하거나 클릭하여 업로드합니다",
-    "supportText": "최대 10MB의 .json 파일을 지원합니다",
+    "description": "번역할 JSON 파일을 업로드하세요",
+    "dragText": "여기에 파일을 드래그 앤 드롭하거나 클릭하여 업로드하세요",
+    "supportText": "10MB 이하의 .json 파일 지원",
     "apiKeyTitle": "API 키",
     "apiKeyPlaceholder": "sk-...",
     "aiProviderTitle": "AI 제공업체",
@@ -66,45 +67,45 @@
       "claude": "Anthropic"
     },
     "errors": {
-      "selectFile": "파일을 선택해주세요",
-      "jsonExtension": ".json 파일을 업로드해주세요",
+      "selectFile": "파일을 선택해 주세요",
+      "jsonExtension": ".json 파일을 업로드해 주세요",
       "fileSize": "파일 크기는 10MB를 초과할 수 없습니다",
-      "jsonFormat": "잘못된 JSON 형식입니다. 파일 내용을 확인해주세요",
-      "emptyJson": "JSON 파일이 비어 있을 수 없습니다"
+      "jsonFormat": "잘못된 JSON 형식입니다. 파일 내용을 확인해 주세요",
+      "emptyJson": "JSON 파일은 비워둘 수 없습니다"
     },
     "success": {
       "uploaded": "파일이 성공적으로 업로드되었습니다"
     },
     "errorTitle": "오류",
     "successTitle": "성공",
-    "apiKeyTip": "API 키는 브라우저에서 일시적으로만 사용되며 서버에 저장되거나 전송되지 않습니다."
+    "apiKeyTip": "키는 브라우저에서만 임시로 사용되며 저장되거나 서버로 전송되지 않습니다."
   },
   "translateSection": {
     "title": "대상 언어 선택",
-    "description": "번역할 대상 언어를 선택합니다"
+    "description": "번역할 대상 언어를 선택하세요"
   },
   "translatePanel": {
     "startTranslate": "번역 시작",
     "translating": "번역 중...",
     "cancel": "취소",
-    "uploadFirst": "먼저 파일을 업로드해주세요",
-    "enterApiKey": "API 키를 입력해주세요",
-    "foundUnfinished": "미완료 번역 발견",
-    "continueTranslation": "번역 계속",
+    "uploadFirst": "먼저 파일을 업로드해 주세요",
+    "enterApiKey": "API 키를 입력해 주세요",
+    "foundUnfinished": "완료되지 않은 번역을 찾았습니다",
+    "continueTranslation": "번역 계속하기",
     "translationCancelled": "번역이 취소되었습니다",
     "invalidApiKey": "잘못된 API 키 형식입니다",
     "errorTitle": "오류",
     "successTitle": "성공",
     "translationCompleted": "번역이 완료되었습니다!",
-    "showMoreLanguages": "더 많은 언어 표시",
+    "showMoreLanguages": "더 많은 언어 보기",
     "hideMoreLanguages": "더 많은 언어 숨기기",
-    "overallProgress": "전체 진행률",
+    "overallProgress": "전체 진행 상황",
     "completedLanguages": "완료된 언어",
     "translatingLanguage": "번역 중",
     "tip": "팁",
     "allLanguagesTranslated": "선택한 모든 언어가 번역되었습니다.",
-    "pleaseSelectLanguage": "하나 이상의 대상 언어를 선택해주세요",
-    "pleaseUploadAndEnterKey": "파일을 업로드하고 API 키를 입력해주세요",
+    "pleaseSelectLanguage": "최소한 하나의 대상 언어를 선택해 주세요",
+    "pleaseUploadAndEnterKey": "파일을 업로드하고 API 키를 입력해 주세요",
     "cancelled": "취소됨",
     "translationFailed": "번역 실패",
     "bytes": "바이트",
@@ -112,21 +113,21 @@
     "mb": "MB",
     "gb": "GB",
     "apiKeyErrors": {
-      "invalidFormat": "잘못된 API 키 형식입니다",
-      "invalidOrExpired": "잘못되었거나 만료된 API 키입니다",
-      "rateLimitReached": "API 호출 속도 제한에 도달했습니다",
-      "validationFailed": "API 키 확인에 실패했습니다"
+      "invalidFormat": "잘못된 API 키 형식",
+      "invalidOrExpired": "잘못되었거나 만료된 API 키",
+      "rateLimitReached": "API 호출 속도 제한 도달",
+      "validationFailed": "API 키 유효성 검사 실패"
     }
   },
   "jsonPreview": {
     "title": "미리보기",
     "empty": "JSON 미리보기가 여기에 표시됩니다",
-    "copied": "클립보드에 복사되었습니다",
+    "copied": "클립보드에 복사됨",
     "originalJson": "원본 JSON",
     "translatedJson": "번역된 JSON",
-    "tips": "팁: 실시간 미리보기 및 서식이 지정된 JSON 파일을 지원합니다. 내용을 직접 복사할 수 있습니다.",
+    "tips": "팁: 실시간 미리보기 및 포맷된 JSON 파일을 지원합니다. 내용을 직접 복사할 수 있습니다.",
     "placeholder": {
-      "upload": "JSON 파일을 업로드해주세요",
+      "upload": "JSON 파일을 업로드해 주세요",
       "translation": "번역 결과가 여기에 표시됩니다"
     },
     "actions": {
@@ -138,10 +139,10 @@
     },
     "toast": {
       "copySuccess": "내용이 클립보드에 복사되었습니다",
-      "copyError": "복사에 실패했습니다. 수동으로 복사해주세요",
+      "copyError": "복사 실패, 수동으로 복사해 주세요",
       "downloadSuccess": "{lang} 번역 파일이 다운로드되었습니다",
       "downloadAllSuccess": "모든 번역 파일이 다운로드되었습니다",
-      "downloadError": "다운로드에 실패했습니다. 다시 시도해주세요"
+      "downloadError": "다운로드 실패, 다시 시도해 주세요"
     },
     "languages": {
       "en": "영어",
@@ -152,8 +153,8 @@
       "fr": "프랑스어",
       "ja": "일본어",
       "pt": "포르투갈어",
-      "zh": "중국어(간체)",
-      "zh-TW": "중국어(번체)",
+      "zh": "간체 중국어",
+      "zh-TW": "번체 중국어",
       "it": "이탈리아어",
       "ar": "아랍어",
       "pl": "폴란드어",
@@ -176,12 +177,12 @@
       "fi": "핀란드어",
       "hr": "크로아티아어",
       "lt": "리투아니아어",
-      "nb": "노르웨이어(보크몰)",
+      "nb": "노르웨이어(보크말)",
       "sl": "슬로베니아어",
       "lv": "라트비아어",
       "et": "에스토니아어",
       "cs": "체코어",
-      "ca": "카탈루냐어",
+      "ca": "카탈로니아어",
       "hi": "힌디어",
       "bn": "벵골어",
       "ta": "타밀어",
@@ -205,53 +206,60 @@
   },
   "faq": {
     "title": "자주 묻는 질문",
-    "description": "JSON 번역 도구에 대한 자주 묻는 질문",
+    "description": "JSON 번역 도구 관련 자주 묻는 질문",
     "items": [
       {
-        "question": "이 도구는 무엇을 합니까?",
-        "answer": "이 도구는 개발자가 JSON 구조의 무결성을 유지하면서 JSON 언어 파일을 여러 언어로 빠르게 번역하는 데 도움이 되는 AI 기반 JSON 국제화 번역 도구입니다."
+        "question": "이 도구는 어떤 기능을 제공하나요?",
+        "answer": "이 도구는 AI 기반의 JSON 국제화 번역 도구로, 개발자들이 JSON 언어 파일을 여러 언어로 빠르게 번역하면서 JSON 구조의 무결성을 유지할 수 있도록 도와줍니다."
       },
       {
-        "question": "이 도구를 사용하는 방법은 무엇입니까?",
-        "answer": "1. 번역할 JSON 파일을 업로드합니다.\n2. 대상 언어를 선택합니다.\n3. API 키를 입력합니다.\n4. 번역 시작을 클릭합니다.\n5. 번역이 완료된 후 결과를 다운로드합니다."
+        "question": "이 도구는 어떻게 사용하나요?",
+        "answer": "1. 번역할 JSON 파일을 업로드합니다\n2. 대상 언어를 선택합니다\n3. API 키를 입력합니다\n4. 번역 시작을 클릭합니다\n5. 번역이 완료된 후 결과를 다운로드합니다"
       },
       {
-        "question": "어떤 언어가 지원됩니까?",
-        "answer": "현재 영어, 중국어(간체), 중국어(번체), 일본어, 한국어, 프랑스어, 독일어, 스페인어, 러시아어 등 여러 언어를 지원합니다."
+        "question": "어떤 언어를 지원하나요?",
+        "answer": "현재 영어, 간체 중국어, 번체 중국어, 일본어, 한국어, 프랑스어, 독일어, 스페인어, 러시아어 등 여러 언어를 지원합니다."
       },
       {
-        "question": "내 API 키가 저장됩니까?",
-        "answer": "아니요. API 키는 브라우저에서 일시적으로만 사용되며 서버에 저장되거나 전송되지 않습니다."
+        "question": "이 도구는 얼마나 안전한가요? 제 데이터는 업로드되나요?",
+        "answer": "우리는 데이터 보안과 개인정보 보호를 매우 중요하게 생각합니다. 이 도구의 모든 작업은 사용자의 브라우저 내에서 로컬로 수행됩니다. 사용자의 JSON 파일과 API 키는 절대로 우리의 서버로 업로드되지 않습니다. 이는 사용자의 데이터 프라이버시와 비즈니스 비밀이 절대적으로 안전하도록 보장합니다.\n\n구체적으로 전체 과정은 다음과 같습니다:\n1. 로컬 처리: 사용자가 JSON 파일을 업로드하면 파일은 직접 브라우저 메모리에 로드됩니다. 원격 서버를 거치지 않습니다.\n2. API 키 보안: 사용자의 API 키는 브라우저의 임시 세션에만 저장됩니다. 이 키는 브라우저에서 직접 AI 제공업체의 공식 API 엔드포인트(예: OpenAI, Google Gemini)로 전송되어 번역에 사용되며, 중간에서 서버를 통해 전달되지 않습니다.\n3. 데이터 보존 없음: 브라우저 탭을 닫으면 파일 내용 및 API 키를 포함한 모든 데이터가 즉시 삭제됩니다. 우리는 사용자의 운영 데이터를 저장, 기록 또는 분석하지 않습니다.\n\n이 도구를 안심하고 사용할 수 있습니다. 민감한 정보는 절대로 사용자의 컴퓨터를 떠나지 않습니다."
       },
       {
-        "question": "번역 품질을 보장하는 방법은 무엇입니까?",
-        "answer": "전문 용어의 정확성과 자연스러운 언어 표현을 보장하기 위해 AI 모델을 사용하여 번역합니다. 또한 특정 용어의 일관성을 유지하기 위해 사용자 지정 사전 기능을 지원합니다."
+        "question": "번역 품질은 어떻게 보장되나요?",
+        "answer": "우리는 AI 모델을 사용하여 번역을 수행하여 전문 용어의 정확성과 언어 표현의 자연스러움을 보장합니다. 또한 사용자 정의 사전 기능을 지원하여 특정 용어의 일관성을 유지합니다."
       },
       {
-        "question": "파일 크기 제한이 있습니까?",
+        "question": "파일 크기 제한이 있나요?",
         "answer": "단일 JSON 파일의 최대 크기는 10MB입니다. 더 큰 파일의 경우 일괄적으로 번역하는 것이 좋습니다."
       }
     ]
   },
   "cta": {
-    "title": "지금 AI 번역 도구를 사용해보세요",
-    "description": "JSON 언어 파일을 여러 언어로 빠르고 정확하게 번역합니다",
+    "title": "지금 AI 번역 도구 사용하기",
+    "description": "JSON 언어 파일을 빠르고 정확하게 여러 언어로 번역하세요",
     "button": "지금 사용해보기",
     "features": [
-      "등록 필요 없음",
+      "회원가입 불필요",
       "완전 무료",
       "실시간 번역"
     ]
   },
   "footer": {
-    "creator": "Red가 ❤️를 담아 제작",
+    "creator": "Red가 ❤️로 제작",
     "twitter": "@chrisgostrong",
-    "coffee": "커피 한 잔 사주세요",
-    "github": "GitHub"
+    "coffee": "커피 한 잔 사주기",
+    "github": "GitHub",
+    "navigation": "탐색",
+    "resources": "자료",
+    "contact": "연락처",
+    "about": "소개",
+    "blog": "블로그",
+    "privacy": "개인정보 보호",
+    "terms": "약관"
   },
   "metadata": {
     "title": "JSON 번역 도구 - AI 기반 다국어 번역 솔루션",
-    "description": "AI 기술을 사용하여 JSON 언어 파일을 여러 언어로 빠르고 정확하게 번역합니다. JSON 구조, 변수 자리 표시자 및 HTML 태그를 유지하는 것을 지원합니다.",
-    "keywords": "i18n 번역, JSON 번역, AI 번역, 개발자 번역 도구, 소프트웨어 현지화, 웹사이트 현지화, 앱 현지화, 국제화 도구, 자동 번역, 코드 번역, React i18n, Vue i18n, Next.js i18n, Angular i18n, Svelte i18n, i18next 자동 번역, next-intl 도구, JavaScript i18n 라이브러리, Flutter i18n, React Native i18n, iOS 앱 번역, Android 앱 번역, GitHub i18n 통합, VS Code i18n 플러그인, Node.js i18n, ARB 파일 번역, AI 기반 JSON 파일 번역, 개발자 특정 i18n 솔루션, JSON 언어 파일의 자동 번역, 온라인 JSON 번역기, 무료 i18n 번역 도구, 효율적인 소프트웨어 국제화 프로세스, 최고의 i18n 사례, 지속적인 현지화 서비스, 다국어 웹사이트 개발, 게임 현지화 도구, AI 지원 현지화, 번역 관리 시스템, TMS, 민첩한 현지화, 번역 API, 원클릭 모든 언어 번역, 다국어 웹사이트 구현 방법, 앱 국제화 방법, 자동화된 프런트엔드 번역 프로세스, 현지화 비용 절감, 다국어 버전 신속 출시, 다국어 JSON 파일 관리 방법, 번역팀 협업 도구, i18n 문제점 해결, 번역 일관성 유지 방법, 최고의 JSON 번역 도구"
+    "description": "AI 기술을 사용하여 JSON 언어 파일을 빠르고 정확하게 여러 언어로 번역하세요. JSON 구조, 변수 자리 표시자, HTML 태그 보존을 지원합니다.",
+    "keywords": "i18n 번역, JSON 번역, AI 번역, 개발자 번역 도구, 소프트웨어 현지화, 웹사이트 현지화, 앱 현지화, 국제화 도구, 자동 번역, 코드 번역, React i18n, Vue i18n, Next.js i18n, Angular i18n, Svelte i18n, i18next 자동 번역, next-intl 도구, JavaScript i18n 라이브러리, Flutter i18n, React Native i18n, iOS 앱 번역, Android 앱 번역, GitHub i18n 통합, VS Code i18n 플러그인, Node.js i18n, ARB 파일 번역, AI 기반 JSON 파일 번역, 개발자용 i18n 솔루션, JSON 언어 파일 자동 번역, 온라인 JSON 번역기, 무료 i18n 번역 도구, 효율적인 소프트웨어 국제화 프로세스, 최고의 i18n 실천 사례, 지속적인 현지화 서비스, 다국어 웹사이트 개발, 게임 현지화 도구, AI 지원 현지화, 번역 관리 시스템, TMS, 애자일 현지화, 번역 API, 모든 언어 일괄 번역, 다국어 웹사이트 구현 방법, 앱 국제화 방법, 자동 프론트엔드 번역 프로세스, 현지화 비용 절감, 다국어 버전 빠르게 출시, 다국어 JSON 파일 관리, 번역 팀 협업 도구, i18n 문제 해결, 번역 일관성 유지 방법, 최고의 JSON 번역 도구"
   }
 }

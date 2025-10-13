@@ -1,28 +1,28 @@
 {
   "hero": {
-    "badge": "AI hỗ trợ",
-    "title": "Công cụ dịch thuật quốc tế hóa JSON i18n",
+    "badge": "Được hỗ trợ bởi AI",
+    "title": "Công cụ Dịch thuật Quốc tế hóa JSON i18n",
     "description": "Sử dụng công nghệ AI để nhanh chóng dịch các tệp ngôn ngữ JSON của bạn. Nhanh chóng, chính xác và dễ sử dụng.",
     "features": {
       "multilanguage": "Hỗ trợ đa ngôn ngữ",
-      "realtime": "Dịch thuật thời gian thực"
+      "secure": "An toàn và đáng tin cậy",
+      "free": "Hoàn toàn miễn phí"
     }
   },
   "workflow": {
-    "title": "Dịch thuật trong bốn bước đơn giản",
-    "description": "Chúng tôiđã đơn giản hóa quy trình dịch thuật tệp JSON để giúp bạn nhanh chóng có được kết quả dịch thuật chất lượng cao",
+    "title": "Cách hoạt động",
     "steps": [
       {
-        "title": "Tải lên tệp JSON",
-        "description": "Hỗ trợ tải lên bằng cách kéo và thả hoặc nhấp để chọn tệp"
+        "title": "Tải lên tệp",
+        "description": "Tải lên tệp JSON bạn cần dịch"
       },
       {
-        "title": "Chọn ngôn ngữ đích",
-        "description": "Chọn ngôn ngữ đích bạn cần dịch"
+        "title": "Chọn ngôn ngữ mục tiêu",
+        "description": "Chọn ngôn ngữ bạn muốn dịch sang"
       },
       {
-        "title": "Bắt đầu dịch thuật",
-        "description": "Nhập API Key của bạn và bắt đầu dịch thuật AI"
+        "title": "Bắt đầu dịch",
+        "description": "Nhập khóa API của bạn và bắt đầu dịch bằng AI"
       },
       {
         "title": "Tải xuống kết quả",
@@ -31,32 +31,33 @@
     ]
   },
   "features": {
-    "title": "Các tính năng dịch thuật mạnh mẽ",
-    "items": [
-      {
-        "title": "Giữ nguyên cấu trúc JSON",
-        "description": "Thông minh xác định và giữ nguyên cấu trúc, thụt lề và định dạng của tệp JSON gốc"
+    "title": "Tại sao chọn chúng tôi?",
+    "learnMore": "Tìm hiểu thêm",
+    "items": {
+      "codeFriendly": {
+        "title": "Thân thiện với lập trình viên",
+        "description": "Hỗ trợ định dạng JSON tự động, bạn có thể sao chép hoặc tải trực tiếp tệp JSON."
       },
-      {
+      "multiLanguage": {
         "title": "Hỗ trợ đa ngôn ngữ",
-        "description": "Hỗ trợ dịch thuật giữa nhiều ngôn ngữ, bao gồm tiếng Anh, tiếng Trung, tiếng Nhật và hơn thế nữa"
+        "description": "Hỗ trợ dịch thuật trên 30 ngôn ngữ, được cung cấp bởi Google, DeepSeek, Anthropic và OpenAI."
       },
-      {
-        "title": "Dịch thuật bằng AI",
-        "description": "Sử dụng các mô hình AI để đảm bảo độ chính xác và cách diễn đạt tự nhiên của thuật ngữ chuyên nghiệp"
+      "aiPowered": {
+        "title": "Được hỗ trợ bởi AI",
+        "description": "Sử dụng công nghệ AI tiên tiến để đảm bảo độ chính xác và lưu loát của bản dịch."
       },
-      {
-        "title": "An toàn và đáng tin cậy",
-        "description": "API Key chỉ được sử dụng tạm thời trong trình duyệt và không bao giờ được lưu hoặc truyền đến máy chủ"
+      "dataSecurity": {
+        "title": "Bảo mật dữ liệu",
+        "description": "Tất cả các quá trình dịch thuật đều được thực hiện trong trình duyệt của bạn, đảm bảo rằng dữ liệu của bạn không được tải lên đám mây."
       }
-    ]
+    }
   },
   "uploadSection": {
     "title": "Tải lên tệp JSON",
     "description": "Tải lên tệp JSON bạn cần dịch",
     "dragText": "Kéo và thả tệp vào đây hoặc nhấp để tải lên",
-    "supportText": "Hỗ trợ các tệp .json lên đến 10MB",
-    "apiKeyTitle": "API Key",
+    "supportText": "Hỗ trợ tệp .json tối đa 10MB",
+    "apiKeyTitle": "Khóa API",
     "apiKeyPlaceholder": "sk-...",
     "aiProviderTitle": "Nhà cung cấp AI",
     "aiProviders": {
@@ -77,57 +78,57 @@
     },
     "errorTitle": "Lỗi",
     "successTitle": "Thành công",
-    "apiKeyTip": "API Key của bạn chỉ được sử dụng tạm thời trong trình duyệt và sẽ không được lưu hoặc truyền đến bất kỳ máy chủ nào."
+    "apiKeyTip": "Khóa chỉ được dùng tạm thời trong trình duyệt và sẽ không được lưu hoặc truyền đến bất kỳ máy chủ nào."
   },
   "translateSection": {
-    "title": "Chọn ngôn ngữ đích",
-    "description": "Chọn ngôn ngữ đích bạn cần dịch"
+    "title": "Chọn ngôn ngữ mục tiêu",
+    "description": "Chọn ngôn ngữ bạn muốn dịch sang"
   },
   "translatePanel": {
-    "startTranslate": "Bắt đầu dịch thuật",
+    "startTranslate": "Bắt đầu dịch",
     "translating": "Đang dịch...",
     "cancel": "Hủy",
     "uploadFirst": "Vui lòng tải lên tệp trước",
-    "enterApiKey": "Vui lòng nhập API Key của bạn",
-    "foundUnfinished": "Tìm thấy bản dịch chưa hoàn thành",
-    "continueTranslation": "Tiếp tục dịch thuật",
-    "translationCancelled": "Bản dịch đã bị hủy",
-    "invalidApiKey": "Định dạng API Key không hợp lệ",
+    "enterApiKey": "Vui lòng nhập Khóa API của bạn",
+    "foundUnfinished": "Tìm thấy bản dịch chưa hoàn tất",
+    "continueTranslation": "Tiếp tục dịch",
+    "translationCancelled": "Đã hủy bản dịch",
+    "invalidApiKey": "Định dạng Khóa API không hợp lệ",
     "errorTitle": "Lỗi",
     "successTitle": "Thành công",
-    "translationCompleted": "Bản dịch đã hoàn tất!",
-    "showMoreLanguages": "Hiển thị thêm ngôn ngữ",
-    "hideMoreLanguages": "Ẩn bớt ngôn ngữ",
+    "translationCompleted": "Dịch xong!",
+    "showMoreLanguages": "Hiện thêm ngôn ngữ",
+    "hideMoreLanguages": "Ẩn ngôn ngữ khác",
     "overallProgress": "Tiến độ tổng thể",
-    "completedLanguages": "Ngôn ngữ đã hoàn thành",
+    "completedLanguages": "Ngôn ngữ đã hoàn tất",
     "translatingLanguage": "Đang dịch",
     "tip": "Mẹo",
-    "allLanguagesTranslated": "Tất cả các ngôn ngữ đã chọn đã được dịch.",
-    "pleaseSelectLanguage": "Vui lòng chọn ít nhất một ngôn ngữ đích",
-    "pleaseUploadAndEnterKey": "Vui lòng tải lên tệp và nhập API Key của bạn",
+    "allLanguagesTranslated": "Tất cả các ngôn ngữ đã chọn đã được dịch xong.",
+    "pleaseSelectLanguage": "Vui lòng chọn ít nhất một ngôn ngữ mục tiêu",
+    "pleaseUploadAndEnterKey": "Vui lòng tải lên tệp và nhập Khóa API của bạn",
     "cancelled": "Đã hủy",
-    "translationFailed": "Bản dịch thất bại",
+    "translationFailed": "Dịch không thành công",
     "bytes": "bytes",
     "kb": "KB",
     "mb": "MB",
     "gb": "GB",
     "apiKeyErrors": {
-      "invalidFormat": "Định dạng API key không hợp lệ",
-      "invalidOrExpired": "API key không hợp lệ hoặc đã hết hạn",
-      "rateLimitReached": "Đã đạt giới hạn tốc độ gọi API",
-      "validationFailed": "Xác thực API key thất bại"
+      "invalidFormat": "Định dạng khóa API không hợp lệ",
+      "invalidOrExpired": "Khóa API không hợp lệ hoặc đã hết hạn",
+      "rateLimitReached": "Đã đạt đến giới hạn gọi API",
+      "validationFailed": "Xác thực khóa API không thành công"
     }
   },
   "jsonPreview": {
     "title": "Xem trước",
-    "empty": "Xem trước JSON sẽ được hiển thị ở đây",
-    "copied": "Đã sao chép vào clipboard",
+    "empty": "Bản xem trước JSON sẽ hiển thị ở đây",
+    "copied": "Đã sao chép vào bảng nhớ tạm",
     "originalJson": "JSON gốc",
-    "translatedJson": "JSON đã được dịch",
+    "translatedJson": "JSON đã dịch",
     "tips": "Mẹo: Hỗ trợ xem trước thời gian thực và các tệp JSON được định dạng. Bạn có thể sao chép nội dung trực tiếp.",
     "placeholder": {
       "upload": "Vui lòng tải lên tệp JSON",
-      "translation": "Kết quả dịch thuật sẽ được hiển thị ở đây"
+      "translation": "Kết quả dịch sẽ hiển thị ở đây"
     },
     "actions": {
       "copy": "Sao chép",
@@ -137,11 +138,11 @@
       "downloadFormat": "Tải xuống bản dịch {lang}"
     },
     "toast": {
-      "copySuccess": "Nội dung đã được sao chép vào clipboard",
-      "copyError": "Sao chép thất bại, vui lòng sao chép thủ công",
-      "downloadSuccess": "Tệp dịch thuật {lang} đã được tải xuống",
-      "downloadAllSuccess": "Tất cả các tệp dịch thuật đã được tải xuống",
-      "downloadError": "Tải xuống thất bại, vui lòng thử lại"
+      "copySuccess": "Đã sao chép nội dung vào bảng nhớ tạm",
+      "copyError": "Sao chép không thành công, vui lòng sao chép thủ công",
+      "downloadSuccess": "Tệp dịch {lang} đã được tải xuống",
+      "downloadAllSuccess": "Tất cả tệp dịch đã được tải xuống",
+      "downloadError": "Tải xuống không thành công, vui lòng thử lại"
     },
     "languages": {
       "en": "Tiếng Anh",
@@ -170,20 +171,20 @@
       "ro": "Tiếng Romania",
       "hu": "Tiếng Hungary",
       "da": "Tiếng Đan Mạch",
-      "sk": "Tiếng Slovakia",
+      "sk": "Tiếng Slovak",
       "sr": "Tiếng Serbia",
       "bg": "Tiếng Bulgaria",
       "fi": "Tiếng Phần Lan",
       "hr": "Tiếng Croatia",
-      "lt": "Tiếng Litva",
-      "nb": "Tiếng Na Uy Bokmål",
+      "lt": "Tiếng Lithuania",
+      "nb": "Tiếng Na Uy (Bokmål)",
       "sl": "Tiếng Slovenia",
       "lv": "Tiếng Latvia",
       "et": "Tiếng Estonia",
       "cs": "Tiếng Séc",
       "ca": "Tiếng Catalan",
-      "hi": "Tiếng Hin-ddi",
-      "bn": "Tiếng Bengal",
+      "hi": "Tiếng Hindi",
+      "bn": "Tiếng Bengali",
       "ta": "Tiếng Tamil",
       "ur": "Tiếng Urdu",
       "gu": "Tiếng Gujarati",
@@ -205,38 +206,38 @@
   },
   "faq": {
     "title": "Câu hỏi thường gặp",
-    "description": "Câu hỏi thường gặp về công cụ dịch thuật JSON",
+    "description": "Các câu hỏi thường gặp về công cụ dịch thuật JSON",
     "items": [
       {
         "question": "Công cụ này làm gì?",
-        "answer": "Đây là một công cụ dịch thuật quốc tế hóa JSON mạnh mẽ được hỗ trợ bởi AI giúp các nhà phát triển nhanh chóng dịch các tệp ngôn ngữ JSON sang nhiều ngôn ngữ trong khi vẫn duy trì tính toàn vẹn của cấu trúc JSON."
+        "answer": "Đây là một công cụ dịch thuật quốc tế hóa JSON được hỗ trợ bởi AI, giúp các nhà phát triển nhanh chóng dịch các tệp ngôn ngữ JSON sang nhiều ngôn ngữ khác nhau trong khi vẫn giữ nguyên cấu trúc JSON."
       },
       {
         "question": "Cách sử dụng công cụ này?",
-        "answer": "1. Tải lên tệp JSON bạn cần dịch\n2. Chọn ngôn ngữ đích\n3. Nhập API Key của bạn\n4. Nhấp vào Bắt đầu dịch thuật\n5. Tải xuống kết quả sau khi dịch thuật hoàn tất"
+        "answer": "1. Tải lên tệp JSON bạn cần dịch\n2. Chọn ngôn ngữ mục tiêu\n3. Nhập Khóa API của bạn\n4. Nhấp vào Bắt đầu dịch\n5. Tải xuống kết quả sau khi dịch xong"
       },
       {
-        "question": "Ngôn ngữ nào được hỗ trợ?",
-        "answer": "Hiện tại hỗ trợ nhiều ngôn ngữ bao gồm tiếng Anh, tiếng Trung giản thể, tiếng Trung phồn thể, tiếng Nhật, tiếng Hàn, tiếng Pháp, tiếng Đức, tiếng Tây Ban Nha, tiếng Nga và hơn thế nữa."
+        "question": "Hỗ trợ những ngôn ngữ nào?",
+        "answer": "Hiện tại hỗ trợ nhiều ngôn ngữ bao gồm tiếng Anh, tiếng Trung giản thể, tiếng Trung phồn thể, tiếng Nhật, tiếng Hàn, tiếng Pháp, tiếng Đức, tiếng Tây Ban Nha, tiếng Nga và nhiều ngôn ngữ khác."
       },
       {
-        "question": "API Key của tôi có được lưu không?",
-        "answer": "Không. API Key của bạn chỉ được sử dụng tạm thời trong trình duyệt và sẽ không được lưu hoặc truyền đến bất kỳ máy chủ nào."
+        "question": "Công cụ này có an toàn không? Dữ liệu của tôi có bị tải lên không?",
+        "answer": "Chúng tôi rất nghiêm túc trong việc bảo mật dữ liệu và quyền riêng tư. Tất cả các thao tác của công cụ này đều được thực hiện cục bộ trong trình duyệt của bạn. Các tệp JSON và khóa API của bạn sẽ không bao giờ được tải lên máy chủ của chúng tôi. Điều này đảm bảo rằng dữ liệu cá nhân và bí mật kinh doanh của bạn hoàn toàn an toàn.\n\nCụ thể, toàn bộ quy trình hoạt động như sau:\n1. Xử lý cục bộ: Khi bạn tải lên tệp JSON, nó sẽ được tải trực tiếp vào bộ nhớ trình duyệt. Nó không đi qua bất kỳ máy chủ từ xa nào.\n2. Bảo mật khóa API: Khóa API của bạn chỉ được lưu trữ trong phiên làm việc tạm thời của trình duyệt. Nó sẽ được gửi trực tiếp từ trình duyệt của bạn đến điểm cuối API chính thức của nhà cung cấp AI (ví dụ: OpenAI, Google Gemini) để dịch thuật, mà không đi qua máy chủ của chúng tôi làm trung gian.\n3. Không lưu trữ dữ liệu: Khi bạn đóng tab trình duyệt, tất cả dữ liệu, bao gồm nội dung tệp và Khóa API, sẽ được xóa ngay lập tức. Chúng tôi không lưu trữ, ghi lại hoặc phân tích bất kỳ dữ liệu vận hành nào của bạn.\n\nBạn có thể hoàn toàn yên tâm sử dụng công cụ này, vì thông tin nhạy cảm của bạn sẽ không bao giờ rời khỏi máy tính của bạn."
       },
       {
-        "question": "Làm thế nào để đảm bảo chất lượng dịch thuật?",
-        "answer": "Chúng tôi sử dụng các mô hình AI để dịch thuật nhằm đảm bảo độ chính xác của thuật ngữ chuyên nghiệp và tính tự nhiên của cách diễn đạt ngôn ngữ. Chúng tôi cũng hỗ trợ các chức năng từ điển tùy chỉnh để duy trì tính nhất quán của các thuật ngữ cụ thể."
+        "question": "Làm cách nào để đảm bảo chất lượng bản dịch?",
+        "answer": "Chúng tôi sử dụng các mô hình AI để dịch thuật nhằm đảm bảo độ chính xác của thuật ngữ chuyên ngành và tính tự nhiên của cách diễn đạt ngôn ngữ. Chúng tôi cũng hỗ trợ chức năng từ điển tùy chỉnh để duy trì tính nhất quán của các thuật ngữ cụ thể."
       },
       {
         "question": "Có giới hạn kích thước tệp không?",
-        "answer": "Kích thước tối đa cho một tệp JSON duy nhất là 10MB. Đối với các tệp lớn hơn, nên dịch chúng theo từng lô."
+        "answer": "Kích thước tối đa cho một tệp JSON duy nhất là 10MB. Đối với các tệp lớn hơn, bạn nên dịch chúng theo từng phần."
       }
     ]
   },
   "cta": {
-    "title": "Sử dụng công cụ dịch thuật AI ngay bây giờ",
-    "description": "Nhanh chóng và chính xác dịch các tệp ngôn ngữ JSON của bạn sang nhiều ngôn ngữ",
-    "button": "Thử ngay",
+    "title": "Sử dụng công cụ dịch AI ngay bây giờ",
+    "description": "Nhanh chóng và chính xác dịch các tệp ngôn ngữ JSON của bạn sang nhiều ngôn ngữ khác nhau",
+    "button": "Dùng thử ngay",
     "features": [
       "Không cần đăng ký",
       "Hoàn toàn miễn phí",
@@ -246,12 +247,19 @@
   "footer": {
     "creator": "Được tạo bởi Red với ❤️",
     "twitter": "@chrisgostrong",
-    "coffee": "Mua cho tôi một ly cà phê",
-    "github": "GitHub"
+    "coffee": "Mời tôi một ly cà phê",
+    "github": "GitHub",
+    "navigation": "Điều hướng",
+    "resources": "Tài nguyên",
+    "contact": "Liên hệ",
+    "about": "Về chúng tôi",
+    "blog": "Blog",
+    "privacy": "Quyền riêng tư",
+    "terms": "Điều khoản"
   },
   "metadata": {
-    "title": "Công cụ dịch thuật JSON - Giải pháp dịch thuật đa ngôn ngữ mạnh mẽ bằng AI",
-    "description": "Sử dụng công nghệ AI để nhanh chóng và chính xác dịch các tệp ngôn ngữ JSON sang nhiều ngôn ngữ. Hỗ trợ giữ nguyên cấu trúc JSON, các placeholder biến và thẻ HTML.",
-    "keywords": "dịch thuật i18n, dịch thuật JSON, dịch thuật AI, công cụ dịch thuật cho nhà phát triển, bản địa hóa phần mềm, bản địa hóa trang web, bản địa hóa ứng dụng, công cụ quốc tế hóa, dịch thuật tự động, dịch thuật mã, React i18n, Vue i18n, Next.js i18n, Angular i18n, Svelte i18n, dịch thuật tự động i18next, công cụ next-intl, thư viện JavaScript i18n, Flutter i18n, React Native i18n, dịch thuật ứng dụng iOS, dịch thuật ứng dụng Android, tích hợp GitHub i18n, plugin VS Code i18n, Node.js i18n, dịch thuật tệp ARB, dịch thuật tệp JSON bằng AI, giải pháp i18n dành riêng cho nhà phát triển, dịch thuật tự động các tệp ngôn ngữ JSON, trình dịch JSON trực tuyến, công cụ dịch thuật i18n miễn phí, quy trình quốc tế hóa phần mềm hiệu quả, các thực tiễn i18n tốt nhất, dịch vụ bản địa hóa liên tục, phát triển trang web đa ngôn ngữ, công cụ bản địa hóa trò chơi, bản địa hóa hỗ trợ AI, hệ thống quản lý dịch thuật, TMS, bản địa hóa nhanh, API dịch thuật, dịch thuật một lần nhấp tất cả các ngôn ngữ, cách triển khai trang web đa ngôn ngữ, cách thực hiện quốc tế hóa ứng dụng, quy trình dịch thuật front-end tự động, giảm chi phí bản địa hóa, nhanh chóng ra mắt các phiên bản đa ngôn ngữ, cách quản lý các tệp JSON đa ngôn ngữ, công cụ cộng tác dịch thuật, giải quyết các điểm yếu i18n, cách duy trì tính nhất quán của bản dịch, công cụ dịch thuật JSON tốt nhất"
+    "title": "Công cụ dịch thuật JSON - Giải pháp dịch đa ngôn ngữ được hỗ trợ bởi AI",
+    "description": "Sử dụng công nghệ AI để nhanh chóng và chính xác dịch các tệp ngôn ngữ JSON sang nhiều ngôn ngữ khác nhau. Hỗ trợ giữ nguyên cấu trúc JSON, các biến giữ chỗ và thẻ HTML.",
+    "keywords": "dịch i18n, dịch JSON, dịch AI, công cụ dịch cho lập trình viên, bản địa hóa phần mềm, bản địa hóa website, bản địa hóa App, công cụ quốc tế hóa, dịch thuật tự động, dịch code, React i18n, Vue i18n, Next.js i18n, Angular i18n, Svelte i18n, dịch tự động i18next, công cụ next-intl, thư viện i18n JavaScript, Flutter i18n, React Native i18n, dịch App iOS, dịch App Android, tích hợp i18n GitHub, plugin i18n VS Code, i18n Node.js, dịch tệp ARB, dịch tệp JSON được hỗ trợ bởi AI, giải pháp i18n cho lập trình viên, dịch tự động tệp ngôn ngữ JSON, trình dịch JSON trực tuyến, công cụ dịch i18n miễn phí, quy trình quốc tế hóa phần mềm hiệu quả, thực hành i18n tốt nhất, dịch vụ bản địa hóa liên tục, phát triển website đa ngôn ngữ, công cụ bản địa hóa game, hỗ trợ bản địa hóa bằng AI, hệ thống quản lý bản dịch, TMS, bản địa hóa nhanh, API dịch thuật, dịch một cú nhấn tất cả ngôn ngữ, cách thực hiện website đa ngôn ngữ, cách thực hiện quốc tế hóa App, quy trình dịch front-end tự động, giảm chi phí bản địa hóa, nhanh chóng ra mắt phiên bản đa ngôn ngữ, cách quản lý tệp JSON đa ngôn ngữ, công cụ hợp tác nhóm dịch thuật, giải quyết các điểm đau i18n, cách duy trì tính nhất quán trong bản dịch, công cụ dịch JSON tốt nhất"
   }
 }

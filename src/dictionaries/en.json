@@ -4,17 +4,17 @@
     "title": "i18n JSON Internationalization Translation Tool",
     "description": "Use AI technology to quickly translate your JSON language files. Fast, accurate, and easy to use.",
     "features": {
-      "multilanguage": "Multilingual Support",
-      "realtime": "Real-time Translation"
+      "multilanguage": "Multi-language Support",
+      "secure": "Secure and Reliable",
+      "free": "Completely Free"
     }
   },
   "workflow": {
-    "title": "How It Works?",
-    "description": "This tool runs entirely locally in your browser, ensuring your data never leaves your computer. We've simplified the JSON file translation process into four easy steps to help you get high-quality results quickly and securely.",
+    "title": "How It Works",
     "steps": [
       {
-        "title": "Upload JSON File",
-        "description": "Supports drag-and-drop upload or click to select file"
+        "title": "Upload File",
+        "description": "Upload the JSON file you need to translate"
       },
       {
         "title": "Select Target Language",
@@ -31,25 +31,26 @@
     ]
   },
   "features": {
-    "title": "Powerful Translation Features",
-    "items": [
-      {
-        "title": "Preserve JSON Structure",
-        "description": "Intelligently identifies and preserves the structure, indentation, and formatting of the original JSON file"
+    "title": "Why Choose Us?",
+    "learnMore": "Learn More",
+    "items": {
+      "codeFriendly": {
+        "title": "Code Friendly",
+        "description": "Supports automatic JSON formatting, you can copy or directly download the JSON file."
       },
-      {
-        "title": "Multilingual Support",
-        "description": "Supports translation between multiple languages, including English, Chinese, Japanese, and more"
+      "multiLanguage": {
+        "title": "Multi-language Support",
+        "description": "Supports translation in over 30 languages, powered by Google, DeepSeek, Anthropic and OpenAI."
       },
-      {
-        "title": "AI-Powered Translation",
-        "description": "Uses AI models to ensure the accuracy and natural expression of professional terminology"
+      "aiPowered": {
+        "title": "AI-Powered",
+        "description": "Utilizes advanced AI technology to ensure translation accuracy and fluency."
       },
-      {
-        "title": "Secure and Reliable",
-        "description": "API Key is only used temporarily in the browser and is never saved or transmitted to the server"
+      "dataSecurity": {
+        "title": "Data Security",
+        "description": "All translation processes are done in your browser, ensuring your data is not uploaded to the cloud."
       }
-    ]
+    }
   },
   "uploadSection": {
     "title": "Upload JSON File",
@@ -247,7 +248,14 @@
     "creator": "Created by Red with ❤️",
     "twitter": "@chrisgostrong",
     "coffee": "Buy me a coffee",
-    "github": "GitHub"
+    "github": "GitHub",
+    "navigation": "Navigation",
+    "resources": "Resources",
+    "contact": "Contact",
+    "about": "About",
+    "blog": "Blog",
+    "privacy": "Privacy",
+    "terms": "Terms"
   },
   "metadata": {
     "title": "JSON Translation Tool - AI-powered Multilingual Translation Solution",

@@ -1,24 +1,24 @@
 {
   "hero": {
     "badge": "KI-gestützt",
-    "title": "i18n JSON Internationalisierungs-Übersetzungswerkzeug",
-    "description": "Verwenden Sie KI-Technologie, um Ihre JSON-Sprachdateien schnell zu übersetzen. Schnell, präzise und einfach zu bedienen.",
+    "title": "i18n JSON-Internationalisierungs-Übersetzungstool",
+    "description": "Nutzen Sie KI-Technologie, um Ihre JSON-Sprachdateien schnell zu übersetzen. Schnell, genau und einfach zu bedienen.",
     "features": {
       "multilanguage": "Mehrsprachige Unterstützung",
-      "realtime": "Echtzeit-Übersetzung"
+      "secure": "Sicher und zuverlässig",
+      "free": "Völlig kostenlos"
     }
   },
   "workflow": {
-    "title": "Übersetzen in vier einfachen Schritten",
-    "description": "Wir haben den Übersetzungsprozess von JSON-Dateien vereinfacht, damit Sie schnell hochwertige Übersetzungsergebnisse erhalten",
+    "title": "So funktioniert es",
     "steps": [
       {
-        "title": "JSON-Datei hochladen",
-        "description": "Unterstützt Drag-and-Drop-Upload oder Klicken, um Datei auszuwählen"
+        "title": "Datei hochladen",
+        "description": "Laden Sie die JSON-Datei hoch, die Sie übersetzen möchten"
       },
       {
         "title": "Zielsprache auswählen",
-        "description": "Wählen Sie die Zielsprache, in die Sie übersetzen möchten"
+        "description": "Wählen Sie die Zielsprache aus, in die Sie übersetzen möchten"
       },
       {
         "title": "Übersetzung starten",
@@ -31,31 +31,32 @@
     ]
   },
   "features": {
-    "title": "Leistungsstarke Übersetzungsfunktionen",
-    "items": [
-      {
-        "title": "JSON-Struktur beibehalten",
-        "description": "Erkennt und bewahrt intelligent die Struktur, Einrückung und Formatierung der ursprünglichen JSON-Datei"
+    "title": "Warum uns wählen?",
+    "learnMore": "Mehr erfahren",
+    "items": {
+      "codeFriendly": {
+        "title": "Code-freundlich",
+        "description": "Unterstützt automatische JSON-Formatierung, Sie können die JSON-Datei kopieren oder direkt herunterladen."
       },
-      {
+      "multiLanguage": {
         "title": "Mehrsprachige Unterstützung",
-        "description": "Unterstützt die Übersetzung zwischen mehreren Sprachen, darunter Englisch, Chinesisch, Japanisch und mehr"
+        "description": "Unterstützt Übersetzungen in über 30 Sprachen, betrieben von Google, DeepSeek, Anthropic und OpenAI."
       },
-      {
-        "title": "KI-gestützte Übersetzung",
-        "description": "Verwendet KI-Modelle, um die Genauigkeit und den natürlichen Ausdruck professioneller Terminologie zu gewährleisten"
+      "aiPowered": {
+        "title": "KI-gestützt",
+        "description": "Nutzt fortschrittliche KI-Technologie, um Übersetzungsgenauigkeit und Flüssigkeit zu gewährleisten."
       },
-      {
-        "title": "Sicher und zuverlässig",
-        "description": "Der API-Schlüssel wird nur vorübergehend im Browser verwendet und niemals auf dem Server gespeichert oder übertragen"
+      "dataSecurity": {
+        "title": "Datensicherheit",
+        "description": "Alle Übersetzungsprozesse werden in Ihrem Browser durchgeführt, sodass Ihre Daten nicht in die Cloud hochgeladen werden."
       }
-    ]
+    }
   },
   "uploadSection": {
     "title": "JSON-Datei hochladen",
     "description": "Laden Sie die JSON-Datei hoch, die Sie übersetzen möchten",
-    "dragText": "Ziehen Sie Dateien hierher oder klicken Sie zum Hochladen",
-    "supportText": "Unterstützt .json-Dateien bis zu 10 MB",
+    "dragText": "Dateien hierher ziehen und ablegen oder klicken zum Hochladen",
+    "supportText": "Unterstützt .json-Dateien bis zu 10MB",
     "apiKeyTitle": "API-Schlüssel",
     "apiKeyPlaceholder": "sk-...",
     "aiProviderTitle": "KI-Anbieter",
@@ -68,40 +69,40 @@
     "errors": {
       "selectFile": "Bitte wählen Sie eine Datei aus",
       "jsonExtension": "Bitte laden Sie eine .json-Datei hoch",
-      "fileSize": "Die Dateigröße darf 10 MB nicht überschreiten",
+      "fileSize": "Dateigröße darf 10MB nicht überschreiten",
       "jsonFormat": "Ungültiges JSON-Format, bitte überprüfen Sie den Dateiinhalt",
-      "emptyJson": "Die JSON-Datei darf nicht leer sein"
+      "emptyJson": "JSON-Datei darf nicht leer sein"
     },
     "success": {
       "uploaded": "Datei erfolgreich hochgeladen"
     },
     "errorTitle": "Fehler",
     "successTitle": "Erfolg",
-    "apiKeyTip": "Ihr API-Schlüssel wird nur vorübergehend im Browser verwendet und wird nicht auf einem Server gespeichert oder übertragen."
+    "apiKeyTip": "Der Schlüssel wird nur vorübergehend im Browser verwendet und nicht auf einem Server gespeichert oder übertragen."
   },
   "translateSection": {
     "title": "Zielsprache auswählen",
-    "description": "Wählen Sie die Zielsprache, in die Sie übersetzen möchten"
+    "description": "Wählen Sie die Zielsprache aus, in die Sie übersetzen möchten"
   },
   "translatePanel": {
     "startTranslate": "Übersetzung starten",
-    "translating": "Übersetze...",
+    "translating": "Wird übersetzt...",
     "cancel": "Abbrechen",
     "uploadFirst": "Bitte laden Sie zuerst eine Datei hoch",
     "enterApiKey": "Bitte geben Sie Ihren API-Schlüssel ein",
     "foundUnfinished": "Unvollständige Übersetzung gefunden",
     "continueTranslation": "Übersetzung fortsetzen",
     "translationCancelled": "Übersetzung abgebrochen",
-    "invalidApiKey": "Ungültiges API-Schlüsselformat",
+    "invalidApiKey": "Ungültiges API-Schlüssel-Format",
     "errorTitle": "Fehler",
     "successTitle": "Erfolg",
     "translationCompleted": "Übersetzung abgeschlossen!",
-    "showMoreLanguages": "Mehr Sprachen anzeigen",
-    "hideMoreLanguages": "Mehr Sprachen ausblenden",
+    "showMoreLanguages": "Weitere Sprachen anzeigen",
+    "hideMoreLanguages": "Weitere Sprachen ausblenden",
     "overallProgress": "Gesamtfortschritt",
     "completedLanguages": "Abgeschlossene Sprachen",
-    "translatingLanguage": "Übersetzen",
-    "tip": "Tipp",
+    "translatingLanguage": "Wird übersetzt",
+    "tip": "Hinweis",
     "allLanguagesTranslated": "Alle ausgewählten Sprachen wurden übersetzt.",
     "pleaseSelectLanguage": "Bitte wählen Sie mindestens eine Zielsprache aus",
     "pleaseUploadAndEnterKey": "Bitte laden Sie eine Datei hoch und geben Sie Ihren API-Schlüssel ein",
@@ -112,22 +113,22 @@
     "mb": "MB",
     "gb": "GB",
     "apiKeyErrors": {
-      "invalidFormat": "Ungültiges API-Schlüsselformat",
+      "invalidFormat": "Ungültiges API-Schlüssel-Format",
       "invalidOrExpired": "Ungültiger oder abgelaufener API-Schlüssel",
-      "rateLimitReached": "API-Aufrufratenlimit erreicht",
-      "validationFailed": "API-Schlüsselvalidierung fehlgeschlagen"
+      "rateLimitReached": "API-Aufruf-Ratenlimit erreicht",
+      "validationFailed": "API-Schlüssel-Validierung fehlgeschlagen"
     }
   },
   "jsonPreview": {
     "title": "Vorschau",
-    "empty": "Die JSON-Vorschau wird hier angezeigt",
+    "empty": "JSON-Vorschau wird hier angezeigt",
     "copied": "In die Zwischenablage kopiert",
-    "originalJson": "Original JSON",
+    "originalJson": "Original-JSON",
     "translatedJson": "Übersetzte JSON",
     "tips": "Tipp: Unterstützt Echtzeit-Vorschau und formatierte JSON-Dateien. Sie können den Inhalt direkt kopieren.",
     "placeholder": {
       "upload": "Bitte laden Sie eine JSON-Datei hoch",
-      "translation": "Die Übersetzungsergebnisse werden hier angezeigt"
+      "translation": "Übersetzungsergebnisse werden hier angezeigt"
     },
     "actions": {
       "copy": "Kopieren",
@@ -141,7 +142,7 @@
       "copyError": "Kopieren fehlgeschlagen, bitte manuell kopieren",
       "downloadSuccess": "{lang} Übersetzungsdatei heruntergeladen",
       "downloadAllSuccess": "Alle Übersetzungsdateien heruntergeladen",
-      "downloadError": "Download fehlgeschlagen, bitte wiederholen"
+      "downloadError": "Download fehlgeschlagen, bitte erneut versuchen"
     },
     "languages": {
       "en": "Englisch",
@@ -191,7 +192,7 @@
       "ml": "Malayalam",
       "mr": "Marathi",
       "ms": "Malaiisch",
-      "my": "Birmanisch",
+      "my": "Burmesisch",
       "km": "Khmer",
       "lo": "Laotisch",
       "mn": "Mongolisch",
@@ -205,37 +206,37 @@
   },
   "faq": {
     "title": "Häufig gestellte Fragen",
-    "description": "Häufig gestellte Fragen zum JSON-Übersetzungswerkzeug",
+    "description": "Häufig gestellte Fragen zum JSON-Übersetzungstool",
     "items": [
       {
         "question": "Was macht dieses Tool?",
-        "answer": "Dies ist ein KI-gestütztes JSON-Internationalisierungs-Übersetzungswerkzeug, das Entwicklern hilft, JSON-Sprachdateien schnell in mehrere Sprachen zu übersetzen und gleichzeitig die Integrität der JSON-Struktur zu erhalten."
+        "answer": "Dies ist ein KI-gestütztes JSON-Internationalisierungs-Übersetzungstool, das Entwicklern hilft, JSON-Sprachdateien schnell in mehrere Sprachen zu übersetzen, während die Integrität der JSON-Struktur erhalten bleibt."
       },
       {
         "question": "Wie verwende ich dieses Tool?",
-        "answer": "1. Laden Sie die zu übersetzende JSON-Datei hoch\n2. Wählen Sie die Zielsprache aus\n3. Geben Sie Ihren API-Schlüssel ein\n4. Klicken Sie auf Übersetzung starten\n5. Laden Sie das Ergebnis nach Abschluss der Übersetzung herunter"
+        "answer": "1. Laden Sie die JSON-Datei hoch, die Sie übersetzen möchten\n2. Wählen Sie die Zielsprache aus\n3. Geben Sie Ihren API-Schlüssel ein\n4. Klicken Sie auf Übersetzung starten\n5. Laden Sie das Ergebnis herunter, nachdem die Übersetzung abgeschlossen ist"
       },
       {
         "question": "Welche Sprachen werden unterstützt?",
-        "answer": "Derzeit werden mehrere Sprachen unterstützt, darunter Englisch, vereinfachtes Chinesisch, traditionelles Chinesisch, Japanisch, Koreanisch, Französisch, Deutsch, Spanisch, Russisch und mehr."
+        "answer": "Derzeit werden mehrere Sprachen unterstützt, darunter Englisch, Vereinfachtes Chinesisch, Traditionelles Chinesisch, Japanisch, Koreanisch, Französisch, Deutsch, Spanisch, Russisch und mehr."
       },
       {
-        "question": "Wird mein API-Schlüssel gespeichert?",
-        "answer": "Nein. Ihr API-Schlüssel wird nur vorübergehend im Browser verwendet und wird nicht auf einem Server gespeichert oder übertragen."
+        "question": "Wie sicher ist dieses Tool? Werden meine Daten hochgeladen?",
+        "answer": "Wir nehmen Datensicherheit und Privatsphäre sehr ernst. Alle Vorgänge dieses Tools werden lokal in Ihrem Browser ausgeführt. Ihre JSON-Dateien und API-Schlüssel werden niemals auf unsere Server hochgeladen. Dies stellt sicher, dass Ihre Datenprivatsphäre und Geschäftsgeheimnisse absolut sicher sind.\n\nKonkret funktioniert der gesamte Prozess wie folgt:\n1.  Lokale Verarbeitung: Wenn Sie eine JSON-Datei hochladen, wird sie direkt in den Speicher Ihres Browsers geladen. Sie durchläuft keinen entfernten Server.\n2.  API-Schlüssel-Sicherheit: Ihr API-Schlüssel wird nur in der temporären Sitzung des Browsers gespeichert. Er wird direkt von Ihrem Browser an den offiziellen API-Endpunkt des KI-Anbieters (z.B. OpenAI, Google Gemini) zur Übersetzung gesendet, ohne unseren Server als Proxy zu durchlaufen.\n3.  Keine Datenspeicherung: Sobald Sie den Browser-Tab schließen, werden alle Daten, einschließlich des Dateiinhalts und des API-Schlüssels, sofort gelöscht. Wir speichern, zeichnen oder analysieren keine Ihrer Betriebsdaten.\n\nSie können dieses Tool mit vollstem Vertrauen verwenden, da Ihre sensiblen Informationen Ihren eigenen Computer niemals verlassen."
       },
       {
         "question": "Wie wird die Übersetzungsqualität sichergestellt?",
-        "answer": "Wir verwenden KI-Modelle für die Übersetzung, um die Genauigkeit der professionellen Terminologie und die Natürlichkeit des Sprachausdrucks zu gewährleisten. Wir unterstützen auch benutzerdefinierte Wörterbuchfunktionen, um die Konsistenz bestimmter Begriffe zu wahren."
+        "answer": "Wir verwenden KI-Modelle für die Übersetzung, um die Genauigkeit von Fachterminologie und die Natürlichkeit des Sprachausdrucks zu gewährleisten. Wir unterstützen auch benutzerdefinierte Wörterbuchfunktionen, um die Konsistenz spezifischer Begriffe beizubehalten."
       },
       {
         "question": "Gibt es eine Dateigrößenbeschränkung?",
-        "answer": "Die maximale Größe für eine einzelne JSON-Datei beträgt 10 MB. Für größere Dateien wird empfohlen, diese in Batches zu übersetzen."
+        "answer": "Die maximale Größe für eine einzelne JSON-Datei beträgt 10MB. Für größere Dateien wird empfohlen, sie in Chargen zu übersetzen."
       }
     ]
   },
   "cta": {
-    "title": "Verwenden Sie jetzt das KI-Übersetzungswerkzeug",
-    "description": "Übersetzen Sie Ihre JSON-Sprachdateien schnell und präzise in mehrere Sprachen",
+    "title": "Nutzen Sie das KI-Übersetzungstool jetzt",
+    "description": "Übersetzen Sie Ihre JSON-Sprachdateien schnell und genau in mehrere Sprachen",
     "button": "Jetzt ausprobieren",
     "features": [
       "Keine Registrierung erforderlich",
@@ -246,12 +247,19 @@
   "footer": {
     "creator": "Erstellt von Red mit ❤️",
     "twitter": "@chrisgostrong",
-    "coffee": "Kaffee spendieren",
-    "github": "GitHub"
+    "coffee": "Kauf mir einen Kaffee",
+    "github": "GitHub",
+    "navigation": "Navigation",
+    "resources": "Ressourcen",
+    "contact": "Kontakt",
+    "about": "Über uns",
+    "blog": "Blog",
+    "privacy": "Datenschutz",
+    "terms": "Bedingungen"
   },
   "metadata": {
-    "title": "JSON-Übersetzungswerkzeug - KI-gestützte mehrsprachige Übersetzungslösung",
-    "description": "Verwenden Sie KI-Technologie, um JSON-Sprachdateien schnell und präzise in mehrere Sprachen zu übersetzen. Unterstützt die Beibehaltung der JSON-Struktur, Variablenplatzhalter und HTML-Tags.",
-    "keywords": "i18n Übersetzung, JSON Übersetzung, KI Übersetzung, Entwickler-Übersetzungswerkzeug, Software-Lokalisierung, Website-Lokalisierung, App-Lokalisierung, Internationalisierungswerkzeug, automatisierte Übersetzung, Code-Übersetzung, React i18n, Vue i18n, Next.js i18n, Angular i18n, Svelte i18n, i18next automatisierte Übersetzung, next-intl tool, JavaScript i18n Bibliothek, Flutter i18n, React Native i18n, iOS App Übersetzung, Android App Übersetzung, GitHub i18n Integration, VS Code i18n Plugin, Node.js i18n, ARB Datei Übersetzung, KI-gestützte JSON-Dateiübersetzung, entwicklerspezifische i18n-Lösung, automatisierte Übersetzung von JSON-Sprachdateien, Online-JSON-Übersetzer, kostenloses i18n-Übersetzungswerkzeug, effizienter Software-Internationalisierungsprozess, beste i18n-Praktiken, kontinuierlicher Lokalisierungsdienst, mehrsprachige Website-Entwicklung, Spiele-Lokalisierungswerkzeug, KI-gestützte Lokalisierung, Übersetzungsmanagement-System, TMS, agile Lokalisierung, Übersetzungs-API, Ein-Klick-Übersetzung aller Sprachen, wie man mehrsprachige Websites implementiert, wie man App-Internationalisierung durchführt, automatisierter Front-End-Übersetzungsprozess, Senkung der Lokalisierungskosten, schnelles Starten mehrsprachiger Versionen, wie man mehrsprachige JSON-Dateien verwaltet, Tool zur Zusammenarbeit im Übersetzungsteam, Lösung von i18n-Schmerzpunkten, wie man die Übersetzungskonsistenz aufrechterhält, das beste JSON-Übersetzungswerkzeug"
+    "title": "JSON-Übersetzungstool - KI-gestützte mehrsprachige Übersetzungslösung",
+    "description": "Nutzen Sie KI-Technologie, um JSON-Sprachdateien schnell und genau in mehrere Sprachen zu übersetzen. Unterstützt das Bewahren der JSON-Struktur, Variablen-Platzhalter und HTML-Tags.",
+    "keywords": "i18n Übersetzung, JSON Übersetzung, KI Übersetzung, Entwickler-Übersetzungstool, Software-Lokalisierung, Website-Lokalisierung, App-Lokalisierung, Internationalisierungstool, automatisierte Übersetzung, Code-Übersetzung, React i18n, Vue i18n, Next.js i18n, Angular i18n, Svelte i18n, i18next automatisierte Übersetzung, next-intl Tool, JavaScript i18n Bibliothek, Flutter i18n, React Native i18n, iOS App Übersetzung, Android App Übersetzung, GitHub i18n Integration, VS Code i18n Plugin, Node.js i18n, ARB Dateiübersetzung, KI-gestützte JSON-Dateiübersetzung, entwicklerspezifische i18n-Lösung, automatisierte Übersetzung von JSON-Sprachdateien, Online-JSON-Übersetzer, kostenloses i18n-Übersetzungstool, effizienter Software-Internationalisierungsprozess, beste i18n-Praktiken, kontinuierlicher Lokalisierungsservice, mehrsprachige Website-Entwicklung, Spiel-Lokalisierungstool, KI-unterstützte Lokalisierung, Übersetzungsmanagementsystem, TMS, agile Lokalisierung, Übersetzungs-API, Ein-Klick-Übersetzung aller Sprachen, wie man mehrsprachige Websites implementiert, wie man App-Internationalisierung durchführt, automatisierter Frontend-Übersetzungsprozess, Lokalisierungskosten reduzieren, schnell mehrsprachige Versionen veröffentlichen, wie man mehrsprachige JSON-Dateien verwaltet, Übersetzungsteam-Kollaborationstool, i18n-Schmerzpunkte lösen, wie man Übersetzungskonsistenz aufrechterhält, das beste JSON-Übersetzungstool"
   }
 }

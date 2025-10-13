@@ -1,7 +1,13 @@
 import Link from 'next/link';
 import { getDictionary } from '@/lib/getDictionary'
 
-const articles = [
+export type Article = {
+  slug: string;
+  title: string;
+  description: string;
+};
+
+export const articles: Article[] = [
   {
     slug: 'what-is-json',
     title: 'What is JSON? A Beginner\'s Guide for Web Developers',

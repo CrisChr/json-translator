@@ -52,9 +52,7 @@ export default function LanguageSwitcher() {
           size="sm"
           className={cn(
             "flex items-center gap-2 px-2 h-9",
-            scrolled
-              ? "text-foreground hover:text-foreground bg-gray-100/0 hover:bg-gray-100 px-3 rounded-full text-white"
-              : "text-white hover:text-white hover:bg-white/10 px-3 rounded-full"
+            "text-white hover:text-white hover:bg-white/10 px-3 rounded-full"
           )}
         >
           <Globe className={cn(
