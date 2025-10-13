@@ -66,7 +66,7 @@ export default function FAQ({ dict }: FAQProps) {
                 className="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-100"
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
               >
-                <span className="font-semibold">{faq.question}</span>
+                <h3 className="font-semibold text-lg">{faq.question}</h3>
                 <ChevronDown
                   className={`w-5 h-5 transition-transform ${
                     openIndex === index ? 'rotate-180' : ''

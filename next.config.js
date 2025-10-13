@@ -14,6 +14,12 @@ const nextConfig = {
         port: '',
         pathname: '/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'api.producthunt.com',
+        port: '',
+        pathname: '/**',
+      },
     ],
   },
   // cacheHandler: require.resolve('./cache-handler.js'),
@@ -50,6 +56,23 @@ const nextConfig = {
         has: [{ type: 'host', value: 'www.jsontrans.fun' }],
         destination: 'https://jsontrans.fun/:path*',
         permanent: true,
+      },
+    ]
+  },
+  async headers() {
+    return [
+      {
+        source: '/:path*',
+        headers: [
+          {
+            key: 'X-Frame-Options',
+            value: 'SAMEORIGIN',
+          },
+          {
+            key: 'X-Content-Type-Options',
+            value: 'nosniff',
+          },
+        ],
       },
     ]
   },

@@ -1,13 +1,10 @@
-import { getDictionary } from '@/lib/getDictionary'
 import PageLayout from '@/components/PageLayout'
 
 export default async function PrivacyPage({ params: { lang } }: { params: { lang: string } }) {
-  const dict = await getDictionary(lang)
 
   return (
     <PageLayout title="Privacy Policy">
       <p><strong>Last Updated: October 26, 2024</strong></p>
-      
       <p>
         Welcome to JSON Translater! We highly value your privacy. This Privacy Policy is intended to explain how we handle your information and to assure you that your data is absolutely secure with us.
       </p>
