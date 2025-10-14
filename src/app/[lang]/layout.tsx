@@ -177,7 +177,7 @@ export default async function LocaleLayout(props: LayoutProps) {
       >
         {/* <Analytics /> */}
         <TranslateProvider>
-          <NavbarWrapper dict={{ coffee: dict.footer.coffee }} />
+          <NavbarWrapper dict={{ coffee: dict.footer.coffee, blog: dict.footer.blog, helpCenter: dict.footer.helpCenter }} />
           <main className="flex-grow">
             {" "}
             {/* Wrap children in a main tag with flex-grow */}

@@ -9,7 +9,9 @@ import { useParams } from 'next/navigation'
 
 interface NavbarProps {
   dict: {
-    coffee: string
+    coffee: string;
+    helpCenter: string;
+    blog: string;
   }
 }
 
@@ -67,7 +69,7 @@ export default function Navbar({ dict }: NavbarProps) {
                 scrolled ? 'text-white hover:text-white/80' : 'text-white hover:text-white/80'
               }`}
             >
-              Help Center
+              {dict.helpCenter}
             </Link>
             <Link
               href={`/${lang}/blog`}
@@ -75,7 +77,7 @@ export default function Navbar({ dict }: NavbarProps) {
                 scrolled ? 'text-white hover:text-white/80' : 'text-white hover:text-white/80'
               }`}
             >
-              Blog
+              {dict.blog}
             </Link>
             {mounted && <LanguageSwitcher />}
 
