@@ -31,10 +31,10 @@ export function FeaturesSection({ dict }: FeaturesSectionProps) {
     : Object.values(dict.items || {})
 
   const featureLinks = [
-    'en/blog/what-is-json',
-    'en/blog/json-vs-xml',
-    'en/blog/how-to-build',
-    'en/blog/common-json-error',
+    'en/help/code-friendly',
+    'en/help/multi-language-support',
+    'en/help/ai-powered',
+    'en/help/data-security',
   ];
 
   return (

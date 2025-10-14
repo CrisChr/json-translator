@@ -14,7 +14,7 @@ export default function BlogPostLayout({ children, params }: BlogPostLayoutProps
   const relatedArticles = articles.filter(article => article.slug !== params.slug);
 
   return (
-    <div className="container mx-auto px-4 py-20">
+    <div className="container mx-auto px-4 py-24">
       <article className="prose prose-lg mx-auto">
         {children}
       </article>

@@ -53,3 +53,7 @@ Thumbs.db
 .clineignore
 .clinerules
 /memory-bank
+
+/AGENTS.md
+/.kilocode/
+/openspec/
