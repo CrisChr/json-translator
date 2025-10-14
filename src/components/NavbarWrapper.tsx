@@ -4,6 +4,8 @@ import Navbar from '@/components/Navbar';
 interface NavbarWrapperProps {
   dict: {
     coffee: string;
+    helpCenter: string;
+    blog: string;
   };
 }
 

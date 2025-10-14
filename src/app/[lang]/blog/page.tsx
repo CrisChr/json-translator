@@ -9,6 +9,16 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    slug: 'ai-vs-human-translation',
+    title: 'AI Translation vs. Human Translation: Finding the Best Localization Strategy for Your Project',
+    description: 'The best strategy often lies not in choosing one over the other, but in understanding how to leverage both.',
+  },
+  {
+    slug: 'i18n-ultimate-guide',
+    title: 'i18n Ultimate Guide: A Developer\'s Roadmap from "Hello World" to a Global App',
+    description: 'This guide will provide you with a clear roadmap to build a truly global-ready application from the ground up.',
+  },
+  {
     slug: 'what-is-json',
     title: 'What is JSON? A Beginner\'s Guide for Web Developers',
     description: 'JSON is a lightweight data-interchange format that has become the de facto standard in web development. This article will guide you through its basic structure, its differences from XML, and its practical applications.',

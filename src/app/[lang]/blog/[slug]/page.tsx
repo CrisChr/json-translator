@@ -6,12 +6,24 @@ import whatIsJsonMarkdown from '@/content/what-is-json';
 import howToBuildMarkdown from '@/content/how-to-build';
 import commonErrorMarkdown from '@/content/common-json-error';
 import jsonVsXmlMarkdown from '@/content/json-vs-xml';
+import i18nUltimateGuideMarkdown from '@/content/i18n-ultimate-guide';
+import aiVsHumanTranslationMarkdown from '@/content/ai-vs-human-translation';
 import { getDictionary } from '@/lib/getDictionary';
 import { locales, defaultLocale } from '@/config/i18n';
 import React from 'react'; // Import React for React.HTMLAttributes
 
 // Metadata for each blog post
 const blogMetadata: { [key: string]: { title: string; description: string; date: string; } } = {
+  'ai-vs-human-translation': {
+    title: 'AI Translation vs. Human Translation: Finding the Best Localization Strategy for Your Project',
+    description: 'The best strategy often lies not in choosing one over the other, but in understanding how to leverage both.',
+    date: '2025-10-14',
+  },
+  'i18n-ultimate-guide': {
+    title: 'i18n Ultimate Guide: A Developer\'s Roadmap from "Hello World" to a Global App',
+    description: 'This guide will provide you with a clear roadmap to build a truly global-ready application from the ground up.',
+    date: '2025-10-14',
+  },
   'what-is-json': {
     title: 'What is JSON? A Comprehensive Guide for Developers',
     description: 'Explore the fundamentals of JSON, including its syntax, data types, and common use cases in web development and APIs.',
@@ -167,6 +179,18 @@ export default async function BlogPostPage({ params }: { params: { slug: string,
 
   const renderContent = () => {
     switch (params.slug) {
+      case 'ai-vs-human-translation':
+        return (
+          <ReactMarkdown remarkPlugins={[remarkGfm]} components={components}>
+            {aiVsHumanTranslationMarkdown}
+          </ReactMarkdown>
+        );
+      case 'i18n-ultimate-guide':
+        return (
+          <ReactMarkdown remarkPlugins={[remarkGfm]} components={components}>
+            {i18nUltimateGuideMarkdown}
+          </ReactMarkdown>
+        );
       case 'what-is-json':
         return (
           <ReactMarkdown remarkPlugins={[remarkGfm]} components={components}>
