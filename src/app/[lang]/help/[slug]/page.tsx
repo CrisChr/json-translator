@@ -10,6 +10,7 @@ import aiPoweredMarkdown from '@/content/ai-powered';
 import dataSecurityMarkdown from '@/content/data-security';
 import fullTranslationWorkflowMarkdown from '@/content/full-translation-workflow';
 import apiKeySecurityMarkdown from '@/content/api-key-security';
+import Breadcrumb from '@/components/Breadcrumb';
 
 // Metadata for each help post
 const helpMetadata: { [key: string]: { title: string; description: string; date: string; } } = {
@@ -220,8 +221,23 @@ export default async function HelpPostPage({ params }: { params: { slug: string,
         }
     };
 
+    // Get article title for breadcrumb
+    const articleTitle = helpMetadata[params.slug]?.title || '';
+
+    // Breadcrumb items for help articles
+    const breadcrumbItems = [
+        {
+            label: dict.footer?.helpCenter || 'Help Center',
+            href: `/${params.lang}/help`
+        },
+        {
+            label: articleTitle
+        }
+    ];
+
     return (
         <div className="container mx-auto px-4 py-15">
+            <Breadcrumb items={breadcrumbItems} lang={params.lang} />
             {renderContent()}
         </div>
     );

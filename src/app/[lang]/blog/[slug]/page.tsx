@@ -11,6 +11,7 @@ import aiVsHumanTranslationMarkdown from '@/content/ai-vs-human-translation';
 import { getDictionary } from '@/lib/getDictionary';
 import { locales, defaultLocale } from '@/config/i18n';
 import React from 'react'; // Import React for React.HTMLAttributes
+import Breadcrumb from '@/components/Breadcrumb';
 
 // Metadata for each blog post
 const blogMetadata: { [key: string]: { title: string; description: string; date: string; } } = {
@@ -220,8 +221,23 @@ export default async function BlogPostPage({ params }: { params: { slug: string,
     }
   };
 
+  // Get article title for breadcrumb
+  const articleTitle = blogMetadata[params.slug]?.title || '';
+
+  // Breadcrumb items for blog articles
+  const breadcrumbItems = [
+    {
+      label: dict.footer?.blog || 'Blog',
+      href: `/${params.lang}/blog`
+    },
+    {
+      label: articleTitle
+    }
+  ];
+
   return (
     <div className="container mx-auto px-4 py-15">
+      <Breadcrumb items={breadcrumbItems} lang={params.lang} />
       {renderContent()}
     </div>
   );
