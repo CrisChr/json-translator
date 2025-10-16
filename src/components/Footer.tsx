@@ -48,7 +48,7 @@ export default function Footer({ dict }: FooterProps) {
         links: [
           { href: 'https://red666.vercel.app', text: 'Red Blog', target: '__blank'},
           { href: 'https://x.com/chrisgostrong', text: 'Twitter', target: '_blank' },
-          { href: 'https://github.com/CrisChr/json-translator', text: 'GitHub', target: '_blank' },
+          { href: 'https://github.com/CrisChr', text: 'GitHub', target: '_blank' },
         ],
       },
     ]

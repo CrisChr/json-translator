@@ -83,7 +83,7 @@ export default function Navbar({ dict }: NavbarProps) {
 
             {/* GitHub 链接 */}
             <a
-              href="https://github.com/CrisChr/json-translator"
+              href="https://github.com/CrisChr"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="GitHub"
