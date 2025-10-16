@@ -148,25 +148,6 @@ export default async function LocaleLayout(props: LayoutProps) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
-        <script async data-cfasync="false" src="//pl27813265.effectivegatecpm.com/4b5735e9fa53bd4a6fb3a12753c86bcf/invoke.js"></script>
-        <Script
-          id="fancyresponse-script"
-          strategy="lazyOnload"
-          dangerouslySetInnerHTML={{
-            __html: `
-          (function(klmls){
-            var d = document,
-            s = d.createElement('script'),
-            l = d.scripts[d.scripts.length - 1];
-            s.settings = klmls || { };
-            s.src = "\/\/fancyresponse.com\/b.XoV-sQd\/GLlz0sY\/WbcP\/zeRmV9HuVZMUVlIk\/PUTaYB2\/NAzWIRwXM-jIYatCN\/j\/YS3eMaj\/AkyiNIwe";
-            s.async = true;
-            s.referrerPolicy = 'no-referrer-when-downgrade';
-            l.parentNode.insertBefore(s, l);
-          })({ })
-          `,
-          }}
-        ></Script>
       </head>
       <body
         className={cn(
@@ -183,12 +164,10 @@ export default async function LocaleLayout(props: LayoutProps) {
             {/* Wrap children in a main tag with flex-grow */}
             {children}
           </main>
-          <div id="container-4b5735e9fa53bd4a6fb3a12753c86bcf"></div>
           <Footer dict={dict.footer} />{" "}
           <Analytics/>
           <Toaster />
         </TranslateProvider>
-        <script async type='text/javascript' src='//pl27814468.effectivegatecpm.com/fa/75/b9/fa75b9ff9cfa26f8b74ee00d63fb1878.js' data-cfasync="false"></script>
       </body>
     </html>
   );
