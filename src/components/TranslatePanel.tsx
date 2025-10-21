@@ -106,11 +106,6 @@ export function TranslatePanel({ dict }: TranslatePanelProps) {
     resetTranslation, // 获取 resetTranslation 函数
   } = useTranslate()
 
-  // 调试：打印前端的 SECRET_KEY
-  useEffect(() => {
-    console.log('Frontend NEXT_PUBLIC_CRYPTO_SECRET_KEY:', process.env.NEXT_PUBLIC_CRYPTO_SECRET_KEY);
-  }, []);
-
   type TranslatePanelKey = keyof typeof dict.translatePanel | 'apiKeyErrors.invalidFormat' | 'apiKeyErrors.invalidOrExpired' | 'apiKeyErrors.rateLimitReached' | 'apiKeyErrors.validationFailed';
 
   const getTranslation = (key: TranslatePanelKey, defaultValue: string) => {
