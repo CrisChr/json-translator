@@ -168,6 +168,7 @@ export default async function LocaleLayout(props: LayoutProps) {
           <Analytics/>
           <Toaster />
         </TranslateProvider>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8598116000817169" crossorigin="anonymous"></script>
       </body>
     </html>
   );
