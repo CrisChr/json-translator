@@ -32,7 +32,7 @@ export const HeroSection = ({ dict }: HeroSectionProps) => {
           <p className="text-base md:text-xl text-white/80 max-w-2xl mx-auto px-4 md:px-0">
             {dict.description}
           </p>
-          <div className="pt-4 flex justify-center">
+          <div className="pt-4 flex justify-around">
             <a href="https://www.producthunt.com/products/i18n-translator-by-ai?embed=true&utm_source=badge-featured&utm_medium=badge&utm_source=badge-i18n-translator-by-ai" target="_blank">
               <Image
                 src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1002973&theme=light&t=1754627927606" 
@@ -41,6 +41,21 @@ export const HeroSection = ({ dict }: HeroSectionProps) => {
                 height="54"
                 unoptimized={true}
               />
+            </a>
+            <a href="https://startupfa.me/s/json-translator?utm_source=jsontrans.fun" target="_blank">
+              <img src="https://startupfa.me/badges/featured-badge.webp" alt="JSON Translator - Featured on Startup Fame" width="171" height="54" />
+            </a>
+            <a href="https://fazier.com/launches/jsontrans.fun" target="_blank">
+              <img src="https://fazier.com/api/v1//public/badges/launch_badges.svg?badge_type=featured&theme=neutral" width="250" alt="Fazier badge" />
+            </a>
+            <a href="https://twelve.tools" target="_blank">
+              <img src="https://twelve.tools/badge0-light.svg" alt="Featured on Twelve Tools" width="200" height="54"/>
+            </a>
+            <a href="https://turbo0.com/item/i18n-json-translator-tool" target="_blank" rel="noopener noreferrer">
+              <img src="https://img.turbo0.com/badge-listed-light.svg" alt="Listed on Turbo0" style={{height: "54px", width: "auto"}} />
+            </a>
+            <a href="https://aihuntlist.com/tool/ai-powered-i18n-json-internationalization-translation-tool" target="_blank" rel="noopener noreferrer">
+              <img src="https://aihuntlist.com/badge-light.svg" alt="Featured on aihuntlist.com" style={{height:" 54px", width: "auto"}}/>
             </a>
           </div>
           <div className="flex flex-col md:flex-row items-center justify-center gap-3 md:gap-6 pt-2 md:pt-4">
